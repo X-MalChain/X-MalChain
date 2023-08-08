@@ -20,7 +20,7 @@ Our goal is to provide a platform that can explain malware, specifically, to out
 - _tools_: Some codes acting as tools for this project.
 - _sb.sqlite3_: database.
 - _manage.py_: manage codes.
-- 
+  
 ### Operate System
 This project is developed on Ubuntu 20.04.
 ### Language & IDE & Framework
@@ -39,3 +39,6 @@ sudo apt-get install sqlite sqlite3
 sudo apt-get install libsqlite3-dev
 sqlite3 version
 ```
+
+## Web
+Note that,our project for web is also an open source at https://github.com/X-MalChain/projects.
