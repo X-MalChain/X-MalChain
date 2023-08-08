@@ -11,6 +11,7 @@ Our goal is to provide a platform that can explain malware, specifically, to out
 
 ## Development Environment
 ### Project Package Overview
+- _asset_: Some assets used for implementation of X-MalChain or experiments.
 - _common_: Design the model or class of database.
 - _createkg_: Draw a knowledge graph with Neo4j.
 - _detect & verify_: Detect malicious behaviors. Note that, this is an early version, and the latest version is in X-MalChain.py.
