@@ -8,13 +8,13 @@ from py2neo import Graph, Node, Relationship, NodeMatcher
 
 
 def create_graph():
-    # 1、连接neo4j数据库，输入账号密码并指定数据库
+    # 1. access the neo4j, input username and password
     graph = Graph("http://localhost:7474", auth=("neo4j", '11111111'), name='mwep')
-    # 清除neo4j中原有节点的所有信息
+    # avoid multiple draw
     # graph.delete()
     graph.run('match (n) detach delete n')
 
-    # 2、创建节点，使用表KgTest读取有哪些节点，并通过和表ApiTest、PerTest连接读取每个节点的特征（即调用的apis和申请的permissions）
+    # 2. Create nodes
     # kg = KgTest.objects.values()
     kg = KgBackup.objects.values()
     for one in kg:
@@ -43,14 +43,14 @@ def create_graph():
                     pass
         # print('one', kg)
         # if int(action_id)<20:
-        #     node = Node('Behavoir', ID=action_name, name=action_name)  # 给节点添加标签，显著恶意的和非显著恶意的
+        #     node = Node('Behavoir', ID=action_name, name=action_name)  # label, sensitive or not
         # else:
-        #     node = Node('Unkown', ID=action_name, name=action_name)  # 给节点添加标签，显著恶意的和非显著恶意的
+        #     node = Node('Unkown', ID=action_name, name=action_name)
         node = Node('Behavior', ID=action_id, name=action_id, apis=apis, permissions=permissions, action=action_name)
         graph.create(node)
 
-    # 3、创建关系，使用表relTest读取节点之间的关系
-    node_matcher = NodeMatcher(graph)  # 创建NodeMatcher对象
+    # 3. Create relationships
+    node_matcher = NodeMatcher(graph)
     # rel = relTest.objects.values()
     rel = models.relBackup.objects.values()
     for one in rel:
@@ -60,7 +60,7 @@ def create_graph():
         # print('sourceID:',node_id_source)
         # print('target:', node_id_target)
         # print('relation:', relation)
-        if relation=='':    # relation不能为空
+        if relation=='': 
             relation='next'
         # print('\n')
         node_source = node_matcher.match("Behavior").where(ID=node_id_source).first()
@@ -71,14 +71,14 @@ def create_graph():
 
 def str_list(str_list):
     """
-    :param str_list: 数据类型为字符串，但是是数组的形式
+    :param str_list: string list
     """
     ret_list = []
-    if str_list != '':  # 首先应该保证不为空
-        if str_list.find(',') != -1:  # 说明有多个permission或者apis
+    if str_list != '':
+        if str_list.find(',') != -1:
             ret_list = str_list.split(',')
         else:
-            ret_list.append(int(str_list))  # 说明只有一个permission或者api
+            ret_list.append(int(str_list))
     return ret_list
 
 
