@@ -33,10 +33,10 @@ apt install Androguard
 - Django
 ```angular2html
 python -m pip install Django
-#  Edit Table Data
+#  Edit Model or Class
 python manage.py makemigrations
 python manage.py migrate
 ```
 
 ## Web
-Note that,our project for web is also an open source at [Our Web Project](https://github.com/X-MalChain/projects).
+Note that, our project for web is also an open source at [Our Web Project](https://github.com/X-MalChain/projects).
