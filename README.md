@@ -26,18 +26,18 @@ This project is developed on Ubuntu 20.04.
 ### Language & IDE & Framework
 Using python 3.8, we choose Pycharm to implement our Django project.
 ### Installation of important packages
+- Androguard
+```angular2html
+sudo apt-get install sqlite sqlite3
+sudo apt-get install libsqlite3-dev
+sqlite3 version
+```
 - Django
 ```angular2html
 python -m pip install Django
 #  Edit Table Data
 python manage.py makemigrations
 python manage.py migrate
-```
-- Sqlite
-```angular2html
-sudo apt-get install sqlite sqlite3
-sudo apt-get install libsqlite3-dev
-sqlite3 version
 ```
 
 ## Web
