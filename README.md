@@ -41,4 +41,4 @@ sqlite3 version
 ```
 
 ## Web
-Note that,our project for web is also an open source at https://github.com/X-MalChain/projects.
+Note that,our project for web is also an open source at [Our Web Project](https://github.com/X-MalChain/projects).
