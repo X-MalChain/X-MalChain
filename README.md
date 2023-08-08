@@ -12,13 +12,14 @@ Our goal is to provide a platform that can explain malware, specifically, to out
 ## Development Environment
 
 ### Project Package Overview
-- common: Design the model or class of database.
-- createkg: Draw a knowledge graph with Neo4j.
-- detect & verify: Detect malicious behaviors. Note that, this is an early version, and the latest version is in X-MalChain.py.
-- exper & exper1: Implement the codes to conduct our experiments.
-- manager: Design a background management system for our web service.
-- mwep: The configuration package of the project itself.
-- Tools: Some codes acting as tools for this project.
+- _common_: Design the model or class of database.
+- _createkg_: Draw a knowledge graph with Neo4j.
+- _detect & verify_: Detect malicious behaviors. Note that, this is an early version, and the latest version is in X-MalChain.py.
+- _exper & exper1_: Implement the codes to conduct our experiments.
+- _manager_: Design a background management system for our web service.
+- _mwep_: The configuration package of the project itself.
+- _tools_: Some codes acting as tools for this project.
+- _sb.sqlite3_: database.
 
 ### OS
 ### Language and IDE
