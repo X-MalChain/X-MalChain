@@ -10,7 +10,6 @@ Our goal is to provide a platform that can explain malware, specifically, to out
 - Using ChatGpt, generate a brief but clear description to explain why the application is classfied as malware with the help of malicious behavior chains.
 
 ## Development Environment
-
 ### Project Package Overview
 - _common_: Design the model or class of database.
 - _createkg_: Draw a knowledge graph with Neo4j.
@@ -21,12 +20,15 @@ Our goal is to provide a platform that can explain malware, specifically, to out
 - _tools_: Some codes acting as tools for this project.
 - _sb.sqlite3_: database.
 - _manage.py_: manage codes.
+- 
+### Operate System
+This project is developed on Ubuntu 20.04.
+### Language & IDE & Framework
+Using python, we choose Pycharm to implement our Django project.
+### Installation of important packages
 
-### OS
-### Language and IDE
-### Framework
-# Edit Table Data
 ```angular2html
+#  Edit Table Data
 python manage.py makemigrations
 python manage.py migrate
 ```
