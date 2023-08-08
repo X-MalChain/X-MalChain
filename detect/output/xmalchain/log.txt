@@ -1,0 +1,6615 @@
+****************** APK 1 ******************
+Apk name：Apk089
+
+---Malicious---
+Monitor received SMS
+Access specified resources
+Save resource to a local file
+Get the SIM card serial number
+Get IMEI
+Access the Internet
+Send SMS
+Get IMSI
+Read SMS
+Active when start-up broadcast is detected
+Register broadcast receiver
+Block broadcast
+Generate pop-up widgets
+Parsing SMS content
+Get cid
+Delete SMS
+Get the list of running tasks
+Hide icon
+Monitor the screen
+Get mac address
+Get the application lists
+Set Wifi on or off
+Get user's phone number
+
+---Others---
+Look for installed Apk
+Encrypt
+Get network info
+Stop the process
+Register content observer
+Write to SD from input
+Open a mass of threads
+Click the confirm button
+Get location of device
+Get cached message
+Get the network operator
+Hang up phone call
+Stop the service
+Launch Apps
+Get the list of services
+Cache message
+Get HttpUrl
+Listen on clicks
+Check permissions
+Add views
+
+
+---Malicious Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+42->1: Access specified resources->Access the Internet
+14->1: Get the SIM card serial number->Access the Internet
+14->12: Get the SIM card serial number->Get IMEI
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+21->1: Get network info->Access the Internet
+1->73: Access the Internet->Write to SD from input
+1->10: Access the Internet->Generate pop-up widgets
+35->56: Send SMS->Monitor received SMS
+13->1: Get IMSI->Access the Internet
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+23->137: Hide icon->Launch Apps
+22->13: Get user's phone number->Get IMSI
+
+---Others Path---
+41->49: Stop the process->Hang up phone call
+74->75: Get cached message->Cache message
+
+
+---Final Output---
+Access the Internet
+Block broadcast
+Active when start-up broadcast is detected
+Write to SD from input
+Generate pop-up widgets
+Launch Apps
+Get IMEI
+Get IMSI
+Get the SIM card serial number
+Read SMS
+Get the application lists
+Get network info
+Get user's phone number
+Hide icon
+Encrypt
+Get cid
+Monitor the screen
+Parsing SMS content
+Send SMS
+Access specified resources
+Save resource to a local file
+Set Wifi on or off
+Get the list of running tasks
+Get mac address
+Register broadcast receiver
+Delete SMS
+Monitor received SMS
+
+---Reasoning Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+42->1: Access specified resources->Access the Internet
+14->1: Get the SIM card serial number->Access the Internet
+14->12: Get the SIM card serial number->Get IMEI
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+21->1: Get network info->Access the Internet
+1->73: Access the Internet->Write to SD from input
+1->10: Access the Internet->Generate pop-up widgets
+35->56: Send SMS->Monitor received SMS
+13->1: Get IMSI->Access the Internet
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+23->137: Hide icon->Launch Apps
+22->13: Get user's phone number->Get IMSI
+******************
+
+****************** APK 2 ******************
+Apk name：Apk010
+
+---Malicious---
+Monitor received SMS
+Access specified resources
+Save resource to a local file
+Get cid
+Get mac address
+Get the SIM card serial number
+Get IMEI
+Read SMS
+Active when start-up broadcast is detected
+Send SMS
+Access the Internet
+Request permissions
+Register broadcast receiver
+Get IMSI
+Generate pop-up widgets
+Set Wifi on or off
+Get the application lists
+Delete SMS
+Block broadcast
+Parsing SMS content
+Get user's phone number
+Install Apps
+Create a desktop shortcut
+Get the list of running tasks
+Acquire the wake lock
+Install
+
+---Others---
+Open a mass of threads
+Look for installed Apk
+Get network info
+Encrypt
+Write to SD from input
+Click the confirm button
+Register content observer
+Check permissions
+Get the network operator
+Get location of device
+Get the list of services
+Show dialog
+Listen on clicks
+Launch Apps
+Stop the service
+Add views
+Stop the process
+
+
+---Malicious Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+42->1: Access specified resources->Access the Internet
+90->88: Get cid->Encrypt
+47->1: Get mac address->Access the Internet
+21->1: Get network info->Access the Internet
+14->1: Get the SIM card serial number->Access the Internet
+14->12: Get the SIM card serial number->Get IMEI
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+35->56: Send SMS->Monitor received SMS
+1->73: Access the Internet->Write to SD from input
+1->83: Access the Internet->Show dialog
+1->10: Access the Internet->Generate pop-up widgets
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+24->39: Install Apps->Create a desktop shortcut
+24->137: Install Apps->Launch Apps
+
+---Others Path---
+
+
+---Final Output---
+Acquire the wake lock
+Access the Internet
+Block broadcast
+Active when start-up broadcast is detected
+Request permissions
+Launch Apps
+Generate pop-up widgets
+Write to SD from input
+Get IMEI
+Get IMSI
+Get the SIM card serial number
+Read SMS
+Get the application lists
+Install
+Show dialog
+Get network info
+Get user's phone number
+Install Apps
+Encrypt
+Get cid
+Parsing SMS content
+Send SMS
+Create a desktop shortcut
+Access specified resources
+Save resource to a local file
+Set Wifi on or off
+Get the list of running tasks
+Get mac address
+Register broadcast receiver
+Delete SMS
+Monitor received SMS
+
+---Reasoning Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+42->1: Access specified resources->Access the Internet
+90->88: Get cid->Encrypt
+47->1: Get mac address->Access the Internet
+21->1: Get network info->Access the Internet
+14->1: Get the SIM card serial number->Access the Internet
+14->12: Get the SIM card serial number->Get IMEI
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+35->56: Send SMS->Monitor received SMS
+1->73: Access the Internet->Write to SD from input
+1->83: Access the Internet->Show dialog
+1->10: Access the Internet->Generate pop-up widgets
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+24->39: Install Apps->Create a desktop shortcut
+24->137: Install Apps->Launch Apps
+******************
+
+****************** APK 3 ******************
+Apk name：Apk033
+
+---Malicious---
+Monitor received SMS
+Access specified resources
+
+---Others---
+Look for installed Apk
+
+
+---Malicious Path---
+
+---Others Path---
+
+
+---Final Output---
+Monitor received SMS
+Access specified resources
+
+---Reasoning Path---
+******************
+
+****************** APK 4 ******************
+Apk name：Apk057
+
+---Malicious---
+Generate pop-up widgets
+Active when start-up broadcast is detected
+Block broadcast
+
+---Others---
+Launch Apps
+Stop the process
+Write to SD from input
+
+
+---Malicious Path---
+
+---Others Path---
+
+
+---Final Output---
+Generate pop-up widgets
+Block broadcast
+Active when start-up broadcast is detected
+
+---Reasoning Path---
+******************
+
+****************** APK 5 ******************
+Apk name：Apk006
+
+---Malicious---
+Delete SMS
+Read SMS
+Get the application lists
+Access the Internet
+Install App
+Register broadcast receiver
+Save resource to a local file
+Get IMEI
+Get user's phone number
+
+---Others---
+Launch Apps
+Listen on clicks
+Open a mass of threads
+Show dialog
+Get network info
+Click the confirm button
+Call phone number
+Send notification
+Get location of device
+Get the network operator
+Look for installed Apk
+
+
+---Malicious Path---
+16->1: Get the application lists->Access the Internet
+12->22: Get IMEI->Get user's phone number
+
+---Others Path---
+
+
+---Final Output---
+Access the Internet
+Save resource to a local file
+Get IMEI
+Install App
+Read SMS
+Get the application lists
+Register broadcast receiver
+Get user's phone number
+Delete SMS
+
+---Reasoning Path---
+16->1: Get the application lists->Access the Internet
+12->22: Get IMEI->Get user's phone number
+******************
+
+****************** APK 6 ******************
+Apk name：Apk053
+
+---Malicious---
+Monitor received SMS
+Access specified resources
+
+---Others---
+Click the confirm button
+Stop the process
+
+
+---Malicious Path---
+
+---Others Path---
+
+
+---Final Output---
+Monitor received SMS
+Access specified resources
+
+---Reasoning Path---
+******************
+
+****************** APK 7 ******************
+Apk name：Apk056
+
+---Malicious---
+Generate pop-up widgets
+Active when start-up broadcast is detected
+Block broadcast
+
+---Others---
+Launch Apps
+Stop the process
+Write to SD from input
+
+
+---Malicious Path---
+
+---Others Path---
+
+
+---Final Output---
+Generate pop-up widgets
+Block broadcast
+Active when start-up broadcast is detected
+
+---Reasoning Path---
+******************
+
+****************** APK 8 ******************
+Apk name：Apk068
+
+---Malicious---
+Generate pop-up widgets
+Active when start-up broadcast is detected
+Block broadcast
+
+---Others---
+Launch Apps
+Stop the process
+Write to SD from input
+
+
+---Malicious Path---
+
+---Others Path---
+
+
+---Final Output---
+Generate pop-up widgets
+Block broadcast
+Active when start-up broadcast is detected
+
+---Reasoning Path---
+******************
+
+****************** APK 9 ******************
+Apk name：Apk095
+
+---Malicious---
+Monitor received SMS
+Save resource to a local file
+Active when start-up broadcast is detected
+Access specified resources
+Generate pop-up widgets
+Get IMSI
+Get the application lists
+Get IMEI
+Access the Internet
+Get mac address
+Block broadcast
+Get cid
+Read SMS
+Send SMS
+Get the SIM card serial number
+Get user's phone number
+Get the list of running tasks
+Get BSSID
+Register broadcast receiver
+Delete SMS
+
+---Others---
+Look for installed Apk
+Encrypt
+Get network info
+Open a mass of threads
+Stop the service
+Click the confirm button
+Get location of device
+Get the network operator
+Launch Apps
+Send notification
+Cache message
+Get the list of services
+Register content observer
+Stop the process
+Write to SD from input
+Get sensor list
+Get sensor info(name, version, vendor)
+Show dialog
+
+
+---Malicious Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+21->1: Get network info->Access the Internet
+42->1: Access specified resources->Access the Internet
+13->1: Get IMSI->Access the Internet
+13->14: Get IMSI->Get the SIM card serial number
+12->47: Get IMEI->Get mac address
+12->22: Get IMEI->Get user's phone number
+90->88: Get cid->Encrypt
+35->56: Send SMS->Monitor received SMS
+14->12: Get the SIM card serial number->Get IMEI
+
+---Others Path---
+98->106: Get sensor list->Get sensor info(name, version, vendor)
+
+
+---Final Output---
+Access the Internet
+Block broadcast
+Active when start-up broadcast is detected
+Generate pop-up widgets
+Get IMEI
+Get IMSI
+Get the SIM card serial number
+Read SMS
+Get the application lists
+Get network info
+Get user's phone number
+Send SMS
+Access specified resources
+Save resource to a local file
+Get the list of running tasks
+Get mac address
+Register broadcast receiver
+Delete SMS
+Monitor received SMS
+Encrypt
+Get cid
+Get BSSID
+
+---Reasoning Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+21->1: Get network info->Access the Internet
+42->1: Access specified resources->Access the Internet
+13->1: Get IMSI->Access the Internet
+13->14: Get IMSI->Get the SIM card serial number
+12->47: Get IMEI->Get mac address
+12->22: Get IMEI->Get user's phone number
+90->88: Get cid->Encrypt
+35->56: Send SMS->Monitor received SMS
+14->12: Get the SIM card serial number->Get IMEI
+******************
+
+****************** APK 10 ******************
+Apk name：Apk037
+
+---Malicious---
+Monitor received SMS
+Save resource to a local file
+Request permissions
+Active when start-up broadcast is detected
+Send SMS
+Generate pop-up widgets
+Read SMS
+Access the Internet
+Get the list of running tasks
+Register broadcast receiver
+Delete SMS
+Get IMEI
+Get IMSI
+Get user's phone number
+Get the application lists
+Create a desktop shortcut
+Get mac address
+
+---Others---
+Check permissions
+Look for installed Apk
+Open a mass of threads
+Launch Apps
+Register content observer
+Get network info
+Listen on clicks
+Get the network operator
+Click the confirm button
+Get avaliable internal memory size
+Get total internal memory size
+Write to SD from input
+Stop the service
+Get the list of services
+Stop the process
+Get sensor list
+
+
+---Malicious Path---
+56->55: Monitor received SMS->Delete SMS
+35->56: Send SMS->Monitor received SMS
+1->73: Access the Internet->Write to SD from input
+1->10: Access the Internet->Generate pop-up widgets
+21->1: Get network info->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+
+---Others Path---
+68->67: Get avaliable internal memory size->Get total internal memory size
+67->68: Get total internal memory size->Get avaliable internal memory size
+
+
+---Final Output---
+Access the Internet
+Active when start-up broadcast is detected
+Request permissions
+Generate pop-up widgets
+Get IMEI
+Get IMSI
+Read SMS
+Get the application lists
+Get network info
+Get user's phone number
+Send SMS
+Create a desktop shortcut
+Save resource to a local file
+Get the list of running tasks
+Get mac address
+Register broadcast receiver
+Delete SMS
+Monitor received SMS
+Write to SD from input
+
+---Reasoning Path---
+56->55: Monitor received SMS->Delete SMS
+35->56: Send SMS->Monitor received SMS
+1->73: Access the Internet->Write to SD from input
+1->10: Access the Internet->Generate pop-up widgets
+21->1: Get network info->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+******************
+
+****************** APK 11 ******************
+Apk name：Apk091
+
+---Malicious---
+Generate pop-up widgets
+
+---Others---
+Stop the service
+Launch Apps
+Write to SD from input
+
+
+---Malicious Path---
+
+---Others Path---
+
+
+---Final Output---
+Generate pop-up widgets
+
+---Reasoning Path---
+******************
+
+****************** APK 12 ******************
+Apk name：Apk013
+
+---Malicious---
+Get IMEI
+Send SMS
+Access the Internet
+Get IMSI
+Get mac address
+Save resource to a local file
+Get the application lists
+
+---Others---
+Open a mass of threads
+Parse XML's Info from server
+Look for installed Apk
+Cache message
+Get cached message
+Get network info
+Get the network operator
+Check permissions
+Get HttpUrl
+Launch Apps
+Click the confirm button
+Show dialog
+Send notification
+Get the list of services
+Write to SD from input
+
+
+---Malicious Path---
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+1->73: Access the Internet->Write to SD from input
+1->78: Access the Internet->Parse XML's Info from server
+1->83: Access the Internet->Show dialog
+13->12: Get IMSI->Get IMEI
+
+---Others Path---
+74->75: Get cached message->Cache message
+
+
+---Final Output---
+Access the Internet
+Write to SD from input
+Get IMEI
+Get IMSI
+Parse XML's Info from server
+Get the application lists
+Show dialog
+Send SMS
+Save resource to a local file
+Get mac address
+
+---Reasoning Path---
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+1->73: Access the Internet->Write to SD from input
+1->78: Access the Internet->Parse XML's Info from server
+1->83: Access the Internet->Show dialog
+13->12: Get IMSI->Get IMEI
+******************
+
+****************** APK 13 ******************
+Apk name：Apk074
+
+---Malicious---
+Monitor received SMS
+Access specified resources
+Save resource to a local file
+Get cid
+Get mac address
+Get the SIM card serial number
+Get IMEI
+Read SMS
+Active when start-up broadcast is detected
+Send SMS
+Access the Internet
+Request permissions
+Register broadcast receiver
+Get IMSI
+Generate pop-up widgets
+Set Wifi on or off
+Get the application lists
+Delete SMS
+Block broadcast
+Parsing SMS content
+Get user's phone number
+Install Apps
+Create a desktop shortcut
+Get the list of running tasks
+Acquire the wake lock
+Install
+
+---Others---
+Open a mass of threads
+Look for installed Apk
+Get network info
+Encrypt
+Write to SD from input
+Click the confirm button
+Register content observer
+Check permissions
+Get the network operator
+Get location of device
+Get the list of services
+Show dialog
+Listen on clicks
+Launch Apps
+Stop the service
+Add views
+Stop the process
+
+
+---Malicious Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+42->1: Access specified resources->Access the Internet
+90->88: Get cid->Encrypt
+47->1: Get mac address->Access the Internet
+21->1: Get network info->Access the Internet
+14->1: Get the SIM card serial number->Access the Internet
+14->12: Get the SIM card serial number->Get IMEI
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+35->56: Send SMS->Monitor received SMS
+1->73: Access the Internet->Write to SD from input
+1->83: Access the Internet->Show dialog
+1->10: Access the Internet->Generate pop-up widgets
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+24->39: Install Apps->Create a desktop shortcut
+24->137: Install Apps->Launch Apps
+
+---Others Path---
+
+
+---Final Output---
+Acquire the wake lock
+Access the Internet
+Block broadcast
+Active when start-up broadcast is detected
+Request permissions
+Launch Apps
+Generate pop-up widgets
+Write to SD from input
+Get IMEI
+Get IMSI
+Get the SIM card serial number
+Read SMS
+Get the application lists
+Install
+Show dialog
+Get network info
+Get user's phone number
+Install Apps
+Encrypt
+Get cid
+Parsing SMS content
+Send SMS
+Create a desktop shortcut
+Access specified resources
+Save resource to a local file
+Set Wifi on or off
+Get the list of running tasks
+Get mac address
+Register broadcast receiver
+Delete SMS
+Monitor received SMS
+
+---Reasoning Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+42->1: Access specified resources->Access the Internet
+90->88: Get cid->Encrypt
+47->1: Get mac address->Access the Internet
+21->1: Get network info->Access the Internet
+14->1: Get the SIM card serial number->Access the Internet
+14->12: Get the SIM card serial number->Get IMEI
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+35->56: Send SMS->Monitor received SMS
+1->73: Access the Internet->Write to SD from input
+1->83: Access the Internet->Show dialog
+1->10: Access the Internet->Generate pop-up widgets
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+24->39: Install Apps->Create a desktop shortcut
+24->137: Install Apps->Launch Apps
+******************
+
+****************** APK 14 ******************
+Apk name：Apk086
+
+---Malicious---
+Monitor received SMS
+Access specified resources
+Active when start-up broadcast is detected
+Save resource to a local file
+Access the Internet
+Read SMS
+Send SMS
+Get IMEI
+Get mac address
+Get the application lists
+Call or Call forwarding
+Delete SMS
+Register broadcast receiver
+
+---Others---
+Launch Apps
+Get network info
+Open a mass of threads
+Stop the process
+Look for installed Apk
+Click the confirm button
+Show dialog
+Hang up phone call
+Get location of device
+Register content observer
+
+
+---Malicious Path---
+56->55: Monitor received SMS->Delete SMS
+42->1: Access specified resources->Access the Internet
+35->56: Send SMS->Monitor received SMS
+12->47: Get IMEI->Get mac address
+49->48: Hang up phone call->Call or Call forwarding
+
+---Others Path---
+41->49: Stop the process->Hang up phone call
+
+
+---Final Output---
+Access the Internet
+Send SMS
+Active when start-up broadcast is detected
+Access specified resources
+Save resource to a local file
+Get IMEI
+Get mac address
+Call or Call forwarding
+Hang up phone call
+Read SMS
+Get the application lists
+Register broadcast receiver
+Delete SMS
+Monitor received SMS
+
+---Reasoning Path---
+56->55: Monitor received SMS->Delete SMS
+42->1: Access specified resources->Access the Internet
+35->56: Send SMS->Monitor received SMS
+12->47: Get IMEI->Get mac address
+49->48: Hang up phone call->Call or Call forwarding
+******************
+
+****************** APK 15 ******************
+Apk name：Apk044
+
+---Malicious---
+Save resource to a local file
+Access specified resources
+Access the Internet
+Active when start-up broadcast is detected
+Read SMS
+Download
+Register broadcast receiver
+Hide icon
+Monitor the screen
+Acquire the wake lock
+Audio recording
+Get the SIM card serial number
+Get user's phone number
+Get IMEI
+Request permissions
+
+---Others---
+Open a mass of threads
+Check permissions
+Look for installed Apk
+Launch Apps
+Stop the service
+Get network info
+Listen on clicks
+Get location of device
+Send notification
+Click the confirm button
+Register content observer
+Get the list of services
+Stop the process
+Show dialog
+Get HttpUrl
+
+
+---Malicious Path---
+42->1: Access specified resources->Access the Internet
+1->8: Access the Internet->Download
+1->83: Access the Internet->Show dialog
+138->8: Look for installed Apk->Download
+21->1: Get network info->Access the Internet
+19->1: Get location of device->Access the Internet
+23->137: Hide icon->Launch Apps
+54->43: Audio recording->Save resource to a local file
+14->12: Get the SIM card serial number->Get IMEI
+12->22: Get IMEI->Get user's phone number
+
+---Others Path---
+
+
+---Final Output---
+Access the Internet
+Active when start-up broadcast is detected
+Download
+Launch Apps
+Look for installed Apk
+Request permissions
+Get IMEI
+Get the SIM card serial number
+Read SMS
+Get location of device
+Get network info
+Get user's phone number
+Hide icon
+Monitor the screen
+Access specified resources
+Save resource to a local file
+Register broadcast receiver
+Audio recording
+Acquire the wake lock
+Show dialog
+
+---Reasoning Path---
+42->1: Access specified resources->Access the Internet
+1->8: Access the Internet->Download
+1->83: Access the Internet->Show dialog
+138->8: Look for installed Apk->Download
+21->1: Get network info->Access the Internet
+19->1: Get location of device->Access the Internet
+23->137: Hide icon->Launch Apps
+54->43: Audio recording->Save resource to a local file
+14->12: Get the SIM card serial number->Get IMEI
+12->22: Get IMEI->Get user's phone number
+******************
+
+****************** APK 16 ******************
+Apk name：Apk036
+
+---Malicious---
+Access specified resources
+Save resource to a local file
+Access the Internet
+Get the application lists
+Get user's phone number
+Get IMSI
+Get IMEI
+Get the SIM card serial number
+Get BSSID
+Get mac address
+Generate pop-up widgets
+Get the list of running tasks
+Active when start-up broadcast is detected
+Register broadcast receiver
+
+---Others---
+Open a mass of threads
+Launch Apps
+Look for installed Apk
+Get network info
+Get sensor list
+Get sensor info(name, version, vendor)
+Get total internal memory size
+Click the confirm button
+Encrypt
+Get the network operator
+Get location of device
+Listen on clicks
+Get the list of services
+Stop the service
+Check permissions
+Show dialog
+Get HttpUrl
+
+
+---Malicious Path---
+42->1: Access specified resources->Access the Internet
+1->83: Access the Internet->Show dialog
+1->10: Access the Internet->Generate pop-up widgets
+21->1: Get network info->Access the Internet
+16->1: Get the application lists->Access the Internet
+22->13: Get user's phone number->Get IMSI
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+14->12: Get the SIM card serial number->Get IMEI
+47->67: Get mac address->Get total internal memory size
+
+---Others Path---
+98->106: Get sensor list->Get sensor info(name, version, vendor)
+
+
+---Final Output---
+Access the Internet
+Get total internal memory size
+Active when start-up broadcast is detected
+Generate pop-up widgets
+Access specified resources
+Get IMEI
+Get IMSI
+Get the SIM card serial number
+Get mac address
+Get the application lists
+Save resource to a local file
+Get the list of running tasks
+Show dialog
+Get BSSID
+Get network info
+Get user's phone number
+Register broadcast receiver
+Encrypt
+
+---Reasoning Path---
+42->1: Access specified resources->Access the Internet
+1->83: Access the Internet->Show dialog
+1->10: Access the Internet->Generate pop-up widgets
+21->1: Get network info->Access the Internet
+16->1: Get the application lists->Access the Internet
+22->13: Get user's phone number->Get IMSI
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+14->12: Get the SIM card serial number->Get IMEI
+47->67: Get mac address->Get total internal memory size
+******************
+
+****************** APK 17 ******************
+Apk name：Apk029
+
+---Malicious---
+Monitor received SMS
+Access specified resources
+Save resource to a local file
+Active when start-up broadcast is detected
+Get the list of running tasks
+Register broadcast receiver
+Get IMEI
+Get IMSI
+Generate pop-up widgets
+Access the Internet
+Get user's phone number
+Get cid
+Get mac address
+Get the SIM card serial number
+Read SMS
+Send SMS
+Request permissions
+Set Wifi on or off
+Get the application lists
+Delete SMS
+Block broadcast
+Parsing SMS content
+Install Apps
+Create a desktop shortcut
+Acquire the wake lock
+Install
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Click the confirm button
+Look for installed Apk
+Show dialog
+Send notification
+Launch Apps
+Encrypt
+Get network info
+Stop the service
+Write to SD from input
+Register content observer
+Check permissions
+Get the network operator
+Get location of device
+Get the list of services
+Stop the process
+
+
+---Malicious Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+42->1: Access specified resources->Access the Internet
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+13->1: Get IMSI->Access the Internet
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+1->73: Access the Internet->Write to SD from input
+1->83: Access the Internet->Show dialog
+1->10: Access the Internet->Generate pop-up widgets
+21->1: Get network info->Access the Internet
+22->13: Get user's phone number->Get IMSI
+90->88: Get cid->Encrypt
+14->12: Get the SIM card serial number->Get IMEI
+35->56: Send SMS->Monitor received SMS
+24->39: Install Apps->Create a desktop shortcut
+24->137: Install Apps->Launch Apps
+
+---Others Path---
+
+
+---Final Output---
+Acquire the wake lock
+Access the Internet
+Block broadcast
+Active when start-up broadcast is detected
+Request permissions
+Launch Apps
+Generate pop-up widgets
+Write to SD from input
+Get IMEI
+Get IMSI
+Get the SIM card serial number
+Read SMS
+Get the application lists
+Install
+Show dialog
+Get network info
+Get user's phone number
+Install Apps
+Encrypt
+Get cid
+Parsing SMS content
+Send SMS
+Create a desktop shortcut
+Access specified resources
+Save resource to a local file
+Set Wifi on or off
+Get the list of running tasks
+Get mac address
+Register broadcast receiver
+Delete SMS
+Monitor received SMS
+
+---Reasoning Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+42->1: Access specified resources->Access the Internet
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+13->1: Get IMSI->Access the Internet
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+1->73: Access the Internet->Write to SD from input
+1->83: Access the Internet->Show dialog
+1->10: Access the Internet->Generate pop-up widgets
+21->1: Get network info->Access the Internet
+22->13: Get user's phone number->Get IMSI
+90->88: Get cid->Encrypt
+14->12: Get the SIM card serial number->Get IMEI
+35->56: Send SMS->Monitor received SMS
+24->39: Install Apps->Create a desktop shortcut
+24->137: Install Apps->Launch Apps
+******************
+
+****************** APK 18 ******************
+Apk name：Apk048
+
+---Malicious---
+Generate pop-up widgets
+Active when start-up broadcast is detected
+Block broadcast
+
+---Others---
+Launch Apps
+Stop the process
+Write to SD from input
+
+
+---Malicious Path---
+
+---Others Path---
+
+
+---Final Output---
+Generate pop-up widgets
+Block broadcast
+Active when start-up broadcast is detected
+
+---Reasoning Path---
+******************
+
+****************** APK 19 ******************
+Apk name：Apk016
+
+---Malicious---
+Monitor received SMS
+Save resource to a local file
+Install
+
+---Others---
+Open a mass of threads
+
+
+---Malicious Path---
+
+---Others Path---
+
+
+---Final Output---
+Monitor received SMS
+Save resource to a local file
+Install
+
+---Reasoning Path---
+******************
+
+****************** APK 20 ******************
+Apk name：Apk079
+
+---Malicious---
+Monitor received SMS
+Access specified resources
+Save resource to a local file
+Get cid
+Get mac address
+Get the SIM card serial number
+Get IMEI
+Read SMS
+Active when start-up broadcast is detected
+Send SMS
+Access the Internet
+Request permissions
+Register broadcast receiver
+Get IMSI
+Generate pop-up widgets
+Set Wifi on or off
+Get the application lists
+Delete SMS
+Block broadcast
+Parsing SMS content
+Get user's phone number
+Install Apps
+Create a desktop shortcut
+Get the list of running tasks
+Acquire the wake lock
+Install
+
+---Others---
+Open a mass of threads
+Look for installed Apk
+Get network info
+Encrypt
+Write to SD from input
+Click the confirm button
+Register content observer
+Check permissions
+Get the network operator
+Get location of device
+Get the list of services
+Show dialog
+Listen on clicks
+Launch Apps
+Stop the service
+Stop the process
+
+
+---Malicious Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+42->1: Access specified resources->Access the Internet
+90->88: Get cid->Encrypt
+21->1: Get network info->Access the Internet
+47->1: Get mac address->Access the Internet
+14->1: Get the SIM card serial number->Access the Internet
+14->12: Get the SIM card serial number->Get IMEI
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+35->56: Send SMS->Monitor received SMS
+1->73: Access the Internet->Write to SD from input
+1->83: Access the Internet->Show dialog
+1->10: Access the Internet->Generate pop-up widgets
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+24->39: Install Apps->Create a desktop shortcut
+24->137: Install Apps->Launch Apps
+
+---Others Path---
+
+
+---Final Output---
+Acquire the wake lock
+Access the Internet
+Block broadcast
+Active when start-up broadcast is detected
+Request permissions
+Launch Apps
+Generate pop-up widgets
+Write to SD from input
+Get IMEI
+Get IMSI
+Get the SIM card serial number
+Read SMS
+Get the application lists
+Install
+Show dialog
+Get network info
+Get user's phone number
+Install Apps
+Encrypt
+Get cid
+Parsing SMS content
+Send SMS
+Create a desktop shortcut
+Access specified resources
+Save resource to a local file
+Set Wifi on or off
+Get the list of running tasks
+Get mac address
+Register broadcast receiver
+Delete SMS
+Monitor received SMS
+
+---Reasoning Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+42->1: Access specified resources->Access the Internet
+90->88: Get cid->Encrypt
+21->1: Get network info->Access the Internet
+47->1: Get mac address->Access the Internet
+14->1: Get the SIM card serial number->Access the Internet
+14->12: Get the SIM card serial number->Get IMEI
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+35->56: Send SMS->Monitor received SMS
+1->73: Access the Internet->Write to SD from input
+1->83: Access the Internet->Show dialog
+1->10: Access the Internet->Generate pop-up widgets
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+24->39: Install Apps->Create a desktop shortcut
+24->137: Install Apps->Launch Apps
+******************
+
+****************** APK 21 ******************
+Apk name：Apk015
+
+---Malicious---
+Monitor received SMS
+Read SMS
+Block broadcast
+Active when start-up broadcast is detected
+Generate pop-up widgets
+Send SMS
+Register broadcast receiver
+Save resource to a local file
+Get IMEI
+Get the SIM card serial number
+Get user's phone number
+Set Wifi on or off
+Access the Internet
+Get IMSI
+Parsing SMS content
+Delete SMS
+
+---Others---
+Register content observer
+Launch Apps
+Look for installed Apk
+Get network info
+Open a mass of threads
+
+
+---Malicious Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+35->56: Send SMS->Monitor received SMS
+12->1: Get IMEI->Access the Internet
+12->13: Get IMEI->Get IMSI
+14->1: Get the SIM card serial number->Access the Internet
+22->1: Get user's phone number->Access the Internet
+
+---Others Path---
+
+
+---Final Output---
+Access the Internet
+Block broadcast
+Send SMS
+Active when start-up broadcast is detected
+Generate pop-up widgets
+Save resource to a local file
+Get IMEI
+Get IMSI
+Get the SIM card serial number
+Read SMS
+Set Wifi on or off
+Register broadcast receiver
+Get user's phone number
+Delete SMS
+Monitor received SMS
+Parsing SMS content
+
+---Reasoning Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+35->56: Send SMS->Monitor received SMS
+12->1: Get IMEI->Access the Internet
+12->13: Get IMEI->Get IMSI
+14->1: Get the SIM card serial number->Access the Internet
+22->1: Get user's phone number->Access the Internet
+******************
+
+****************** APK 22 ******************
+Apk name：Apk049
+
+---Malicious---
+Monitor received SMS
+
+
+---Malicious Path---
+
+---Others Path---
+
+
+---Final Output---
+Monitor received SMS
+
+---Reasoning Path---
+******************
+
+****************** APK 23 ******************
+Apk name：Apk096
+
+---Malicious---
+Monitor received SMS
+Generate pop-up widgets
+Reset password
+Block broadcast
+Active when start-up broadcast is detected
+Register broadcast receiver
+
+---Others---
+Hang up phone call
+Lock screen
+Stop the service
+
+
+---Malicious Path---
+56->2: Monitor received SMS->Block broadcast
+26->7: Reset password->Active when start-up broadcast is detected
+26->40: Reset password->Lock screen
+
+---Others Path---
+
+
+---Final Output---
+Block broadcast
+Reset password
+Generate pop-up widgets
+Register broadcast receiver
+Active when start-up broadcast is detected
+Lock screen
+Monitor received SMS
+
+---Reasoning Path---
+56->2: Monitor received SMS->Block broadcast
+26->7: Reset password->Active when start-up broadcast is detected
+26->40: Reset password->Lock screen
+******************
+
+****************** APK 24 ******************
+Apk name：Apk097
+
+---Malicious---
+Monitor received SMS
+
+
+---Malicious Path---
+
+---Others Path---
+
+
+---Final Output---
+Monitor received SMS
+
+---Reasoning Path---
+******************
+
+****************** APK 25 ******************
+Apk name：Apk061
+
+---Malicious---
+Generate pop-up widgets
+Reset password
+Block broadcast
+Active when start-up broadcast is detected
+
+---Others---
+Lock screen
+Stop the service
+Get network info
+
+
+---Malicious Path---
+26->7: Reset password->Active when start-up broadcast is detected
+26->40: Reset password->Lock screen
+
+---Others Path---
+
+
+---Final Output---
+Block broadcast
+Active when start-up broadcast is detected
+Lock screen
+Generate pop-up widgets
+Reset password
+
+---Reasoning Path---
+26->7: Reset password->Active when start-up broadcast is detected
+26->40: Reset password->Lock screen
+******************
+
+****************** APK 26 ******************
+Apk name：Apk011
+
+---Malicious---
+Access specified resources
+Save resource to a local file
+Active when start-up broadcast is detected
+Generate pop-up widgets
+Get the application lists
+Get mac address
+Get the list of running tasks
+Get IMSI
+Get IMEI
+Get the SIM card serial number
+Get user's phone number
+Get BSSID
+Get cid
+Access the Internet
+Register broadcast receiver
+Set Wifi on or off
+Hide icon
+Monitor the screen
+
+---Others---
+Launch Apps
+Check permissions
+Register content observer
+Get network info
+Open a mass of threads
+Listen on clicks
+Show dialog
+Look for installed Apk
+Get the network operator
+Set date of birth
+Get sensor list
+Get sensor info(name, version, vendor)
+Get total internal memory size
+Click the confirm button
+Get location of device
+Call phone number
+Parse XML's Info from server
+Get SHA256
+Stop the service
+Get the list of services
+Send notification
+Write to SD from input
+Stop the process
+Encrypt
+Get avaliable internal memory size
+
+
+---Malicious Path---
+42->1: Access specified resources->Access the Internet
+21->1: Get network info->Access the Internet
+47->67: Get mac address->Get total internal memory size
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+14->12: Get the SIM card serial number->Get IMEI
+22->13: Get user's phone number->Get IMSI
+23->137: Hide icon->Launch Apps
+
+---Others Path---
+98->106: Get sensor list->Get sensor info(name, version, vendor)
+67->68: Get total internal memory size->Get avaliable internal memory size
+
+
+---Final Output---
+Access the Internet
+Active when start-up broadcast is detected
+Launch Apps
+Generate pop-up widgets
+Get IMEI
+Get IMSI
+Get the SIM card serial number
+Get the application lists
+Get network info
+Get user's phone number
+Hide icon
+Monitor the screen
+Access specified resources
+Save resource to a local file
+Set Wifi on or off
+Get the list of running tasks
+Get mac address
+Register broadcast receiver
+Get total internal memory size
+Encrypt
+Get cid
+Get BSSID
+
+---Reasoning Path---
+42->1: Access specified resources->Access the Internet
+21->1: Get network info->Access the Internet
+47->67: Get mac address->Get total internal memory size
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+14->12: Get the SIM card serial number->Get IMEI
+22->13: Get user's phone number->Get IMSI
+23->137: Hide icon->Launch Apps
+******************
+
+****************** APK 27 ******************
+Apk name：Apk021
+
+---Malicious---
+Monitor received SMS
+Access specified resources
+Generate pop-up widgets
+Active when start-up broadcast is detected
+Get IMEI
+Get the SIM card serial number
+Save resource to a local file
+Get cid
+Register broadcast receiver
+Get user's phone number
+Access the Internet
+Get IMSI
+Get mac address
+Send SMS
+Block broadcast
+Get the list of running tasks
+Delete SMS
+Download
+Read SMS
+
+---Others---
+Launch Apps
+Get network info
+Open a mass of threads
+Encrypt
+Write to SD from input
+Look for installed Apk
+Click the confirm button
+Stop the service
+Stop the process
+Get the network operator
+Register content observer
+Check permissions
+Show dialog
+Parse XML's Info from server
+Get location of device
+
+
+---Malicious Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+42->1: Access specified resources->Access the Internet
+21->1: Get network info->Access the Internet
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+14->1: Get the SIM card serial number->Access the Internet
+14->12: Get the SIM card serial number->Get IMEI
+138->8: Look for installed Apk->Download
+90->88: Get cid->Encrypt
+35->56: Send SMS->Monitor received SMS
+
+---Others Path---
+
+
+---Final Output---
+Access the Internet
+Block broadcast
+Active when start-up broadcast is detected
+Download
+Look for installed Apk
+Generate pop-up widgets
+Get IMEI
+Get IMSI
+Get the SIM card serial number
+Read SMS
+Get network info
+Get user's phone number
+Encrypt
+Get cid
+Send SMS
+Access specified resources
+Save resource to a local file
+Get the list of running tasks
+Get mac address
+Register broadcast receiver
+Delete SMS
+Monitor received SMS
+
+---Reasoning Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+42->1: Access specified resources->Access the Internet
+21->1: Get network info->Access the Internet
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+14->1: Get the SIM card serial number->Access the Internet
+14->12: Get the SIM card serial number->Get IMEI
+138->8: Look for installed Apk->Download
+90->88: Get cid->Encrypt
+35->56: Send SMS->Monitor received SMS
+******************
+
+****************** APK 28 ******************
+Apk name：Apk018
+
+---Malicious---
+Monitor received SMS
+Access specified resources
+Save resource to a local file
+Active when start-up broadcast is detected
+Get the list of running tasks
+Register broadcast receiver
+Get IMSI
+Get IMEI
+Generate pop-up widgets
+Access the Internet
+Get user's phone number
+Get cid
+Get mac address
+Get the SIM card serial number
+Read SMS
+Send SMS
+Request permissions
+Set Wifi on or off
+Get the application lists
+Delete SMS
+Block broadcast
+Parsing SMS content
+Install Apps
+Create a desktop shortcut
+Acquire the wake lock
+Install
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Click the confirm button
+Look for installed Apk
+Show dialog
+Send notification
+Launch Apps
+Encrypt
+Get network info
+Stop the service
+Write to SD from input
+Register content observer
+Check permissions
+Get the network operator
+Get location of device
+Get the list of services
+Stop the process
+
+
+---Malicious Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+42->1: Access specified resources->Access the Internet
+13->1: Get IMSI->Access the Internet
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+1->73: Access the Internet->Write to SD from input
+1->83: Access the Internet->Show dialog
+1->10: Access the Internet->Generate pop-up widgets
+22->1: Get user's phone number->Access the Internet
+22->13: Get user's phone number->Get IMSI
+90->88: Get cid->Encrypt
+14->12: Get the SIM card serial number->Get IMEI
+35->56: Send SMS->Monitor received SMS
+24->39: Install Apps->Create a desktop shortcut
+24->137: Install Apps->Launch Apps
+
+---Others Path---
+
+
+---Final Output---
+Acquire the wake lock
+Access the Internet
+Block broadcast
+Active when start-up broadcast is detected
+Request permissions
+Launch Apps
+Generate pop-up widgets
+Write to SD from input
+Get IMEI
+Get IMSI
+Get the SIM card serial number
+Read SMS
+Get the application lists
+Install
+Show dialog
+Get user's phone number
+Install Apps
+Encrypt
+Get cid
+Parsing SMS content
+Send SMS
+Create a desktop shortcut
+Access specified resources
+Save resource to a local file
+Set Wifi on or off
+Get the list of running tasks
+Get mac address
+Register broadcast receiver
+Delete SMS
+Monitor received SMS
+
+---Reasoning Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+42->1: Access specified resources->Access the Internet
+13->1: Get IMSI->Access the Internet
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+1->73: Access the Internet->Write to SD from input
+1->83: Access the Internet->Show dialog
+1->10: Access the Internet->Generate pop-up widgets
+22->1: Get user's phone number->Access the Internet
+22->13: Get user's phone number->Get IMSI
+90->88: Get cid->Encrypt
+14->12: Get the SIM card serial number->Get IMEI
+35->56: Send SMS->Monitor received SMS
+24->39: Install Apps->Create a desktop shortcut
+24->137: Install Apps->Launch Apps
+******************
+
+****************** APK 29 ******************
+Apk name：Apk017
+
+---Malicious---
+Monitor received SMS
+
+
+---Malicious Path---
+
+---Others Path---
+
+
+---Final Output---
+Monitor received SMS
+
+---Reasoning Path---
+******************
+
+****************** APK 30 ******************
+Apk name：Apk014
+
+---Malicious---
+Monitor received SMS
+Access specified resources
+Save resource to a local file
+Get cid
+Get mac address
+Get the SIM card serial number
+Get IMEI
+Active when start-up broadcast is detected
+Access the Internet
+Get the application lists
+Request permissions
+Register broadcast receiver
+Get IMSI
+Read SMS
+Generate pop-up widgets
+Set Wifi on or off
+Send SMS
+Delete SMS
+Block broadcast
+Parsing SMS content
+Get user's phone number
+Install Apps
+Create a desktop shortcut
+Get the list of running tasks
+Acquire the wake lock
+Install
+
+---Others---
+Open a mass of threads
+Look for installed Apk
+Get network info
+Encrypt
+Write to SD from input
+Click the confirm button
+Check permissions
+Register content observer
+Get the network operator
+Get location of device
+Get the list of services
+Show dialog
+Listen on clicks
+Launch Apps
+Stop the service
+Add views
+Stop the process
+
+
+---Malicious Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+42->1: Access specified resources->Access the Internet
+90->88: Get cid->Encrypt
+47->1: Get mac address->Access the Internet
+21->1: Get network info->Access the Internet
+14->1: Get the SIM card serial number->Access the Internet
+14->12: Get the SIM card serial number->Get IMEI
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+1->73: Access the Internet->Write to SD from input
+1->83: Access the Internet->Show dialog
+1->10: Access the Internet->Generate pop-up widgets
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+35->56: Send SMS->Monitor received SMS
+24->39: Install Apps->Create a desktop shortcut
+24->137: Install Apps->Launch Apps
+
+---Others Path---
+
+
+---Final Output---
+Acquire the wake lock
+Access the Internet
+Block broadcast
+Active when start-up broadcast is detected
+Request permissions
+Launch Apps
+Generate pop-up widgets
+Write to SD from input
+Get IMEI
+Get IMSI
+Get the SIM card serial number
+Read SMS
+Get the application lists
+Install
+Show dialog
+Get network info
+Get user's phone number
+Install Apps
+Encrypt
+Get cid
+Parsing SMS content
+Send SMS
+Create a desktop shortcut
+Access specified resources
+Save resource to a local file
+Set Wifi on or off
+Get the list of running tasks
+Get mac address
+Register broadcast receiver
+Delete SMS
+Monitor received SMS
+
+---Reasoning Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+42->1: Access specified resources->Access the Internet
+90->88: Get cid->Encrypt
+47->1: Get mac address->Access the Internet
+21->1: Get network info->Access the Internet
+14->1: Get the SIM card serial number->Access the Internet
+14->12: Get the SIM card serial number->Get IMEI
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+1->73: Access the Internet->Write to SD from input
+1->83: Access the Internet->Show dialog
+1->10: Access the Internet->Generate pop-up widgets
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+35->56: Send SMS->Monitor received SMS
+24->39: Install Apps->Create a desktop shortcut
+24->137: Install Apps->Launch Apps
+******************
+
+****************** APK 31 ******************
+Apk name：Apk072
+
+---Malicious---
+Monitor received SMS
+Access specified resources
+Save resource to a local file
+Send SMS
+Generate pop-up widgets
+Read SMS
+Get IMEI
+Get the SIM card serial number
+Get user's phone number
+Get IMSI
+Get cid
+Access the Internet
+Set Wifi on or off
+Delete SMS
+Block broadcast
+Parsing SMS content
+Request permissions
+Register broadcast receiver
+Get the application lists
+Install Apps
+Get the list of running tasks
+Get mac address
+
+---Others---
+Launch Apps
+Check permissions
+Register content observer
+Get network info
+Open a mass of threads
+Get the network operator
+Look for installed Apk
+Click the confirm button
+Write to SD from input
+Listen on clicks
+Call phone number
+Get location of device
+Show dialog
+Encrypt
+Stop the service
+
+
+---Malicious Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+42->1: Access specified resources->Access the Internet
+35->56: Send SMS->Monitor received SMS
+21->1: Get network info->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+14->12: Get the SIM card serial number->Get IMEI
+22->13: Get user's phone number->Get IMSI
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+24->137: Install Apps->Launch Apps
+
+---Others Path---
+
+
+---Final Output---
+Access the Internet
+Block broadcast
+Request permissions
+Launch Apps
+Generate pop-up widgets
+Get IMEI
+Get IMSI
+Get the SIM card serial number
+Read SMS
+Get the application lists
+Get network info
+Get user's phone number
+Install Apps
+Encrypt
+Get cid
+Parsing SMS content
+Send SMS
+Access specified resources
+Save resource to a local file
+Set Wifi on or off
+Get the list of running tasks
+Get mac address
+Register broadcast receiver
+Delete SMS
+Monitor received SMS
+
+---Reasoning Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+42->1: Access specified resources->Access the Internet
+35->56: Send SMS->Monitor received SMS
+21->1: Get network info->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+14->12: Get the SIM card serial number->Get IMEI
+22->13: Get user's phone number->Get IMSI
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+24->137: Install Apps->Launch Apps
+******************
+
+****************** APK 32 ******************
+Apk name：Apk058
+
+---Malicious---
+Generate pop-up widgets
+Reset password
+Block broadcast
+Active when start-up broadcast is detected
+
+---Others---
+Lock screen
+Stop the service
+Get network info
+
+
+---Malicious Path---
+26->7: Reset password->Active when start-up broadcast is detected
+26->40: Reset password->Lock screen
+
+---Others Path---
+
+
+---Final Output---
+Block broadcast
+Active when start-up broadcast is detected
+Lock screen
+Generate pop-up widgets
+Reset password
+
+---Reasoning Path---
+26->7: Reset password->Active when start-up broadcast is detected
+26->40: Reset password->Lock screen
+******************
+
+****************** APK 33 ******************
+Apk name：Apk075
+
+---Malicious---
+Get IMEI
+Get mac address
+Save resource to a local file
+Access the Internet
+Get the SIM card serial number
+Get the list of running tasks
+Active when start-up broadcast is detected
+Get the application lists
+Get IMSI
+Generate pop-up widgets
+Create a desktop shortcut
+Register broadcast receiver
+Acquire the wake lock
+Block broadcast
+
+---Others---
+Look for installed Apk
+Check permissions
+Get network info
+Get the network operator
+Open a mass of threads
+Get total internal memory size
+Launch Apps
+Click the confirm button
+Show dialog
+Get sensor list
+Get sensor info(name, version, vendor)
+Encrypt
+Get location of device
+Stop the process
+Listen on clicks
+Stop the service
+Send notification
+Write to SD from input
+
+
+---Malicious Path---
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+47->1: Get mac address->Access the Internet
+47->67: Get mac address->Get total internal memory size
+21->1: Get network info->Access the Internet
+1->73: Access the Internet->Write to SD from input
+1->83: Access the Internet->Show dialog
+14->12: Get the SIM card serial number->Get IMEI
+
+---Others Path---
+98->106: Get sensor list->Get sensor info(name, version, vendor)
+
+
+---Final Output---
+Acquire the wake lock
+Access the Internet
+Block broadcast
+Get total internal memory size
+Active when start-up broadcast is detected
+Create a desktop shortcut
+Write to SD from input
+Generate pop-up widgets
+Save resource to a local file
+Get IMEI
+Get IMSI
+Get the SIM card serial number
+Get mac address
+Get the list of running tasks
+Get the application lists
+Show dialog
+Register broadcast receiver
+Get network info
+
+---Reasoning Path---
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+47->1: Get mac address->Access the Internet
+47->67: Get mac address->Get total internal memory size
+21->1: Get network info->Access the Internet
+1->73: Access the Internet->Write to SD from input
+1->83: Access the Internet->Show dialog
+14->12: Get the SIM card serial number->Get IMEI
+******************
+
+****************** APK 34 ******************
+Apk name：Apk051
+
+---Malicious---
+Generate pop-up widgets
+Reset password
+Block broadcast
+Active when start-up broadcast is detected
+
+---Others---
+Lock screen
+Stop the service
+Get network info
+
+
+---Malicious Path---
+26->7: Reset password->Active when start-up broadcast is detected
+26->40: Reset password->Lock screen
+
+---Others Path---
+
+
+---Final Output---
+Block broadcast
+Active when start-up broadcast is detected
+Lock screen
+Generate pop-up widgets
+Reset password
+
+---Reasoning Path---
+26->7: Reset password->Active when start-up broadcast is detected
+26->40: Reset password->Lock screen
+******************
+
+****************** APK 35 ******************
+Apk name：Apk088
+
+---Malicious---
+Get the list of running tasks
+Access the Internet
+Register broadcast receiver
+Get IMEI
+Get IMSI
+Get cid
+Get user's phone number
+Get call records
+Generate pop-up widgets
+Save resource to a local file
+Get the application lists
+Create a desktop shortcut
+Get mac address
+
+---Others---
+Open a mass of threads
+Launch Apps
+Click the confirm button
+Show dialog
+Listen on clicks
+Get the network operator
+Get avaliable internal memory size
+Get total internal memory size
+Write to SD from input
+Stop the service
+Get the list of services
+Get network info
+Check permissions
+Look for installed Apk
+Get sensor list
+
+
+---Malicious Path---
+1->73: Access the Internet->Write to SD from input
+1->83: Access the Internet->Show dialog
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+47->67: Get mac address->Get total internal memory size
+
+---Others Path---
+68->67: Get avaliable internal memory size->Get total internal memory size
+
+
+---Final Output---
+Access the Internet
+Get total internal memory size
+Create a desktop shortcut
+Write to SD from input
+Generate pop-up widgets
+Save resource to a local file
+Get IMEI
+Get IMSI
+Get the list of running tasks
+Get mac address
+Get the application lists
+Get call records
+Show dialog
+Register broadcast receiver
+Get user's phone number
+Get cid
+
+---Reasoning Path---
+1->73: Access the Internet->Write to SD from input
+1->83: Access the Internet->Show dialog
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+47->67: Get mac address->Get total internal memory size
+******************
+
+****************** APK 36 ******************
+Apk name：Apk069
+
+---Malicious---
+Generate pop-up widgets
+Reset password
+Block broadcast
+Active when start-up broadcast is detected
+
+---Others---
+Lock screen
+Stop the service
+Get network info
+
+
+---Malicious Path---
+26->7: Reset password->Active when start-up broadcast is detected
+26->40: Reset password->Lock screen
+
+---Others Path---
+
+
+---Final Output---
+Block broadcast
+Active when start-up broadcast is detected
+Lock screen
+Generate pop-up widgets
+Reset password
+
+---Reasoning Path---
+26->7: Reset password->Active when start-up broadcast is detected
+26->40: Reset password->Lock screen
+******************
+
+****************** APK 37 ******************
+Apk name：Apk071
+
+---Malicious---
+Generate pop-up widgets
+Reset password
+Block broadcast
+Active when start-up broadcast is detected
+
+---Others---
+Lock screen
+Stop the service
+Get network info
+
+
+---Malicious Path---
+26->7: Reset password->Active when start-up broadcast is detected
+26->40: Reset password->Lock screen
+
+---Others Path---
+
+
+---Final Output---
+Block broadcast
+Active when start-up broadcast is detected
+Lock screen
+Generate pop-up widgets
+Reset password
+
+---Reasoning Path---
+26->7: Reset password->Active when start-up broadcast is detected
+26->40: Reset password->Lock screen
+******************
+
+****************** APK 38 ******************
+Apk name：Apk041
+
+---Malicious---
+Monitor received SMS
+Generate pop-up widgets
+Active when start-up broadcast is detected
+Get user's phone number
+Get IMSI
+Get the application lists
+Access the Internet
+Save resource to a local file
+Get the contact information
+Send SMS
+Register broadcast receiver
+Hide icon
+Request activation of device manager
+Delete the recording of incoming phone calls
+Block broadcast
+
+---Others---
+Launch Apps
+Get network info
+Click the confirm button
+Show dialog
+Get the list of services
+Send notification
+Write to SD from input
+Lock screen
+Hang up phone call
+Mute
+Register content observer
+
+
+---Malicious Path---
+56->2: Monitor received SMS->Block broadcast
+21->1: Get network info->Access the Internet
+22->1: Get user's phone number->Access the Internet
+22->13: Get user's phone number->Get IMSI
+16->1: Get the application lists->Access the Internet
+1->73: Access the Internet->Write to SD from input
+17->35: Get the contact information->Send SMS
+35->56: Send SMS->Monitor received SMS
+23->137: Hide icon->Launch Apps
+49->6: Hang up phone call->Delete the recording of incoming phone calls
+
+---Others Path---
+30->49: Mute->Hang up phone call
+
+
+---Final Output---
+Access the Internet
+Block broadcast
+Delete the recording of incoming phone calls
+Active when start-up broadcast is detected
+Launch Apps
+Generate pop-up widgets
+Get IMSI
+Get the application lists
+Get the contact information
+Get network info
+Get user's phone number
+Hide icon
+Request activation of device manager
+Send SMS
+Save resource to a local file
+Hang up phone call
+Register broadcast receiver
+Monitor received SMS
+Write to SD from input
+
+---Reasoning Path---
+56->2: Monitor received SMS->Block broadcast
+21->1: Get network info->Access the Internet
+22->1: Get user's phone number->Access the Internet
+22->13: Get user's phone number->Get IMSI
+16->1: Get the application lists->Access the Internet
+1->73: Access the Internet->Write to SD from input
+17->35: Get the contact information->Send SMS
+35->56: Send SMS->Monitor received SMS
+23->137: Hide icon->Launch Apps
+49->6: Hang up phone call->Delete the recording of incoming phone calls
+******************
+
+****************** APK 39 ******************
+Apk name：Apk046
+
+---Malicious---
+Generate pop-up widgets
+Block broadcast
+Active when start-up broadcast is detected
+Reset password
+
+---Others---
+Get network info
+Lock screen
+Stop the service
+
+
+---Malicious Path---
+7->26: Active when start-up broadcast is detected->Reset password
+26->40: Reset password->Lock screen
+
+---Others Path---
+
+
+---Final Output---
+Block broadcast
+Active when start-up broadcast is detected
+Lock screen
+Generate pop-up widgets
+Reset password
+
+---Reasoning Path---
+7->26: Active when start-up broadcast is detected->Reset password
+26->40: Reset password->Lock screen
+******************
+
+****************** APK 40 ******************
+Apk name：Apk054
+
+---Malicious---
+Generate pop-up widgets
+Active when start-up broadcast is detected
+Block broadcast
+
+---Others---
+Launch Apps
+Stop the process
+Write to SD from input
+
+
+---Malicious Path---
+
+---Others Path---
+
+
+---Final Output---
+Generate pop-up widgets
+Block broadcast
+Active when start-up broadcast is detected
+
+---Reasoning Path---
+******************
+
+****************** APK 41 ******************
+Apk name：Apk080
+
+---Malicious---
+Monitor received SMS
+
+
+---Malicious Path---
+
+---Others Path---
+
+
+---Final Output---
+Monitor received SMS
+
+---Reasoning Path---
+******************
+
+****************** APK 42 ******************
+Apk name：Apk076
+
+---Malicious---
+Monitor received SMS
+Register broadcast receiver
+Save resource to a local file
+Access the Internet
+
+---Others---
+Get the list of services
+Stop the service
+Open a mass of threads
+Write to SD from input
+Look for installed Apk
+Get HttpUrl
+Parse XML's Info from server
+Click the confirm button
+Show dialog
+Stop the process
+Launch Apps
+
+
+---Malicious Path---
+1->73: Access the Internet->Write to SD from input
+
+---Others Path---
+
+
+---Final Output---
+Access the Internet
+Write to SD from input
+Save resource to a local file
+Register broadcast receiver
+Monitor received SMS
+
+---Reasoning Path---
+1->73: Access the Internet->Write to SD from input
+******************
+
+****************** APK 43 ******************
+Apk name：Apk028
+
+---Malicious---
+Monitor received SMS
+Access the Internet
+Block broadcast
+Get IMEI
+Get the SIM card serial number
+Get user's phone number
+Send SMS
+Get the application lists
+
+---Others---
+Launch Apps
+Click the confirm button
+Show dialog
+Get Uid from server
+Look for installed Apk
+Get location of device
+Listen on clicks
+Open a mass of threads
+
+
+---Malicious Path---
+56->2: Monitor received SMS->Block broadcast
+1->84: Access the Internet->Get Uid from server
+1->83: Access the Internet->Show dialog
+12->1: Get IMEI->Access the Internet
+12->22: Get IMEI->Get user's phone number
+14->1: Get the SIM card serial number->Access the Internet
+22->1: Get user's phone number->Access the Internet
+35->56: Send SMS->Monitor received SMS
+16->1: Get the application lists->Access the Internet
+
+---Others Path---
+
+
+---Final Output---
+Access the Internet
+Block broadcast
+Send SMS
+Get IMEI
+Get the SIM card serial number
+Get the application lists
+Show dialog
+Get Uid from server
+Get user's phone number
+Monitor received SMS
+
+---Reasoning Path---
+56->2: Monitor received SMS->Block broadcast
+1->84: Access the Internet->Get Uid from server
+1->83: Access the Internet->Show dialog
+12->1: Get IMEI->Access the Internet
+12->22: Get IMEI->Get user's phone number
+14->1: Get the SIM card serial number->Access the Internet
+22->1: Get user's phone number->Access the Internet
+35->56: Send SMS->Monitor received SMS
+16->1: Get the application lists->Access the Internet
+******************
+
+****************** APK 44 ******************
+Apk name：Apk093
+
+---Malicious---
+Send SMS
+
+---Others---
+Stop the process
+Open a mass of threads
+Listen on clicks
+Click the confirm button
+
+
+---Malicious Path---
+
+---Others Path---
+
+
+---Final Output---
+Send SMS
+
+---Reasoning Path---
+******************
+
+****************** APK 45 ******************
+Apk name：Apk081
+
+---Malicious---
+Monitor received SMS
+Send SMS
+Get cid
+Get IMEI
+Save resource to a local file
+Active when start-up broadcast is detected
+Read SMS
+Hide icon
+Delete SMS
+Generate pop-up widgets
+Monitor incoming calls
+Audio recording
+Block broadcast
+Parsing SMS content
+Set Wifi on or off
+Get mac address
+Get user's phone number
+Acquire the wake lock
+Access the Internet
+
+---Others---
+Get location of device
+Get the network operator
+Get network info
+Click the confirm button
+Launch Apps
+Listen on clicks
+Open a mass of threads
+Stop the service
+Register content observer
+Hang up phone call
+
+
+---Malicious Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+19->1: Get location of device->Access the Internet
+35->56: Send SMS->Monitor received SMS
+12->47: Get IMEI->Get mac address
+12->22: Get IMEI->Get user's phone number
+23->137: Hide icon->Launch Apps
+27->49: Monitor incoming calls->Hang up phone call
+54->43: Audio recording->Save resource to a local file
+
+---Others Path---
+
+
+---Final Output---
+Acquire the wake lock
+Access the Internet
+Block broadcast
+Active when start-up broadcast is detected
+Launch Apps
+Generate pop-up widgets
+Get IMEI
+Read SMS
+Get location of device
+Get user's phone number
+Hide icon
+Get cid
+Monitor incoming calls
+Parsing SMS content
+Send SMS
+Save resource to a local file
+Set Wifi on or off
+Get mac address
+Hang up phone call
+Audio recording
+Delete SMS
+Monitor received SMS
+
+---Reasoning Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+19->1: Get location of device->Access the Internet
+35->56: Send SMS->Monitor received SMS
+12->47: Get IMEI->Get mac address
+12->22: Get IMEI->Get user's phone number
+23->137: Hide icon->Launch Apps
+27->49: Monitor incoming calls->Hang up phone call
+54->43: Audio recording->Save resource to a local file
+******************
+
+****************** APK 46 ******************
+Apk name：Apk007
+
+---Malicious---
+Get cid
+Get IMEI
+Register broadcast receiver
+Save resource to a local file
+Active when start-up broadcast is detected
+Get the contact information
+Get the application lists
+Install Apps
+Get user's phone number
+Create a desktop shortcut
+Delete the recording of incoming phone calls
+Set Wifi on or off
+Access the Internet
+Audio recording
+Install App
+
+---Others---
+Launch Apps
+Get location of device
+Get the network operator
+Get network info
+Listen on clicks
+Stop the service
+Send notification
+Open a mass of threads
+Look for installed Apk
+Show dialog
+Click the confirm button
+
+
+---Malicious Path---
+19->1: Get location of device->Access the Internet
+12->1: Get IMEI->Access the Internet
+12->22: Get IMEI->Get user's phone number
+17->1: Get the contact information->Access the Internet
+21->1: Get network info->Access the Internet
+24->39: Install Apps->Create a desktop shortcut
+24->137: Install Apps->Launch Apps
+54->43: Audio recording->Save resource to a local file
+
+---Others Path---
+
+
+---Final Output---
+Access the Internet
+Delete the recording of incoming phone calls
+Create a desktop shortcut
+Active when start-up broadcast is detected
+Launch Apps
+Save resource to a local file
+Get IMEI
+Set Wifi on or off
+Install App
+Get the application lists
+Get the contact information
+Get location of device
+Register broadcast receiver
+Get network info
+Get user's phone number
+Audio recording
+Install Apps
+Get cid
+
+---Reasoning Path---
+19->1: Get location of device->Access the Internet
+12->1: Get IMEI->Access the Internet
+12->22: Get IMEI->Get user's phone number
+17->1: Get the contact information->Access the Internet
+21->1: Get network info->Access the Internet
+24->39: Install Apps->Create a desktop shortcut
+24->137: Install Apps->Launch Apps
+54->43: Audio recording->Save resource to a local file
+******************
+
+****************** APK 47 ******************
+Apk name：Apk026
+
+---Malicious---
+Monitor received SMS
+Get IMEI
+Get IMSI
+Get mac address
+Save resource to a local file
+Compress the information into a .zip file
+Access the Internet
+
+---Others---
+Look for installed Apk
+Get total internal memory size
+Get network info
+Get avaliable internal memory size
+Stop the process
+Encrypt
+
+
+---Malicious Path---
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+13->1: Get IMSI->Access the Internet
+13->88: Get IMSI->Encrypt
+47->67: Get mac address->Get total internal memory size
+
+---Others Path---
+67->68: Get total internal memory size->Get avaliable internal memory size
+
+
+---Final Output---
+Access the Internet
+Get total internal memory size
+Compress the information into a .zip file
+Get IMEI
+Get IMSI
+Encrypt
+Save resource to a local file
+Get mac address
+Monitor received SMS
+
+---Reasoning Path---
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+13->1: Get IMSI->Access the Internet
+13->88: Get IMSI->Encrypt
+47->67: Get mac address->Get total internal memory size
+******************
+
+****************** APK 48 ******************
+Apk name：Apk030
+
+---Malicious---
+Save resource to a local file
+Get the contact information
+Download
+Register broadcast receiver
+Access the Internet
+Request permissions
+Get user's phone number
+
+---Others---
+Check permissions
+Look for installed Apk
+Launch Apps
+Stop the service
+Open a mass of threads
+Listen on clicks
+Get location of device
+Stop the process
+Encrypt
+Register content observer
+Show dialog
+
+
+---Malicious Path---
+138->8: Look for installed Apk->Download
+17->1: Get the contact information->Access the Internet
+
+---Others Path---
+
+
+---Final Output---
+Access the Internet
+Download
+Request permissions
+Look for installed Apk
+Save resource to a local file
+Get the contact information
+Register broadcast receiver
+Get user's phone number
+
+---Reasoning Path---
+138->8: Look for installed Apk->Download
+17->1: Get the contact information->Access the Internet
+******************
+
+****************** APK 49 ******************
+Apk name：Apk038
+
+---Malicious---
+Monitor received SMS
+Access specified resources
+Save resource to a local file
+Active when start-up broadcast is detected
+Generate pop-up widgets
+Send SMS
+Read SMS
+Get mac address
+Access the Internet
+Get the application lists
+Get IMEI
+Get IMSI
+Get cid
+Monitor the screen
+Get the SIM card serial number
+Get user's phone number
+Block broadcast
+Set Wifi on or off
+Delete SMS
+Register broadcast receiver
+Create a desktop shortcut
+Get the list of running tasks
+Parsing SMS content
+
+---Others---
+Launch Apps
+Check permissions
+Register content observer
+Get network info
+Open a mass of threads
+Stop the process
+Look for installed Apk
+Get location of device
+Get the network operator
+Call phone number
+Listen on clicks
+Click the confirm button
+Send notification
+Show dialog
+Encrypt
+Parse XML's Info from server
+
+
+---Malicious Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+42->1: Access specified resources->Access the Internet
+35->56: Send SMS->Monitor received SMS
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+14->12: Get the SIM card serial number->Get IMEI
+22->13: Get user's phone number->Get IMSI
+
+---Others Path---
+
+
+---Final Output---
+Access the Internet
+Block broadcast
+Active when start-up broadcast is detected
+Generate pop-up widgets
+Get IMEI
+Get IMSI
+Get the SIM card serial number
+Read SMS
+Get the application lists
+Get user's phone number
+Monitor the screen
+Parsing SMS content
+Send SMS
+Create a desktop shortcut
+Access specified resources
+Save resource to a local file
+Set Wifi on or off
+Get the list of running tasks
+Get mac address
+Register broadcast receiver
+Delete SMS
+Monitor received SMS
+Encrypt
+Get cid
+
+---Reasoning Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+42->1: Access specified resources->Access the Internet
+35->56: Send SMS->Monitor received SMS
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+14->12: Get the SIM card serial number->Get IMEI
+22->13: Get user's phone number->Get IMSI
+******************
+
+****************** APK 50 ******************
+Apk name：Apk099
+
+---Malicious---
+Monitor received SMS
+Access specified resources
+Read SMS
+Delete the recording of incoming phone calls
+Send SMS
+Get IMEI
+Get user's phone number
+Get mac address
+Request permissions
+Active when start-up broadcast is detected
+Parsing SMS content
+Access the Internet
+
+---Others---
+Check permissions
+Look for installed Apk
+Launch Apps
+Listen on clicks
+Open a mass of threads
+Get location of device
+Register content observer
+
+
+---Malicious Path---
+56->29: Monitor received SMS->Parsing SMS content
+42->1: Access specified resources->Access the Internet
+35->56: Send SMS->Monitor received SMS
+12->47: Get IMEI->Get mac address
+12->22: Get IMEI->Get user's phone number
+
+---Others Path---
+
+
+---Final Output---
+Access the Internet
+Send SMS
+Delete the recording of incoming phone calls
+Active when start-up broadcast is detected
+Request permissions
+Access specified resources
+Get IMEI
+Get mac address
+Read SMS
+Get user's phone number
+Monitor received SMS
+Parsing SMS content
+
+---Reasoning Path---
+56->29: Monitor received SMS->Parsing SMS content
+42->1: Access specified resources->Access the Internet
+35->56: Send SMS->Monitor received SMS
+12->47: Get IMEI->Get mac address
+12->22: Get IMEI->Get user's phone number
+******************
+
+****************** APK 51 ******************
+Apk name：Apk009
+
+---Malicious---
+Monitor received SMS
+Active when start-up broadcast is detected
+Block broadcast
+Get IMSI
+Save resource to a local file
+Access the Internet
+Get IMEI
+Access specified resources
+Get the SIM card serial number
+Send SMS
+Read SMS
+Register broadcast receiver
+Get user's phone number
+Get cid
+Get mac address
+Delete SMS
+Get the list of running tasks
+Generate pop-up widgets
+Parsing SMS content
+Download
+
+---Others---
+Look for installed Apk
+Encrypt
+Open a mass of threads
+Stop the process
+Get network info
+Get the network operator
+Click the confirm button
+Launch Apps
+Get HttpUrl
+Register content observer
+Write to SD from input
+Check permissions
+Stop the service
+Get SHA256
+Show dialog
+Hang up phone call
+Parse XML's Info from server
+
+
+---Malicious Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+138->8: Look for installed Apk->Download
+13->1: Get IMSI->Access the Internet
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+1->73: Access the Internet->Write to SD from input
+1->78: Access the Internet->Parse XML's Info from server
+1->8: Access the Internet->Download
+1->83: Access the Internet->Show dialog
+1->10: Access the Internet->Generate pop-up widgets
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+42->1: Access specified resources->Access the Internet
+14->1: Get the SIM card serial number->Access the Internet
+14->12: Get the SIM card serial number->Get IMEI
+21->1: Get network info->Access the Internet
+35->56: Send SMS->Monitor received SMS
+90->88: Get cid->Encrypt
+
+---Others Path---
+41->49: Stop the process->Hang up phone call
+
+
+---Final Output---
+Access the Internet
+Block broadcast
+Active when start-up broadcast is detected
+Download
+Write to SD from input
+Generate pop-up widgets
+Look for installed Apk
+Get IMEI
+Get IMSI
+Get the SIM card serial number
+Parse XML's Info from server
+Read SMS
+Show dialog
+Get network info
+Get user's phone number
+Encrypt
+Get cid
+Parsing SMS content
+Send SMS
+Access specified resources
+Save resource to a local file
+Get the list of running tasks
+Get mac address
+Register broadcast receiver
+Delete SMS
+Monitor received SMS
+
+---Reasoning Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+138->8: Look for installed Apk->Download
+13->1: Get IMSI->Access the Internet
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+1->73: Access the Internet->Write to SD from input
+1->78: Access the Internet->Parse XML's Info from server
+1->8: Access the Internet->Download
+1->83: Access the Internet->Show dialog
+1->10: Access the Internet->Generate pop-up widgets
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+42->1: Access specified resources->Access the Internet
+14->1: Get the SIM card serial number->Access the Internet
+14->12: Get the SIM card serial number->Get IMEI
+21->1: Get network info->Access the Internet
+35->56: Send SMS->Monitor received SMS
+90->88: Get cid->Encrypt
+******************
+
+****************** APK 52 ******************
+Apk name：Apk092
+
+---Malicious---
+Monitor received SMS
+Access specified resources
+Request permissions
+Active when start-up broadcast is detected
+Read SMS
+Access the Internet
+Save resource to a local file
+Monitor the screen
+Install Apps
+Hide icon
+Parsing SMS content
+Audio recording
+
+---Others---
+Launch Apps
+Check permissions
+Look for installed Apk
+Open a mass of threads
+Register content observer
+Listen on clicks
+Get location of device
+Stop the process
+Get network info
+Stop the service
+Get the network operator
+
+
+---Malicious Path---
+56->29: Monitor received SMS->Parsing SMS content
+42->1: Access specified resources->Access the Internet
+24->23: Install Apps->Hide icon
+24->137: Install Apps->Launch Apps
+54->43: Audio recording->Save resource to a local file
+
+---Others Path---
+
+
+---Final Output---
+Access the Internet
+Active when start-up broadcast is detected
+Request permissions
+Launch Apps
+Access specified resources
+Save resource to a local file
+Read SMS
+Audio recording
+Hide icon
+Monitor received SMS
+Install Apps
+Monitor the screen
+Parsing SMS content
+
+---Reasoning Path---
+56->29: Monitor received SMS->Parsing SMS content
+42->1: Access specified resources->Access the Internet
+24->23: Install Apps->Hide icon
+24->137: Install Apps->Launch Apps
+54->43: Audio recording->Save resource to a local file
+******************
+
+****************** APK 53 ******************
+Apk name：Apk063
+
+---Malicious---
+Generate pop-up widgets
+Reset password
+Block broadcast
+Active when start-up broadcast is detected
+
+---Others---
+Lock screen
+Stop the service
+Get network info
+
+
+---Malicious Path---
+26->7: Reset password->Active when start-up broadcast is detected
+26->40: Reset password->Lock screen
+
+---Others Path---
+
+
+---Final Output---
+Block broadcast
+Active when start-up broadcast is detected
+Lock screen
+Generate pop-up widgets
+Reset password
+
+---Reasoning Path---
+26->7: Reset password->Active when start-up broadcast is detected
+26->40: Reset password->Lock screen
+******************
+
+****************** APK 54 ******************
+Apk name：Apk078
+
+---Malicious---
+Access specified resources
+
+---Others---
+Stop the process
+Click the confirm button
+
+
+---Malicious Path---
+
+---Others Path---
+
+
+---Final Output---
+Access specified resources
+
+---Reasoning Path---
+******************
+
+****************** APK 55 ******************
+Apk name：Apk066
+
+---Malicious---
+Monitor received SMS
+Access specified resources
+Save resource to a local file
+Get cid
+Get mac address
+Get the SIM card serial number
+Get IMEI
+Read SMS
+Active when start-up broadcast is detected
+Send SMS
+Access the Internet
+Request permissions
+Register broadcast receiver
+Get IMSI
+Generate pop-up widgets
+Set Wifi on or off
+Get the application lists
+Delete SMS
+Block broadcast
+Parsing SMS content
+Get user's phone number
+Install Apps
+Create a desktop shortcut
+Get the list of running tasks
+Acquire the wake lock
+Install
+
+---Others---
+Open a mass of threads
+Look for installed Apk
+Get network info
+Encrypt
+Write to SD from input
+Click the confirm button
+Register content observer
+Check permissions
+Get the network operator
+Get location of device
+Get the list of services
+Show dialog
+Listen on clicks
+Launch Apps
+Stop the service
+Stop the process
+
+
+---Malicious Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+42->1: Access specified resources->Access the Internet
+90->88: Get cid->Encrypt
+21->1: Get network info->Access the Internet
+47->1: Get mac address->Access the Internet
+14->1: Get the SIM card serial number->Access the Internet
+14->12: Get the SIM card serial number->Get IMEI
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+35->56: Send SMS->Monitor received SMS
+1->73: Access the Internet->Write to SD from input
+1->83: Access the Internet->Show dialog
+1->10: Access the Internet->Generate pop-up widgets
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+24->39: Install Apps->Create a desktop shortcut
+24->137: Install Apps->Launch Apps
+
+---Others Path---
+
+
+---Final Output---
+Acquire the wake lock
+Access the Internet
+Block broadcast
+Active when start-up broadcast is detected
+Request permissions
+Launch Apps
+Generate pop-up widgets
+Write to SD from input
+Get IMEI
+Get IMSI
+Get the SIM card serial number
+Read SMS
+Get the application lists
+Install
+Show dialog
+Get network info
+Get user's phone number
+Install Apps
+Encrypt
+Get cid
+Parsing SMS content
+Send SMS
+Create a desktop shortcut
+Access specified resources
+Save resource to a local file
+Set Wifi on or off
+Get the list of running tasks
+Get mac address
+Register broadcast receiver
+Delete SMS
+Monitor received SMS
+
+---Reasoning Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+42->1: Access specified resources->Access the Internet
+90->88: Get cid->Encrypt
+21->1: Get network info->Access the Internet
+47->1: Get mac address->Access the Internet
+14->1: Get the SIM card serial number->Access the Internet
+14->12: Get the SIM card serial number->Get IMEI
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+35->56: Send SMS->Monitor received SMS
+1->73: Access the Internet->Write to SD from input
+1->83: Access the Internet->Show dialog
+1->10: Access the Internet->Generate pop-up widgets
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+24->39: Install Apps->Create a desktop shortcut
+24->137: Install Apps->Launch Apps
+******************
+
+****************** APK 56 ******************
+Apk name：Apk034
+
+---Malicious---
+Monitor received SMS
+Active when start-up broadcast is detected
+Generate pop-up widgets
+Get the contact information
+Get user's phone number
+Get the application lists
+Access the Internet
+Get IMSI
+Save resource to a local file
+Send SMS
+Register broadcast receiver
+Hide icon
+Request activation of device manager
+Delete the recording of incoming phone calls
+Block broadcast
+
+---Others---
+Launch Apps
+Register content observer
+Get network info
+Hang up phone call
+Click the confirm button
+Show dialog
+Get the list of services
+Send notification
+Write to SD from input
+Lock screen
+Mute
+
+
+---Malicious Path---
+56->2: Monitor received SMS->Block broadcast
+17->35: Get the contact information->Send SMS
+17->1: Get the contact information->Access the Internet
+21->1: Get network info->Access the Internet
+49->6: Hang up phone call->Delete the recording of incoming phone calls
+22->1: Get user's phone number->Access the Internet
+22->13: Get user's phone number->Get IMSI
+35->56: Send SMS->Monitor received SMS
+23->137: Hide icon->Launch Apps
+
+---Others Path---
+30->49: Mute->Hang up phone call
+
+
+---Final Output---
+Access the Internet
+Block broadcast
+Send SMS
+Request activation of device manager
+Delete the recording of incoming phone calls
+Active when start-up broadcast is detected
+Launch Apps
+Generate pop-up widgets
+Save resource to a local file
+Get IMSI
+Get the application lists
+Get the contact information
+Hang up phone call
+Register broadcast receiver
+Get network info
+Get user's phone number
+Hide icon
+Monitor received SMS
+
+---Reasoning Path---
+56->2: Monitor received SMS->Block broadcast
+17->35: Get the contact information->Send SMS
+17->1: Get the contact information->Access the Internet
+21->1: Get network info->Access the Internet
+49->6: Hang up phone call->Delete the recording of incoming phone calls
+22->1: Get user's phone number->Access the Internet
+22->13: Get user's phone number->Get IMSI
+35->56: Send SMS->Monitor received SMS
+23->137: Hide icon->Launch Apps
+******************
+
+****************** APK 57 ******************
+Apk name：Apk039
+
+---Malicious---
+Monitor received SMS
+Save resource to a local file
+Active when start-up broadcast is detected
+Generate pop-up widgets
+Read SMS
+Get IMSI
+Get IMEI
+Send SMS
+Get cid
+Register broadcast receiver
+Get the application lists
+Access the Internet
+Set Wifi on or off
+Get user's phone number
+Get mac address
+Clear app cache
+Block broadcast
+Get the list of running tasks
+Create a desktop shortcut
+
+---Others---
+Launch Apps
+Register content observer
+Get network info
+Open a mass of threads
+Get location of device
+Look for installed Apk
+Get the network operator
+Call phone number
+Listen on clicks
+Click the confirm button
+Show dialog
+
+
+---Malicious Path---
+56->2: Monitor received SMS->Block broadcast
+21->1: Get network info->Access the Internet
+19->1: Get location of device->Access the Internet
+13->1: Get IMSI->Access the Internet
+13->12: Get IMSI->Get IMEI
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+35->56: Send SMS->Monitor received SMS
+
+---Others Path---
+
+
+---Final Output---
+Access the Internet
+Block broadcast
+Active when start-up broadcast is detected
+Clear app cache
+Generate pop-up widgets
+Get IMEI
+Get IMSI
+Read SMS
+Get the application lists
+Get location of device
+Get network info
+Get user's phone number
+Send SMS
+Create a desktop shortcut
+Save resource to a local file
+Set Wifi on or off
+Get the list of running tasks
+Get mac address
+Register broadcast receiver
+Monitor received SMS
+Get cid
+
+---Reasoning Path---
+56->2: Monitor received SMS->Block broadcast
+21->1: Get network info->Access the Internet
+19->1: Get location of device->Access the Internet
+13->1: Get IMSI->Access the Internet
+13->12: Get IMSI->Get IMEI
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+35->56: Send SMS->Monitor received SMS
+******************
+
+****************** APK 58 ******************
+Apk name：Apk002
+
+---Malicious---
+Access the Internet
+Install
+Save resource to a local file
+
+---Others---
+Register content observer
+Listen on clicks
+Launch Apps
+Parse XML's Info from server
+Open a mass of threads
+Get network info
+Click the confirm button
+Show dialog
+
+
+---Malicious Path---
+1->78: Access the Internet->Parse XML's Info from server
+1->83: Access the Internet->Show dialog
+
+---Others Path---
+
+
+---Final Output---
+Access the Internet
+Install
+Save resource to a local file
+Parse XML's Info from server
+Show dialog
+
+---Reasoning Path---
+1->78: Access the Internet->Parse XML's Info from server
+1->83: Access the Internet->Show dialog
+******************
+
+****************** APK 59 ******************
+Apk name：Apk052
+
+---Malicious---
+Monitor received SMS
+Generate pop-up widgets
+Reset password
+Block broadcast
+Active when start-up broadcast is detected
+Register broadcast receiver
+
+---Others---
+Hang up phone call
+Lock screen
+Stop the service
+
+
+---Malicious Path---
+56->2: Monitor received SMS->Block broadcast
+26->7: Reset password->Active when start-up broadcast is detected
+26->40: Reset password->Lock screen
+
+---Others Path---
+
+
+---Final Output---
+Block broadcast
+Reset password
+Generate pop-up widgets
+Register broadcast receiver
+Active when start-up broadcast is detected
+Lock screen
+Monitor received SMS
+
+---Reasoning Path---
+56->2: Monitor received SMS->Block broadcast
+26->7: Reset password->Active when start-up broadcast is detected
+26->40: Reset password->Lock screen
+******************
+
+****************** APK 60 ******************
+Apk name：Apk031
+
+---Malicious---
+Monitor received SMS
+Delete SMS
+Access the Internet
+Register broadcast receiver
+Read SMS
+Send SMS
+Get IMSI
+Get IMEI
+Get the SIM card serial number
+Get user's phone number
+Block broadcast
+Save resource to a local file
+Get cid
+Get the list of running tasks
+Parsing SMS content
+Access specified resources
+Generate pop-up widgets
+Set Wifi on or off
+Get the application lists
+Request permissions
+Get mac address
+
+---Others---
+Open a mass of threads
+Write to SD from input
+Register content observer
+Get network info
+Get SHA256
+Look for installed Apk
+Encrypt
+Click the confirm button
+Stop the process
+Launch Apps
+Add views
+Get HttpUrl
+Check permissions
+Get the network operator
+Get location of device
+Stop the service
+Show dialog
+Hang up phone call
+Listen on clicks
+Parse XML's Info from server
+
+
+---Malicious Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+1->73: Access the Internet->Write to SD from input
+1->78: Access the Internet->Parse XML's Info from server
+1->83: Access the Internet->Show dialog
+1->10: Access the Internet->Generate pop-up widgets
+35->56: Send SMS->Monitor received SMS
+13->1: Get IMSI->Access the Internet
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+21->1: Get network info->Access the Internet
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->22: Get IMEI->Get user's phone number
+14->1: Get the SIM card serial number->Access the Internet
+14->12: Get the SIM card serial number->Get IMEI
+22->1: Get user's phone number->Access the Internet
+90->88: Get cid->Encrypt
+42->1: Access specified resources->Access the Internet
+44->1: Set Wifi on or off->Access the Internet
+
+---Others Path---
+41->49: Stop the process->Hang up phone call
+
+
+---Final Output---
+Access the Internet
+Block broadcast
+Request permissions
+Write to SD from input
+Generate pop-up widgets
+Get IMEI
+Get IMSI
+Get the SIM card serial number
+Parse XML's Info from server
+Read SMS
+Get the application lists
+Show dialog
+Get network info
+Get user's phone number
+Encrypt
+Get cid
+Parsing SMS content
+Send SMS
+Access specified resources
+Save resource to a local file
+Set Wifi on or off
+Get the list of running tasks
+Get mac address
+Register broadcast receiver
+Delete SMS
+Monitor received SMS
+
+---Reasoning Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+1->73: Access the Internet->Write to SD from input
+1->78: Access the Internet->Parse XML's Info from server
+1->83: Access the Internet->Show dialog
+1->10: Access the Internet->Generate pop-up widgets
+35->56: Send SMS->Monitor received SMS
+13->1: Get IMSI->Access the Internet
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+21->1: Get network info->Access the Internet
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->22: Get IMEI->Get user's phone number
+14->1: Get the SIM card serial number->Access the Internet
+14->12: Get the SIM card serial number->Get IMEI
+22->1: Get user's phone number->Access the Internet
+90->88: Get cid->Encrypt
+42->1: Access specified resources->Access the Internet
+44->1: Set Wifi on or off->Access the Internet
+******************
+
+****************** APK 61 ******************
+Apk name：Apk073
+
+---Malicious---
+Generate pop-up widgets
+Reset password
+Block broadcast
+Active when start-up broadcast is detected
+
+---Others---
+Lock screen
+Stop the service
+Get network info
+
+
+---Malicious Path---
+26->7: Reset password->Active when start-up broadcast is detected
+26->40: Reset password->Lock screen
+
+---Others Path---
+
+
+---Final Output---
+Block broadcast
+Active when start-up broadcast is detected
+Lock screen
+Generate pop-up widgets
+Reset password
+
+---Reasoning Path---
+26->7: Reset password->Active when start-up broadcast is detected
+26->40: Reset password->Lock screen
+******************
+
+****************** APK 62 ******************
+Apk name：Apk085
+
+---Malicious---
+Monitor received SMS
+Active when start-up broadcast is detected
+Generate pop-up widgets
+Get the contact information
+Get user's phone number
+Access the Internet
+Get the application lists
+Get IMSI
+Save resource to a local file
+Send SMS
+Register broadcast receiver
+Hide icon
+Request activation of device manager
+Delete the recording of incoming phone calls
+Block broadcast
+
+---Others---
+Launch Apps
+Register content observer
+Get network info
+Hang up phone call
+Click the confirm button
+Show dialog
+Get the list of services
+Send notification
+Write to SD from input
+Lock screen
+Mute
+
+
+---Malicious Path---
+56->2: Monitor received SMS->Block broadcast
+17->35: Get the contact information->Send SMS
+17->1: Get the contact information->Access the Internet
+21->1: Get network info->Access the Internet
+49->6: Hang up phone call->Delete the recording of incoming phone calls
+22->1: Get user's phone number->Access the Internet
+22->13: Get user's phone number->Get IMSI
+35->56: Send SMS->Monitor received SMS
+23->137: Hide icon->Launch Apps
+
+---Others Path---
+30->49: Mute->Hang up phone call
+
+
+---Final Output---
+Access the Internet
+Block broadcast
+Send SMS
+Request activation of device manager
+Delete the recording of incoming phone calls
+Active when start-up broadcast is detected
+Launch Apps
+Generate pop-up widgets
+Save resource to a local file
+Get IMSI
+Get the application lists
+Get the contact information
+Hang up phone call
+Register broadcast receiver
+Get network info
+Get user's phone number
+Hide icon
+Monitor received SMS
+
+---Reasoning Path---
+56->2: Monitor received SMS->Block broadcast
+17->35: Get the contact information->Send SMS
+17->1: Get the contact information->Access the Internet
+21->1: Get network info->Access the Internet
+49->6: Hang up phone call->Delete the recording of incoming phone calls
+22->1: Get user's phone number->Access the Internet
+22->13: Get user's phone number->Get IMSI
+35->56: Send SMS->Monitor received SMS
+23->137: Hide icon->Launch Apps
+******************
+
+****************** APK 63 ******************
+Apk name：Apk024
+
+---Malicious---
+Monitor received SMS
+Access specified resources
+
+---Others---
+Click the confirm button
+Stop the process
+
+
+---Malicious Path---
+
+---Others Path---
+
+
+---Final Output---
+Monitor received SMS
+Access specified resources
+
+---Reasoning Path---
+******************
+
+****************** APK 64 ******************
+Apk name：Apk043
+
+---Malicious---
+Monitor received SMS
+Access specified resources
+Generate pop-up widgets
+Active when start-up broadcast is detected
+Save resource to a local file
+Get the SIM card serial number
+Get IMEI
+Access the Internet
+Get IMSI
+Get cid
+Read SMS
+Delete SMS
+Send SMS
+Request permissions
+Parsing SMS content
+Register broadcast receiver
+Get mac address
+Block broadcast
+Get the application lists
+
+---Others---
+Launch Apps
+Get network info
+Open a mass of threads
+Encrypt
+Write to SD from input
+Look for installed Apk
+Check permissions
+Stop the process
+Stop the service
+Register content observer
+Click the confirm button
+Get the network operator
+Get the list of services
+Get sensor list
+Get sensor info(name, version, vendor)
+Get location of device
+Show dialog
+Listen on clicks
+
+
+---Malicious Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+42->1: Access specified resources->Access the Internet
+21->1: Get network info->Access the Internet
+14->12: Get the SIM card serial number->Get IMEI
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+13->14: Get IMSI->Get the SIM card serial number
+90->88: Get cid->Encrypt
+35->56: Send SMS->Monitor received SMS
+
+---Others Path---
+98->106: Get sensor list->Get sensor info(name, version, vendor)
+
+
+---Final Output---
+Access the Internet
+Block broadcast
+Active when start-up broadcast is detected
+Request permissions
+Generate pop-up widgets
+Get IMEI
+Get IMSI
+Get the SIM card serial number
+Read SMS
+Get the application lists
+Get network info
+Parsing SMS content
+Send SMS
+Access specified resources
+Save resource to a local file
+Get mac address
+Register broadcast receiver
+Delete SMS
+Monitor received SMS
+Encrypt
+Get cid
+
+---Reasoning Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+42->1: Access specified resources->Access the Internet
+21->1: Get network info->Access the Internet
+14->12: Get the SIM card serial number->Get IMEI
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+13->14: Get IMSI->Get the SIM card serial number
+90->88: Get cid->Encrypt
+35->56: Send SMS->Monitor received SMS
+******************
+
+****************** APK 65 ******************
+Apk name：Apk004
+
+---Malicious---
+Monitor received SMS
+
+
+---Malicious Path---
+
+---Others Path---
+
+
+---Final Output---
+Monitor received SMS
+
+---Reasoning Path---
+******************
+
+****************** APK 66 ******************
+Apk name：Apk040
+
+---Malicious---
+Generate pop-up widgets
+Reset password
+Block broadcast
+Active when start-up broadcast is detected
+
+---Others---
+Lock screen
+Stop the service
+Get network info
+
+
+---Malicious Path---
+26->7: Reset password->Active when start-up broadcast is detected
+26->40: Reset password->Lock screen
+
+---Others Path---
+
+
+---Final Output---
+Block broadcast
+Active when start-up broadcast is detected
+Lock screen
+Generate pop-up widgets
+Reset password
+
+---Reasoning Path---
+26->7: Reset password->Active when start-up broadcast is detected
+26->40: Reset password->Lock screen
+******************
+
+****************** APK 67 ******************
+Apk name：Apk047
+
+---Malicious---
+Monitor received SMS
+Access specified resources
+Save resource to a local file
+Access the Internet
+Get the application lists
+Get the SIM card serial number
+Get IMEI
+Get IMSI
+Get user's phone number
+Send SMS
+Get cid
+Read SMS
+Block broadcast
+Active when start-up broadcast is detected
+Delete SMS
+Register broadcast receiver
+Install Apps
+Generate pop-up widgets
+Create a desktop shortcut
+Get the list of running tasks
+Get mac address
+Set Wifi on or off
+Request permissions
+Parsing SMS content
+Acquire the wake lock
+Install
+
+---Others---
+Open a mass of threads
+Check permissions
+Look for installed Apk
+Get network info
+Get the list of services
+Click the confirm button
+Register content observer
+Show dialog
+Listen on clicks
+Launch Apps
+Stop the service
+Write to SD from input
+Get the network operator
+Add views
+Encrypt
+Stop the process
+
+
+---Malicious Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+42->1: Access specified resources->Access the Internet
+1->73: Access the Internet->Write to SD from input
+1->83: Access the Internet->Show dialog
+1->10: Access the Internet->Generate pop-up widgets
+14->12: Get the SIM card serial number->Get IMEI
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+22->13: Get user's phone number->Get IMSI
+35->56: Send SMS->Monitor received SMS
+90->88: Get cid->Encrypt
+24->39: Install Apps->Create a desktop shortcut
+24->137: Install Apps->Launch Apps
+
+---Others Path---
+
+
+---Final Output---
+Acquire the wake lock
+Access the Internet
+Block broadcast
+Active when start-up broadcast is detected
+Request permissions
+Launch Apps
+Generate pop-up widgets
+Write to SD from input
+Get IMEI
+Get IMSI
+Get the SIM card serial number
+Read SMS
+Get the application lists
+Install
+Show dialog
+Get user's phone number
+Install Apps
+Encrypt
+Get cid
+Parsing SMS content
+Send SMS
+Create a desktop shortcut
+Access specified resources
+Save resource to a local file
+Set Wifi on or off
+Get the list of running tasks
+Get mac address
+Register broadcast receiver
+Delete SMS
+Monitor received SMS
+
+---Reasoning Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+42->1: Access specified resources->Access the Internet
+1->73: Access the Internet->Write to SD from input
+1->83: Access the Internet->Show dialog
+1->10: Access the Internet->Generate pop-up widgets
+14->12: Get the SIM card serial number->Get IMEI
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+22->13: Get user's phone number->Get IMSI
+35->56: Send SMS->Monitor received SMS
+90->88: Get cid->Encrypt
+24->39: Install Apps->Create a desktop shortcut
+24->137: Install Apps->Launch Apps
+******************
+
+****************** APK 68 ******************
+Apk name：Apk022
+
+---Malicious---
+Monitor received SMS
+Delete SMS
+Access the Internet
+Register broadcast receiver
+Read SMS
+Send SMS
+Get IMSI
+Get user's phone number
+Get IMEI
+Get the SIM card serial number
+Save resource to a local file
+Access specified resources
+Request permissions
+Generate pop-up widgets
+Install Apps
+Audio recording
+Get the application lists
+Get cid
+Block broadcast
+Parsing SMS content
+Get mac address
+Get the list of running tasks
+
+---Others---
+Open a mass of threads
+Write to SD from input
+Register content observer
+Get network info
+Get SHA256
+Look for installed Apk
+Check permissions
+Launch Apps
+Listen on clicks
+Get location of device
+Encrypt
+Send notification
+Add views
+Call phone number
+Click the confirm button
+Show dialog
+Get the network operator
+Stop the service
+
+
+---Malicious Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+1->73: Access the Internet->Write to SD from input
+1->83: Access the Internet->Show dialog
+1->10: Access the Internet->Generate pop-up widgets
+35->56: Send SMS->Monitor received SMS
+13->1: Get IMSI->Access the Internet
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+21->1: Get network info->Access the Internet
+22->1: Get user's phone number->Access the Internet
+22->13: Get user's phone number->Get IMSI
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->22: Get IMEI->Get user's phone number
+14->1: Get the SIM card serial number->Access the Internet
+14->12: Get the SIM card serial number->Get IMEI
+42->1: Access specified resources->Access the Internet
+24->137: Install Apps->Launch Apps
+54->43: Audio recording->Save resource to a local file
+90->88: Get cid->Encrypt
+
+---Others Path---
+
+
+---Final Output---
+Access the Internet
+Block broadcast
+Request permissions
+Launch Apps
+Generate pop-up widgets
+Write to SD from input
+Get IMEI
+Get IMSI
+Get the SIM card serial number
+Read SMS
+Get the application lists
+Show dialog
+Get network info
+Get user's phone number
+Install Apps
+Encrypt
+Get cid
+Parsing SMS content
+Send SMS
+Access specified resources
+Save resource to a local file
+Get the list of running tasks
+Get mac address
+Register broadcast receiver
+Audio recording
+Delete SMS
+Monitor received SMS
+
+---Reasoning Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+1->73: Access the Internet->Write to SD from input
+1->83: Access the Internet->Show dialog
+1->10: Access the Internet->Generate pop-up widgets
+35->56: Send SMS->Monitor received SMS
+13->1: Get IMSI->Access the Internet
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+21->1: Get network info->Access the Internet
+22->1: Get user's phone number->Access the Internet
+22->13: Get user's phone number->Get IMSI
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->22: Get IMEI->Get user's phone number
+14->1: Get the SIM card serial number->Access the Internet
+14->12: Get the SIM card serial number->Get IMEI
+42->1: Access specified resources->Access the Internet
+24->137: Install Apps->Launch Apps
+54->43: Audio recording->Save resource to a local file
+90->88: Get cid->Encrypt
+******************
+
+****************** APK 69 ******************
+Apk name：Apk055
+
+---Malicious---
+Generate pop-up widgets
+Reset password
+Block broadcast
+Active when start-up broadcast is detected
+
+---Others---
+Lock screen
+Stop the service
+Get network info
+
+
+---Malicious Path---
+26->7: Reset password->Active when start-up broadcast is detected
+26->40: Reset password->Lock screen
+
+---Others Path---
+
+
+---Final Output---
+Block broadcast
+Active when start-up broadcast is detected
+Lock screen
+Generate pop-up widgets
+Reset password
+
+---Reasoning Path---
+26->7: Reset password->Active when start-up broadcast is detected
+26->40: Reset password->Lock screen
+******************
+
+****************** APK 70 ******************
+Apk name：Apk064
+
+---Malicious---
+Generate pop-up widgets
+Reset password
+Block broadcast
+Active when start-up broadcast is detected
+
+---Others---
+Lock screen
+Stop the service
+Get network info
+
+
+---Malicious Path---
+26->7: Reset password->Active when start-up broadcast is detected
+26->40: Reset password->Lock screen
+
+---Others Path---
+
+
+---Final Output---
+Block broadcast
+Active when start-up broadcast is detected
+Lock screen
+Generate pop-up widgets
+Reset password
+
+---Reasoning Path---
+26->7: Reset password->Active when start-up broadcast is detected
+26->40: Reset password->Lock screen
+******************
+
+****************** APK 71 ******************
+Apk name：Apk065
+
+---Malicious---
+Generate pop-up widgets
+Block broadcast
+Active when start-up broadcast is detected
+Reset password
+
+---Others---
+Stop the service
+Get network info
+Lock screen
+
+
+---Malicious Path---
+7->26: Active when start-up broadcast is detected->Reset password
+26->40: Reset password->Lock screen
+
+---Others Path---
+
+
+---Final Output---
+Block broadcast
+Active when start-up broadcast is detected
+Lock screen
+Generate pop-up widgets
+Reset password
+
+---Reasoning Path---
+7->26: Active when start-up broadcast is detected->Reset password
+26->40: Reset password->Lock screen
+******************
+
+****************** APK 72 ******************
+Apk name：Apk019
+
+---Malicious---
+Monitor received SMS
+Access specified resources
+Save resource to a local file
+Active when start-up broadcast is detected
+Get the list of running tasks
+Register broadcast receiver
+Get IMEI
+Get IMSI
+Generate pop-up widgets
+Access the Internet
+Get user's phone number
+Get cid
+Get mac address
+Get the SIM card serial number
+Read SMS
+Send SMS
+Request permissions
+Set Wifi on or off
+Get the application lists
+Delete SMS
+Block broadcast
+Parsing SMS content
+Install Apps
+Create a desktop shortcut
+Acquire the wake lock
+Install
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Click the confirm button
+Look for installed Apk
+Show dialog
+Send notification
+Launch Apps
+Encrypt
+Get network info
+Stop the service
+Write to SD from input
+Register content observer
+Check permissions
+Get the network operator
+Get location of device
+Get the list of services
+Stop the process
+
+
+---Malicious Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+42->1: Access specified resources->Access the Internet
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+13->1: Get IMSI->Access the Internet
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+1->73: Access the Internet->Write to SD from input
+1->83: Access the Internet->Show dialog
+1->10: Access the Internet->Generate pop-up widgets
+22->1: Get user's phone number->Access the Internet
+22->13: Get user's phone number->Get IMSI
+90->88: Get cid->Encrypt
+14->12: Get the SIM card serial number->Get IMEI
+35->56: Send SMS->Monitor received SMS
+24->39: Install Apps->Create a desktop shortcut
+24->137: Install Apps->Launch Apps
+
+---Others Path---
+
+
+---Final Output---
+Acquire the wake lock
+Access the Internet
+Block broadcast
+Active when start-up broadcast is detected
+Request permissions
+Launch Apps
+Generate pop-up widgets
+Write to SD from input
+Get IMEI
+Get IMSI
+Get the SIM card serial number
+Read SMS
+Get the application lists
+Install
+Show dialog
+Get user's phone number
+Install Apps
+Encrypt
+Get cid
+Parsing SMS content
+Send SMS
+Create a desktop shortcut
+Access specified resources
+Save resource to a local file
+Set Wifi on or off
+Get the list of running tasks
+Get mac address
+Register broadcast receiver
+Delete SMS
+Monitor received SMS
+
+---Reasoning Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+42->1: Access specified resources->Access the Internet
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+13->1: Get IMSI->Access the Internet
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+1->73: Access the Internet->Write to SD from input
+1->83: Access the Internet->Show dialog
+1->10: Access the Internet->Generate pop-up widgets
+22->1: Get user's phone number->Access the Internet
+22->13: Get user's phone number->Get IMSI
+90->88: Get cid->Encrypt
+14->12: Get the SIM card serial number->Get IMEI
+35->56: Send SMS->Monitor received SMS
+24->39: Install Apps->Create a desktop shortcut
+24->137: Install Apps->Launch Apps
+******************
+
+****************** APK 73 ******************
+Apk name：Apk001
+
+---Malicious---
+Get IMEI
+Get IMSI
+Get mac address
+Save resource to a local file
+Compress the information into a .zip file
+Access the Internet
+
+---Others---
+Look for installed Apk
+Get total internal memory size
+Get network info
+Get avaliable internal memory size
+Stop the process
+Encrypt
+
+
+---Malicious Path---
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+13->1: Get IMSI->Access the Internet
+13->88: Get IMSI->Encrypt
+47->67: Get mac address->Get total internal memory size
+
+---Others Path---
+67->68: Get total internal memory size->Get avaliable internal memory size
+
+
+---Final Output---
+Access the Internet
+Get total internal memory size
+Compress the information into a .zip file
+Encrypt
+Save resource to a local file
+Get IMEI
+Get IMSI
+Get mac address
+
+---Reasoning Path---
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+13->1: Get IMSI->Access the Internet
+13->88: Get IMSI->Encrypt
+47->67: Get mac address->Get total internal memory size
+******************
+
+****************** APK 74 ******************
+Apk name：Apk008
+
+---Malicious---
+Monitor received SMS
+Hide icon
+Get user's phone number
+Request activation of device manager
+Access the Internet
+Send SMS
+Save resource to a local file
+Generate pop-up widgets
+Active when start-up broadcast is detected
+Delete the recording of incoming phone calls
+Get IMSI
+Block broadcast
+Get the contact information
+Get the application lists
+Register broadcast receiver
+
+---Others---
+Hang up phone call
+Launch Apps
+Lock screen
+Write to SD from input
+Mute
+Get network info
+Click the confirm button
+Show dialog
+Send notification
+Get the list of services
+
+
+---Malicious Path---
+49->6: Hang up phone call->Delete the recording of incoming phone calls
+56->2: Monitor received SMS->Block broadcast
+23->137: Hide icon->Launch Apps
+22->1: Get user's phone number->Access the Internet
+22->13: Get user's phone number->Get IMSI
+1->73: Access the Internet->Write to SD from input
+1->83: Access the Internet->Show dialog
+1->10: Access the Internet->Generate pop-up widgets
+35->56: Send SMS->Monitor received SMS
+17->35: Get the contact information->Send SMS
+
+---Others Path---
+30->49: Mute->Hang up phone call
+
+
+---Final Output---
+Access the Internet
+Block broadcast
+Delete the recording of incoming phone calls
+Active when start-up broadcast is detected
+Launch Apps
+Generate pop-up widgets
+Get IMSI
+Get the application lists
+Get the contact information
+Get user's phone number
+Hide icon
+Request activation of device manager
+Send SMS
+Save resource to a local file
+Hang up phone call
+Register broadcast receiver
+Monitor received SMS
+Write to SD from input
+Show dialog
+
+---Reasoning Path---
+49->6: Hang up phone call->Delete the recording of incoming phone calls
+56->2: Monitor received SMS->Block broadcast
+23->137: Hide icon->Launch Apps
+22->1: Get user's phone number->Access the Internet
+22->13: Get user's phone number->Get IMSI
+1->73: Access the Internet->Write to SD from input
+1->83: Access the Internet->Show dialog
+1->10: Access the Internet->Generate pop-up widgets
+35->56: Send SMS->Monitor received SMS
+17->35: Get the contact information->Send SMS
+******************
+
+****************** APK 75 ******************
+Apk name：Apk045
+
+---Malicious---
+Access specified resources
+Save resource to a local file
+Access the Internet
+Get IMEI
+Get IMSI
+Get the list of running tasks
+Get user's phone number
+Get the SIM card serial number
+Active when start-up broadcast is detected
+Register broadcast receiver
+Generate pop-up widgets
+Get the application lists
+Get mac address
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Get the list of services
+Look for installed Apk
+Get network info
+Stop the service
+Launch Apps
+Click the confirm button
+Show dialog
+Encrypt
+Get HttpUrl
+Check permissions
+Get the network operator
+
+
+---Malicious Path---
+42->1: Access specified resources->Access the Internet
+1->83: Access the Internet->Show dialog
+1->10: Access the Internet->Generate pop-up widgets
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+13->1: Get IMSI->Access the Internet
+13->14: Get IMSI->Get the SIM card serial number
+22->1: Get user's phone number->Access the Internet
+21->1: Get network info->Access the Internet
+
+---Others Path---
+
+
+---Final Output---
+Access the Internet
+Active when start-up broadcast is detected
+Generate pop-up widgets
+Access specified resources
+Get IMEI
+Get IMSI
+Get the SIM card serial number
+Get mac address
+Save resource to a local file
+Get the list of running tasks
+Get the application lists
+Show dialog
+Register broadcast receiver
+Get network info
+Get user's phone number
+
+---Reasoning Path---
+42->1: Access specified resources->Access the Internet
+1->83: Access the Internet->Show dialog
+1->10: Access the Internet->Generate pop-up widgets
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+13->1: Get IMSI->Access the Internet
+13->14: Get IMSI->Get the SIM card serial number
+22->1: Get user's phone number->Access the Internet
+21->1: Get network info->Access the Internet
+******************
+
+****************** APK 76 ******************
+Apk name：Apk050
+
+
+---Malicious Path---
+
+---Others Path---
+
+
+---Final Output---
+
+---Reasoning Path---
+******************
+
+****************** APK 77 ******************
+Apk name：Apk082
+
+---Malicious---
+Monitor received SMS
+Delete SMS
+Access the Internet
+Register broadcast receiver
+Read SMS
+Send SMS
+Get IMSI
+Get user's phone number
+Get IMEI
+Get the SIM card serial number
+Save resource to a local file
+Access specified resources
+Get mac address
+Get cid
+Block broadcast
+Get the list of running tasks
+Parsing SMS content
+Download
+
+---Others---
+Open a mass of threads
+Write to SD from input
+Register content observer
+Get network info
+Get SHA256
+Look for installed Apk
+Launch Apps
+Encrypt
+Stop the process
+Check permissions
+Get the network operator
+Stop the service
+Click the confirm button
+Show dialog
+Get location of device
+Listen on clicks
+Cache message
+
+
+---Malicious Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+1->73: Access the Internet->Write to SD from input
+1->8: Access the Internet->Download
+1->83: Access the Internet->Show dialog
+35->56: Send SMS->Monitor received SMS
+13->1: Get IMSI->Access the Internet
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+21->1: Get network info->Access the Internet
+22->1: Get user's phone number->Access the Internet
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->22: Get IMEI->Get user's phone number
+14->1: Get the SIM card serial number->Access the Internet
+14->12: Get the SIM card serial number->Get IMEI
+138->8: Look for installed Apk->Download
+42->1: Access specified resources->Access the Internet
+90->88: Get cid->Encrypt
+
+---Others Path---
+
+
+---Final Output---
+Access the Internet
+Block broadcast
+Download
+Write to SD from input
+Look for installed Apk
+Get IMEI
+Get IMSI
+Get the SIM card serial number
+Read SMS
+Show dialog
+Get network info
+Get user's phone number
+Encrypt
+Get cid
+Parsing SMS content
+Send SMS
+Access specified resources
+Save resource to a local file
+Get the list of running tasks
+Get mac address
+Register broadcast receiver
+Delete SMS
+Monitor received SMS
+
+---Reasoning Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+1->73: Access the Internet->Write to SD from input
+1->8: Access the Internet->Download
+1->83: Access the Internet->Show dialog
+35->56: Send SMS->Monitor received SMS
+13->1: Get IMSI->Access the Internet
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+21->1: Get network info->Access the Internet
+22->1: Get user's phone number->Access the Internet
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->22: Get IMEI->Get user's phone number
+14->1: Get the SIM card serial number->Access the Internet
+14->12: Get the SIM card serial number->Get IMEI
+138->8: Look for installed Apk->Download
+42->1: Access specified resources->Access the Internet
+90->88: Get cid->Encrypt
+******************
+
+****************** APK 78 ******************
+Apk name：Apk062
+
+---Malicious---
+Monitor received SMS
+Generate pop-up widgets
+Active when start-up broadcast is detected
+Access the Internet
+Block broadcast
+Register broadcast receiver
+
+---Others---
+Get the list of services
+Stop the service
+
+
+---Malicious Path---
+56->2: Monitor received SMS->Block broadcast
+1->10: Access the Internet->Generate pop-up widgets
+
+---Others Path---
+
+
+---Final Output---
+Access the Internet
+Block broadcast
+Active when start-up broadcast is detected
+Generate pop-up widgets
+Register broadcast receiver
+Monitor received SMS
+
+---Reasoning Path---
+56->2: Monitor received SMS->Block broadcast
+1->10: Access the Internet->Generate pop-up widgets
+******************
+
+****************** APK 79 ******************
+Apk name：Apk083
+
+---Malicious---
+Monitor received SMS
+Access the Internet
+Save resource to a local file
+Read SMS
+Send SMS
+Delete SMS
+Get IMSI
+Get IMEI
+Get mac address
+Get the SIM card serial number
+Get cid
+Block broadcast
+Parsing SMS content
+Register broadcast receiver
+Access specified resources
+Get the list of running tasks
+Get the application lists
+Set Wifi on or off
+Install Apps
+Get user's phone number
+Request permissions
+
+---Others---
+Look for installed Apk
+Check permissions
+Open a mass of threads
+Get network info
+Get the list of services
+Get the network operator
+Register content observer
+Get location of device
+Get total internal memory size
+Launch Apps
+Listen on clicks
+Send notification
+Get HttpUrl
+Click the confirm button
+Stop the process
+Stop the service
+Write to SD from input
+Show dialog
+Parse XML's Info from server
+
+
+---Malicious Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+1->73: Access the Internet->Write to SD from input
+1->78: Access the Internet->Parse XML's Info from server
+1->83: Access the Internet->Show dialog
+21->1: Get network info->Access the Internet
+35->56: Send SMS->Monitor received SMS
+13->1: Get IMSI->Access the Internet
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+47->1: Get mac address->Access the Internet
+47->67: Get mac address->Get total internal memory size
+14->1: Get the SIM card serial number->Access the Internet
+14->12: Get the SIM card serial number->Get IMEI
+42->1: Access specified resources->Access the Internet
+19->1: Get location of device->Access the Internet
+16->1: Get the application lists->Access the Internet
+24->137: Install Apps->Launch Apps
+
+---Others Path---
+
+
+---Final Output---
+Access the Internet
+Block broadcast
+Get total internal memory size
+Request permissions
+Launch Apps
+Write to SD from input
+Get IMEI
+Get IMSI
+Get the SIM card serial number
+Parse XML's Info from server
+Get the application lists
+Read SMS
+Get location of device
+Show dialog
+Get network info
+Get user's phone number
+Install Apps
+Get cid
+Parsing SMS content
+Send SMS
+Access specified resources
+Save resource to a local file
+Set Wifi on or off
+Get the list of running tasks
+Get mac address
+Register broadcast receiver
+Delete SMS
+Monitor received SMS
+
+---Reasoning Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+1->73: Access the Internet->Write to SD from input
+1->78: Access the Internet->Parse XML's Info from server
+1->83: Access the Internet->Show dialog
+21->1: Get network info->Access the Internet
+35->56: Send SMS->Monitor received SMS
+13->1: Get IMSI->Access the Internet
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+47->1: Get mac address->Access the Internet
+47->67: Get mac address->Get total internal memory size
+14->1: Get the SIM card serial number->Access the Internet
+14->12: Get the SIM card serial number->Get IMEI
+42->1: Access specified resources->Access the Internet
+19->1: Get location of device->Access the Internet
+16->1: Get the application lists->Access the Internet
+24->137: Install Apps->Launch Apps
+******************
+
+****************** APK 80 ******************
+Apk name：Apk077
+
+---Malicious---
+Monitor received SMS
+Access specified resources
+Read SMS
+Get mac address
+Send SMS
+Get IMEI
+Active when start-up broadcast is detected
+Request permissions
+Parsing SMS content
+
+---Others---
+Check permissions
+Look for installed Apk
+Launch Apps
+Listen on clicks
+Open a mass of threads
+Get location of device
+Register content observer
+
+
+---Malicious Path---
+56->29: Monitor received SMS->Parsing SMS content
+35->56: Send SMS->Monitor received SMS
+12->47: Get IMEI->Get mac address
+
+---Others Path---
+
+
+---Final Output---
+Active when start-up broadcast is detected
+Request permissions
+Get IMEI
+Read SMS
+Parsing SMS content
+Send SMS
+Access specified resources
+Get mac address
+Monitor received SMS
+
+---Reasoning Path---
+56->29: Monitor received SMS->Parsing SMS content
+35->56: Send SMS->Monitor received SMS
+12->47: Get IMEI->Get mac address
+******************
+
+****************** APK 81 ******************
+Apk name：Apk059
+
+---Malicious---
+Generate pop-up widgets
+Reset password
+Block broadcast
+Active when start-up broadcast is detected
+
+---Others---
+Get network info
+Lock screen
+Stop the service
+
+
+---Malicious Path---
+26->7: Reset password->Active when start-up broadcast is detected
+26->40: Reset password->Lock screen
+
+---Others Path---
+
+
+---Final Output---
+Block broadcast
+Active when start-up broadcast is detected
+Lock screen
+Generate pop-up widgets
+Reset password
+
+---Reasoning Path---
+26->7: Reset password->Active when start-up broadcast is detected
+26->40: Reset password->Lock screen
+******************
+
+****************** APK 82 ******************
+Apk name：Apk027
+
+---Malicious---
+Monitor received SMS
+Access the Internet
+Save resource to a local file
+Read SMS
+Send SMS
+Delete SMS
+Get IMSI
+Get IMEI
+Get mac address
+Get the SIM card serial number
+Get cid
+Block broadcast
+Parsing SMS content
+Register broadcast receiver
+Request permissions
+Access specified resources
+
+---Others---
+Look for installed Apk
+Check permissions
+Open a mass of threads
+Get network info
+Get the list of services
+Get the network operator
+Register content observer
+Get HttpUrl
+Stop the process
+Stop the service
+Click the confirm button
+Write to SD from input
+Show dialog
+Encrypt
+Launch Apps
+Parse XML's Info from server
+
+
+---Malicious Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+1->73: Access the Internet->Write to SD from input
+1->78: Access the Internet->Parse XML's Info from server
+1->83: Access the Internet->Show dialog
+21->1: Get network info->Access the Internet
+35->56: Send SMS->Monitor received SMS
+13->1: Get IMSI->Access the Internet
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+47->1: Get mac address->Access the Internet
+14->1: Get the SIM card serial number->Access the Internet
+14->12: Get the SIM card serial number->Get IMEI
+
+---Others Path---
+
+
+---Final Output---
+Access the Internet
+Block broadcast
+Request permissions
+Get IMEI
+Get IMSI
+Get the SIM card serial number
+Read SMS
+Get network info
+Parsing SMS content
+Send SMS
+Access specified resources
+Save resource to a local file
+Get mac address
+Register broadcast receiver
+Delete SMS
+Monitor received SMS
+Write to SD from input
+Parse XML's Info from server
+Show dialog
+Encrypt
+Get cid
+
+---Reasoning Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+1->73: Access the Internet->Write to SD from input
+1->78: Access the Internet->Parse XML's Info from server
+1->83: Access the Internet->Show dialog
+21->1: Get network info->Access the Internet
+35->56: Send SMS->Monitor received SMS
+13->1: Get IMSI->Access the Internet
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+47->1: Get mac address->Access the Internet
+14->1: Get the SIM card serial number->Access the Internet
+14->12: Get the SIM card serial number->Get IMEI
+******************
+
+****************** APK 83 ******************
+Apk name：Apk060
+
+---Malicious---
+Generate pop-up widgets
+Active when start-up broadcast is detected
+Block broadcast
+
+---Others---
+Launch Apps
+Stop the process
+Write to SD from input
+
+
+---Malicious Path---
+
+---Others Path---
+
+
+---Final Output---
+Generate pop-up widgets
+Block broadcast
+Active when start-up broadcast is detected
+
+---Reasoning Path---
+******************
+
+****************** APK 84 ******************
+Apk name：Apk094
+
+---Malicious---
+Access the Internet
+Create a desktop shortcut
+Get IMEI
+Acquire the wake lock
+Active when start-up broadcast is detected
+Access specified resources
+Get cid
+Register broadcast receiver
+Save resource to a local file
+Get IMSI
+Get mac address
+Get user's phone number
+Get the list of running tasks
+Get the application lists
+Install App
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Get network info
+Get location of device
+Get the network operator
+Send notification
+Click the confirm button
+Show dialog
+Launch Apps
+Get SHA256
+Check permissions
+Look for installed Apk
+Stop the service
+Get user's agent
+Get the list of services
+Call phone number
+Get cached message
+Cache message
+Stop the process
+
+
+---Malicious Path---
+21->1: Get network info->Access the Internet
+1->83: Access the Internet->Show dialog
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+19->1: Get location of device->Access the Internet
+
+---Others Path---
+74->75: Get cached message->Cache message
+
+
+---Final Output---
+Acquire the wake lock
+Access the Internet
+Create a desktop shortcut
+Active when start-up broadcast is detected
+Access specified resources
+Save resource to a local file
+Get IMEI
+Get IMSI
+Get the list of running tasks
+Get mac address
+Get the application lists
+Install App
+Show dialog
+Get location of device
+Get network info
+Get user's phone number
+Register broadcast receiver
+Get cid
+
+---Reasoning Path---
+21->1: Get network info->Access the Internet
+1->83: Access the Internet->Show dialog
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+19->1: Get location of device->Access the Internet
+******************
+
+****************** APK 85 ******************
+Apk name：Apk023
+
+---Malicious---
+Monitor received SMS
+
+
+---Malicious Path---
+
+---Others Path---
+
+
+---Final Output---
+Monitor received SMS
+
+---Reasoning Path---
+******************
+
+****************** APK 86 ******************
+Apk name：Apk012
+
+---Malicious---
+Monitor received SMS
+Access specified resources
+
+---Others---
+Click the confirm button
+Stop the process
+
+
+---Malicious Path---
+
+---Others Path---
+
+
+---Final Output---
+Monitor received SMS
+Access specified resources
+
+---Reasoning Path---
+******************
+
+****************** APK 87 ******************
+Apk name：Apk035
+
+---Malicious---
+Monitor received SMS
+Access the Internet
+Save resource to a local file
+Get the application lists
+Get IMEI
+Get IMSI
+Get mac address
+Access specified resources
+Register broadcast receiver
+Read SMS
+Send SMS
+Delete SMS
+Get the SIM card serial number
+Get cid
+Block broadcast
+Parsing SMS content
+Set Wifi on or off
+Install Apps
+Get user's phone number
+Request permissions
+
+---Others---
+Look for installed Apk
+Check permissions
+Encrypt
+Get network info
+Launch Apps
+Open a mass of threads
+Get the list of services
+Get the network operator
+Register content observer
+Get location of device
+Get total internal memory size
+Listen on clicks
+Send notification
+Get HttpUrl
+Click the confirm button
+Stop the process
+Stop the service
+Write to SD from input
+Show dialog
+Parse XML's Info from server
+
+
+---Malicious Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+1->73: Access the Internet->Write to SD from input
+1->78: Access the Internet->Parse XML's Info from server
+1->83: Access the Internet->Show dialog
+16->1: Get the application lists->Access the Internet
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+13->1: Get IMSI->Access the Internet
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+47->1: Get mac address->Access the Internet
+47->67: Get mac address->Get total internal memory size
+21->1: Get network info->Access the Internet
+42->1: Access specified resources->Access the Internet
+35->56: Send SMS->Monitor received SMS
+14->1: Get the SIM card serial number->Access the Internet
+19->1: Get location of device->Access the Internet
+24->137: Install Apps->Launch Apps
+
+---Others Path---
+
+
+---Final Output---
+Access the Internet
+Block broadcast
+Get total internal memory size
+Request permissions
+Launch Apps
+Write to SD from input
+Get IMEI
+Get IMSI
+Get the SIM card serial number
+Parse XML's Info from server
+Get the application lists
+Read SMS
+Get location of device
+Show dialog
+Get network info
+Get user's phone number
+Install Apps
+Encrypt
+Get cid
+Parsing SMS content
+Send SMS
+Access specified resources
+Save resource to a local file
+Set Wifi on or off
+Get mac address
+Register broadcast receiver
+Delete SMS
+Monitor received SMS
+
+---Reasoning Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+1->73: Access the Internet->Write to SD from input
+1->78: Access the Internet->Parse XML's Info from server
+1->83: Access the Internet->Show dialog
+16->1: Get the application lists->Access the Internet
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+13->1: Get IMSI->Access the Internet
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+47->1: Get mac address->Access the Internet
+47->67: Get mac address->Get total internal memory size
+21->1: Get network info->Access the Internet
+42->1: Access specified resources->Access the Internet
+35->56: Send SMS->Monitor received SMS
+14->1: Get the SIM card serial number->Access the Internet
+19->1: Get location of device->Access the Internet
+24->137: Install Apps->Launch Apps
+******************
+
+****************** APK 88 ******************
+Apk name：Apk032
+
+---Malicious---
+Access specified resources
+Save resource to a local file
+Active when start-up broadcast is detected
+Generate pop-up widgets
+Access the Internet
+Get IMEI
+Get the application lists
+Get IMSI
+Download
+Register broadcast receiver
+Get mac address
+Get the list of running tasks
+Set Wifi on or off
+Clear app cache
+
+---Others---
+Click the confirm button
+Open a mass of threads
+Listen on clicks
+Launch Apps
+Show dialog
+Look for installed Apk
+Register content observer
+Get network info
+Get location of device
+Send notification
+Get the network operator
+Check permissions
+Get cached message
+Cache message
+Stop the service
+Get the list of services
+Stop the process
+
+
+---Malicious Path---
+3->8: Click the confirm button->Download
+42->1: Access specified resources->Access the Internet
+138->8: Look for installed Apk->Download
+21->1: Get network info->Access the Internet
+1->8: Access the Internet->Download
+1->83: Access the Internet->Show dialog
+1->10: Access the Internet->Generate pop-up widgets
+19->1: Get location of device->Access the Internet
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+16->1: Get the application lists->Access the Internet
+13->1: Get IMSI->Access the Internet
+13->12: Get IMSI->Get IMEI
+
+---Others Path---
+74->75: Get cached message->Cache message
+
+
+---Final Output---
+Access the Internet
+Click the confirm button
+Active when start-up broadcast is detected
+Download
+Clear app cache
+Look for installed Apk
+Generate pop-up widgets
+Get IMEI
+Get IMSI
+Get the application lists
+Get location of device
+Get network info
+Access specified resources
+Save resource to a local file
+Set Wifi on or off
+Get the list of running tasks
+Get mac address
+Register broadcast receiver
+Show dialog
+
+---Reasoning Path---
+3->8: Click the confirm button->Download
+42->1: Access specified resources->Access the Internet
+138->8: Look for installed Apk->Download
+21->1: Get network info->Access the Internet
+1->8: Access the Internet->Download
+1->83: Access the Internet->Show dialog
+1->10: Access the Internet->Generate pop-up widgets
+19->1: Get location of device->Access the Internet
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+16->1: Get the application lists->Access the Internet
+13->1: Get IMSI->Access the Internet
+13->12: Get IMSI->Get IMEI
+******************
+
+****************** APK 89 ******************
+Apk name：Apk084
+
+---Malicious---
+Monitor received SMS
+Save resource to a local file
+Get IMEI
+Get cid
+Get the SIM card serial number
+Parsing SMS content
+Register broadcast receiver
+Access the Internet
+Read SMS
+Delete SMS
+Send SMS
+Get IMSI
+Generate pop-up widgets
+Get user's phone number
+Set Wifi on or off
+Get mac address
+Access specified resources
+Get BSSID
+Get the list of running tasks
+
+---Others---
+Write to SD from input
+Get network info
+Encrypt
+Open a mass of threads
+Look for installed Apk
+Check permissions
+Stop the process
+Click the confirm button
+Get the network operator
+Stop the service
+Register content observer
+Launch Apps
+Send notification
+Get the list of services
+Get sensor list
+Get sensor info(name, version, vendor)
+Get location of device
+Cache message
+Show dialog
+
+
+---Malicious Path---
+56->55: Monitor received SMS->Delete SMS
+56->29: Monitor received SMS->Parsing SMS content
+21->1: Get network info->Access the Internet
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+90->88: Get cid->Encrypt
+14->1: Get the SIM card serial number->Access the Internet
+14->12: Get the SIM card serial number->Get IMEI
+1->73: Access the Internet->Write to SD from input
+1->83: Access the Internet->Show dialog
+1->10: Access the Internet->Generate pop-up widgets
+35->56: Send SMS->Monitor received SMS
+13->1: Get IMSI->Access the Internet
+44->1: Set Wifi on or off->Access the Internet
+
+---Others Path---
+98->106: Get sensor list->Get sensor info(name, version, vendor)
+
+
+---Final Output---
+Access the Internet
+Write to SD from input
+Generate pop-up widgets
+Get IMEI
+Get IMSI
+Get the SIM card serial number
+Read SMS
+Show dialog
+Get network info
+Get user's phone number
+Encrypt
+Get cid
+Parsing SMS content
+Send SMS
+Access specified resources
+Save resource to a local file
+Set Wifi on or off
+Get the list of running tasks
+Get mac address
+Register broadcast receiver
+Get BSSID
+Delete SMS
+Monitor received SMS
+
+---Reasoning Path---
+56->55: Monitor received SMS->Delete SMS
+56->29: Monitor received SMS->Parsing SMS content
+21->1: Get network info->Access the Internet
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+90->88: Get cid->Encrypt
+14->1: Get the SIM card serial number->Access the Internet
+14->12: Get the SIM card serial number->Get IMEI
+1->73: Access the Internet->Write to SD from input
+1->83: Access the Internet->Show dialog
+1->10: Access the Internet->Generate pop-up widgets
+35->56: Send SMS->Monitor received SMS
+13->1: Get IMSI->Access the Internet
+44->1: Set Wifi on or off->Access the Internet
+******************
+
+****************** APK 90 ******************
+Apk name：Apk067
+
+---Malicious---
+Monitor received SMS
+Save resource to a local file
+
+---Others---
+Stop the process
+
+
+---Malicious Path---
+
+---Others Path---
+
+
+---Final Output---
+Monitor received SMS
+Save resource to a local file
+
+---Reasoning Path---
+******************
+
+****************** APK 91 ******************
+Apk name：Apk020
+
+---Malicious---
+Monitor received SMS
+Get IMEI
+Get IMSI
+Get the SIM card serial number
+Access the Internet
+Save resource to a local file
+Register broadcast receiver
+Access specified resources
+
+---Others---
+Get the list of services
+Stop the service
+Write to SD from input
+Check permissions
+Look for installed Apk
+Stop the process
+Click the confirm button
+Show dialog
+Launch Apps
+Open a mass of threads
+
+
+---Malicious Path---
+12->1: Get IMEI->Access the Internet
+13->1: Get IMSI->Access the Internet
+14->1: Get the SIM card serial number->Access the Internet
+1->73: Access the Internet->Write to SD from input
+
+---Others Path---
+
+
+---Final Output---
+Access the Internet
+Write to SD from input
+Get IMEI
+Get IMSI
+Get the SIM card serial number
+Access specified resources
+Save resource to a local file
+Register broadcast receiver
+Monitor received SMS
+
+---Reasoning Path---
+12->1: Get IMEI->Access the Internet
+13->1: Get IMSI->Access the Internet
+14->1: Get the SIM card serial number->Access the Internet
+1->73: Access the Internet->Write to SD from input
+******************
+
+****************** APK 92 ******************
+Apk name：Apk087
+
+---Malicious---
+Monitor received SMS
+Access specified resources
+Save resource to a local file
+Get the application lists
+Create a desktop shortcut
+Read SMS
+Register broadcast receiver
+Access the Internet
+Active when start-up broadcast is detected
+Install Apps
+Get the list of running tasks
+Get IMEI
+Get IMSI
+Get mac address
+Get the SIM card serial number
+Get cid
+Send SMS
+
+---Others---
+Stop the process
+Look for installed Apk
+Launch Apps
+Click the confirm button
+Listen on clicks
+Show dialog
+Get network info
+Open a mass of threads
+Stop the service
+Write to SD from input
+Get file name
+Get total internal memory size
+Get sensor list
+Get sensor info(name, version, vendor)
+Encrypt
+Get the network operator
+Get location of device
+
+
+---Malicious Path---
+42->1: Access specified resources->Access the Internet
+24->39: Install Apps->Create a desktop shortcut
+24->137: Install Apps->Launch Apps
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+47->67: Get mac address->Get total internal memory size
+14->12: Get the SIM card serial number->Get IMEI
+90->88: Get cid->Encrypt
+35->56: Send SMS->Monitor received SMS
+
+---Others Path---
+98->106: Get sensor list->Get sensor info(name, version, vendor)
+
+
+---Final Output---
+Access the Internet
+Active when start-up broadcast is detected
+Launch Apps
+Get IMEI
+Get IMSI
+Get the SIM card serial number
+Read SMS
+Get the application lists
+Install Apps
+Send SMS
+Create a desktop shortcut
+Access specified resources
+Save resource to a local file
+Get the list of running tasks
+Get mac address
+Register broadcast receiver
+Monitor received SMS
+Get total internal memory size
+Encrypt
+Get cid
+
+---Reasoning Path---
+42->1: Access specified resources->Access the Internet
+24->39: Install Apps->Create a desktop shortcut
+24->137: Install Apps->Launch Apps
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+47->67: Get mac address->Get total internal memory size
+14->12: Get the SIM card serial number->Get IMEI
+90->88: Get cid->Encrypt
+35->56: Send SMS->Monitor received SMS
+******************
+
+****************** APK 93 ******************
+Apk name：Apk098
+
+---Malicious---
+Get IMEI
+Get the SIM card serial number
+Get user's phone number
+Generate pop-up widgets
+Access the Internet
+Register broadcast receiver
+Get the contact information
+Save resource to a local file
+Get the application lists
+Get IMSI
+Active when start-up broadcast is detected
+Get cid
+Get the list of running tasks
+Get mac address
+Install Apps
+Set Wifi on or off
+
+---Others---
+Get network info
+Hang up phone call
+Listen on clicks
+Launch Apps
+Click the confirm button
+Show dialog
+Send notification
+Call phone number
+Get location of device
+Parse XML's Info from server
+Open a mass of threads
+Stop the process
+Look for installed Apk
+Stop the service
+Get the network operator
+Cache message
+Encrypt
+
+
+---Malicious Path---
+21->1: Get network info->Access the Internet
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+14->1: Get the SIM card serial number->Access the Internet
+22->1: Get user's phone number->Access the Internet
+22->13: Get user's phone number->Get IMSI
+1->78: Access the Internet->Parse XML's Info from server
+1->83: Access the Internet->Show dialog
+1->10: Access the Internet->Generate pop-up widgets
+19->1: Get location of device->Access the Internet
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+24->137: Install Apps->Launch Apps
+
+---Others Path---
+41->49: Stop the process->Hang up phone call
+
+
+---Final Output---
+Access the Internet
+Active when start-up broadcast is detected
+Launch Apps
+Generate pop-up widgets
+Get IMEI
+Get IMSI
+Get the SIM card serial number
+Get the application lists
+Get the contact information
+Get location of device
+Get network info
+Get user's phone number
+Install Apps
+Save resource to a local file
+Set Wifi on or off
+Get the list of running tasks
+Get mac address
+Register broadcast receiver
+Parse XML's Info from server
+Show dialog
+Encrypt
+Get cid
+
+---Reasoning Path---
+21->1: Get network info->Access the Internet
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+14->1: Get the SIM card serial number->Access the Internet
+22->1: Get user's phone number->Access the Internet
+22->13: Get user's phone number->Get IMSI
+1->78: Access the Internet->Parse XML's Info from server
+1->83: Access the Internet->Show dialog
+1->10: Access the Internet->Generate pop-up widgets
+19->1: Get location of device->Access the Internet
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+24->137: Install Apps->Launch Apps
+******************
+
+****************** APK 94 ******************
+Apk name：Apk025
+
+---Malicious---
+Monitor received SMS
+Generate pop-up widgets
+Active when start-up broadcast is detected
+Send SMS
+Access the Internet
+
+---Others---
+Launch Apps
+
+
+---Malicious Path---
+35->56: Send SMS->Monitor received SMS
+1->10: Access the Internet->Generate pop-up widgets
+
+---Others Path---
+
+
+---Final Output---
+Access the Internet
+Send SMS
+Active when start-up broadcast is detected
+Generate pop-up widgets
+Monitor received SMS
+
+---Reasoning Path---
+35->56: Send SMS->Monitor received SMS
+1->10: Access the Internet->Generate pop-up widgets
+******************
+
+****************** APK 95 ******************
+Apk name：Apk070
+
+---Malicious---
+Access the Internet
+Generate pop-up widgets
+Active when start-up broadcast is detected
+
+---Others---
+Open a mass of threads
+Launch Apps
+Stop the process
+
+
+---Malicious Path---
+1->10: Access the Internet->Generate pop-up widgets
+
+---Others Path---
+
+
+---Final Output---
+Access the Internet
+Generate pop-up widgets
+Active when start-up broadcast is detected
+
+---Reasoning Path---
+1->10: Access the Internet->Generate pop-up widgets
+******************
+
+****************** APK 96 ******************
+Apk name：Apk090
+
+---Malicious---
+Save resource to a local file
+Access the Internet
+Get user's phone number
+Register broadcast receiver
+Get IMEI
+Install App
+Get mac address
+Audio recording
+Monitor the screen
+Get the list of running tasks
+Get the application lists
+
+---Others---
+Launch Apps
+Register content observer
+Get network info
+Open a mass of threads
+Stop the process
+Check permissions
+Click the confirm button
+Listen on clicks
+Get location of device
+Show dialog
+Look for installed Apk
+Get the network operator
+Get SHA256
+Send notification
+Call phone number
+Get the list of services
+Encrypt
+Get file name
+Get ACRA shared preferences
+
+
+---Malicious Path---
+21->1: Get network info->Access the Internet
+1->83: Access the Internet->Show dialog
+19->1: Get location of device->Access the Internet
+22->1: Get user's phone number->Access the Internet
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+54->43: Audio recording->Save resource to a local file
+
+---Others Path---
+
+
+---Final Output---
+Access the Internet
+Save resource to a local file
+Get IMEI
+Install App
+Get the list of running tasks
+Get mac address
+Get the application lists
+Get location of device
+Show dialog
+Get network info
+Get user's phone number
+Audio recording
+Register broadcast receiver
+Monitor the screen
+
+---Reasoning Path---
+21->1: Get network info->Access the Internet
+1->83: Access the Internet->Show dialog
+19->1: Get location of device->Access the Internet
+22->1: Get user's phone number->Access the Internet
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+54->43: Audio recording->Save resource to a local file
+******************
+
+****************** APK 97 ******************
+Apk name：Apk042
+
+---Malicious---
+Active when start-up broadcast is detected
+Monitor received SMS
+Block broadcast
+Parsing SMS content
+Register broadcast receiver
+Read SMS
+Get user's phone number
+Get IMEI
+Get the SIM card serial number
+Hide icon
+Delete SMS
+Save resource to a local file
+
+---Others---
+Register content observer
+Open a mass of threads
+Parse XML's Info from server
+Get network info
+
+
+---Malicious Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+12->22: Get IMEI->Get user's phone number
+
+---Others Path---
+
+
+---Final Output---
+Block broadcast
+Active when start-up broadcast is detected
+Get IMEI
+Get the SIM card serial number
+Read SMS
+Get user's phone number
+Hide icon
+Parsing SMS content
+Save resource to a local file
+Register broadcast receiver
+Delete SMS
+Monitor received SMS
+
+---Reasoning Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+12->22: Get IMEI->Get user's phone number
+******************
+
+****************** APK 98 ******************
+Apk name：Apk003
+
+---Malicious---
+Generate pop-up widgets
+Reset password
+Block broadcast
+Active when start-up broadcast is detected
+
+---Others---
+Lock screen
+Stop the service
+Get network info
+
+
+---Malicious Path---
+26->7: Reset password->Active when start-up broadcast is detected
+26->40: Reset password->Lock screen
+
+---Others Path---
+
+
+---Final Output---
+Block broadcast
+Active when start-up broadcast is detected
+Lock screen
+Generate pop-up widgets
+Reset password
+
+---Reasoning Path---
+26->7: Reset password->Active when start-up broadcast is detected
+26->40: Reset password->Lock screen
+******************
+
+****************** APK 99 ******************
+Apk name：Apk005
+
+---Malicious---
+Monitor received SMS
+Access specified resources
+Save resource to a local file
+Active when start-up broadcast is detected
+Get the list of running tasks
+Register broadcast receiver
+Get IMEI
+Get IMSI
+Generate pop-up widgets
+Access the Internet
+Get user's phone number
+Get cid
+Get mac address
+Get the SIM card serial number
+Read SMS
+Send SMS
+Get the application lists
+Request permissions
+Set Wifi on or off
+Delete SMS
+Block broadcast
+Parsing SMS content
+Install Apps
+Create a desktop shortcut
+Acquire the wake lock
+Install
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Click the confirm button
+Look for installed Apk
+Show dialog
+Send notification
+Launch Apps
+Encrypt
+Get network info
+Stop the service
+Write to SD from input
+Register content observer
+Check permissions
+Get the network operator
+Get location of device
+Get the list of services
+Stop the process
+
+
+---Malicious Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+42->1: Access specified resources->Access the Internet
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+13->1: Get IMSI->Access the Internet
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+1->73: Access the Internet->Write to SD from input
+1->83: Access the Internet->Show dialog
+1->10: Access the Internet->Generate pop-up widgets
+21->1: Get network info->Access the Internet
+22->1: Get user's phone number->Access the Internet
+22->13: Get user's phone number->Get IMSI
+90->88: Get cid->Encrypt
+14->12: Get the SIM card serial number->Get IMEI
+35->56: Send SMS->Monitor received SMS
+24->39: Install Apps->Create a desktop shortcut
+24->137: Install Apps->Launch Apps
+
+---Others Path---
+
+
+---Final Output---
+Acquire the wake lock
+Access the Internet
+Block broadcast
+Active when start-up broadcast is detected
+Request permissions
+Launch Apps
+Generate pop-up widgets
+Write to SD from input
+Get IMEI
+Get IMSI
+Get the SIM card serial number
+Read SMS
+Get the application lists
+Install
+Show dialog
+Get network info
+Get user's phone number
+Install Apps
+Encrypt
+Get cid
+Parsing SMS content
+Send SMS
+Create a desktop shortcut
+Access specified resources
+Save resource to a local file
+Set Wifi on or off
+Get the list of running tasks
+Get mac address
+Register broadcast receiver
+Delete SMS
+Monitor received SMS
+
+---Reasoning Path---
+56->55: Monitor received SMS->Delete SMS
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+42->1: Access specified resources->Access the Internet
+12->1: Get IMEI->Access the Internet
+12->47: Get IMEI->Get mac address
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+13->1: Get IMSI->Access the Internet
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+13->88: Get IMSI->Encrypt
+1->73: Access the Internet->Write to SD from input
+1->83: Access the Internet->Show dialog
+1->10: Access the Internet->Generate pop-up widgets
+21->1: Get network info->Access the Internet
+22->1: Get user's phone number->Access the Internet
+22->13: Get user's phone number->Get IMSI
+90->88: Get cid->Encrypt
+14->12: Get the SIM card serial number->Get IMEI
+35->56: Send SMS->Monitor received SMS
+24->39: Install Apps->Create a desktop shortcut
+24->137: Install Apps->Launch Apps
+******************
+

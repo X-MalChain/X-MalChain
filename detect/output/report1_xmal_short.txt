@@ -1,0 +1,7499 @@
+*********1*********
+Apk name: ClickrAd
+7: Active when start-up broadcast is detected
+20: Get the network operator
+21: Get network mode
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+57: Upload via the net
+122: saveRecord
+168: trackInstall
+100: getCountryFieldName
+259: addVerSionCode
+237: AnalyseData
+87: setDateOfBirth
+231: getMODELID
+124: deleteSMS
+150: getCachedMessageBody
+184: logMsg
+190: dx_Encode
+208: sendErrorsInfo
+226: uploadFile
+234: getSDKversionnumber
+255: getProxyUrl
+256: getHttpUrl
+267: getHWID
+278: getModel
+11: Get user's input information
+66: getAppName
+288: readHttpResponse
+240: getTimeLength
+68: getUserAgentString
+241: getParams
+251: buildErrorMessage
+53: Get file list
+71: approvePendingReports
+72: notifySendReport
+76: getDeviceCountry
+257: showNetDialog
+212: ShowDialog
+242: onCreateDialog
+16: Get the application lists
+23: Hide icon
+213: getAppkey
+151: cacheMessageBody
+86: serializeToUrlConnection
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+236: readConfig
+139: write2SDFromInput
+238: getStringByURL
+31: Open a mass of threads
+160: tagEvent
+46: Top app's own page
+61: Restart SDK
+285: setAlarm
+36: Uninstall the specified app
+225: CallPhoneNumber
+4: Unlock the screen
+174: cancelAutoSendMessage
+159: getSha256
+52: Register for call status monitoring broadcast
+24: Install apps
+126: DeleteFileFromSDCardThruPath
+105: getTotalInternalMemorySize
+106: getAvailableInternalMemorySize
+107: getTotalExternalMemorySize
+128: StorageInfo
+182: sendLocation
+41: Stop the process
+209: execute
+62: Get Date
+137: getUserAgent
+51: Register broadcast receiver
+161: webGet
+19: Get location of device
+136: getCoordinates
+3: Click the confirm button
+30: Mute
+50: Get the list of processes
+183: unInstallApp
+******************
+
+*********2*********
+Apk name: GoldenCup
+12: Get IMEI
+13: Get IMSI
+22: Get user's phone number
+5: Compress the information into a .zip file
+37: Uploads files to the remote server
+42: Access specified resources
+21: Get network mode
+283: getNetType
+25: Allow apps to run in the background
+28: Monitor the screen on and off
+57: Upload via the net
+212: ShowDialog
+257: showNetDialog
+61: Restart SDK
+174: cancelAutoSendMessage
+285: setAlarm
+66: getAppName
+76: getDeviceCountry
+168: trackInstall
+100: getCountryFieldName
+11: Get user's input information
+150: getCachedMessageBody
+184: logMsg
+190: dx_Encode
+208: sendErrorsInfo
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+259: addVerSionCode
+267: getHWID
+278: getModel
+231: getMODELID
+241: getParams
+251: buildErrorMessage
+53: Get file list
+213: getAppkey
+151: cacheMessageBody
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+236: readConfig
+139: write2SDFromInput
+238: getStringByURL
+46: Top app's own page
+4: Unlock the screen
+159: getSha256
+160: tagEvent
+31: Open a mass of threads
+52: Register for call status monitoring broadcast
+126: DeleteFileFromSDCardThruPath
+107: getTotalExternalMemorySize
+71: approvePendingReports
+137: getUserAgent
+225: CallPhoneNumber
+51: Register broadcast receiver
+36: Uninstall the specified app
+19: Get location of device
+136: getCoordinates
+24: Install apps
+3: Click the confirm button
+161: webGet
+******************
+
+*********3*********
+Apk name: TekyaHRX
+7: Active when start-up broadcast is detected
+5: Compress the information into a .zip file
+37: Uploads files to the remote server
+42: Access specified resources
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+127: networkInfo
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+25: Allow apps to run in the background
+28: Monitor the screen on and off
+79: ForceBacklightOn
+57: Upload via the net
+208: sendErrorsInfo
+184: logMsg
+190: dx_Encode
+226: uploadFile
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+259: addVerSionCode
+267: getHWID
+278: getModel
+150: getCachedMessageBody
+251: buildErrorMessage
+240: getTimeLength
+61: Restart SDK
+172: tryToFetchInfoFromServer
+173: startOneRoundSMSSend
+182: sendLocation
+285: setAlarm
+241: getParams
+123: sendEmail
+213: getAppkey
+212: ShowDialog
+11: Get user's input information
+66: getAppName
+100: getCountryFieldName
+236: readConfig
+288: readHttpResponse
+159: getSha256
+168: trackInstall
+31: Open a mass of threads
+160: tagEvent
+87: setDateOfBirth
+231: getMODELID
+24: Install apps
+174: cancelAutoSendMessage
+107: getTotalExternalMemorySize
+126: DeleteFileFromSDCardThruPath
+128: StorageInfo
+137: getUserAgent
+19: Get location of device
+136: getCoordinates
+76: getDeviceCountry
+221: getUidfromServer
+224: getValueFromServer
+238: getStringByURL
+151: cacheMessageBody
+86: serializeToUrlConnection
+216: copyAssets
+139: write2SDFromInput
+209: execute
+71: approvePendingReports
+53: Get file list
+230: encrypt1
+36: Uninstall the specified app
+225: CallPhoneNumber
+16: Get the application lists
+23: Hide icon
+206: getMetricsd
+106: getAvailableInternalMemorySize
+105: getTotalInternalMemorySize
+62: Get Date
+52: Register for call status monitoring broadcast
+30: Mute
+4: Unlock the screen
+46: Top app's own page
+242: onCreateDialog
+257: showNetDialog
+161: webGet
+68: getUserAgentString
+3: Click the confirm button
+70: getACRASharedPreferences
+41: Stop the process
+51: Register broadcast receiver
+183: unInstallApp
+50: Get the list of processes
+******************
+
+*********4*********
+Apk name: FakeApp
+21: Get network mode
+283: getNetType
+28: Monitor the screen on and off
+79: ForceBacklightOn
+57: Upload via the net
+190: dx_Encode
+240: getTimeLength
+124: deleteSMS
+150: getCachedMessageBody
+184: logMsg
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+259: addVerSionCode
+267: getHWID
+278: getModel
+86: serializeToUrlConnection
+168: trackInstall
+213: getAppkey
+66: getAppName
+160: tagEvent
+241: getParams
+71: approvePendingReports
+151: cacheMessageBody
+139: write2SDFromInput
+216: copyAssets
+122: saveRecord
+238: getStringByURL
+105: getTotalInternalMemorySize
+106: getAvailableInternalMemorySize
+107: getTotalExternalMemorySize
+128: StorageInfo
+11: Get user's input information
+61: Restart SDK
+285: setAlarm
+76: getDeviceCountry
+212: ShowDialog
+100: getCountryFieldName
+137: getUserAgent
+231: getMODELID
+52: Register for call status monitoring broadcast
+174: cancelAutoSendMessage
+159: getSha256
+31: Open a mass of threads
+161: webGet
+46: Top app's own page
+225: CallPhoneNumber
+257: showNetDialog
+51: Register broadcast receiver
+242: onCreateDialog
+19: Get location of device
+136: getCoordinates
+36: Uninstall the specified app
+3: Click the confirm button
+******************
+
+*********5*********
+Apk name: GuerillaA
+12: Get IMEI
+13: Get IMSI
+5: Compress the information into a .zip file
+8: Download  apps
+37: Uploads files to the remote server
+42: Access specified resources
+43: Save resource to a local file
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+25: Allow apps to run in the background
+28: Monitor the screen on and off
+79: ForceBacklightOn
+57: Upload via the net
+190: dx_Encode
+208: sendErrorsInfo
+226: uploadFile
+278: getModel
+259: addVerSionCode
+288: readHttpResponse
+240: getTimeLength
+267: getHWID
+123: sendEmail
+213: getAppkey
+212: ShowDialog
+100: getCountryFieldName
+209: execute
+251: buildErrorMessage
+66: getAppName
+76: getDeviceCountry
+231: getMODELID
+221: getUidfromServer
+224: getValueFromServer
+238: getStringByURL
+237: AnalyseData
+46: Top app's own page
+61: Restart SDK
+184: logMsg
+234: getSDKversionnumber
+255: getProxyUrl
+256: getHttpUrl
+150: getCachedMessageBody
+11: Get user's input information
+236: readConfig
+159: getSha256
+168: trackInstall
+160: tagEvent
+241: getParams
+36: Uninstall the specified app
+225: CallPhoneNumber
+257: showNetDialog
+242: onCreateDialog
+151: cacheMessageBody
+86: serializeToUrlConnection
+216: copyAssets
+139: write2SDFromInput
+31: Open a mass of threads
+285: setAlarm
+174: cancelAutoSendMessage
+68: getUserAgentString
+24: Install apps
+126: DeleteFileFromSDCardThruPath
+105: getTotalInternalMemorySize
+106: getAvailableInternalMemorySize
+107: getTotalExternalMemorySize
+128: StorageInfo
+71: approvePendingReports
+182: sendLocation
+41: Stop the process
+70: getACRASharedPreferences
+52: Register for call status monitoring broadcast
+125: getContactNameFromNumber
+51: Register broadcast receiver
+137: getUserAgent
+62: Get Date
+161: webGet
+19: Get location of device
+136: getCoordinates
+206: getMetricsd
+3: Click the confirm button
+30: Mute
+******************
+
+*********6*********
+Apk name: HiddenAdGLCA
+39: Create a desktop shortcut
+7: Active when start-up broadcast is detected
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+127: networkInfo
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+25: Allow apps to run in the background
+28: Monitor the screen on and off
+79: ForceBacklightOn
+57: Upload via the net
+12: Get IMEI
+13: Get IMSI
+43: Save resource to a local file
+122: saveRecord
+168: trackInstall
+100: getCountryFieldName
+11: Get user's input information
+66: getAppName
+124: deleteSMS
+150: getCachedMessageBody
+184: logMsg
+190: dx_Encode
+208: sendErrorsInfo
+226: uploadFile
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+259: addVerSionCode
+267: getHWID
+278: getModel
+87: setDateOfBirth
+231: getMODELID
+251: buildErrorMessage
+241: getParams
+288: readHttpResponse
+240: getTimeLength
+61: Restart SDK
+285: setAlarm
+123: sendEmail
+126: DeleteFileFromSDCardThruPath
+68: getUserAgentString
+151: cacheMessageBody
+86: serializeToUrlConnection
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+236: readConfig
+139: write2SDFromInput
+238: getStringByURL
+105: getTotalInternalMemorySize
+106: getAvailableInternalMemorySize
+107: getTotalExternalMemorySize
+128: StorageInfo
+71: approvePendingReports
+160: tagEvent
+213: getAppkey
+23: Hide icon
+182: sendLocation
+76: getDeviceCountry
+159: getSha256
+36: Uninstall the specified app
+225: CallPhoneNumber
+212: ShowDialog
+242: onCreateDialog
+257: showNetDialog
+70: getACRASharedPreferences
+230: encrypt1
+172: tryToFetchInfoFromServer
+173: startOneRoundSMSSend
+174: cancelAutoSendMessage
+46: Top app's own page
+31: Open a mass of threads
+4: Unlock the screen
+206: getMetricsd
+62: Get Date
+137: getUserAgent
+52: Register for call status monitoring broadcast
+24: Install apps
+125: getContactNameFromNumber
+51: Register broadcast receiver
+209: execute
+161: webGet
+19: Get location of device
+136: getCoordinates
+3: Click the confirm button
+50: Get the list of processes
+41: Stop the process
+30: Mute
+******************
+
+*********7*********
+Apk name: TrojanDropperAgentCIQ
+******************
+
+*********8*********
+Apk name: Clast82
+57: Upload via the net
+21: Get network mode
+63: getConnectionType
+283: getNetType
+100: getCountryFieldName
+31: Open a mass of threads
+208: sendErrorsInfo
+160: tagEvent
+259: addVerSionCode
+231: getMODELID
+4: Unlock the screen
+184: logMsg
+190: dx_Encode
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+267: getHWID
+278: getModel
+66: getAppName
+123: sendEmail
+241: getParams
+251: buildErrorMessage
+150: getCachedMessageBody
+213: getAppkey
+212: ShowDialog
+168: trackInstall
+46: Top app's own page
+11: Get user's input information
+236: readConfig
+159: getSha256
+151: cacheMessageBody
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+139: write2SDFromInput
+238: getStringByURL
+51: Register broadcast receiver
+36: Uninstall the specified app
+225: CallPhoneNumber
+242: onCreateDialog
+257: showNetDialog
+71: approvePendingReports
+126: DeleteFileFromSDCardThruPath
+3: Click the confirm button
+24: Install apps
+52: Register for call status monitoring broadcast
+161: webGet
+19: Get location of device
+136: getCoordinates
+******************
+
+*********9*********
+Apk name: Tekya
+7: Active when start-up broadcast is detected
+47: Get mac address
+43: Save resource to a local file
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+127: networkInfo
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+25: Allow apps to run in the background
+28: Monitor the screen on and off
+79: ForceBacklightOn
+57: Upload via the net
+76: getDeviceCountry
+68: getUserAgentString
+46: Top app's own page
+61: Restart SDK
+72: notifySendReport
+174: cancelAutoSendMessage
+285: setAlarm
+123: sendEmail
+126: DeleteFileFromSDCardThruPath
+208: sendErrorsInfo
+4: Unlock the screen
+190: dx_Encode
+226: uploadFile
+278: getModel
+122: saveRecord
+259: addVerSionCode
+288: readHttpResponse
+240: getTimeLength
+66: getAppName
+31: Open a mass of threads
+160: tagEvent
+124: deleteSMS
+184: logMsg
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+267: getHWID
+24: Install apps
+36: Uninstall the specified app
+225: CallPhoneNumber
+150: getCachedMessageBody
+100: getCountryFieldName
+168: trackInstall
+87: setDateOfBirth
+159: getSha256
+230: encrypt1
+231: getMODELID
+11: Get user's input information
+241: getParams
+251: buildErrorMessage
+53: Get file list
+71: approvePendingReports
+212: ShowDialog
+242: onCreateDialog
+257: showNetDialog
+107: getTotalExternalMemorySize
+128: StorageInfo
+86: serializeToUrlConnection
+105: getTotalInternalMemorySize
+106: getAvailableInternalMemorySize
+151: cacheMessageBody
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+236: readConfig
+139: write2SDFromInput
+238: getStringByURL
+137: getUserAgent
+213: getAppkey
+209: execute
+182: sendLocation
+206: getMetricsd
+16: Get the application lists
+23: Hide icon
+62: Get Date
+19: Get location of device
+136: getCoordinates
+70: getACRASharedPreferences
+52: Register for call status monitoring broadcast
+161: webGet
+3: Click the confirm button
+51: Register broadcast receiver
+30: Mute
+183: unInstallApp
+41: Stop the process
+2: Block SMS broadcast
+******************
+
+*********10*********
+Apk name: Reputation1_2019
+39: Create a desktop shortcut
+7: Active when start-up broadcast is detected
+20: Get the network operator
+21: Get network mode
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+5: Compress the information into a .zip file
+8: Download  apps
+37: Uploads files to the remote server
+42: Access specified resources
+25: Allow apps to run in the background
+28: Monitor the screen on and off
+79: ForceBacklightOn
+57: Upload via the net
+43: Save resource to a local file
+208: sendErrorsInfo
+259: addVerSionCode
+288: readHttpResponse
+87: setDateOfBirth
+231: getMODELID
+285: setAlarm
+31: Open a mass of threads
+160: tagEvent
+100: getCountryFieldName
+137: getUserAgent
+241: getParams
+251: buildErrorMessage
+174: cancelAutoSendMessage
+151: cacheMessageBody
+86: serializeToUrlConnection
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+226: uploadFile
+236: readConfig
+139: write2SDFromInput
+150: getCachedMessageBody
+238: getStringByURL
+237: AnalyseData
+159: getSha256
+230: encrypt1
+184: logMsg
+190: dx_Encode
+234: getSDKversionnumber
+255: getProxyUrl
+256: getHttpUrl
+267: getHWID
+278: getModel
+168: trackInstall
+11: Get user's input information
+66: getAppName
+53: Get file list
+240: getTimeLength
+76: getDeviceCountry
+68: getUserAgentString
+71: approvePendingReports
+212: ShowDialog
+242: onCreateDialog
+257: showNetDialog
+213: getAppkey
+36: Uninstall the specified app
+225: CallPhoneNumber
+23: Hide icon
+123: sendEmail
+4: Unlock the screen
+46: Top app's own page
+172: tryToFetchInfoFromServer
+173: startOneRoundSMSSend
+62: Get Date
+126: DeleteFileFromSDCardThruPath
+182: sendLocation
+19: Get location of device
+136: getCoordinates
+105: getTotalInternalMemorySize
+106: getAvailableInternalMemorySize
+107: getTotalExternalMemorySize
+128: StorageInfo
+41: Stop the process
+70: getACRASharedPreferences
+206: getMetricsd
+52: Register for call status monitoring broadcast
+24: Install apps
+125: getContactNameFromNumber
+209: execute
+161: webGet
+50: Get the list of processes
+51: Register broadcast receiver
+3: Click the confirm button
+30: Mute
+******************
+
+*********11*********
+Apk name: TrojanPornClicker
+21: Get network mode
+168: trackInstall
+70: getACRASharedPreferences
+23: Hide icon
+******************
+
+*********12*********
+Apk name: GuerillaD
+10: Generate pop-up widgets
+32: Provide UI  with clickable button
+12: Get IMEI
+13: Get IMSI
+7: Active when start-up broadcast is detected
+44: Set Wifi on or off
+5: Compress the information into a .zip file
+8: Download  apps
+37: Uploads files to the remote server
+42: Access specified resources
+43: Save resource to a local file
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+25: Allow apps to run in the background
+28: Monitor the screen on and off
+79: ForceBacklightOn
+57: Upload via the net
+100: getCountryFieldName
+69: saveCrashReportFile
+184: logMsg
+190: dx_Encode
+208: sendErrorsInfo
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+259: addVerSionCode
+267: getHWID
+278: getModel
+150: getCachedMessageBody
+168: trackInstall
+11: Get user's input information
+66: getAppName
+288: readHttpResponse
+240: getTimeLength
+231: getMODELID
+241: getParams
+251: buildErrorMessage
+68: getUserAgentString
+71: approvePendingReports
+212: ShowDialog
+242: onCreateDialog
+257: showNetDialog
+123: sendEmail
+213: getAppkey
+230: encrypt1
+76: getDeviceCountry
+221: getUidfromServer
+224: getValueFromServer
+238: getStringByURL
+46: Top app's own page
+4: Unlock the screen
+236: readConfig
+159: getSha256
+160: tagEvent
+36: Uninstall the specified app
+225: CallPhoneNumber
+151: cacheMessageBody
+86: serializeToUrlConnection
+216: copyAssets
+139: write2SDFromInput
+285: setAlarm
+174: cancelAutoSendMessage
+126: DeleteFileFromSDCardThruPath
+105: getTotalInternalMemorySize
+106: getAvailableInternalMemorySize
+107: getTotalExternalMemorySize
+128: StorageInfo
+182: sendLocation
+31: Open a mass of threads
+41: Stop the process
+70: getACRASharedPreferences
+206: getMetricsd
+52: Register for call status monitoring broadcast
+62: Get Date
+137: getUserAgent
+24: Install apps
+161: webGet
+19: Get location of device
+136: getCoordinates
+3: Click the confirm button
+30: Mute
+51: Register broadcast receiver
+******************
+
+*********13*********
+Apk name: FakeWhatsApp
+57: Upload via the net
+20: Get the network operator
+21: Get network mode
+283: getNetType
+184: logMsg
+190: dx_Encode
+208: sendErrorsInfo
+226: uploadFile
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+259: addVerSionCode
+267: getHWID
+278: getModel
+150: getCachedMessageBody
+241: getParams
+251: buildErrorMessage
+11: Get user's input information
+66: getAppName
+100: getCountryFieldName
+236: readConfig
+159: getSha256
+168: trackInstall
+231: getMODELID
+76: getDeviceCountry
+240: getTimeLength
+31: Open a mass of threads
+160: tagEvent
+126: DeleteFileFromSDCardThruPath
+213: getAppkey
+212: ShowDialog
+46: Top app's own page
+182: sendLocation
+285: setAlarm
+24: Install apps
+174: cancelAutoSendMessage
+242: onCreateDialog
+257: showNetDialog
+137: getUserAgent
+230: encrypt1
+52: Register for call status monitoring broadcast
+62: Get Date
+139: write2SDFromInput
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+151: cacheMessageBody
+209: execute
+238: getStringByURL
+161: webGet
+225: CallPhoneNumber
+3: Click the confirm button
+36: Uninstall the specified app
+19: Get location of device
+136: getCoordinates
+30: Mute
+206: getMetricsd
+51: Register broadcast receiver
+******************
+
+*********14*********
+Apk name: AndroidOSJSMiner
+57: Upload via the net
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+47: Get mac address
+278: getModel
+259: addVerSionCode
+240: getTimeLength
+168: trackInstall
+237: AnalyseData
+251: buildErrorMessage
+159: getSha256
+184: logMsg
+234: getSDKversionnumber
+267: getHWID
+19: Get location of device
+136: getCoordinates
+213: getAppkey
+212: ShowDialog
+231: getMODELID
+36: Uninstall the specified app
+225: CallPhoneNumber
+24: Install apps
+242: onCreateDialog
+257: showNetDialog
+62: Get Date
+238: getStringByURL
+126: DeleteFileFromSDCardThruPath
+3: Click the confirm button
+52: Register for call status monitoring broadcast
+206: getMetricsd
+******************
+
+*********15*********
+Apk name: ProjectSpyHRX
+15: Read user's SMS
+7: Active when start-up broadcast is detected
+47: Get mac address
+20: Get the network operator
+21: Get network mode
+283: getNetType
+6: Delete the recording of incoming phone calls
+56: Monitor incoming SMS messages
+8: Download  apps
+37: Uploads files to the remote server
+42: Access specified resources
+54: Audio recording
+25: Allow apps to run in the background
+57: Upload via the net
+18: Get call records
+12: Get IMEI
+13: Get IMSI
+14: Get the SIM card serial number
+22: Get user's phone number
+27: Monitor incoming calls
+43: Save resource to a local file
+17: Get the contact information
+208: sendErrorsInfo
+237: AnalyseData
+259: addVerSionCode
+31: Open a mass of threads
+160: tagEvent
+190: dx_Encode
+226: uploadFile
+278: getModel
+240: getTimeLength
+267: getHWID
+123: sendEmail
+213: getAppkey
+212: ShowDialog
+257: showNetDialog
+242: onCreateDialog
+231: getMODELID
+4: Unlock the screen
+46: Top app's own page
+36: Uninstall the specified app
+225: CallPhoneNumber
+159: getSha256
+66: getAppName
+76: getDeviceCountry
+100: getCountryFieldName
+251: buildErrorMessage
+150: getCachedMessageBody
+184: logMsg
+234: getSDKversionnumber
+255: getProxyUrl
+256: getHttpUrl
+52: Register for call status monitoring broadcast
+241: getParams
+168: trackInstall
+19: Get location of device
+136: getCoordinates
+151: cacheMessageBody
+216: copyAssets
+236: readConfig
+139: write2SDFromInput
+11: Get user's input information
+23: Hide icon
+126: DeleteFileFromSDCardThruPath
+137: getUserAgent
+209: execute
+70: getACRASharedPreferences
+62: Get Date
+71: approvePendingReports
+161: webGet
+41: Stop the process
+51: Register broadcast receiver
+3: Click the confirm button
+******************
+
+*********16*********
+Apk name: FakeAppKO
+57: Upload via the net
+190: dx_Encode
+278: getModel
+259: addVerSionCode
+240: getTimeLength
+267: getHWID
+123: sendEmail
+213: getAppkey
+100: getCountryFieldName
+251: buildErrorMessage
+66: getAppName
+76: getDeviceCountry
+237: AnalyseData
+221: getUidfromServer
+224: getValueFromServer
+46: Top app's own page
+184: logMsg
+234: getSDKversionnumber
+150: getCachedMessageBody
+11: Get user's input information
+236: readConfig
+168: trackInstall
+151: cacheMessageBody
+216: copyAssets
+139: write2SDFromInput
+285: setAlarm
+174: cancelAutoSendMessage
+160: tagEvent
+241: getParams
+31: Open a mass of threads
+41: Stop the process
+70: getACRASharedPreferences
+225: CallPhoneNumber
+52: Register for call status monitoring broadcast
+36: Uninstall the specified app
+126: DeleteFileFromSDCardThruPath
+71: approvePendingReports
+137: getUserAgent
+161: webGet
+19: Get location of device
+136: getCoordinates
+51: Register broadcast receiver
+******************
+
+*********17*********
+Apk name: FakeAppHZ
+190: dx_Encode
+278: getModel
+259: addVerSionCode
+150: getCachedMessageBody
+184: logMsg
+234: getSDKversionnumber
+237: AnalyseData
+267: getHWID
+285: setAlarm
+213: getAppkey
+66: getAppName
+160: tagEvent
+241: getParams
+168: trackInstall
+174: cancelAutoSendMessage
+251: buildErrorMessage
+100: getCountryFieldName
+46: Top app's own page
+225: CallPhoneNumber
+52: Register for call status monitoring broadcast
+31: Open a mass of threads
+71: approvePendingReports
+36: Uninstall the specified app
+161: webGet
+19: Get location of device
+136: getCoordinates
+51: Register broadcast receiver
+******************
+
+*********18*********
+Apk name: HiddadBZ
+7: Active when start-up broadcast is detected
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+5: Compress the information into a .zip file
+8: Download  apps
+37: Uploads files to the remote server
+42: Access specified resources
+25: Allow apps to run in the background
+79: ForceBacklightOn
+57: Upload via the net
+43: Save resource to a local file
+190: dx_Encode
+208: sendErrorsInfo
+226: uploadFile
+278: getModel
+259: addVerSionCode
+288: readHttpResponse
+240: getTimeLength
+231: getMODELID
+66: getAppName
+76: getDeviceCountry
+251: buildErrorMessage
+267: getHWID
+213: getAppkey
+212: ShowDialog
+168: trackInstall
+242: onCreateDialog
+257: showNetDialog
+237: AnalyseData
+151: cacheMessageBody
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+236: readConfig
+139: write2SDFromInput
+150: getCachedMessageBody
+238: getStringByURL
+184: logMsg
+234: getSDKversionnumber
+255: getProxyUrl
+256: getHttpUrl
+285: setAlarm
+11: Get user's input information
+100: getCountryFieldName
+159: getSha256
+126: DeleteFileFromSDCardThruPath
+241: getParams
+68: getUserAgentString
+171: parseServerXMLInfo
+71: approvePendingReports
+16: Get the application lists
+160: tagEvent
+182: sendLocation
+174: cancelAutoSendMessage
+36: Uninstall the specified app
+225: CallPhoneNumber
+72: notifySendReport
+172: tryToFetchInfoFromServer
+173: startOneRoundSMSSend
+4: Unlock the screen
+46: Top app's own page
+31: Open a mass of threads
+52: Register for call status monitoring broadcast
+24: Install apps
+51: Register broadcast receiver
+209: execute
+137: getUserAgent
+161: webGet
+19: Get location of device
+136: getCoordinates
+206: getMetricsd
+3: Click the confirm button
+30: Mute
+183: unInstallApp
+2: Block SMS broadcast
+******************
+
+*********19*********
+Apk name: HiddenAdHRXH
+39: Create a desktop shortcut
+45: Get the list of running tasks
+7: Active when start-up broadcast is detected
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+127: networkInfo
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+5: Compress the information into a .zip file
+8: Download  apps
+37: Uploads files to the remote server
+42: Access specified resources
+54: Audio recording
+25: Allow apps to run in the background
+28: Monitor the screen on and off
+79: ForceBacklightOn
+57: Upload via the net
+12: Get IMEI
+13: Get IMSI
+14: Get the SIM card serial number
+43: Save resource to a local file
+190: dx_Encode
+208: sendErrorsInfo
+226: uploadFile
+278: getModel
+122: saveRecord
+259: addVerSionCode
+288: readHttpResponse
+240: getTimeLength
+100: getCountryFieldName
+267: getHWID
+123: sendEmail
+213: getAppkey
+212: ShowDialog
+53: Get file list
+251: buildErrorMessage
+209: execute
+66: getAppName
+76: getDeviceCountry
+87: setDateOfBirth
+231: getMODELID
+46: Top app's own page
+61: Restart SDK
+4: Unlock the screen
+124: deleteSMS
+184: logMsg
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+150: getCachedMessageBody
+11: Get user's input information
+236: readConfig
+159: getSha256
+168: trackInstall
+16: Get the application lists
+23: Hide icon
+36: Uninstall the specified app
+225: CallPhoneNumber
+160: tagEvent
+241: getParams
+257: showNetDialog
+242: onCreateDialog
+285: setAlarm
+172: tryToFetchInfoFromServer
+173: startOneRoundSMSSend
+174: cancelAutoSendMessage
+68: getUserAgentString
+31: Open a mass of threads
+230: encrypt1
+171: parseServerXMLInfo
+52: Register for call status monitoring broadcast
+151: cacheMessageBody
+86: serializeToUrlConnection
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+139: write2SDFromInput
+238: getStringByURL
+126: DeleteFileFromSDCardThruPath
+105: getTotalInternalMemorySize
+106: getAvailableInternalMemorySize
+107: getTotalExternalMemorySize
+128: StorageInfo
+71: approvePendingReports
+182: sendLocation
+137: getUserAgent
+41: Stop the process
+70: getACRASharedPreferences
+24: Install apps
+125: getContactNameFromNumber
+51: Register broadcast receiver
+62: Get Date
+161: webGet
+19: Get location of device
+136: getCoordinates
+50: Get the list of processes
+206: getMetricsd
+3: Click the confirm button
+183: unInstallApp
+30: Mute
+******************
+
+*********20*********
+Apk name: Solid
+7: Active when start-up broadcast is detected
+12: Get IMEI
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+25: Allow apps to run in the background
+79: ForceBacklightOn
+57: Upload via the net
+190: dx_Encode
+208: sendErrorsInfo
+226: uploadFile
+278: getModel
+122: saveRecord
+259: addVerSionCode
+288: readHttpResponse
+240: getTimeLength
+231: getMODELID
+151: cacheMessageBody
+86: serializeToUrlConnection
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+236: readConfig
+124: deleteSMS
+139: write2SDFromInput
+150: getCachedMessageBody
+238: getStringByURL
+184: logMsg
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+267: getHWID
+61: Restart SDK
+285: setAlarm
+123: sendEmail
+213: getAppkey
+212: ShowDialog
+182: sendLocation
+66: getAppName
+160: tagEvent
+241: getParams
+16: Get the application lists
+242: onCreateDialog
+257: showNetDialog
+168: trackInstall
+159: getSha256
+70: getACRASharedPreferences
+34: Request activation of device manager
+174: cancelAutoSendMessage
+251: buildErrorMessage
+68: getUserAgentString
+11: Get user's input information
+100: getCountryFieldName
+76: getDeviceCountry
+46: Top app's own page
+4: Unlock the screen
+225: CallPhoneNumber
+52: Register for call status monitoring broadcast
+24: Install apps
+31: Open a mass of threads
+105: getTotalInternalMemorySize
+106: getAvailableInternalMemorySize
+107: getTotalExternalMemorySize
+128: StorageInfo
+126: DeleteFileFromSDCardThruPath
+71: approvePendingReports
+36: Uninstall the specified app
+209: execute
+137: getUserAgent
+161: webGet
+19: Get location of device
+136: getCoordinates
+3: Click the confirm button
+206: getMetricsd
+51: Register broadcast receiver
+30: Mute
+183: unInstallApp
+50: Get the list of processes
+******************
+
+*********21*********
+Apk name: InstaDetector
+43: Save resource to a local file
+20: Get the network operator
+21: Get network mode
+283: getNetType
+79: ForceBacklightOn
+57: Upload via the net
+66: getAppName
+76: getDeviceCountry
+123: sendEmail
+150: getCachedMessageBody
+184: logMsg
+190: dx_Encode
+234: getSDKversionnumber
+237: AnalyseData
+259: addVerSionCode
+267: getHWID
+278: getModel
+213: getAppkey
+241: getParams
+240: getTimeLength
+251: buildErrorMessage
+61: Restart SDK
+174: cancelAutoSendMessage
+285: setAlarm
+231: getMODELID
+31: Open a mass of threads
+160: tagEvent
+11: Get user's input information
+100: getCountryFieldName
+159: getSha256
+168: trackInstall
+212: ShowDialog
+4: Unlock the screen
+46: Top app's own page
+52: Register for call status monitoring broadcast
+257: showNetDialog
+137: getUserAgent
+242: onCreateDialog
+51: Register broadcast receiver
+151: cacheMessageBody
+216: copyAssets
+139: write2SDFromInput
+238: getStringByURL
+36: Uninstall the specified app
+225: CallPhoneNumber
+24: Install apps
+126: DeleteFileFromSDCardThruPath
+161: webGet
+3: Click the confirm button
+19: Get location of device
+136: getCoordinates
+30: Mute
+******************
+
+*********22*********
+Apk name: AgentBKY
+35: Send SMS
+179: startSendingMessages
+15: Read user's SMS
+29: Parsing SMS content
+55: Delete SMS
+56: Monitor incoming SMS messages
+12: Get IMEI
+22: Get user's phone number
+8: Download  apps
+37: Uploads files to the remote server
+42: Access specified resources
+43: Save resource to a local file
+20: Get the network operator
+21: Get network mode
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+25: Allow apps to run in the background
+79: ForceBacklightOn
+57: Upload via the net
+190: dx_Encode
+278: getModel
+259: addVerSionCode
+240: getTimeLength
+267: getHWID
+213: getAppkey
+100: getCountryFieldName
+66: getAppName
+76: getDeviceCountry
+251: buildErrorMessage
+231: getMODELID
+221: getUidfromServer
+224: getValueFromServer
+238: getStringByURL
+237: AnalyseData
+46: Top app's own page
+61: Restart SDK
+184: logMsg
+234: getSDKversionnumber
+255: getProxyUrl
+256: getHttpUrl
+150: getCachedMessageBody
+11: Get user's input information
+236: readConfig
+159: getSha256
+168: trackInstall
+151: cacheMessageBody
+216: copyAssets
+139: write2SDFromInput
+285: setAlarm
+174: cancelAutoSendMessage
+160: tagEvent
+241: getParams
+31: Open a mass of threads
+41: Stop the process
+225: CallPhoneNumber
+52: Register for call status monitoring broadcast
+36: Uninstall the specified app
+107: getTotalExternalMemorySize
+126: DeleteFileFromSDCardThruPath
+71: approvePendingReports
+137: getUserAgent
+62: Get Date
+161: webGet
+19: Get location of device
+136: getCoordinates
+51: Register broadcast receiver
+******************
+
+*********23*********
+Apk name: HiddenAdOS
+8: Download  apps
+37: Uploads files to the remote server
+42: Access specified resources
+43: Save resource to a local file
+20: Get the network operator
+21: Get network mode
+283: getNetType
+25: Allow apps to run in the background
+79: ForceBacklightOn
+57: Upload via the net
+237: AnalyseData
+259: addVerSionCode
+31: Open a mass of threads
+208: sendErrorsInfo
+160: tagEvent
+174: cancelAutoSendMessage
+267: getHWID
+123: sendEmail
+213: getAppkey
+212: ShowDialog
+61: Restart SDK
+285: setAlarm
+87: setDateOfBirth
+231: getMODELID
+4: Unlock the screen
+46: Top app's own page
+36: Uninstall the specified app
+225: CallPhoneNumber
+159: getSha256
+230: encrypt1
+257: showNetDialog
+251: buildErrorMessage
+100: getCountryFieldName
+184: logMsg
+190: dx_Encode
+234: getSDKversionnumber
+255: getProxyUrl
+256: getHttpUrl
+278: getModel
+150: getCachedMessageBody
+52: Register for call status monitoring broadcast
+168: trackInstall
+66: getAppName
+76: getDeviceCountry
+241: getParams
+68: getUserAgentString
+19: Get location of device
+136: getCoordinates
+182: sendLocation
+240: getTimeLength
+11: Get user's input information
+236: readConfig
+151: cacheMessageBody
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+139: write2SDFromInput
+238: getStringByURL
+242: onCreateDialog
+23: Hide icon
+24: Install apps
+71: approvePendingReports
+137: getUserAgent
+126: DeleteFileFromSDCardThruPath
+51: Register broadcast receiver
+161: webGet
+3: Click the confirm button
+30: Mute
+******************
+
+*********24*********
+Apk name: FakeAppCQ
+88: switchOnLocUpdate
+232: getCid
+12: Get IMEI
+22: Get user's phone number
+47: Get mac address
+7: Active when start-up broadcast is detected
+43: Save resource to a local file
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+57: Upload via the net
+66: getAppName
+160: tagEvent
+213: getAppkey
+241: getParams
+16: Get the application lists
+11: Get user's input information
+100: getCountryFieldName
+150: getCachedMessageBody
+184: logMsg
+190: dx_Encode
+208: sendErrorsInfo
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+259: addVerSionCode
+267: getHWID
+278: getModel
+236: readConfig
+251: buildErrorMessage
+288: readHttpResponse
+159: getSha256
+168: trackInstall
+61: Restart SDK
+285: setAlarm
+240: getTimeLength
+107: getTotalExternalMemorySize
+76: getDeviceCountry
+123: sendEmail
+140: unload
+87: setDateOfBirth
+231: getMODELID
+71: approvePendingReports
+68: getUserAgentString
+72: notifySendReport
+174: cancelAutoSendMessage
+31: Open a mass of threads
+257: showNetDialog
+46: Top app's own page
+212: ShowDialog
+53: Get file list
+4: Unlock the screen
+126: DeleteFileFromSDCardThruPath
+182: sendLocation
+52: Register for call status monitoring broadcast
+216: copyAssets
+242: onCreateDialog
+137: getUserAgent
+230: encrypt1
+151: cacheMessageBody
+221: getUidfromServer
+224: getValueFromServer
+139: write2SDFromInput
+238: getStringByURL
+36: Uninstall the specified app
+225: CallPhoneNumber
+19: Get location of device
+136: getCoordinates
+206: getMetricsd
+161: webGet
+24: Install apps
+3: Click the confirm button
+70: getACRASharedPreferences
+62: Get Date
+30: Mute
+51: Register broadcast receiver
+41: Stop the process
+183: unInstallApp
+******************
+
+*********25*********
+Apk name: Joker
+15: Read user's SMS
+55: Delete SMS
+7: Active when start-up broadcast is detected
+1: Access the Internet
+20: Get the network operator
+21: Get network mode
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+6: Delete the recording of incoming phone calls
+56: Monitor incoming SMS messages
+8: Download  apps
+37: Uploads files to the remote server
+42: Access specified resources
+54: Audio recording
+25: Allow apps to run in the background
+28: Monitor the screen on and off
+79: ForceBacklightOn
+180: addContact
+181: addContacts
+57: Upload via the net
+35: Send SMS
+179: startSendingMessages
+10: Generate pop-up widgets
+32: Provide UI  with clickable button
+33: Receive a designated call
+12: Get IMEI
+22: Get user's phone number
+27: Monitor incoming calls
+43: Save resource to a local file
+17: Get the contact information
+259: addVerSionCode
+237: AnalyseData
+87: setDateOfBirth
+231: getMODELID
+168: trackInstall
+184: logMsg
+190: dx_Encode
+208: sendErrorsInfo
+226: uploadFile
+234: getSDKversionnumber
+255: getProxyUrl
+256: getHttpUrl
+267: getHWID
+278: getModel
+251: buildErrorMessage
+288: readHttpResponse
+209: execute
+201: getSDAliaMemory
+240: getTimeLength
+225: CallPhoneNumber
+11: Get user's input information
+66: getAppName
+100: getCountryFieldName
+150: getCachedMessageBody
+236: readConfig
+159: getSha256
+160: tagEvent
+213: getAppkey
+241: getParams
+23: Hide icon
+212: ShowDialog
+36: Uninstall the specified app
+285: setAlarm
+31: Open a mass of threads
+137: getUserAgent
+151: cacheMessageBody
+86: serializeToUrlConnection
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+139: write2SDFromInput
+238: getStringByURL
+174: cancelAutoSendMessage
+76: getDeviceCountry
+68: getUserAgentString
+123: sendEmail
+230: encrypt1
+242: onCreateDialog
+257: showNetDialog
+24: Install apps
+125: getContactNameFromNumber
+52: Register for call status monitoring broadcast
+107: getTotalExternalMemorySize
+126: DeleteFileFromSDCardThruPath
+128: StorageInfo
+182: sendLocation
+71: approvePendingReports
+161: webGet
+62: Get Date
+19: Get location of device
+136: getCoordinates
+70: getACRASharedPreferences
+53: Get file list
+206: getMetricsd
+46: Top app's own page
+105: getTotalInternalMemorySize
+106: getAvailableInternalMemorySize
+3: Click the confirm button
+4: Unlock the screen
+30: Mute
+51: Register broadcast receiver
+41: Stop the process
+2: Block SMS broadcast
+******************
+
+*********26*********
+Apk name: PSWAndroidOSMyVK
+232: getCid
+12: Get IMEI
+13: Get IMSI
+27: Monitor incoming calls
+47: Get mac address
+5: Compress the information into a .zip file
+8: Download  apps
+37: Uploads files to the remote server
+42: Access specified resources
+43: Save resource to a local file
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+57: Upload via the net
+190: dx_Encode
+208: sendErrorsInfo
+226: uploadFile
+278: getModel
+259: addVerSionCode
+288: readHttpResponse
+240: getTimeLength
+231: getMODELID
+285: setAlarm
+150: getCachedMessageBody
+184: logMsg
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+267: getHWID
+123: sendEmail
+126: DeleteFileFromSDCardThruPath
+241: getParams
+251: buildErrorMessage
+68: getUserAgentString
+168: trackInstall
+151: cacheMessageBody
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+236: readConfig
+139: write2SDFromInput
+238: getStringByURL
+105: getTotalInternalMemorySize
+106: getAvailableInternalMemorySize
+107: getTotalExternalMemorySize
+128: StorageInfo
+71: approvePendingReports
+213: getAppkey
+16: Get the application lists
+66: getAppName
+160: tagEvent
+100: getCountryFieldName
+53: Get file list
+87: setDateOfBirth
+182: sendLocation
+11: Get user's input information
+174: cancelAutoSendMessage
+76: getDeviceCountry
+159: getSha256
+36: Uninstall the specified app
+225: CallPhoneNumber
+212: ShowDialog
+242: onCreateDialog
+70: getACRASharedPreferences
+46: Top app's own page
+52: Register for call status monitoring broadcast
+125: getContactNameFromNumber
+31: Open a mass of threads
+51: Register broadcast receiver
+209: execute
+137: getUserAgent
+62: Get Date
+161: webGet
+206: getMetricsd
+19: Get location of device
+136: getCoordinates
+3: Click the confirm button
+41: Stop the process
+183: unInstallApp
+30: Mute
+******************
+
+*********27*********
+Apk name: AxentDS
+267: getHWID
+213: getAppkey
+278: getModel
+139: write2SDFromInput
+137: getUserAgent
+76: getDeviceCountry
+159: getSha256
+168: trackInstall
+230: encrypt1
+******************
+
+*********28*********
+Apk name: Reputation2
+7: Active when start-up broadcast is detected
+1: Access the Internet
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+127: networkInfo
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+5: Compress the information into a .zip file
+8: Download  apps
+37: Uploads files to the remote server
+42: Access specified resources
+25: Allow apps to run in the background
+28: Monitor the screen on and off
+79: ForceBacklightOn
+57: Upload via the net
+10: Generate pop-up widgets
+32: Provide UI  with clickable button
+44: Set Wifi on or off
+6: Delete the recording of incoming phone calls
+12: Get IMEI
+13: Get IMSI
+14: Get the SIM card serial number
+22: Get user's phone number
+9: Clear app cache
+17: Get the contact information
+39: Create a desktop shortcut
+45: Get the list of running tasks
+18: Get call records
+43: Save resource to a local file
+251: buildErrorMessage
+124: deleteSMS
+184: logMsg
+190: dx_Encode
+208: sendErrorsInfo
+226: uploadFile
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+259: addVerSionCode
+267: getHWID
+278: getModel
+87: setDateOfBirth
+231: getMODELID
+288: readHttpResponse
+150: getCachedMessageBody
+68: getUserAgentString
+171: parseServerXMLInfo
+122: saveRecord
+151: cacheMessageBody
+159: getSha256
+224: getValueFromServer
+230: encrypt1
+61: Restart SDK
+285: setAlarm
+240: getTimeLength
+241: getParams
+100: getCountryFieldName
+11: Get user's input information
+66: getAppName
+76: getDeviceCountry
+123: sendEmail
+126: DeleteFileFromSDCardThruPath
+212: ShowDialog
+242: onCreateDialog
+257: showNetDialog
+16: Get the application lists
+23: Hide icon
+213: getAppkey
+46: Top app's own page
+24: Install apps
+172: tryToFetchInfoFromServer
+173: startOneRoundSMSSend
+174: cancelAutoSendMessage
+168: trackInstall
+107: getTotalExternalMemorySize
+128: StorageInfo
+86: serializeToUrlConnection
+105: getTotalInternalMemorySize
+106: getAvailableInternalMemorySize
+209: execute
+182: sendLocation
+225: CallPhoneNumber
+160: tagEvent
+36: Uninstall the specified app
+137: getUserAgent
+236: readConfig
+4: Unlock the screen
+52: Register for call status monitoring broadcast
+125: getContactNameFromNumber
+71: approvePendingReports
+41: Stop the process
+31: Open a mass of threads
+53: Get file list
+238: getStringByURL
+50: Get the list of processes
+183: unInstallApp
+221: getUidfromServer
+206: getMetricsd
+62: Get Date
+216: copyAssets
+139: write2SDFromInput
+19: Get location of device
+136: getCoordinates
+70: getACRASharedPreferences
+51: Register broadcast receiver
+161: webGet
+2: Block SMS broadcast
+3: Click the confirm button
+30: Mute
+******************
+
+*********29*********
+Apk name: GhostTeam
+44: Set Wifi on or off
+45: Get the list of running tasks
+7: Active when start-up broadcast is detected
+1: Access the Internet
+20: Get the network operator
+21: Get network mode
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+6: Delete the recording of incoming phone calls
+5: Compress the information into a .zip file
+8: Download  apps
+37: Uploads files to the remote server
+42: Access specified resources
+25: Allow apps to run in the background
+28: Monitor the screen on and off
+79: ForceBacklightOn
+180: addContact
+181: addContacts
+57: Upload via the net
+10: Generate pop-up widgets
+32: Provide UI  with clickable button
+18: Get call records
+12: Get IMEI
+22: Get user's phone number
+43: Save resource to a local file
+9: Clear app cache
+17: Get the contact information
+190: dx_Encode
+208: sendErrorsInfo
+226: uploadFile
+278: getModel
+259: addVerSionCode
+288: readHttpResponse
+240: getTimeLength
+100: getCountryFieldName
+267: getHWID
+123: sendEmail
+213: getAppkey
+212: ShowDialog
+209: execute
+251: buildErrorMessage
+66: getAppName
+76: getDeviceCountry
+87: setDateOfBirth
+231: getMODELID
+237: AnalyseData
+221: getUidfromServer
+224: getValueFromServer
+238: getStringByURL
+46: Top app's own page
+61: Restart SDK
+4: Unlock the screen
+184: logMsg
+234: getSDKversionnumber
+255: getProxyUrl
+256: getHttpUrl
+150: getCachedMessageBody
+11: Get user's input information
+236: readConfig
+159: getSha256
+168: trackInstall
+160: tagEvent
+241: getParams
+36: Uninstall the specified app
+225: CallPhoneNumber
+16: Get the application lists
+242: onCreateDialog
+257: showNetDialog
+151: cacheMessageBody
+86: serializeToUrlConnection
+216: copyAssets
+139: write2SDFromInput
+31: Open a mass of threads
+285: setAlarm
+172: tryToFetchInfoFromServer
+173: startOneRoundSMSSend
+174: cancelAutoSendMessage
+68: getUserAgentString
+52: Register for call status monitoring broadcast
+24: Install apps
+126: DeleteFileFromSDCardThruPath
+105: getTotalInternalMemorySize
+106: getAvailableInternalMemorySize
+107: getTotalExternalMemorySize
+128: StorageInfo
+71: approvePendingReports
+182: sendLocation
+41: Stop the process
+70: getACRASharedPreferences
+51: Register broadcast receiver
+137: getUserAgent
+62: Get Date
+161: webGet
+19: Get location of device
+136: getCoordinates
+206: getMetricsd
+3: Click the confirm button
+183: unInstallApp
+30: Mute
+******************
+
+*********30*********
+Apk name: Haken
+10: Generate pop-up widgets
+32: Provide UI  with clickable button
+12: Get IMEI
+7: Active when start-up broadcast is detected
+8: Download  apps
+37: Uploads files to the remote server
+42: Access specified resources
+43: Save resource to a local file
+20: Get the network operator
+21: Get network mode
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+25: Allow apps to run in the background
+28: Monitor the screen on and off
+79: ForceBacklightOn
+57: Upload via the net
+208: sendErrorsInfo
+190: dx_Encode
+278: getModel
+259: addVerSionCode
+288: readHttpResponse
+240: getTimeLength
+11: Get user's input information
+66: getAppName
+100: getCountryFieldName
+151: cacheMessageBody
+159: getSha256
+224: getValueFromServer
+230: encrypt1
+139: write2SDFromInput
+216: copyAssets
+221: getUidfromServer
+236: readConfig
+150: getCachedMessageBody
+184: logMsg
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+267: getHWID
+231: getMODELID
+213: getAppkey
+160: tagEvent
+241: getParams
+238: getStringByURL
+31: Open a mass of threads
+225: CallPhoneNumber
+251: buildErrorMessage
+212: ShowDialog
+242: onCreateDialog
+257: showNetDialog
+61: Restart SDK
+168: trackInstall
+174: cancelAutoSendMessage
+285: setAlarm
+36: Uninstall the specified app
+76: getDeviceCountry
+123: sendEmail
+16: Get the application lists
+23: Hide icon
+53: Get file list
+46: Top app's own page
+137: getUserAgent
+4: Unlock the screen
+68: getUserAgentString
+86: serializeToUrlConnection
+52: Register for call status monitoring broadcast
+182: sendLocation
+19: Get location of device
+136: getCoordinates
+51: Register broadcast receiver
+126: DeleteFileFromSDCardThruPath
+105: getTotalInternalMemorySize
+106: getAvailableInternalMemorySize
+107: getTotalExternalMemorySize
+128: StorageInfo
+24: Install apps
+71: approvePendingReports
+206: getMetricsd
+161: webGet
+62: Get Date
+3: Click the confirm button
+41: Stop the process
+30: Mute
+183: unInstallApp
+******************
+
+*********31*********
+Apk name: AgentJL
+8: Download  apps
+37: Uploads files to the remote server
+42: Access specified resources
+57: Upload via the net
+43: Save resource to a local file
+190: dx_Encode
+278: getModel
+259: addVerSionCode
+240: getTimeLength
+151: cacheMessageBody
+216: copyAssets
+236: readConfig
+139: write2SDFromInput
+150: getCachedMessageBody
+237: AnalyseData
+285: setAlarm
+66: getAppName
+100: getCountryFieldName
+231: getMODELID
+4: Unlock the screen
+159: getSha256
+46: Top app's own page
+174: cancelAutoSendMessage
+257: showNetDialog
+212: ShowDialog
+184: logMsg
+234: getSDKversionnumber
+255: getProxyUrl
+256: getHttpUrl
+267: getHWID
+168: trackInstall
+213: getAppkey
+11: Get user's input information
+160: tagEvent
+241: getParams
+251: buildErrorMessage
+41: Stop the process
+31: Open a mass of threads
+70: getACRASharedPreferences
+171: parseServerXMLInfo
+225: CallPhoneNumber
+52: Register for call status monitoring broadcast
+24: Install apps
+71: approvePendingReports
+36: Uninstall the specified app
+209: execute
+161: webGet
+19: Get location of device
+136: getCoordinates
+51: Register broadcast receiver
+3: Click the confirm button
+******************
+
+*********32*********
+Apk name: SpyBankerAJZ
+10: Generate pop-up widgets
+32: Provide UI  with clickable button
+7: Active when start-up broadcast is detected
+8: Download  apps
+37: Uploads files to the remote server
+42: Access specified resources
+43: Save resource to a local file
+57: Upload via the net
+100: getCountryFieldName
+184: logMsg
+190: dx_Encode
+234: getSDKversionnumber
+237: AnalyseData
+259: addVerSionCode
+267: getHWID
+278: getModel
+150: getCachedMessageBody
+168: trackInstall
+231: getMODELID
+66: getAppName
+241: getParams
+251: buildErrorMessage
+71: approvePendingReports
+213: getAppkey
+212: ShowDialog
+76: getDeviceCountry
+160: tagEvent
+46: Top app's own page
+285: setAlarm
+4: Unlock the screen
+242: onCreateDialog
+257: showNetDialog
+151: cacheMessageBody
+216: copyAssets
+139: write2SDFromInput
+16: Get the application lists
+174: cancelAutoSendMessage
+225: CallPhoneNumber
+137: getUserAgent
+52: Register for call status monitoring broadcast
+31: Open a mass of threads
+36: Uninstall the specified app
+161: webGet
+19: Get location of device
+136: getCoordinates
+3: Click the confirm button
+183: unInstallApp
+51: Register broadcast receiver
+******************
+
+*********33*********
+Apk name: FakeAppKP
+12: Get IMEI
+7: Active when start-up broadcast is detected
+20: Get the network operator
+21: Get network mode
+283: getNetType
+25: Allow apps to run in the background
+28: Monitor the screen on and off
+79: ForceBacklightOn
+57: Upload via the net
+159: getSha256
+31: Open a mass of threads
+208: sendErrorsInfo
+160: tagEvent
+100: getCountryFieldName
+184: logMsg
+190: dx_Encode
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+259: addVerSionCode
+267: getHWID
+278: getModel
+150: getCachedMessageBody
+168: trackInstall
+231: getMODELID
+11: Get user's input information
+66: getAppName
+241: getParams
+251: buildErrorMessage
+61: Restart SDK
+285: setAlarm
+288: readHttpResponse
+240: getTimeLength
+68: getUserAgentString
+71: approvePendingReports
+212: ShowDialog
+242: onCreateDialog
+257: showNetDialog
+213: getAppkey
+76: getDeviceCountry
+238: getStringByURL
+46: Top app's own page
+182: sendLocation
+4: Unlock the screen
+151: cacheMessageBody
+216: copyAssets
+139: write2SDFromInput
+174: cancelAutoSendMessage
+52: Register for call status monitoring broadcast
+225: CallPhoneNumber
+137: getUserAgent
+24: Install apps
+36: Uninstall the specified app
+126: DeleteFileFromSDCardThruPath
+161: webGet
+19: Get location of device
+136: getCoordinates
+30: Mute
+3: Click the confirm button
+51: Register broadcast receiver
+41: Stop the process
+******************
+
+*********34*********
+Apk name: SpyBankerPV
+7: Active when start-up broadcast is detected
+20: Get the network operator
+21: Get network mode
+57: Upload via the net
+151: cacheMessageBody
+216: copyAssets
+139: write2SDFromInput
+150: getCachedMessageBody
+238: getStringByURL
+184: logMsg
+190: dx_Encode
+234: getSDKversionnumber
+237: AnalyseData
+259: addVerSionCode
+267: getHWID
+278: getModel
+100: getCountryFieldName
+240: getTimeLength
+168: trackInstall
+36: Uninstall the specified app
+225: CallPhoneNumber
+231: getMODELID
+11: Get user's input information
+66: getAppName
+251: buildErrorMessage
+159: getSha256
+212: ShowDialog
+257: showNetDialog
+241: getParams
+137: getUserAgent
+160: tagEvent
+71: approvePendingReports
+31: Open a mass of threads
+76: getDeviceCountry
+213: getAppkey
+46: Top app's own page
+23: Hide icon
+51: Register broadcast receiver
+34: Request activation of device manager
+3: Click the confirm button
+161: webGet
+******************
+
+*********35*********
+Apk name: ClipperC
+57: Upload via the net
+43: Save resource to a local file
+21: Get network mode
+283: getNetType
+159: getSha256
+31: Open a mass of threads
+160: tagEvent
+100: getCountryFieldName
+184: logMsg
+190: dx_Encode
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+259: addVerSionCode
+267: getHWID
+278: getModel
+150: getCachedMessageBody
+168: trackInstall
+231: getMODELID
+11: Get user's input information
+66: getAppName
+53: Get file list
+251: buildErrorMessage
+241: getParams
+240: getTimeLength
+71: approvePendingReports
+213: getAppkey
+76: getDeviceCountry
+209: execute
+46: Top app's own page
+4: Unlock the screen
+236: readConfig
+151: cacheMessageBody
+216: copyAssets
+139: write2SDFromInput
+52: Register for call status monitoring broadcast
+225: CallPhoneNumber
+137: getUserAgent
+36: Uninstall the specified app
+171: parseServerXMLInfo
+161: webGet
+19: Get location of device
+136: getCoordinates
+51: Register broadcast receiver
+******************
+
+*********36*********
+Apk name: DoubleHidden
+7: Active when start-up broadcast is detected
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+25: Allow apps to run in the background
+79: ForceBacklightOn
+57: Upload via the net
+190: dx_Encode
+208: sendErrorsInfo
+278: getModel
+259: addVerSionCode
+66: getAppName
+76: getDeviceCountry
+212: ShowDialog
+242: onCreateDialog
+257: showNetDialog
+231: getMODELID
+237: AnalyseData
+16: Get the application lists
+23: Hide icon
+213: getAppkey
+151: cacheMessageBody
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+236: readConfig
+139: write2SDFromInput
+150: getCachedMessageBody
+238: getStringByURL
+31: Open a mass of threads
+160: tagEvent
+46: Top app's own page
+251: buildErrorMessage
+184: logMsg
+234: getSDKversionnumber
+255: getProxyUrl
+256: getHttpUrl
+267: getHWID
+61: Restart SDK
+285: setAlarm
+36: Uninstall the specified app
+225: CallPhoneNumber
+4: Unlock the screen
+172: tryToFetchInfoFromServer
+173: startOneRoundSMSSend
+174: cancelAutoSendMessage
+241: getParams
+100: getCountryFieldName
+159: getSha256
+11: Get user's input information
+52: Register for call status monitoring broadcast
+168: trackInstall
+24: Install apps
+126: DeleteFileFromSDCardThruPath
+41: Stop the process
+182: sendLocation
+107: getTotalExternalMemorySize
+71: approvePendingReports
+51: Register broadcast receiver
+137: getUserAgent
+161: webGet
+19: Get location of device
+136: getCoordinates
+3: Click the confirm button
+30: Mute
+183: unInstallApp
+2: Block SMS broadcast
+******************
+
+*********37*********
+Apk name: FakeInsta
+7: Active when start-up broadcast is detected
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+25: Allow apps to run in the background
+79: ForceBacklightOn
+57: Upload via the net
+159: getSha256
+31: Open a mass of threads
+208: sendErrorsInfo
+160: tagEvent
+100: getCountryFieldName
+122: saveRecord
+168: trackInstall
+259: addVerSionCode
+237: AnalyseData
+124: deleteSMS
+184: logMsg
+190: dx_Encode
+226: uploadFile
+234: getSDKversionnumber
+255: getProxyUrl
+256: getHttpUrl
+267: getHWID
+278: getModel
+11: Get user's input information
+66: getAppName
+150: getCachedMessageBody
+231: getMODELID
+241: getParams
+251: buildErrorMessage
+288: readHttpResponse
+240: getTimeLength
+61: Restart SDK
+71: approvePendingReports
+212: ShowDialog
+242: onCreateDialog
+257: showNetDialog
+126: DeleteFileFromSDCardThruPath
+107: getTotalExternalMemorySize
+123: sendEmail
+128: StorageInfo
+86: serializeToUrlConnection
+105: getTotalInternalMemorySize
+106: getAvailableInternalMemorySize
+151: cacheMessageBody
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+236: readConfig
+139: write2SDFromInput
+238: getStringByURL
+125: getContactNameFromNumber
+285: setAlarm
+137: getUserAgent
+213: getAppkey
+76: getDeviceCountry
+209: execute
+46: Top app's own page
+172: tryToFetchInfoFromServer
+173: startOneRoundSMSSend
+182: sendLocation
+4: Unlock the screen
+16: Get the application lists
+23: Hide icon
+174: cancelAutoSendMessage
+52: Register for call status monitoring broadcast
+24: Install apps
+41: Stop the process
+36: Uninstall the specified app
+225: CallPhoneNumber
+70: getACRASharedPreferences
+62: Get Date
+51: Register broadcast receiver
+161: webGet
+19: Get location of device
+136: getCoordinates
+3: Click the confirm button
+30: Mute
+183: unInstallApp
+******************
+
+*********38*********
+Apk name: DroidPlugin
+55: Delete SMS
+7: Active when start-up broadcast is detected
+48: Call forwarding
+58: Monitor incoming and outgoing user calls
+1: Access the Internet
+20: Get the network operator
+21: Get network mode
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+25: Allow apps to run in the background
+28: Monitor the screen on and off
+79: ForceBacklightOn
+57: Upload via the net
+10: Generate pop-up widgets
+32: Provide UI  with clickable button
+35: Send SMS
+179: startSendingMessages
+33: Receive a designated call
+6: Delete the recording of incoming phone calls
+12: Get IMEI
+13: Get IMSI
+14: Get the SIM card serial number
+22: Get user's phone number
+9: Clear app cache
+17: Get the contact information
+39: Create a desktop shortcut
+18: Get call records
+43: Save resource to a local file
+15: Read user's SMS
+47: Get mac address
+56: Monitor incoming SMS messages
+259: addVerSionCode
+122: saveRecord
+87: setDateOfBirth
+231: getMODELID
+151: cacheMessageBody
+216: copyAssets
+226: uploadFile
+124: deleteSMS
+208: sendErrorsInfo
+139: write2SDFromInput
+150: getCachedMessageBody
+238: getStringByURL
+184: logMsg
+190: dx_Encode
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+267: getHWID
+278: getModel
+240: getTimeLength
+288: readHttpResponse
+61: Restart SDK
+285: setAlarm
+123: sendEmail
+213: getAppkey
+66: getAppName
+160: tagEvent
+241: getParams
+16: Get the application lists
+23: Hide icon
+168: trackInstall
+70: getACRASharedPreferences
+159: getSha256
+230: encrypt1
+72: notifySendReport
+174: cancelAutoSendMessage
+251: buildErrorMessage
+11: Get user's input information
+100: getCountryFieldName
+76: getDeviceCountry
+31: Open a mass of threads
+53: Get file list
+46: Top app's own page
+225: CallPhoneNumber
+52: Register for call status monitoring broadcast
+24: Install apps
+105: getTotalInternalMemorySize
+106: getAvailableInternalMemorySize
+107: getTotalExternalMemorySize
+128: StorageInfo
+126: DeleteFileFromSDCardThruPath
+71: approvePendingReports
+36: Uninstall the specified app
+209: execute
+137: getUserAgent
+62: Get Date
+4: Unlock the screen
+19: Get location of device
+136: getCoordinates
+161: webGet
+41: Stop the process
+183: unInstallApp
+51: Register broadcast receiver
+******************
+
+*********39*********
+Apk name: PletorD
+32: Provide UI  with clickable button
+28: Monitor the screen on and off
+7: Active when start-up broadcast is detected
+12: Get IMEI
+259: addVerSionCode
+168: trackInstall
+267: getHWID
+213: getAppkey
+251: buildErrorMessage
+237: AnalyseData
+190: dx_Encode
+278: getModel
+285: setAlarm
+66: getAppName
+76: getDeviceCountry
+46: Top app's own page
+34: Request activation of device manager
+241: getParams
+160: tagEvent
+100: getCountryFieldName
+31: Open a mass of threads
+51: Register broadcast receiver
+19: Get location of device
+136: getCoordinates
+36: Uninstall the specified app
+225: CallPhoneNumber
+******************
+
+*********40*********
+Apk name: AxentEH
+10: Generate pop-up widgets
+32: Provide UI  with clickable button
+45: Get the list of running tasks
+12: Get IMEI
+13: Get IMSI
+8: Download  apps
+37: Uploads files to the remote server
+42: Access specified resources
+43: Save resource to a local file
+1: Access the Internet
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+57: Upload via the net
+124: deleteSMS
+184: logMsg
+190: dx_Encode
+208: sendErrorsInfo
+226: uploadFile
+234: getSDKversionnumber
+237: AnalyseData
+259: addVerSionCode
+267: getHWID
+278: getModel
+150: getCachedMessageBody
+87: setDateOfBirth
+240: getTimeLength
+182: sendLocation
+122: saveRecord
+288: readHttpResponse
+212: ShowDialog
+242: onCreateDialog
+257: showNetDialog
+140: unload
+241: getParams
+251: buildErrorMessage
+231: getMODELID
+68: getUserAgentString
+171: parseServerXMLInfo
+11: Get user's input information
+66: getAppName
+100: getCountryFieldName
+159: getSha256
+168: trackInstall
+76: getDeviceCountry
+123: sendEmail
+72: notifySendReport
+31: Open a mass of threads
+160: tagEvent
+213: getAppkey
+53: Get file list
+46: Top app's own page
+285: setAlarm
+16: Get the application lists
+52: Register for call status monitoring broadcast
+24: Install apps
+174: cancelAutoSendMessage
+106: getAvailableInternalMemorySize
+126: DeleteFileFromSDCardThruPath
+71: approvePendingReports
+216: copyAssets
+36: Uninstall the specified app
+225: CallPhoneNumber
+151: cacheMessageBody
+139: write2SDFromInput
+238: getStringByURL
+137: getUserAgent
+62: Get Date
+209: execute
+161: webGet
+19: Get location of device
+136: getCoordinates
+206: getMetricsd
+41: Stop the process
+51: Register broadcast receiver
+3: Click the confirm button
+183: unInstallApp
+70: getACRASharedPreferences
+30: Mute
+50: Get the list of processes
+******************
+
+*********41*********
+Apk name: JokerV2
+5: Compress the information into a .zip file
+8: Download  apps
+37: Uploads files to the remote server
+42: Access specified resources
+43: Save resource to a local file
+20: Get the network operator
+21: Get network mode
+283: getNetType
+25: Allow apps to run in the background
+28: Monitor the screen on and off
+57: Upload via the net
+150: getCachedMessageBody
+184: logMsg
+190: dx_Encode
+208: sendErrorsInfo
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+259: addVerSionCode
+267: getHWID
+278: getModel
+107: getTotalExternalMemorySize
+139: write2SDFromInput
+216: copyAssets
+151: cacheMessageBody
+123: sendEmail
+126: DeleteFileFromSDCardThruPath
+87: setDateOfBirth
+231: getMODELID
+213: getAppkey
+221: getUidfromServer
+224: getValueFromServer
+238: getStringByURL
+66: getAppName
+160: tagEvent
+241: getParams
+31: Open a mass of threads
+212: ShowDialog
+242: onCreateDialog
+257: showNetDialog
+225: CallPhoneNumber
+285: setAlarm
+251: buildErrorMessage
+11: Get user's input information
+36: Uninstall the specified app
+100: getCountryFieldName
+236: readConfig
+159: getSha256
+168: trackInstall
+240: getTimeLength
+174: cancelAutoSendMessage
+76: getDeviceCountry
+137: getUserAgent
+46: Top app's own page
+52: Register for call status monitoring broadcast
+19: Get location of device
+136: getCoordinates
+86: serializeToUrlConnection
+71: approvePendingReports
+62: Get Date
+41: Stop the process
+161: webGet
+3: Click the confirm button
+51: Register broadcast receiver
+******************
+
+*********42*********
+Apk name: HiddadAJN
+7: Active when start-up broadcast is detected
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+25: Allow apps to run in the background
+28: Monitor the screen on and off
+79: ForceBacklightOn
+57: Upload via the net
+150: getCachedMessageBody
+184: logMsg
+190: dx_Encode
+208: sendErrorsInfo
+226: uploadFile
+234: getSDKversionnumber
+237: AnalyseData
+259: addVerSionCode
+267: getHWID
+278: getModel
+68: getUserAgentString
+241: getParams
+251: buildErrorMessage
+168: trackInstall
+100: getCountryFieldName
+11: Get user's input information
+66: getAppName
+236: readConfig
+288: readHttpResponse
+159: getSha256
+87: setDateOfBirth
+230: encrypt1
+31: Open a mass of threads
+160: tagEvent
+231: getMODELID
+53: Get file list
+61: Restart SDK
+285: setAlarm
+240: getTimeLength
+71: approvePendingReports
+212: ShowDialog
+242: onCreateDialog
+257: showNetDialog
+123: sendEmail
+213: getAppkey
+76: getDeviceCountry
+209: execute
+221: getUidfromServer
+224: getValueFromServer
+238: getStringByURL
+46: Top app's own page
+172: tryToFetchInfoFromServer
+173: startOneRoundSMSSend
+182: sendLocation
+4: Unlock the screen
+206: getMetricsd
+36: Uninstall the specified app
+225: CallPhoneNumber
+23: Hide icon
+151: cacheMessageBody
+216: copyAssets
+139: write2SDFromInput
+70: getACRASharedPreferences
+174: cancelAutoSendMessage
+52: Register for call status monitoring broadcast
+62: Get Date
+137: getUserAgent
+24: Install apps
+105: getTotalInternalMemorySize
+106: getAvailableInternalMemorySize
+107: getTotalExternalMemorySize
+128: StorageInfo
+126: DeleteFileFromSDCardThruPath
+161: webGet
+19: Get location of device
+136: getCoordinates
+51: Register broadcast receiver
+3: Click the confirm button
+30: Mute
+41: Stop the process
+******************
+
+*********43*********
+Apk name: ClickAds
+57: Upload via the net
+20: Get the network operator
+21: Get network mode
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+190: dx_Encode
+278: getModel
+259: addVerSionCode
+288: readHttpResponse
+240: getTimeLength
+184: logMsg
+234: getSDKversionnumber
+237: AnalyseData
+267: getHWID
+150: getCachedMessageBody
+87: setDateOfBirth
+182: sendLocation
+231: getMODELID
+174: cancelAutoSendMessage
+213: getAppkey
+66: getAppName
+76: getDeviceCountry
+160: tagEvent
+241: getParams
+11: Get user's input information
+100: getCountryFieldName
+236: readConfig
+251: buildErrorMessage
+159: getSha256
+168: trackInstall
+285: setAlarm
+126: DeleteFileFromSDCardThruPath
+36: Uninstall the specified app
+225: CallPhoneNumber
+212: ShowDialog
+242: onCreateDialog
+257: showNetDialog
+230: encrypt1
+46: Top app's own page
+71: approvePendingReports
+52: Register for call status monitoring broadcast
+24: Install apps
+31: Open a mass of threads
+151: cacheMessageBody
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+139: write2SDFromInput
+238: getStringByURL
+51: Register broadcast receiver
+137: getUserAgent
+62: Get Date
+161: webGet
+3: Click the confirm button
+206: getMetricsd
+19: Get location of device
+136: getCoordinates
+30: Mute
+******************
+
+*********44*********
+Apk name: MobstSpy
+39: Create a desktop shortcut
+7: Active when start-up broadcast is detected
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+283: getNetType
+25: Allow apps to run in the background
+28: Monitor the screen on and off
+79: ForceBacklightOn
+57: Upload via the net
+150: getCachedMessageBody
+184: logMsg
+190: dx_Encode
+208: sendErrorsInfo
+226: uploadFile
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+259: addVerSionCode
+267: getHWID
+278: getModel
+140: unload
+68: getUserAgentString
+171: parseServerXMLInfo
+241: getParams
+251: buildErrorMessage
+168: trackInstall
+100: getCountryFieldName
+240: getTimeLength
+288: readHttpResponse
+11: Get user's input information
+66: getAppName
+236: readConfig
+159: getSha256
+87: setDateOfBirth
+231: getMODELID
+151: cacheMessageBody
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+139: write2SDFromInput
+238: getStringByURL
+76: getDeviceCountry
+123: sendEmail
+213: getAppkey
+212: ShowDialog
+61: Restart SDK
+285: setAlarm
+126: DeleteFileFromSDCardThruPath
+71: approvePendingReports
+106: getAvailableInternalMemorySize
+182: sendLocation
+137: getUserAgent
+172: tryToFetchInfoFromServer
+173: startOneRoundSMSSend
+174: cancelAutoSendMessage
+16: Get the application lists
+160: tagEvent
+52: Register for call status monitoring broadcast
+31: Open a mass of threads
+4: Unlock the screen
+46: Top app's own page
+242: onCreateDialog
+257: showNetDialog
+225: CallPhoneNumber
+209: execute
+206: getMetricsd
+19: Get location of device
+136: getCoordinates
+36: Uninstall the specified app
+24: Install apps
+62: Get Date
+3: Click the confirm button
+70: getACRASharedPreferences
+50: Get the list of processes
+183: unInstallApp
+41: Stop the process
+161: webGet
+51: Register broadcast receiver
+30: Mute
+******************
+
+*********45*********
+Apk name: SideWinder
+10: Generate pop-up widgets
+32: Provide UI  with clickable button
+8: Download  apps
+37: Uploads files to the remote server
+42: Access specified resources
+43: Save resource to a local file
+21: Get network mode
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+25: Allow apps to run in the background
+79: ForceBacklightOn
+180: addContact
+181: addContacts
+57: Upload via the net
+259: addVerSionCode
+231: getMODELID
+184: logMsg
+190: dx_Encode
+208: sendErrorsInfo
+234: getSDKversionnumber
+237: AnalyseData
+267: getHWID
+278: getModel
+213: getAppkey
+150: getCachedMessageBody
+221: getUidfromServer
+224: getValueFromServer
+238: getStringByURL
+66: getAppName
+160: tagEvent
+241: getParams
+31: Open a mass of threads
+212: ShowDialog
+242: onCreateDialog
+257: showNetDialog
+225: CallPhoneNumber
+61: Restart SDK
+285: setAlarm
+251: buildErrorMessage
+36: Uninstall the specified app
+123: sendEmail
+11: Get user's input information
+100: getCountryFieldName
+236: readConfig
+159: getSha256
+168: trackInstall
+240: getTimeLength
+174: cancelAutoSendMessage
+76: getDeviceCountry
+4: Unlock the screen
+46: Top app's own page
+52: Register for call status monitoring broadcast
+19: Get location of device
+136: getCoordinates
+151: cacheMessageBody
+216: copyAssets
+139: write2SDFromInput
+126: DeleteFileFromSDCardThruPath
+24: Install apps
+137: getUserAgent
+70: getACRASharedPreferences
+71: approvePendingReports
+161: webGet
+41: Stop the process
+3: Click the confirm button
+51: Register broadcast receiver
+50: Get the list of processes
+******************
+
+*********46*********
+Apk name: SpyBankerAIF
+57: Upload via the net
+100: getCountryFieldName
+184: logMsg
+190: dx_Encode
+234: getSDKversionnumber
+237: AnalyseData
+259: addVerSionCode
+267: getHWID
+278: getModel
+150: getCachedMessageBody
+168: trackInstall
+11: Get user's input information
+66: getAppName
+231: getMODELID
+251: buildErrorMessage
+241: getParams
+240: getTimeLength
+151: cacheMessageBody
+139: write2SDFromInput
+213: getAppkey
+212: ShowDialog
+52: Register for call status monitoring broadcast
+31: Open a mass of threads
+160: tagEvent
+46: Top app's own page
+159: getSha256
+257: showNetDialog
+225: CallPhoneNumber
+36: Uninstall the specified app
+19: Get location of device
+136: getCoordinates
+161: webGet
+3: Click the confirm button
+51: Register broadcast receiver
+******************
+
+*********47*********
+Apk name: LightsOut
+7: Active when start-up broadcast is detected
+1: Access the Internet
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+127: networkInfo
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+5: Compress the information into a .zip file
+8: Download  apps
+37: Uploads files to the remote server
+42: Access specified resources
+25: Allow apps to run in the background
+28: Monitor the screen on and off
+79: ForceBacklightOn
+180: addContact
+181: addContacts
+57: Upload via the net
+10: Generate pop-up widgets
+32: Provide UI  with clickable button
+44: Set Wifi on or off
+6: Delete the recording of incoming phone calls
+12: Get IMEI
+13: Get IMSI
+17: Get the contact information
+39: Create a desktop shortcut
+45: Get the list of running tasks
+18: Get call records
+43: Save resource to a local file
+47: Get mac address
+122: saveRecord
+124: deleteSMS
+184: logMsg
+190: dx_Encode
+208: sendErrorsInfo
+226: uploadFile
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+259: addVerSionCode
+267: getHWID
+278: getModel
+150: getCachedMessageBody
+151: cacheMessageBody
+159: getSha256
+224: getValueFromServer
+230: encrypt1
+61: Restart SDK
+285: setAlarm
+87: setDateOfBirth
+231: getMODELID
+240: getTimeLength
+288: readHttpResponse
+139: write2SDFromInput
+216: copyAssets
+221: getUidfromServer
+236: readConfig
+213: getAppkey
+212: ShowDialog
+168: trackInstall
+53: Get file list
+251: buildErrorMessage
+242: onCreateDialog
+257: showNetDialog
+238: getStringByURL
+126: DeleteFileFromSDCardThruPath
+241: getParams
+68: getUserAgentString
+71: approvePendingReports
+105: getTotalInternalMemorySize
+106: getAvailableInternalMemorySize
+107: getTotalExternalMemorySize
+128: StorageInfo
+66: getAppName
+160: tagEvent
+16: Get the application lists
+23: Hide icon
+100: getCountryFieldName
+182: sendLocation
+11: Get user's input information
+174: cancelAutoSendMessage
+76: getDeviceCountry
+172: tryToFetchInfoFromServer
+173: startOneRoundSMSSend
+46: Top app's own page
+4: Unlock the screen
+52: Register for call status monitoring broadcast
+225: CallPhoneNumber
+31: Open a mass of threads
+125: getContactNameFromNumber
+36: Uninstall the specified app
+24: Install apps
+137: getUserAgent
+51: Register broadcast receiver
+209: execute
+19: Get location of device
+136: getCoordinates
+62: Get Date
+41: Stop the process
+161: webGet
+3: Click the confirm button
+30: Mute
+183: unInstallApp
+50: Get the list of processes
+******************
+
+*********48*********
+Apk name: Fasurke
+57: Upload via the net
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+25: Allow apps to run in the background
+79: ForceBacklightOn
+180: addContact
+181: addContacts
+184: logMsg
+190: dx_Encode
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+259: addVerSionCode
+267: getHWID
+278: getModel
+150: getCachedMessageBody
+87: setDateOfBirth
+240: getTimeLength
+182: sendLocation
+288: readHttpResponse
+213: getAppkey
+66: getAppName
+160: tagEvent
+241: getParams
+212: ShowDialog
+242: onCreateDialog
+257: showNetDialog
+61: Restart SDK
+72: notifySendReport
+174: cancelAutoSendMessage
+285: setAlarm
+231: getMODELID
+251: buildErrorMessage
+11: Get user's input information
+100: getCountryFieldName
+236: readConfig
+159: getSha256
+168: trackInstall
+76: getDeviceCountry
+31: Open a mass of threads
+46: Top app's own page
+52: Register for call status monitoring broadcast
+24: Install apps
+126: DeleteFileFromSDCardThruPath
+71: approvePendingReports
+216: copyAssets
+36: Uninstall the specified app
+225: CallPhoneNumber
+151: cacheMessageBody
+221: getUidfromServer
+224: getValueFromServer
+139: write2SDFromInput
+238: getStringByURL
+137: getUserAgent
+4: Unlock the screen
+3: Click the confirm button
+19: Get location of device
+136: getCoordinates
+30: Mute
+161: webGet
+51: Register broadcast receiver
+******************
+
+*********49*********
+Apk name: Vilny
+28: Monitor the screen on and off
+79: ForceBacklightOn
+45: Get the list of running tasks
+7: Active when start-up broadcast is detected
+9: Clear app cache
+21: Get network mode
+63: getConnectionType
+283: getNetType
+57: Upload via the net
+100: getCountryFieldName
+184: logMsg
+190: dx_Encode
+234: getSDKversionnumber
+237: AnalyseData
+259: addVerSionCode
+267: getHWID
+278: getModel
+150: getCachedMessageBody
+168: trackInstall
+231: getMODELID
+11: Get user's input information
+66: getAppName
+251: buildErrorMessage
+241: getParams
+240: getTimeLength
+160: tagEvent
+213: getAppkey
+159: getSha256
+285: setAlarm
+212: ShowDialog
+242: onCreateDialog
+257: showNetDialog
+172: tryToFetchInfoFromServer
+173: startOneRoundSMSSend
+174: cancelAutoSendMessage
+76: getDeviceCountry
+52: Register for call status monitoring broadcast
+225: CallPhoneNumber
+123: sendEmail
+137: getUserAgent
+24: Install apps
+36: Uninstall the specified app
+151: cacheMessageBody
+216: copyAssets
+139: write2SDFromInput
+126: DeleteFileFromSDCardThruPath
+31: Open a mass of threads
+161: webGet
+4: Unlock the screen
+3: Click the confirm button
+206: getMetricsd
+41: Stop the process
+51: Register broadcast receiver
+******************
+
+*********50*********
+Apk name: AceCard
+35: Send SMS
+179: startSendingMessages
+15: Read user's SMS
+29: Parsing SMS content
+33: Receive a designated call
+56: Monitor incoming SMS messages
+7: Active when start-up broadcast is detected
+12: Get IMEI
+22: Get user's phone number
+21: Get network mode
+283: getNetType
+57: Upload via the net
+184: logMsg
+190: dx_Encode
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+259: addVerSionCode
+267: getHWID
+278: getModel
+241: getParams
+251: buildErrorMessage
+11: Get user's input information
+66: getAppName
+100: getCountryFieldName
+236: readConfig
+159: getSha256
+168: trackInstall
+76: getDeviceCountry
+123: sendEmail
+231: getMODELID
+31: Open a mass of threads
+160: tagEvent
+240: getTimeLength
+213: getAppkey
+212: ShowDialog
+46: Top app's own page
+23: Hide icon
+52: Register for call status monitoring broadcast
+126: DeleteFileFromSDCardThruPath
+34: Request activation of device manager
+161: webGet
+216: copyAssets
+36: Uninstall the specified app
+139: write2SDFromInput
+209: execute
+2: Block SMS broadcast
+70: getACRASharedPreferences
+3: Click the confirm button
+41: Stop the process
+51: Register broadcast receiver
+******************
+
+*********51*********
+Apk name: Simpo
+21: Get network mode
+44: Set Wifi on or off
+259: addVerSionCode
+237: AnalyseData
+241: getParams
+11: Get user's input information
+31: Open a mass of threads
+46: Top app's own page
+23: Hide icon
+52: Register for call status monitoring broadcast
+******************
+
+*********52*********
+Apk name: Aladdin
+21: Get network mode
+283: getNetType
+57: Upload via the net
+7: Active when start-up broadcast is detected
+190: dx_Encode
+278: getModel
+259: addVerSionCode
+150: getCachedMessageBody
+184: logMsg
+234: getSDKversionnumber
+237: AnalyseData
+267: getHWID
+285: setAlarm
+213: getAppkey
+66: getAppName
+160: tagEvent
+241: getParams
+23: Hide icon
+168: trackInstall
+174: cancelAutoSendMessage
+251: buildErrorMessage
+11: Get user's input information
+100: getCountryFieldName
+46: Top app's own page
+225: CallPhoneNumber
+52: Register for call status monitoring broadcast
+31: Open a mass of threads
+71: approvePendingReports
+36: Uninstall the specified app
+161: webGet
+19: Get location of device
+136: getCoordinates
+51: Register broadcast receiver
+******************
+
+*********53*********
+Apk name: Sonyvpay
+44: Set Wifi on or off
+7: Active when start-up broadcast is detected
+1: Access the Internet
+20: Get the network operator
+21: Get network mode
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+56: Monitor incoming SMS messages
+5: Compress the information into a .zip file
+8: Download  apps
+37: Uploads files to the remote server
+42: Access specified resources
+25: Allow apps to run in the background
+79: ForceBacklightOn
+57: Upload via the net
+43: Save resource to a local file
+190: dx_Encode
+208: sendErrorsInfo
+278: getModel
+259: addVerSionCode
+240: getTimeLength
+257: showNetDialog
+237: AnalyseData
+212: ShowDialog
+242: onCreateDialog
+100: getCountryFieldName
+231: getMODELID
+285: setAlarm
+87: setDateOfBirth
+174: cancelAutoSendMessage
+46: Top app's own page
+66: getAppName
+76: getDeviceCountry
+123: sendEmail
+267: getHWID
+213: getAppkey
+184: logMsg
+234: getSDKversionnumber
+255: getProxyUrl
+256: getHttpUrl
+150: getCachedMessageBody
+160: tagEvent
+241: getParams
+168: trackInstall
+251: buildErrorMessage
+159: getSha256
+4: Unlock the screen
+24: Install apps
+11: Get user's input information
+126: DeleteFileFromSDCardThruPath
+151: cacheMessageBody
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+236: readConfig
+139: write2SDFromInput
+238: getStringByURL
+71: approvePendingReports
+16: Get the application lists
+53: Get file list
+182: sendLocation
+70: getACRASharedPreferences
+225: CallPhoneNumber
+52: Register for call status monitoring broadcast
+31: Open a mass of threads
+36: Uninstall the specified app
+137: getUserAgent
+161: webGet
+51: Register broadcast receiver
+3: Click the confirm button
+183: unInstallApp
+41: Stop the process
+19: Get location of device
+136: getCoordinates
+50: Get the list of processes
+******************
+
+*********54*********
+Apk name: FlixOnline
+10: Generate pop-up widgets
+32: Provide UI  with clickable button
+7: Active when start-up broadcast is detected
+21: Get network mode
+283: getNetType
+57: Upload via the net
+267: getHWID
+213: getAppkey
+259: addVerSionCode
+237: AnalyseData
+231: getMODELID
+184: logMsg
+190: dx_Encode
+234: getSDKversionnumber
+278: getModel
+240: getTimeLength
+159: getSha256
+168: trackInstall
+66: getAppName
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+236: readConfig
+139: write2SDFromInput
+251: buildErrorMessage
+241: getParams
+61: Restart SDK
+285: setAlarm
+11: Get user's input information
+174: cancelAutoSendMessage
+160: tagEvent
+31: Open a mass of threads
+23: Hide icon
+52: Register for call status monitoring broadcast
+51: Register broadcast receiver
+******************
+
+*********55*********
+Apk name: RedDawn
+10: Generate pop-up widgets
+32: Provide UI  with clickable button
+33: Receive a designated call
+48: Call forwarding
+58: Monitor incoming and outgoing user calls
+12: Get IMEI
+22: Get user's phone number
+7: Active when start-up broadcast is detected
+21: Get network mode
+283: getNetType
+25: Allow apps to run in the background
+79: ForceBacklightOn
+57: Upload via the net
+44: Set Wifi on or off
+259: addVerSionCode
+208: sendErrorsInfo
+168: trackInstall
+267: getHWID
+123: sendEmail
+213: getAppkey
+212: ShowDialog
+251: buildErrorMessage
+237: AnalyseData
+190: dx_Encode
+278: getModel
+240: getTimeLength
+184: logMsg
+234: getSDKversionnumber
+255: getProxyUrl
+256: getHttpUrl
+150: getCachedMessageBody
+151: cacheMessageBody
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+236: readConfig
+139: write2SDFromInput
+238: getStringByURL
+61: Restart SDK
+285: setAlarm
+66: getAppName
+76: getDeviceCountry
+46: Top app's own page
+257: showNetDialog
+174: cancelAutoSendMessage
+241: getParams
+160: tagEvent
+100: getCountryFieldName
+31: Open a mass of threads
+159: getSha256
+4: Unlock the screen
+225: CallPhoneNumber
+52: Register for call status monitoring broadcast
+11: Get user's input information
+126: DeleteFileFromSDCardThruPath
+71: approvePendingReports
+137: getUserAgent
+51: Register broadcast receiver
+36: Uninstall the specified app
+19: Get location of device
+136: getCoordinates
+70: getACRASharedPreferences
+3: Click the confirm button
+50: Get the list of processes
+206: getMetricsd
+161: webGet
+******************
+
+*********56*********
+Apk name: CPUMiner
+7: Active when start-up broadcast is detected
+12: Get IMEI
+21: Get network mode
+169: getNetworkType
+283: getNetType
+25: Allow apps to run in the background
+79: ForceBacklightOn
+180: addContact
+181: addContacts
+57: Upload via the net
+190: dx_Encode
+208: sendErrorsInfo
+278: getModel
+259: addVerSionCode
+240: getTimeLength
+100: getCountryFieldName
+267: getHWID
+123: sendEmail
+213: getAppkey
+212: ShowDialog
+251: buildErrorMessage
+209: execute
+66: getAppName
+76: getDeviceCountry
+231: getMODELID
+237: AnalyseData
+221: getUidfromServer
+224: getValueFromServer
+46: Top app's own page
+4: Unlock the screen
+184: logMsg
+234: getSDKversionnumber
+150: getCachedMessageBody
+11: Get user's input information
+236: readConfig
+168: trackInstall
+151: cacheMessageBody
+216: copyAssets
+139: write2SDFromInput
+285: setAlarm
+172: tryToFetchInfoFromServer
+173: startOneRoundSMSSend
+174: cancelAutoSendMessage
+257: showNetDialog
+242: onCreateDialog
+160: tagEvent
+241: getParams
+31: Open a mass of threads
+41: Stop the process
+23: Hide icon
+70: getACRASharedPreferences
+225: CallPhoneNumber
+62: Get Date
+137: getUserAgent
+52: Register for call status monitoring broadcast
+36: Uninstall the specified app
+107: getTotalExternalMemorySize
+126: DeleteFileFromSDCardThruPath
+71: approvePendingReports
+161: webGet
+19: Get location of device
+136: getCoordinates
+3: Click the confirm button
+51: Register broadcast receiver
+******************
+
+*********57*********
+Apk name: InstaZuna
+7: Active when start-up broadcast is detected
+43: Save resource to a local file
+20: Get the network operator
+21: Get network mode
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+25: Allow apps to run in the background
+79: ForceBacklightOn
+180: addContact
+181: addContacts
+57: Upload via the net
+257: showNetDialog
+259: addVerSionCode
+237: AnalyseData
+212: ShowDialog
+242: onCreateDialog
+61: Restart SDK
+285: setAlarm
+100: getCountryFieldName
+231: getMODELID
+190: dx_Encode
+240: getTimeLength
+11: Get user's input information
+66: getAppName
+72: notifySendReport
+174: cancelAutoSendMessage
+4: Unlock the screen
+46: Top app's own page
+76: getDeviceCountry
+123: sendEmail
+267: getHWID
+213: getAppkey
+184: logMsg
+234: getSDKversionnumber
+255: getProxyUrl
+256: getHttpUrl
+278: getModel
+160: tagEvent
+241: getParams
+150: getCachedMessageBody
+87: setDateOfBirth
+168: trackInstall
+251: buildErrorMessage
+159: getSha256
+24: Install apps
+182: sendLocation
+236: readConfig
+31: Open a mass of threads
+52: Register for call status monitoring broadcast
+126: DeleteFileFromSDCardThruPath
+71: approvePendingReports
+216: copyAssets
+36: Uninstall the specified app
+225: CallPhoneNumber
+151: cacheMessageBody
+221: getUidfromServer
+224: getValueFromServer
+139: write2SDFromInput
+137: getUserAgent
+19: Get location of device
+136: getCoordinates
+3: Click the confirm button
+209: execute
+30: Mute
+161: webGet
+51: Register broadcast receiver
+******************
+
+*********58*********
+Apk name: FraudApp
+45: Get the list of running tasks
+7: Active when start-up broadcast is detected
+5: Compress the information into a .zip file
+8: Download  apps
+37: Uploads files to the remote server
+42: Access specified resources
+43: Save resource to a local file
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+57: Upload via the net
+168: trackInstall
+150: getCachedMessageBody
+184: logMsg
+190: dx_Encode
+208: sendErrorsInfo
+226: uploadFile
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+259: addVerSionCode
+267: getHWID
+278: getModel
+161: webGet
+16: Get the application lists
+23: Hide icon
+213: getAppkey
+66: getAppName
+160: tagEvent
+241: getParams
+87: setDateOfBirth
+231: getMODELID
+240: getTimeLength
+221: getUidfromServer
+224: getValueFromServer
+238: getStringByURL
+151: cacheMessageBody
+139: write2SDFromInput
+216: copyAssets
+236: readConfig
+209: execute
+172: tryToFetchInfoFromServer
+173: startOneRoundSMSSend
+174: cancelAutoSendMessage
+285: setAlarm
+159: getSha256
+230: encrypt1
+4: Unlock the screen
+36: Uninstall the specified app
+225: CallPhoneNumber
+251: buildErrorMessage
+31: Open a mass of threads
+76: getDeviceCountry
+123: sendEmail
+212: ShowDialog
+257: showNetDialog
+52: Register for call status monitoring broadcast
+182: sendLocation
+3: Click the confirm button
+242: onCreateDialog
+53: Get file list
+100: getCountryFieldName
+68: getUserAgentString
+11: Get user's input information
+137: getUserAgent
+62: Get Date
+19: Get location of device
+136: getCoordinates
+30: Mute
+71: approvePendingReports
+46: Top app's own page
+24: Install apps
+206: getMetricsd
+107: getTotalExternalMemorySize
+126: DeleteFileFromSDCardThruPath
+128: StorageInfo
+105: getTotalInternalMemorySize
+106: getAvailableInternalMemorySize
+51: Register broadcast receiver
+70: getACRASharedPreferences
+183: unInstallApp
+41: Stop the process
+******************
+
+*********59*********
+Apk name: AnubisDropper
+7: Active when start-up broadcast is detected
+8: Download  apps
+37: Uploads files to the remote server
+42: Access specified resources
+43: Save resource to a local file
+57: Upload via the net
+100: getCountryFieldName
+190: dx_Encode
+234: getSDKversionnumber
+237: AnalyseData
+259: addVerSionCode
+267: getHWID
+278: getModel
+150: getCachedMessageBody
+168: trackInstall
+11: Get user's input information
+66: getAppName
+231: getMODELID
+251: buildErrorMessage
+241: getParams
+151: cacheMessageBody
+216: copyAssets
+139: write2SDFromInput
+213: getAppkey
+285: setAlarm
+46: Top app's own page
+172: tryToFetchInfoFromServer
+173: startOneRoundSMSSend
+4: Unlock the screen
+159: getSha256
+160: tagEvent
+174: cancelAutoSendMessage
+31: Open a mass of threads
+52: Register for call status monitoring broadcast
+24: Install apps
+36: Uninstall the specified app
+225: CallPhoneNumber
+19: Get location of device
+136: getCoordinates
+50: Get the list of processes
+51: Register broadcast receiver
+******************
+
+*********60*********
+Apk name: BanBraA
+10: Generate pop-up widgets
+32: Provide UI  with clickable button
+25: Allow apps to run in the background
+79: ForceBacklightOn
+21: Get network mode
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+57: Upload via the net
+184: logMsg
+190: dx_Encode
+208: sendErrorsInfo
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+259: addVerSionCode
+267: getHWID
+278: getModel
+231: getMODELID
+213: getAppkey
+150: getCachedMessageBody
+238: getStringByURL
+66: getAppName
+160: tagEvent
+241: getParams
+31: Open a mass of threads
+212: ShowDialog
+257: showNetDialog
+225: CallPhoneNumber
+61: Restart SDK
+285: setAlarm
+251: buildErrorMessage
+11: Get user's input information
+36: Uninstall the specified app
+100: getCountryFieldName
+159: getSha256
+168: trackInstall
+240: getTimeLength
+76: getDeviceCountry
+174: cancelAutoSendMessage
+4: Unlock the screen
+46: Top app's own page
+52: Register for call status monitoring broadcast
+19: Get location of device
+136: getCoordinates
+151: cacheMessageBody
+216: copyAssets
+139: write2SDFromInput
+126: DeleteFileFromSDCardThruPath
+137: getUserAgent
+71: approvePendingReports
+161: webGet
+51: Register broadcast receiver
+3: Click the confirm button
+******************
+
+*********61*********
+Apk name: Bahamut
+15: Read user's SMS
+29: Parsing SMS content
+55: Delete SMS
+7: Active when start-up broadcast is detected
+47: Get mac address
+1: Access the Internet
+20: Get the network operator
+21: Get network mode
+283: getNetType
+56: Monitor incoming SMS messages
+37: Uploads files to the remote server
+42: Access specified resources
+54: Audio recording
+57: Upload via the net
+12: Get IMEI
+27: Monitor incoming calls
+43: Save resource to a local file
+9: Clear app cache
+17: Get the contact information
+226: uploadFile
+208: sendErrorsInfo
+150: getCachedMessageBody
+259: addVerSionCode
+237: AnalyseData
+285: setAlarm
+100: getCountryFieldName
+174: cancelAutoSendMessage
+190: dx_Encode
+168: trackInstall
+267: getHWID
+123: sendEmail
+213: getAppkey
+212: ShowDialog
+242: onCreateDialog
+257: showNetDialog
+66: getAppName
+72: notifySendReport
+46: Top app's own page
+4: Unlock the screen
+184: logMsg
+234: getSDKversionnumber
+278: getModel
+160: tagEvent
+241: getParams
+251: buildErrorMessage
+201: getSDAliaMemory
+70: getACRASharedPreferences
+31: Open a mass of threads
+52: Register for call status monitoring broadcast
+105: getTotalInternalMemorySize
+106: getAvailableInternalMemorySize
+107: getTotalExternalMemorySize
+128: StorageInfo
+126: DeleteFileFromSDCardThruPath
+71: approvePendingReports
+209: execute
+225: CallPhoneNumber
+36: Uninstall the specified app
+19: Get location of device
+136: getCoordinates
+41: Stop the process
+161: webGet
+51: Register broadcast receiver
+3: Click the confirm button
+******************
+
+*********62*********
+Apk name: SpyBankerHU
+35: Send SMS
+179: startSendingMessages
+15: Read user's SMS
+25: Allow apps to run in the background
+28: Monitor the screen on and off
+79: ForceBacklightOn
+56: Monitor incoming SMS messages
+45: Get the list of running tasks
+7: Active when start-up broadcast is detected
+20: Get the network operator
+21: Get network mode
+283: getNetType
+57: Upload via the net
+184: logMsg
+190: dx_Encode
+208: sendErrorsInfo
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+259: addVerSionCode
+267: getHWID
+278: getModel
+150: getCachedMessageBody
+11: Get user's input information
+66: getAppName
+100: getCountryFieldName
+240: getTimeLength
+231: getMODELID
+137: getUserAgent
+236: readConfig
+251: buildErrorMessage
+159: getSha256
+168: trackInstall
+160: tagEvent
+151: cacheMessageBody
+224: getValueFromServer
+139: write2SDFromInput
+216: copyAssets
+61: Restart SDK
+285: setAlarm
+241: getParams
+212: ShowDialog
+242: onCreateDialog
+257: showNetDialog
+123: sendEmail
+126: DeleteFileFromSDCardThruPath
+62: Get Date
+161: webGet
+221: getUidfromServer
+238: getStringByURL
+172: tryToFetchInfoFromServer
+173: startOneRoundSMSSend
+68: getUserAgentString
+213: getAppkey
+46: Top app's own page
+4: Unlock the screen
+76: getDeviceCountry
+34: Request activation of device manager
+174: cancelAutoSendMessage
+31: Open a mass of threads
+23: Hide icon
+225: CallPhoneNumber
+52: Register for call status monitoring broadcast
+24: Install apps
+36: Uninstall the specified app
+51: Register broadcast receiver
+19: Get location of device
+136: getCoordinates
+38: Use encryption algorithm to generate PIN
+3: Click the confirm button
+30: Mute
+50: Get the list of processes
+40: Lock screen
+26: Modify the screen-lock password/PIN
+70: getACRASharedPreferences
+******************
+
+*********63*********
+Apk name: SMSAndroidOSWesp
+15: Read user's SMS
+29: Parsing SMS content
+56: Monitor incoming SMS messages
+12: Get IMEI
+14: Get the SIM card serial number
+20: Get the network operator
+21: Get network mode
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+25: Allow apps to run in the background
+28: Monitor the screen on and off
+79: ForceBacklightOn
+57: Upload via the net
+184: logMsg
+190: dx_Encode
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+259: addVerSionCode
+267: getHWID
+278: getModel
+150: getCachedMessageBody
+240: getTimeLength
+288: readHttpResponse
+212: ShowDialog
+257: showNetDialog
+241: getParams
+251: buildErrorMessage
+231: getMODELID
+11: Get user's input information
+66: getAppName
+100: getCountryFieldName
+236: readConfig
+159: getSha256
+72: notifySendReport
+31: Open a mass of threads
+160: tagEvent
+213: getAppkey
+53: Get file list
+4: Unlock the screen
+46: Top app's own page
+61: Restart SDK
+285: setAlarm
+23: Hide icon
+52: Register for call status monitoring broadcast
+174: cancelAutoSendMessage
+71: approvePendingReports
+216: copyAssets
+36: Uninstall the specified app
+225: CallPhoneNumber
+151: cacheMessageBody
+86: serializeToUrlConnection
+221: getUidfromServer
+224: getValueFromServer
+139: write2SDFromInput
+238: getStringByURL
+62: Get Date
+19: Get location of device
+136: getCoordinates
+161: webGet
+51: Register broadcast receiver
+3: Click the confirm button
+******************
+
+*********64*********
+Apk name: SimBad
+7: Active when start-up broadcast is detected
+47: Get mac address
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+127: networkInfo
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+25: Allow apps to run in the background
+28: Monitor the screen on and off
+79: ForceBacklightOn
+57: Upload via the net
+124: deleteSMS
+184: logMsg
+190: dx_Encode
+208: sendErrorsInfo
+226: uploadFile
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+259: addVerSionCode
+267: getHWID
+278: getModel
+150: getCachedMessageBody
+68: getUserAgentString
+241: getParams
+251: buildErrorMessage
+168: trackInstall
+100: getCountryFieldName
+11: Get user's input information
+66: getAppName
+240: getTimeLength
+288: readHttpResponse
+236: readConfig
+159: getSha256
+87: setDateOfBirth
+230: encrypt1
+31: Open a mass of threads
+160: tagEvent
+122: saveRecord
+231: getMODELID
+53: Get file list
+61: Restart SDK
+71: approvePendingReports
+212: ShowDialog
+242: onCreateDialog
+257: showNetDialog
+76: getDeviceCountry
+213: getAppkey
+23: Hide icon
+36: Uninstall the specified app
+225: CallPhoneNumber
+151: cacheMessageBody
+86: serializeToUrlConnection
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+139: write2SDFromInput
+238: getStringByURL
+285: setAlarm
+123: sendEmail
+4: Unlock the screen
+46: Top app's own page
+172: tryToFetchInfoFromServer
+173: startOneRoundSMSSend
+174: cancelAutoSendMessage
+105: getTotalInternalMemorySize
+106: getAvailableInternalMemorySize
+107: getTotalExternalMemorySize
+128: StorageInfo
+126: DeleteFileFromSDCardThruPath
+182: sendLocation
+41: Stop the process
+70: getACRASharedPreferences
+206: getMetricsd
+52: Register for call status monitoring broadcast
+62: Get Date
+137: getUserAgent
+24: Install apps
+125: getContactNameFromNumber
+209: execute
+161: webGet
+19: Get location of device
+136: getCoordinates
+51: Register broadcast receiver
+3: Click the confirm button
+30: Mute
+2: Block SMS broadcast
+******************
+
+*********65*********
+Apk name: FakeAppFK
+37: Uploads files to the remote server
+42: Access specified resources
+21: Get network mode
+283: getNetType
+79: ForceBacklightOn
+57: Upload via the net
+259: addVerSionCode
+231: getMODELID
+251: buildErrorMessage
+267: getHWID
+123: sendEmail
+213: getAppkey
+212: ShowDialog
+168: trackInstall
+237: AnalyseData
+190: dx_Encode
+226: uploadFile
+278: getModel
+240: getTimeLength
+150: getCachedMessageBody
+184: logMsg
+234: getSDKversionnumber
+151: cacheMessageBody
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+236: readConfig
+139: write2SDFromInput
+238: getStringByURL
+61: Restart SDK
+285: setAlarm
+66: getAppName
+160: tagEvent
+241: getParams
+76: getDeviceCountry
+225: CallPhoneNumber
+52: Register for call status monitoring broadcast
+46: Top app's own page
+100: getCountryFieldName
+11: Get user's input information
+159: getSha256
+174: cancelAutoSendMessage
+257: showNetDialog
+137: getUserAgent
+31: Open a mass of threads
+51: Register broadcast receiver
+242: onCreateDialog
+36: Uninstall the specified app
+105: getTotalInternalMemorySize
+107: getTotalExternalMemorySize
+128: StorageInfo
+106: getAvailableInternalMemorySize
+126: DeleteFileFromSDCardThruPath
+161: webGet
+41: Stop the process
+3: Click the confirm button
+******************
+
+*********66*********
+Apk name: Ashas
+7: Active when start-up broadcast is detected
+5: Compress the information into a .zip file
+8: Download  apps
+37: Uploads files to the remote server
+42: Access specified resources
+43: Save resource to a local file
+20: Get the network operator
+21: Get network mode
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+57: Upload via the net
+39: Create a desktop shortcut
+159: getSha256
+230: encrypt1
+31: Open a mass of threads
+208: sendErrorsInfo
+160: tagEvent
+259: addVerSionCode
+237: AnalyseData
+168: trackInstall
+100: getCountryFieldName
+231: getMODELID
+11: Get user's input information
+66: getAppName
+184: logMsg
+190: dx_Encode
+234: getSDKversionnumber
+255: getProxyUrl
+256: getHttpUrl
+267: getHWID
+278: getModel
+150: getCachedMessageBody
+251: buildErrorMessage
+241: getParams
+288: readHttpResponse
+240: getTimeLength
+68: getUserAgentString
+71: approvePendingReports
+212: ShowDialog
+242: onCreateDialog
+257: showNetDialog
+213: getAppkey
+76: getDeviceCountry
+221: getUidfromServer
+224: getValueFromServer
+238: getStringByURL
+46: Top app's own page
+4: Unlock the screen
+236: readConfig
+23: Hide icon
+36: Uninstall the specified app
+225: CallPhoneNumber
+151: cacheMessageBody
+216: copyAssets
+139: write2SDFromInput
+285: setAlarm
+172: tryToFetchInfoFromServer
+173: startOneRoundSMSSend
+174: cancelAutoSendMessage
+52: Register for call status monitoring broadcast
+24: Install apps
+126: DeleteFileFromSDCardThruPath
+106: getAvailableInternalMemorySize
+182: sendLocation
+41: Stop the process
+3: Click the confirm button
+62: Get Date
+137: getUserAgent
+51: Register broadcast receiver
+161: webGet
+19: Get location of device
+136: getCoordinates
+30: Mute
+50: Get the list of processes
+******************
+
+*********67*********
+Apk name: FakeAppFG
+20: Get the network operator
+21: Get network mode
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+57: Upload via the net
+190: dx_Encode
+278: getModel
+259: addVerSionCode
+240: getTimeLength
+87: setDateOfBirth
+151: cacheMessageBody
+216: copyAssets
+139: write2SDFromInput
+150: getCachedMessageBody
+238: getStringByURL
+184: logMsg
+234: getSDKversionnumber
+237: AnalyseData
+267: getHWID
+285: setAlarm
+213: getAppkey
+182: sendLocation
+66: getAppName
+160: tagEvent
+241: getParams
+16: Get the application lists
+23: Hide icon
+168: trackInstall
+159: getSha256
+174: cancelAutoSendMessage
+251: buildErrorMessage
+11: Get user's input information
+100: getCountryFieldName
+76: getDeviceCountry
+46: Top app's own page
+4: Unlock the screen
+225: CallPhoneNumber
+52: Register for call status monitoring broadcast
+107: getTotalExternalMemorySize
+126: DeleteFileFromSDCardThruPath
+71: approvePendingReports
+53: Get file list
+31: Open a mass of threads
+36: Uninstall the specified app
+137: getUserAgent
+161: webGet
+19: Get location of device
+136: getCoordinates
+183: unInstallApp
+51: Register broadcast receiver
+******************
+
+*********68*********
+Apk name: AdloadNL
+10: Generate pop-up widgets
+32: Provide UI  with clickable button
+45: Get the list of running tasks
+12: Get IMEI
+22: Get user's phone number
+27: Monitor incoming calls
+7: Active when start-up broadcast is detected
+8: Download  apps
+37: Uploads files to the remote server
+42: Access specified resources
+43: Save resource to a local file
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+25: Allow apps to run in the background
+28: Monitor the screen on and off
+79: ForceBacklightOn
+180: addContact
+181: addContacts
+57: Upload via the net
+69: saveCrashReportFile
+208: sendErrorsInfo
+168: trackInstall
+11: Get user's input information
+66: getAppName
+100: getCountryFieldName
+87: setDateOfBirth
+159: getSha256
+174: cancelAutoSendMessage
+150: getCachedMessageBody
+184: logMsg
+190: dx_Encode
+234: getSDKversionnumber
+237: AnalyseData
+259: addVerSionCode
+267: getHWID
+278: getModel
+68: getUserAgentString
+236: readConfig
+251: buildErrorMessage
+288: readHttpResponse
+123: sendEmail
+213: getAppkey
+212: ShowDialog
+238: getStringByURL
+70: getACRASharedPreferences
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+61: Restart SDK
+172: tryToFetchInfoFromServer
+173: startOneRoundSMSSend
+182: sendLocation
+240: getTimeLength
+285: setAlarm
+137: getUserAgent
+160: tagEvent
+241: getParams
+161: webGet
+16: Get the application lists
+71: approvePendingReports
+126: DeleteFileFromSDCardThruPath
+24: Install apps
+242: onCreateDialog
+257: showNetDialog
+3: Click the confirm button
+231: getMODELID
+76: getDeviceCountry
+36: Uninstall the specified app
+225: CallPhoneNumber
+72: notifySendReport
+46: Top app's own page
+4: Unlock the screen
+31: Open a mass of threads
+52: Register for call status monitoring broadcast
+151: cacheMessageBody
+139: write2SDFromInput
+51: Register broadcast receiver
+19: Get location of device
+136: getCoordinates
+206: getMetricsd
+41: Stop the process
+50: Get the list of processes
+30: Mute
+2: Block SMS broadcast
+183: unInstallApp
+******************
+
+*********69*********
+Apk name: FlokiSpy
+35: Send SMS
+179: startSendingMessages
+15: Read user's SMS
+29: Parsing SMS content
+55: Delete SMS
+56: Monitor incoming SMS messages
+12: Get IMEI
+14: Get the SIM card serial number
+22: Get user's phone number
+57: Upload via the net
+31: Open a mass of threads
+160: tagEvent
+100: getCountryFieldName
+184: logMsg
+190: dx_Encode
+234: getSDKversionnumber
+237: AnalyseData
+259: addVerSionCode
+267: getHWID
+278: getModel
+150: getCachedMessageBody
+168: trackInstall
+231: getMODELID
+11: Get user's input information
+66: getAppName
+251: buildErrorMessage
+241: getParams
+71: approvePendingReports
+213: getAppkey
+76: getDeviceCountry
+46: Top app's own page
+4: Unlock the screen
+151: cacheMessageBody
+216: copyAssets
+139: write2SDFromInput
+23: Hide icon
+52: Register for call status monitoring broadcast
+225: CallPhoneNumber
+137: getUserAgent
+36: Uninstall the specified app
+161: webGet
+19: Get location of device
+136: getCoordinates
+51: Register broadcast receiver
+******************
+
+*********70*********
+Apk name: ToastAmigo
+42: Access specified resources
+3: Click the confirm button
+41: Stop the process
+******************
+
+*********71*********
+Apk name: HidenAd
+7: Active when start-up broadcast is detected
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+283: getNetType
+57: Upload via the net
+150: getCachedMessageBody
+184: logMsg
+190: dx_Encode
+208: sendErrorsInfo
+226: uploadFile
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+259: addVerSionCode
+267: getHWID
+278: getModel
+241: getParams
+251: buildErrorMessage
+68: getUserAgentString
+168: trackInstall
+100: getCountryFieldName
+240: getTimeLength
+11: Get user's input information
+66: getAppName
+236: readConfig
+159: getSha256
+231: getMODELID
+160: tagEvent
+213: getAppkey
+225: CallPhoneNumber
+151: cacheMessageBody
+86: serializeToUrlConnection
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+139: write2SDFromInput
+238: getStringByURL
+76: getDeviceCountry
+123: sendEmail
+212: ShowDialog
+285: setAlarm
+209: execute
+46: Top app's own page
+172: tryToFetchInfoFromServer
+173: startOneRoundSMSSend
+182: sendLocation
+4: Unlock the screen
+242: onCreateDialog
+257: showNetDialog
+230: encrypt1
+62: Get Date
+137: getUserAgent
+23: Hide icon
+174: cancelAutoSendMessage
+31: Open a mass of threads
+126: DeleteFileFromSDCardThruPath
+52: Register for call status monitoring broadcast
+36: Uninstall the specified app
+19: Get location of device
+136: getCoordinates
+70: getACRASharedPreferences
+51: Register broadcast receiver
+71: approvePendingReports
+24: Install apps
+107: getTotalExternalMemorySize
+128: StorageInfo
+41: Stop the process
+105: getTotalInternalMemorySize
+106: getAvailableInternalMemorySize
+161: webGet
+206: getMetricsd
+3: Click the confirm button
+30: Mute
+******************
+
+*********72*********
+Apk name: CoinMinerQ
+7: Active when start-up broadcast is detected
+20: Get the network operator
+21: Get network mode
+283: getNetType
+25: Allow apps to run in the background
+79: ForceBacklightOn
+180: addContact
+181: addContacts
+57: Upload via the net
+122: saveRecord
+259: addVerSionCode
+87: setDateOfBirth
+231: getMODELID
+208: sendErrorsInfo
+251: buildErrorMessage
+168: trackInstall
+267: getHWID
+123: sendEmail
+213: getAppkey
+212: ShowDialog
+66: getAppName
+76: getDeviceCountry
+237: AnalyseData
+190: dx_Encode
+278: getModel
+288: readHttpResponse
+240: getTimeLength
+124: deleteSMS
+150: getCachedMessageBody
+184: logMsg
+234: getSDKversionnumber
+255: getProxyUrl
+256: getHttpUrl
+151: cacheMessageBody
+86: serializeToUrlConnection
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+236: readConfig
+139: write2SDFromInput
+238: getStringByURL
+61: Restart SDK
+285: setAlarm
+137: getUserAgent
+160: tagEvent
+242: onCreateDialog
+257: showNetDialog
+126: DeleteFileFromSDCardThruPath
+105: getTotalInternalMemorySize
+106: getAvailableInternalMemorySize
+107: getTotalExternalMemorySize
+128: StorageInfo
+68: getUserAgentString
+171: parseServerXMLInfo
+241: getParams
+16: Get the application lists
+23: Hide icon
+11: Get user's input information
+100: getCountryFieldName
+159: getSha256
+36: Uninstall the specified app
+225: CallPhoneNumber
+70: getACRASharedPreferences
+174: cancelAutoSendMessage
+46: Top app's own page
+71: approvePendingReports
+31: Open a mass of threads
+4: Unlock the screen
+206: getMetricsd
+62: Get Date
+182: sendLocation
+52: Register for call status monitoring broadcast
+24: Install apps
+230: encrypt1
+51: Register broadcast receiver
+19: Get location of device
+136: getCoordinates
+3: Click the confirm button
+183: unInstallApp
+30: Mute
+161: webGet
+41: Stop the process
+******************
+
+*********73*********
+Apk name: AsiaHitGroup
+35: Send SMS
+179: startSendingMessages
+10: Generate pop-up widgets
+32: Provide UI  with clickable button
+8: Download  apps
+37: Uploads files to the remote server
+42: Access specified resources
+43: Save resource to a local file
+1: Access the Internet
+21: Get network mode
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+25: Allow apps to run in the background
+28: Monitor the screen on and off
+79: ForceBacklightOn
+57: Upload via the net
+190: dx_Encode
+240: getTimeLength
+267: getHWID
+123: sendEmail
+213: getAppkey
+212: ShowDialog
+100: getCountryFieldName
+168: trackInstall
+231: getMODELID
+184: logMsg
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+259: addVerSionCode
+278: getModel
+150: getCachedMessageBody
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+236: readConfig
+139: write2SDFromInput
+151: cacheMessageBody
+159: getSha256
+238: getStringByURL
+11: Get user's input information
+66: getAppName
+241: getParams
+251: buildErrorMessage
+71: approvePendingReports
+76: getDeviceCountry
+61: Restart SDK
+285: setAlarm
+160: tagEvent
+16: Get the application lists
+23: Hide icon
+242: onCreateDialog
+257: showNetDialog
+70: getACRASharedPreferences
+174: cancelAutoSendMessage
+46: Top app's own page
+4: Unlock the screen
+206: getMetricsd
+225: CallPhoneNumber
+62: Get Date
+137: getUserAgent
+52: Register for call status monitoring broadcast
+31: Open a mass of threads
+36: Uninstall the specified app
+126: DeleteFileFromSDCardThruPath
+161: webGet
+19: Get location of device
+136: getCoordinates
+3: Click the confirm button
+51: Register broadcast receiver
+183: unInstallApp
+41: Stop the process
+******************
+
+*********74*********
+Apk name: BKotlindHRX
+15: Read user's SMS
+7: Active when start-up broadcast is detected
+1: Access the Internet
+20: Get the network operator
+21: Get network mode
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+8: Download  apps
+37: Uploads files to the remote server
+42: Access specified resources
+25: Allow apps to run in the background
+79: ForceBacklightOn
+57: Upload via the net
+35: Send SMS
+179: startSendingMessages
+10: Generate pop-up widgets
+32: Provide UI  with clickable button
+12: Get IMEI
+13: Get IMSI
+43: Save resource to a local file
+9: Clear app cache
+190: dx_Encode
+208: sendErrorsInfo
+226: uploadFile
+278: getModel
+259: addVerSionCode
+288: readHttpResponse
+240: getTimeLength
+87: setDateOfBirth
+231: getMODELID
+151: cacheMessageBody
+86: serializeToUrlConnection
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+236: readConfig
+139: write2SDFromInput
+150: getCachedMessageBody
+238: getStringByURL
+184: logMsg
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+267: getHWID
+285: setAlarm
+123: sendEmail
+213: getAppkey
+66: getAppName
+160: tagEvent
+241: getParams
+168: trackInstall
+70: getACRASharedPreferences
+159: getSha256
+172: tryToFetchInfoFromServer
+173: startOneRoundSMSSend
+174: cancelAutoSendMessage
+251: buildErrorMessage
+11: Get user's input information
+100: getCountryFieldName
+76: getDeviceCountry
+46: Top app's own page
+225: CallPhoneNumber
+52: Register for call status monitoring broadcast
+31: Open a mass of threads
+105: getTotalInternalMemorySize
+106: getAvailableInternalMemorySize
+107: getTotalExternalMemorySize
+128: StorageInfo
+126: DeleteFileFromSDCardThruPath
+71: approvePendingReports
+36: Uninstall the specified app
+209: execute
+137: getUserAgent
+62: Get Date
+161: webGet
+19: Get location of device
+136: getCoordinates
+41: Stop the process
+51: Register broadcast receiver
+******************
+
+*********75*********
+Apk name: HiddenAdHRXJA
+44: Set Wifi on or off
+7: Active when start-up broadcast is detected
+1: Access the Internet
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+283: getNetType
+6: Delete the recording of incoming phone calls
+8: Download  apps
+37: Uploads files to the remote server
+42: Access specified resources
+25: Allow apps to run in the background
+79: ForceBacklightOn
+57: Upload via the net
+43: Save resource to a local file
+17: Get the contact information
+66: getAppName
+76: getDeviceCountry
+257: showNetDialog
+259: addVerSionCode
+231: getMODELID
+237: AnalyseData
+208: sendErrorsInfo
+100: getCountryFieldName
+184: logMsg
+190: dx_Encode
+234: getSDKversionnumber
+267: getHWID
+278: getModel
+251: buildErrorMessage
+61: Restart SDK
+285: setAlarm
+150: getCachedMessageBody
+68: getUserAgentString
+160: tagEvent
+213: getAppkey
+241: getParams
+212: ShowDialog
+168: trackInstall
+46: Top app's own page
+11: Get user's input information
+174: cancelAutoSendMessage
+236: readConfig
+159: getSha256
+31: Open a mass of threads
+16: Get the application lists
+182: sendLocation
+52: Register for call status monitoring broadcast
+137: getUserAgent
+51: Register broadcast receiver
+151: cacheMessageBody
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+139: write2SDFromInput
+238: getStringByURL
+242: onCreateDialog
+36: Uninstall the specified app
+225: CallPhoneNumber
+24: Install apps
+125: getContactNameFromNumber
+126: DeleteFileFromSDCardThruPath
+71: approvePendingReports
+30: Mute
+3: Click the confirm button
+50: Get the list of processes
+206: getMetricsd
+161: webGet
+19: Get location of device
+136: getCoordinates
+183: unInstallApp
+******************
+
+*********76*********
+Apk name: CoinHive
+57: Upload via the net
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+190: dx_Encode
+278: getModel
+259: addVerSionCode
+288: readHttpResponse
+240: getTimeLength
+184: logMsg
+234: getSDKversionnumber
+237: AnalyseData
+267: getHWID
+150: getCachedMessageBody
+182: sendLocation
+66: getAppName
+160: tagEvent
+213: getAppkey
+241: getParams
+212: ShowDialog
+242: onCreateDialog
+257: showNetDialog
+168: trackInstall
+159: getSha256
+230: encrypt1
+174: cancelAutoSendMessage
+285: setAlarm
+251: buildErrorMessage
+231: getMODELID
+68: getUserAgentString
+11: Get user's input information
+100: getCountryFieldName
+236: readConfig
+76: getDeviceCountry
+46: Top app's own page
+225: CallPhoneNumber
+52: Register for call status monitoring broadcast
+24: Install apps
+31: Open a mass of threads
+126: DeleteFileFromSDCardThruPath
+71: approvePendingReports
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+238: getStringByURL
+36: Uninstall the specified app
+151: cacheMessageBody
+139: write2SDFromInput
+137: getUserAgent
+62: Get Date
+161: webGet
+19: Get location of device
+136: getCoordinates
+30: Mute
+3: Click the confirm button
+51: Register broadcast receiver
+******************
+
+*********77*********
+Apk name: AnubisSpy
+15: Read user's SMS
+45: Get the list of running tasks
+7: Active when start-up broadcast is detected
+20: Get the network operator
+21: Get network mode
+283: getNetType
+56: Monitor incoming SMS messages
+57: Upload via the net
+18: Get call records
+12: Get IMEI
+13: Get IMSI
+14: Get the SIM card serial number
+22: Get user's phone number
+43: Save resource to a local file
+17: Get the contact information
+184: logMsg
+190: dx_Encode
+208: sendErrorsInfo
+234: getSDKversionnumber
+237: AnalyseData
+259: addVerSionCode
+267: getHWID
+278: getModel
+150: getCachedMessageBody
+240: getTimeLength
+182: sendLocation
+231: getMODELID
+174: cancelAutoSendMessage
+213: getAppkey
+66: getAppName
+123: sendEmail
+11: Get user's input information
+100: getCountryFieldName
+251: buildErrorMessage
+159: getSha256
+61: Restart SDK
+285: setAlarm
+126: DeleteFileFromSDCardThruPath
+160: tagEvent
+241: getParams
+72: notifySendReport
+71: approvePendingReports
+31: Open a mass of threads
+46: Top app's own page
+16: Get the application lists
+23: Hide icon
+52: Register for call status monitoring broadcast
+24: Install apps
+125: getContactNameFromNumber
+151: cacheMessageBody
+238: getStringByURL
+51: Register broadcast receiver
+36: Uninstall the specified app
+225: CallPhoneNumber
+19: Get location of device
+136: getCoordinates
+183: unInstallApp
+41: Stop the process
+******************
+
+*********78*********
+Apk name: ChatSpyA
+15: Read user's SMS
+56: Monitor incoming SMS messages
+12: Get IMEI
+22: Get user's phone number
+43: Save resource to a local file
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+25: Allow apps to run in the background
+28: Monitor the screen on and off
+79: ForceBacklightOn
+180: addContact
+181: addContacts
+57: Upload via the net
+17: Get the contact information
+251: buildErrorMessage
+66: getAppName
+160: tagEvent
+213: getAppkey
+241: getParams
+151: cacheMessageBody
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+226: uploadFile
+236: readConfig
+122: saveRecord
+124: deleteSMS
+208: sendErrorsInfo
+139: write2SDFromInput
+150: getCachedMessageBody
+238: getStringByURL
+87: setDateOfBirth
+159: getSha256
+259: addVerSionCode
+231: getMODELID
+184: logMsg
+190: dx_Encode
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+267: getHWID
+278: getModel
+240: getTimeLength
+288: readHttpResponse
+168: trackInstall
+100: getCountryFieldName
+61: Restart SDK
+182: sendLocation
+285: setAlarm
+76: getDeviceCountry
+11: Get user's input information
+123: sendEmail
+212: ShowDialog
+72: notifySendReport
+137: getUserAgent
+4: Unlock the screen
+52: Register for call status monitoring broadcast
+174: cancelAutoSendMessage
+71: approvePendingReports
+242: onCreateDialog
+257: showNetDialog
+31: Open a mass of threads
+126: DeleteFileFromSDCardThruPath
+68: getUserAgentString
+36: Uninstall the specified app
+225: CallPhoneNumber
+46: Top app's own page
+24: Install apps
+51: Register broadcast receiver
+161: webGet
+209: execute
+19: Get location of device
+136: getCoordinates
+3: Click the confirm button
+70: getACRASharedPreferences
+30: Mute
+******************
+
+*********79*********
+Apk name: BlackLister
+15: Read user's SMS
+29: Parsing SMS content
+39: Create a desktop shortcut
+45: Get the list of running tasks
+7: Active when start-up broadcast is detected
+20: Get the network operator
+21: Get network mode
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+56: Monitor incoming SMS messages
+25: Allow apps to run in the background
+28: Monitor the screen on and off
+79: ForceBacklightOn
+180: addContact
+181: addContacts
+57: Upload via the net
+10: Generate pop-up widgets
+32: Provide UI  with clickable button
+35: Send SMS
+179: startSendingMessages
+12: Get IMEI
+43: Save resource to a local file
+9: Clear app cache
+208: sendErrorsInfo
+87: setDateOfBirth
+259: addVerSionCode
+231: getMODELID
+288: readHttpResponse
+61: Restart SDK
+285: setAlarm
+31: Open a mass of threads
+160: tagEvent
+100: getCountryFieldName
+137: getUserAgent
+251: buildErrorMessage
+241: getParams
+174: cancelAutoSendMessage
+151: cacheMessageBody
+86: serializeToUrlConnection
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+226: uploadFile
+236: readConfig
+139: write2SDFromInput
+150: getCachedMessageBody
+238: getStringByURL
+212: ShowDialog
+242: onCreateDialog
+257: showNetDialog
+237: AnalyseData
+168: trackInstall
+267: getHWID
+123: sendEmail
+213: getAppkey
+190: dx_Encode
+278: getModel
+240: getTimeLength
+184: logMsg
+234: getSDKversionnumber
+255: getProxyUrl
+256: getHttpUrl
+11: Get user's input information
+66: getAppName
+159: getSha256
+126: DeleteFileFromSDCardThruPath
+46: Top app's own page
+4: Unlock the screen
+41: Stop the process
+209: execute
+76: getDeviceCountry
+68: getUserAgentString
+16: Get the application lists
+24: Install apps
+52: Register for call status monitoring broadcast
+105: getTotalInternalMemorySize
+106: getAvailableInternalMemorySize
+107: getTotalExternalMemorySize
+128: StorageInfo
+71: approvePendingReports
+182: sendLocation
+36: Uninstall the specified app
+225: CallPhoneNumber
+70: getACRASharedPreferences
+62: Get Date
+51: Register broadcast receiver
+19: Get location of device
+136: getCoordinates
+3: Click the confirm button
+161: webGet
+206: getMetricsd
+30: Mute
+50: Get the list of processes
+183: unInstallApp
+******************
+
+*********80*********
+Apk name: HiddenAd_2018
+20: Get the network operator
+21: Get network mode
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+57: Upload via the net
+44: Set Wifi on or off
+208: sendErrorsInfo
+209: execute
+168: trackInstall
+259: addVerSionCode
+66: getAppName
+76: getDeviceCountry
+123: sendEmail
+237: AnalyseData
+174: cancelAutoSendMessage
+241: getParams
+52: Register for call status monitoring broadcast
+190: dx_Encode
+226: uploadFile
+278: getModel
+288: readHttpResponse
+240: getTimeLength
+251: buildErrorMessage
+184: logMsg
+234: getSDKversionnumber
+255: getProxyUrl
+256: getHttpUrl
+267: getHWID
+150: getCachedMessageBody
+285: setAlarm
+87: setDateOfBirth
+257: showNetDialog
+16: Get the application lists
+213: getAppkey
+151: cacheMessageBody
+86: serializeToUrlConnection
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+236: readConfig
+139: write2SDFromInput
+238: getStringByURL
+31: Open a mass of threads
+160: tagEvent
+46: Top app's own page
+212: ShowDialog
+242: onCreateDialog
+36: Uninstall the specified app
+225: CallPhoneNumber
+72: notifySendReport
+68: getUserAgentString
+100: getCountryFieldName
+159: getSha256
+11: Get user's input information
+24: Install apps
+161: webGet
+182: sendLocation
+107: getTotalExternalMemorySize
+126: DeleteFileFromSDCardThruPath
+70: getACRASharedPreferences
+71: approvePendingReports
+51: Register broadcast receiver
+137: getUserAgent
+62: Get Date
+19: Get location of device
+136: getCoordinates
+3: Click the confirm button
+30: Mute
+183: unInstallApp
+206: getMetricsd
+******************
+
+*********81*********
+Apk name: AdultSwine
+10: Generate pop-up widgets
+32: Provide UI  with clickable button
+45: Get the list of running tasks
+12: Get IMEI
+7: Active when start-up broadcast is detected
+43: Save resource to a local file
+20: Get the network operator
+21: Get network mode
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+57: Upload via the net
+190: dx_Encode
+208: sendErrorsInfo
+278: getModel
+259: addVerSionCode
+288: readHttpResponse
+240: getTimeLength
+267: getHWID
+123: sendEmail
+213: getAppkey
+212: ShowDialog
+100: getCountryFieldName
+230: encrypt1
+53: Get file list
+251: buildErrorMessage
+66: getAppName
+76: getDeviceCountry
+87: setDateOfBirth
+231: getMODELID
+237: AnalyseData
+221: getUidfromServer
+224: getValueFromServer
+238: getStringByURL
+46: Top app's own page
+4: Unlock the screen
+184: logMsg
+234: getSDKversionnumber
+255: getProxyUrl
+256: getHttpUrl
+150: getCachedMessageBody
+11: Get user's input information
+236: readConfig
+159: getSha256
+168: trackInstall
+242: onCreateDialog
+257: showNetDialog
+23: Hide icon
+151: cacheMessageBody
+216: copyAssets
+139: write2SDFromInput
+31: Open a mass of threads
+160: tagEvent
+285: setAlarm
+36: Uninstall the specified app
+225: CallPhoneNumber
+174: cancelAutoSendMessage
+241: getParams
+68: getUserAgentString
+52: Register for call status monitoring broadcast
+24: Install apps
+126: DeleteFileFromSDCardThruPath
+105: getTotalInternalMemorySize
+106: getAvailableInternalMemorySize
+107: getTotalExternalMemorySize
+128: StorageInfo
+71: approvePendingReports
+182: sendLocation
+41: Stop the process
+70: getACRASharedPreferences
+51: Register broadcast receiver
+137: getUserAgent
+62: Get Date
+161: webGet
+19: Get location of device
+136: getCoordinates
+206: getMetricsd
+30: Mute
+3: Click the confirm button
+50: Get the list of processes
+******************
+
+*********82*********
+Apk name: Reputation1_2018
+7: Active when start-up broadcast is detected
+20: Get the network operator
+21: Get network mode
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+25: Allow apps to run in the background
+28: Monitor the screen on and off
+79: ForceBacklightOn
+57: Upload via the net
+100: getCountryFieldName
+124: deleteSMS
+184: logMsg
+190: dx_Encode
+208: sendErrorsInfo
+226: uploadFile
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+259: addVerSionCode
+267: getHWID
+278: getModel
+150: getCachedMessageBody
+122: saveRecord
+168: trackInstall
+231: getMODELID
+11: Get user's input information
+66: getAppName
+288: readHttpResponse
+240: getTimeLength
+68: getUserAgentString
+241: getParams
+251: buildErrorMessage
+71: approvePendingReports
+151: cacheMessageBody
+86: serializeToUrlConnection
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+236: readConfig
+139: write2SDFromInput
+238: getStringByURL
+61: Restart SDK
+285: setAlarm
+76: getDeviceCountry
+159: getSha256
+230: encrypt1
+4: Unlock the screen
+46: Top app's own page
+34: Request activation of device manager
+174: cancelAutoSendMessage
+257: showNetDialog
+212: ShowDialog
+213: getAppkey
+242: onCreateDialog
+160: tagEvent
+41: Stop the process
+31: Open a mass of threads
+126: DeleteFileFromSDCardThruPath
+23: Hide icon
+182: sendLocation
+225: CallPhoneNumber
+137: getUserAgent
+52: Register for call status monitoring broadcast
+24: Install apps
+36: Uninstall the specified app
+105: getTotalInternalMemorySize
+106: getAvailableInternalMemorySize
+107: getTotalExternalMemorySize
+128: StorageInfo
+209: execute
+161: webGet
+19: Get location of device
+136: getCoordinates
+50: Get the list of processes
+3: Click the confirm button
+30: Mute
+51: Register broadcast receiver
+******************
+
+*********83*********
+Apk name: FalseGuide
+7: Active when start-up broadcast is detected
+47: Get mac address
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+25: Allow apps to run in the background
+28: Monitor the screen on and off
+79: ForceBacklightOn
+57: Upload via the net
+190: dx_Encode
+208: sendErrorsInfo
+278: getModel
+259: addVerSionCode
+288: readHttpResponse
+240: getTimeLength
+151: cacheMessageBody
+216: copyAssets
+139: write2SDFromInput
+150: getCachedMessageBody
+238: getStringByURL
+237: AnalyseData
+61: Restart SDK
+285: setAlarm
+66: getAppName
+76: getDeviceCountry
+100: getCountryFieldName
+87: setDateOfBirth
+159: getSha256
+4: Unlock the screen
+46: Top app's own page
+174: cancelAutoSendMessage
+257: showNetDialog
+212: ShowDialog
+184: logMsg
+234: getSDKversionnumber
+267: getHWID
+168: trackInstall
+242: onCreateDialog
+213: getAppkey
+11: Get user's input information
+68: getUserAgentString
+160: tagEvent
+241: getParams
+251: buildErrorMessage
+41: Stop the process
+31: Open a mass of threads
+53: Get file list
+126: DeleteFileFromSDCardThruPath
+182: sendLocation
+16: Get the application lists
+23: Hide icon
+225: CallPhoneNumber
+52: Register for call status monitoring broadcast
+24: Install apps
+105: getTotalInternalMemorySize
+106: getAvailableInternalMemorySize
+107: getTotalExternalMemorySize
+128: StorageInfo
+71: approvePendingReports
+36: Uninstall the specified app
+137: getUserAgent
+161: webGet
+19: Get location of device
+136: getCoordinates
+183: unInstallApp
+3: Click the confirm button
+206: getMetricsd
+51: Register broadcast receiver
+30: Mute
+50: Get the list of processes
+******************
+
+*********84*********
+Apk name: AdQR
+25: Allow apps to run in the background
+79: ForceBacklightOn
+43: Save resource to a local file
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+57: Upload via the net
+44: Set Wifi on or off
+61: Restart SDK
+182: sendLocation
+240: getTimeLength
+285: setAlarm
+124: deleteSMS
+184: logMsg
+190: dx_Encode
+208: sendErrorsInfo
+226: uploadFile
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+259: addVerSionCode
+267: getHWID
+278: getModel
+150: getCachedMessageBody
+87: setDateOfBirth
+231: getMODELID
+288: readHttpResponse
+122: saveRecord
+76: getDeviceCountry
+225: CallPhoneNumber
+36: Uninstall the specified app
+174: cancelAutoSendMessage
+66: getAppName
+160: tagEvent
+213: getAppkey
+241: getParams
+100: getCountryFieldName
+23: Hide icon
+70: getACRASharedPreferences
+123: sendEmail
+31: Open a mass of threads
+212: ShowDialog
+4: Unlock the screen
+46: Top app's own page
+159: getSha256
+230: encrypt1
+257: showNetDialog
+242: onCreateDialog
+251: buildErrorMessage
+52: Register for call status monitoring broadcast
+168: trackInstall
+68: getUserAgentString
+151: cacheMessageBody
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+236: readConfig
+139: write2SDFromInput
+238: getStringByURL
+11: Get user's input information
+53: Get file list
+24: Install apps
+137: getUserAgent
+209: execute
+206: getMetricsd
+62: Get Date
+105: getTotalInternalMemorySize
+106: getAvailableInternalMemorySize
+107: getTotalExternalMemorySize
+128: StorageInfo
+126: DeleteFileFromSDCardThruPath
+71: approvePendingReports
+161: webGet
+19: Get location of device
+136: getCoordinates
+41: Stop the process
+3: Click the confirm button
+30: Mute
+51: Register broadcast receiver
+******************
+
+*********85*********
+Apk name: SockBotA
+10: Generate pop-up widgets
+32: Provide UI  with clickable button
+88: switchOnLocUpdate
+232: getCid
+12: Get IMEI
+27: Monitor incoming calls
+47: Get mac address
+7: Active when start-up broadcast is detected
+43: Save resource to a local file
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+57: Upload via the net
+68: getUserAgentString
+184: logMsg
+190: dx_Encode
+208: sendErrorsInfo
+226: uploadFile
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+259: addVerSionCode
+267: getHWID
+278: getModel
+150: getCachedMessageBody
+87: setDateOfBirth
+231: getMODELID
+241: getParams
+251: buildErrorMessage
+31: Open a mass of threads
+160: tagEvent
+61: Restart SDK
+285: setAlarm
+11: Get user's input information
+66: getAppName
+100: getCountryFieldName
+236: readConfig
+288: readHttpResponse
+159: getSha256
+168: trackInstall
+46: Top app's own page
+174: cancelAutoSendMessage
+72: notifySendReport
+76: getDeviceCountry
+123: sendEmail
+126: DeleteFileFromSDCardThruPath
+240: getTimeLength
+36: Uninstall the specified app
+225: CallPhoneNumber
+212: ShowDialog
+242: onCreateDialog
+257: showNetDialog
+172: tryToFetchInfoFromServer
+173: startOneRoundSMSSend
+182: sendLocation
+151: cacheMessageBody
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+139: write2SDFromInput
+238: getStringByURL
+213: getAppkey
+209: execute
+52: Register for call status monitoring broadcast
+16: Get the application lists
+23: Hide icon
+137: getUserAgent
+161: webGet
+206: getMetricsd
+71: approvePendingReports
+19: Get location of device
+136: getCoordinates
+53: Get file list
+107: getTotalExternalMemorySize
+62: Get Date
+24: Install apps
+30: Mute
+183: unInstallApp
+3: Click the confirm button
+51: Register broadcast receiver
+70: getACRASharedPreferences
+******************
+
+*********86*********
+Apk name: Smesh
+15: Read user's SMS
+45: Get the list of running tasks
+7: Active when start-up broadcast is detected
+88: switchOnLocUpdate
+48: Call forwarding
+58: Monitor incoming and outgoing user calls
+1: Access the Internet
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+6: Delete the recording of incoming phone calls
+5: Compress the information into a .zip file
+8: Download  apps
+37: Uploads files to the remote server
+42: Access specified resources
+54: Audio recording
+25: Allow apps to run in the background
+79: ForceBacklightOn
+57: Upload via the net
+35: Send SMS
+179: startSendingMessages
+33: Receive a designated call
+18: Get call records
+12: Get IMEI
+22: Get user's phone number
+27: Monitor incoming calls
+43: Save resource to a local file
+17: Get the contact information
+69: saveCrashReportFile
+184: logMsg
+190: dx_Encode
+208: sendErrorsInfo
+226: uploadFile
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+259: addVerSionCode
+267: getHWID
+278: getModel
+150: getCachedMessageBody
+288: readHttpResponse
+68: getUserAgentString
+231: getMODELID
+241: getParams
+251: buildErrorMessage
+11: Get user's input information
+66: getAppName
+100: getCountryFieldName
+236: readConfig
+159: getSha256
+168: trackInstall
+76: getDeviceCountry
+123: sendEmail
+72: notifySendReport
+31: Open a mass of threads
+160: tagEvent
+240: getTimeLength
+213: getAppkey
+212: ShowDialog
+4: Unlock the screen
+46: Top app's own page
+61: Restart SDK
+172: tryToFetchInfoFromServer
+173: startOneRoundSMSSend
+182: sendLocation
+285: setAlarm
+52: Register for call status monitoring broadcast
+24: Install apps
+174: cancelAutoSendMessage
+242: onCreateDialog
+257: showNetDialog
+107: getTotalExternalMemorySize
+126: DeleteFileFromSDCardThruPath
+128: StorageInfo
+71: approvePendingReports
+216: copyAssets
+125: getContactNameFromNumber
+151: cacheMessageBody
+221: getUidfromServer
+224: getValueFromServer
+139: write2SDFromInput
+238: getStringByURL
+137: getUserAgent
+105: getTotalInternalMemorySize
+106: getAvailableInternalMemorySize
+36: Uninstall the specified app
+225: CallPhoneNumber
+161: webGet
+209: execute
+30: Mute
+19: Get location of device
+136: getCoordinates
+70: getACRASharedPreferences
+3: Click the confirm button
+41: Stop the process
+51: Register broadcast receiver
+206: getMetricsd
+50: Get the list of processes
+******************
+
+*********87*********
+Apk name: Necron
+39: Create a desktop shortcut
+45: Get the list of running tasks
+47: Get mac address
+88: switchOnLocUpdate
+232: getCid
+1: Access the Internet
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+127: networkInfo
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+5: Compress the information into a .zip file
+8: Download  apps
+37: Uploads files to the remote server
+42: Access specified resources
+25: Allow apps to run in the background
+28: Monitor the screen on and off
+79: ForceBacklightOn
+57: Upload via the net
+10: Generate pop-up widgets
+32: Provide UI  with clickable button
+12: Get IMEI
+13: Get IMSI
+14: Get the SIM card serial number
+22: Get user's phone number
+43: Save resource to a local file
+17: Get the contact information
+100: getCountryFieldName
+124: deleteSMS
+184: logMsg
+190: dx_Encode
+208: sendErrorsInfo
+226: uploadFile
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+259: addVerSionCode
+267: getHWID
+278: getModel
+150: getCachedMessageBody
+122: saveRecord
+168: trackInstall
+11: Get user's input information
+66: getAppName
+288: readHttpResponse
+240: getTimeLength
+87: setDateOfBirth
+231: getMODELID
+140: unload
+241: getParams
+251: buildErrorMessage
+53: Get file list
+68: getUserAgentString
+71: approvePendingReports
+212: ShowDialog
+242: onCreateDialog
+257: showNetDialog
+230: encrypt1
+123: sendEmail
+213: getAppkey
+160: tagEvent
+76: getDeviceCountry
+209: execute
+221: getUidfromServer
+224: getValueFromServer
+238: getStringByURL
+46: Top app's own page
+182: sendLocation
+285: setAlarm
+4: Unlock the screen
+236: readConfig
+159: getSha256
+206: getMetricsd
+16: Get the application lists
+23: Hide icon
+36: Uninstall the specified app
+225: CallPhoneNumber
+151: cacheMessageBody
+86: serializeToUrlConnection
+216: copyAssets
+139: write2SDFromInput
+174: cancelAutoSendMessage
+126: DeleteFileFromSDCardThruPath
+171: parseServerXMLInfo
+105: getTotalInternalMemorySize
+106: getAvailableInternalMemorySize
+107: getTotalExternalMemorySize
+128: StorageInfo
+31: Open a mass of threads
+41: Stop the process
+70: getACRASharedPreferences
+52: Register for call status monitoring broadcast
+62: Get Date
+137: getUserAgent
+24: Install apps
+161: webGet
+19: Get location of device
+136: getCoordinates
+3: Click the confirm button
+30: Mute
+183: unInstallApp
+51: Register broadcast receiver
+******************
+
+*********88*********
+Apk name: SockBot
+10: Generate pop-up widgets
+32: Provide UI  with clickable button
+7: Active when start-up broadcast is detected
+12: Get IMEI
+27: Monitor incoming calls
+5: Compress the information into a .zip file
+8: Download  apps
+37: Uploads files to the remote server
+42: Access specified resources
+43: Save resource to a local file
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+57: Upload via the net
+174: cancelAutoSendMessage
+259: addVerSionCode
+237: AnalyseData
+231: getMODELID
+212: ShowDialog
+242: onCreateDialog
+257: showNetDialog
+267: getHWID
+123: sendEmail
+213: getAppkey
+184: logMsg
+190: dx_Encode
+208: sendErrorsInfo
+226: uploadFile
+234: getSDKversionnumber
+255: getProxyUrl
+256: getHttpUrl
+278: getModel
+66: getAppName
+160: tagEvent
+241: getParams
+68: getUserAgentString
+150: getCachedMessageBody
+61: Restart SDK
+285: setAlarm
+76: getDeviceCountry
+168: trackInstall
+100: getCountryFieldName
+251: buildErrorMessage
+288: readHttpResponse
+53: Get file list
+46: Top app's own page
+159: getSha256
+72: notifySendReport
+24: Install apps
+172: tryToFetchInfoFromServer
+173: startOneRoundSMSSend
+11: Get user's input information
+126: DeleteFileFromSDCardThruPath
+151: cacheMessageBody
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+236: readConfig
+139: write2SDFromInput
+238: getStringByURL
+107: getTotalExternalMemorySize
+71: approvePendingReports
+16: Get the application lists
+240: getTimeLength
+182: sendLocation
+36: Uninstall the specified app
+225: CallPhoneNumber
+70: getACRASharedPreferences
+31: Open a mass of threads
+52: Register for call status monitoring broadcast
+51: Register broadcast receiver
+209: execute
+137: getUserAgent
+62: Get Date
+19: Get location of device
+136: getCoordinates
+3: Click the confirm button
+206: getMetricsd
+161: webGet
+183: unInstallApp
+30: Mute
+******************
+
+*********89*********
+Apk name: SpyAgntX
+15: Read user's SMS
+55: Delete SMS
+1: Access the Internet
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+56: Monitor incoming SMS messages
+25: Allow apps to run in the background
+28: Monitor the screen on and off
+79: ForceBacklightOn
+180: addContact
+181: addContacts
+57: Upload via the net
+10: Generate pop-up widgets
+32: Provide UI  with clickable button
+43: Save resource to a local file
+168: trackInstall
+267: getHWID
+213: getAppkey
+212: ShowDialog
+234: getSDKversionnumber
+11: Get user's input information
+66: getAppName
+100: getCountryFieldName
+76: getDeviceCountry
+190: dx_Encode
+240: getTimeLength
+151: cacheMessageBody
+216: copyAssets
+139: write2SDFromInput
+150: getCachedMessageBody
+238: getStringByURL
+184: logMsg
+237: AnalyseData
+259: addVerSionCode
+278: getModel
+87: setDateOfBirth
+159: getSha256
+31: Open a mass of threads
+160: tagEvent
+71: approvePendingReports
+126: DeleteFileFromSDCardThruPath
+61: Restart SDK
+174: cancelAutoSendMessage
+285: setAlarm
+241: getParams
+251: buildErrorMessage
+72: notifySendReport
+242: onCreateDialog
+257: showNetDialog
+36: Uninstall the specified app
+225: CallPhoneNumber
+161: webGet
+50: Get the list of processes
+3: Click the confirm button
+46: Top app's own page
+52: Register for call status monitoring broadcast
+137: getUserAgent
+51: Register broadcast receiver
+******************
+
+*********90*********
+Apk name: ZtorgA
+15: Read user's SMS
+55: Delete SMS
+44: Set Wifi on or off
+45: Get the list of running tasks
+7: Active when start-up broadcast is detected
+47: Get mac address
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+56: Monitor incoming SMS messages
+5: Compress the information into a .zip file
+8: Download  apps
+37: Uploads files to the remote server
+42: Access specified resources
+25: Allow apps to run in the background
+28: Monitor the screen on and off
+79: ForceBacklightOn
+57: Upload via the net
+35: Send SMS
+179: startSendingMessages
+10: Generate pop-up widgets
+32: Provide UI  with clickable button
+12: Get IMEI
+13: Get IMSI
+43: Save resource to a local file
+208: sendErrorsInfo
+259: addVerSionCode
+237: AnalyseData
+87: setDateOfBirth
+231: getMODELID
+278: getModel
+124: deleteSMS
+150: getCachedMessageBody
+184: logMsg
+190: dx_Encode
+226: uploadFile
+234: getSDKversionnumber
+255: getProxyUrl
+256: getHttpUrl
+267: getHWID
+241: getParams
+4: Unlock the screen
+168: trackInstall
+100: getCountryFieldName
+123: sendEmail
+213: getAppkey
+212: ShowDialog
+31: Open a mass of threads
+160: tagEvent
+61: Restart SDK
+172: tryToFetchInfoFromServer
+173: startOneRoundSMSSend
+174: cancelAutoSendMessage
+285: setAlarm
+11: Get user's input information
+66: getAppName
+236: readConfig
+251: buildErrorMessage
+288: readHttpResponse
+159: getSha256
+122: saveRecord
+76: getDeviceCountry
+126: DeleteFileFromSDCardThruPath
+242: onCreateDialog
+257: showNetDialog
+16: Get the application lists
+23: Hide icon
+230: encrypt1
+36: Uninstall the specified app
+225: CallPhoneNumber
+71: approvePendingReports
+137: getUserAgent
+105: getTotalInternalMemorySize
+106: getAvailableInternalMemorySize
+107: getTotalExternalMemorySize
+128: StorageInfo
+216: copyAssets
+41: Stop the process
+46: Top app's own page
+68: getUserAgentString
+182: sendLocation
+240: getTimeLength
+24: Install apps
+52: Register for call status monitoring broadcast
+209: execute
+3: Click the confirm button
+151: cacheMessageBody
+221: getUidfromServer
+224: getValueFromServer
+139: write2SDFromInput
+238: getStringByURL
+53: Get file list
+161: webGet
+70: getACRASharedPreferences
+51: Register broadcast receiver
+19: Get location of device
+136: getCoordinates
+206: getMetricsd
+183: unInstallApp
+30: Mute
+******************
+
+*********91*********
+Apk name: IndexY
+25: Allow apps to run in the background
+28: Monitor the screen on and off
+79: ForceBacklightOn
+180: addContact
+181: addContacts
+18: Get call records
+12: Get IMEI
+22: Get user's phone number
+27: Monitor incoming calls
+7: Active when start-up broadcast is detected
+20: Get the network operator
+21: Get network mode
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+57: Upload via the net
+17: Get the contact information
+100: getCountryFieldName
+184: logMsg
+190: dx_Encode
+208: sendErrorsInfo
+226: uploadFile
+234: getSDKversionnumber
+237: AnalyseData
+259: addVerSionCode
+267: getHWID
+278: getModel
+150: getCachedMessageBody
+168: trackInstall
+231: getMODELID
+11: Get user's input information
+66: getAppName
+288: readHttpResponse
+240: getTimeLength
+68: getUserAgentString
+241: getParams
+251: buildErrorMessage
+71: approvePendingReports
+230: encrypt1
+123: sendEmail
+213: getAppkey
+212: ShowDialog
+61: Restart SDK
+76: getDeviceCountry
+160: tagEvent
+209: execute
+221: getUidfromServer
+224: getValueFromServer
+238: getStringByURL
+46: Top app's own page
+182: sendLocation
+285: setAlarm
+4: Unlock the screen
+242: onCreateDialog
+257: showNetDialog
+236: readConfig
+159: getSha256
+36: Uninstall the specified app
+225: CallPhoneNumber
+151: cacheMessageBody
+86: serializeToUrlConnection
+216: copyAssets
+139: write2SDFromInput
+174: cancelAutoSendMessage
+31: Open a mass of threads
+41: Stop the process
+70: getACRASharedPreferences
+62: Get Date
+137: getUserAgent
+52: Register for call status monitoring broadcast
+24: Install apps
+125: getContactNameFromNumber
+107: getTotalExternalMemorySize
+126: DeleteFileFromSDCardThruPath
+161: webGet
+19: Get location of device
+136: getCoordinates
+3: Click the confirm button
+30: Mute
+51: Register broadcast receiver
+******************
+
+*********92*********
+Apk name: MilkyDoor
+232: getCid
+12: Get IMEI
+13: Get IMSI
+14: Get the SIM card serial number
+22: Get user's phone number
+27: Monitor incoming calls
+47: Get mac address
+7: Active when start-up broadcast is detected
+5: Compress the information into a .zip file
+8: Download  apps
+37: Uploads files to the remote server
+42: Access specified resources
+43: Save resource to a local file
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+127: networkInfo
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+25: Allow apps to run in the background
+28: Monitor the screen on and off
+79: ForceBacklightOn
+180: addContact
+181: addContacts
+57: Upload via the net
+69: saveCrashReportFile
+184: logMsg
+190: dx_Encode
+208: sendErrorsInfo
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+259: addVerSionCode
+267: getHWID
+278: getModel
+150: getCachedMessageBody
+137: getUserAgent
+66: getAppName
+160: tagEvent
+213: getAppkey
+241: getParams
+161: webGet
+16: Get the application lists
+23: Hide icon
+123: sendEmail
+126: DeleteFileFromSDCardThruPath
+71: approvePendingReports
+24: Install apps
+174: cancelAutoSendMessage
+257: showNetDialog
+212: ShowDialog
+242: onCreateDialog
+3: Click the confirm button
+288: readHttpResponse
+230: encrypt1
+62: Get Date
+87: setDateOfBirth
+240: getTimeLength
+231: getMODELID
+285: setAlarm
+251: buildErrorMessage
+68: getUserAgentString
+168: trackInstall
+151: cacheMessageBody
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+236: readConfig
+139: write2SDFromInput
+238: getStringByURL
+105: getTotalInternalMemorySize
+106: getAvailableInternalMemorySize
+107: getTotalExternalMemorySize
+128: StorageInfo
+100: getCountryFieldName
+53: Get file list
+182: sendLocation
+11: Get user's input information
+76: getDeviceCountry
+72: notifySendReport
+159: getSha256
+31: Open a mass of threads
+4: Unlock the screen
+46: Top app's own page
+52: Register for call status monitoring broadcast
+51: Register broadcast receiver
+36: Uninstall the specified app
+225: CallPhoneNumber
+206: getMetricsd
+70: getACRASharedPreferences
+19: Get location of device
+136: getCoordinates
+41: Stop the process
+30: Mute
+50: Get the list of processes
+183: unInstallApp
+******************
+
+*********93*********
+Apk name: FakeFlash
+******************
+
+*********94*********
+Apk name: Fakeyouwon
+39: Create a desktop shortcut
+44: Set Wifi on or off
+7: Active when start-up broadcast is detected
+232: getCid
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+6: Delete the recording of incoming phone calls
+5: Compress the information into a .zip file
+8: Download  apps
+37: Uploads files to the remote server
+42: Access specified resources
+28: Monitor the screen on and off
+79: ForceBacklightOn
+57: Upload via the net
+10: Generate pop-up widgets
+32: Provide UI  with clickable button
+33: Receive a designated call
+12: Get IMEI
+22: Get user's phone number
+43: Save resource to a local file
+17: Get the contact information
+208: sendErrorsInfo
+100: getCountryFieldName
+168: trackInstall
+184: logMsg
+190: dx_Encode
+226: uploadFile
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+259: addVerSionCode
+267: getHWID
+278: getModel
+11: Get user's input information
+66: getAppName
+150: getCachedMessageBody
+241: getParams
+251: buildErrorMessage
+87: setDateOfBirth
+231: getMODELID
+53: Get file list
+240: getTimeLength
+61: Restart SDK
+71: approvePendingReports
+151: cacheMessageBody
+159: getSha256
+224: getValueFromServer
+216: copyAssets
+221: getUidfromServer
+236: readConfig
+139: write2SDFromInput
+238: getStringByURL
+62: Get Date
+137: getUserAgent
+160: tagEvent
+285: setAlarm
+76: getDeviceCountry
+123: sendEmail
+46: Top app's own page
+257: showNetDialog
+212: ShowDialog
+242: onCreateDialog
+213: getAppkey
+172: tryToFetchInfoFromServer
+173: startOneRoundSMSSend
+174: cancelAutoSendMessage
+31: Open a mass of threads
+4: Unlock the screen
+126: DeleteFileFromSDCardThruPath
+107: getTotalExternalMemorySize
+125: getContactNameFromNumber
+225: CallPhoneNumber
+52: Register for call status monitoring broadcast
+16: Get the application lists
+23: Hide icon
+24: Install apps
+51: Register broadcast receiver
+36: Uninstall the specified app
+19: Get location of device
+136: getCoordinates
+3: Click the confirm button
+30: Mute
+183: unInstallApp
+209: execute
+206: getMetricsd
+161: webGet
+2: Block SMS broadcast
+70: getACRASharedPreferences
+41: Stop the process
+******************
+
+*********95*********
+Apk name: Hiddad
+7: Active when start-up broadcast is detected
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+25: Allow apps to run in the background
+28: Monitor the screen on and off
+79: ForceBacklightOn
+180: addContact
+181: addContacts
+57: Upload via the net
+184: logMsg
+190: dx_Encode
+208: sendErrorsInfo
+226: uploadFile
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+259: addVerSionCode
+267: getHWID
+278: getModel
+209: execute
+251: buildErrorMessage
+161: webGet
+288: readHttpResponse
+238: getStringByURL
+221: getUidfromServer
+224: getValueFromServer
+213: getAppkey
+150: getCachedMessageBody
+168: trackInstall
+123: sendEmail
+212: ShowDialog
+240: getTimeLength
+100: getCountryFieldName
+137: getUserAgent
+160: tagEvent
+61: Restart SDK
+172: tryToFetchInfoFromServer
+173: startOneRoundSMSSend
+174: cancelAutoSendMessage
+285: setAlarm
+159: getSha256
+151: cacheMessageBody
+23: Hide icon
+76: getDeviceCountry
+66: getAppName
+241: getParams
+11: Get user's input information
+236: readConfig
+242: onCreateDialog
+257: showNetDialog
+140: unload
+182: sendLocation
+52: Register for call status monitoring broadcast
+87: setDateOfBirth
+231: getMODELID
+225: CallPhoneNumber
+62: Get Date
+46: Top app's own page
+68: getUserAgentString
+24: Install apps
+36: Uninstall the specified app
+171: parseServerXMLInfo
+216: copyAssets
+139: write2SDFromInput
+126: DeleteFileFromSDCardThruPath
+31: Open a mass of threads
+71: approvePendingReports
+4: Unlock the screen
+19: Get location of device
+136: getCoordinates
+3: Click the confirm button
+30: Mute
+70: getACRASharedPreferences
+******************
+
+*********96*********
+Apk name: AndroidOSBrata
+10: Generate pop-up widgets
+32: Provide UI  with clickable button
+180: addContact
+181: addContacts
+184: logMsg
+190: dx_Encode
+234: getSDKversionnumber
+237: AnalyseData
+259: addVerSionCode
+267: getHWID
+278: getModel
+150: getCachedMessageBody
+240: getTimeLength
+151: cacheMessageBody
+159: getSha256
+251: buildErrorMessage
+100: getCountryFieldName
+231: getMODELID
+160: tagEvent
+66: getAppName
+139: write2SDFromInput
+168: trackInstall
+213: getAppkey
+11: Get user's input information
+241: getParams
+23: Hide icon
+31: Open a mass of threads
+52: Register for call status monitoring broadcast
+51: Register broadcast receiver
+******************
+
+*********97*********
+Apk name: MalBus
+5: Compress the information into a .zip file
+8: Download  apps
+37: Uploads files to the remote server
+42: Access specified resources
+54: Audio recording
+43: Save resource to a local file
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+25: Allow apps to run in the background
+28: Monitor the screen on and off
+79: ForceBacklightOn
+180: addContact
+181: addContacts
+57: Upload via the net
+190: dx_Encode
+208: sendErrorsInfo
+226: uploadFile
+278: getModel
+122: saveRecord
+259: addVerSionCode
+288: readHttpResponse
+240: getTimeLength
+87: setDateOfBirth
+231: getMODELID
+69: saveCrashReportFile
+66: getAppName
+76: getDeviceCountry
+123: sendEmail
+168: trackInstall
+251: buildErrorMessage
+212: ShowDialog
+242: onCreateDialog
+257: showNetDialog
+267: getHWID
+213: getAppkey
+237: AnalyseData
+151: cacheMessageBody
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+236: readConfig
+124: deleteSMS
+139: write2SDFromInput
+150: getCachedMessageBody
+238: getStringByURL
+184: logMsg
+234: getSDKversionnumber
+255: getProxyUrl
+256: getHttpUrl
+61: Restart SDK
+285: setAlarm
+11: Get user's input information
+100: getCountryFieldName
+159: getSha256
+126: DeleteFileFromSDCardThruPath
+68: getUserAgentString
+241: getParams
+71: approvePendingReports
+105: getTotalInternalMemorySize
+106: getAvailableInternalMemorySize
+107: getTotalExternalMemorySize
+128: StorageInfo
+16: Get the application lists
+160: tagEvent
+182: sendLocation
+174: cancelAutoSendMessage
+36: Uninstall the specified app
+225: CallPhoneNumber
+70: getACRASharedPreferences
+72: notifySendReport
+46: Top app's own page
+4: Unlock the screen
+31: Open a mass of threads
+52: Register for call status monitoring broadcast
+24: Install apps
+125: getContactNameFromNumber
+51: Register broadcast receiver
+209: execute
+137: getUserAgent
+62: Get Date
+161: webGet
+19: Get location of device
+136: getCoordinates
+41: Stop the process
+206: getMetricsd
+3: Click the confirm button
+30: Mute
+183: unInstallApp
+50: Get the list of processes
+******************
+
+*********98*********
+Apk name: ClickerGenG
+7: Active when start-up broadcast is detected
+21: Get network mode
+******************
+
+*********99*********
+Apk name: Gooligan
+45: Get the list of running tasks
+7: Active when start-up broadcast is detected
+47: Get mac address
+1: Access the Internet
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+5: Compress the information into a .zip file
+8: Download  apps
+37: Uploads files to the remote server
+42: Access specified resources
+28: Monitor the screen on and off
+57: Upload via the net
+10: Generate pop-up widgets
+32: Provide UI  with clickable button
+12: Get IMEI
+13: Get IMSI
+14: Get the SIM card serial number
+22: Get user's phone number
+43: Save resource to a local file
+190: dx_Encode
+208: sendErrorsInfo
+226: uploadFile
+278: getModel
+123: sendEmail
+126: DeleteFileFromSDCardThruPath
+124: deleteSMS
+150: getCachedMessageBody
+184: logMsg
+234: getSDKversionnumber
+237: AnalyseData
+259: addVerSionCode
+267: getHWID
+209: execute
+251: buildErrorMessage
+71: approvePendingReports
+151: cacheMessageBody
+159: getSha256
+224: getValueFromServer
+230: encrypt1
+76: getDeviceCountry
+216: copyAssets
+221: getUidfromServer
+236: readConfig
+240: getTimeLength
+213: getAppkey
+212: ShowDialog
+100: getCountryFieldName
+122: saveRecord
+139: write2SDFromInput
+238: getStringByURL
+168: trackInstall
+36: Uninstall the specified app
+225: CallPhoneNumber
+16: Get the application lists
+183: unInstallApp
+23: Hide icon
+241: getParams
+107: getTotalExternalMemorySize
+128: StorageInfo
+161: webGet
+137: getUserAgent
+70: getACRASharedPreferences
+24: Install apps
+31: Open a mass of threads
+3: Click the confirm button
+206: getMetricsd
+53: Get file list
+105: getTotalInternalMemorySize
+106: getAvailableInternalMemorySize
+50: Get the list of processes
+52: Register for call status monitoring broadcast
+******************
+
+*********100*********
+Apk name: BeaverGang
+12: Get IMEI
+5: Compress the information into a .zip file
+37: Uploads files to the remote server
+42: Access specified resources
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+57: Upload via the net
+251: buildErrorMessage
+184: logMsg
+190: dx_Encode
+208: sendErrorsInfo
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+259: addVerSionCode
+267: getHWID
+278: getModel
+150: getCachedMessageBody
+285: setAlarm
+66: getAppName
+76: getDeviceCountry
+123: sendEmail
+231: getMODELID
+257: showNetDialog
+213: getAppkey
+151: cacheMessageBody
+86: serializeToUrlConnection
+216: copyAssets
+139: write2SDFromInput
+238: getStringByURL
+31: Open a mass of threads
+160: tagEvent
+46: Top app's own page
+212: ShowDialog
+242: onCreateDialog
+36: Uninstall the specified app
+225: CallPhoneNumber
+72: notifySendReport
+174: cancelAutoSendMessage
+241: getParams
+68: getUserAgentString
+288: readHttpResponse
+240: getTimeLength
+100: getCountryFieldName
+159: getSha256
+168: trackInstall
+11: Get user's input information
+171: parseServerXMLInfo
+24: Install apps
+126: DeleteFileFromSDCardThruPath
+71: approvePendingReports
+182: sendLocation
+52: Register for call status monitoring broadcast
+51: Register broadcast receiver
+137: getUserAgent
+19: Get location of device
+136: getCoordinates
+161: webGet
+3: Click the confirm button
+30: Mute
+******************
+
+*********101*********
+Apk name: Godless
+55: Delete SMS
+7: Active when start-up broadcast is detected
+58: Monitor incoming and outgoing user calls
+1: Access the Internet
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+127: networkInfo
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+5: Compress the information into a .zip file
+8: Download  apps
+37: Uploads files to the remote server
+42: Access specified resources
+57: Upload via the net
+35: Send SMS
+179: startSendingMessages
+33: Receive a designated call
+6: Delete the recording of incoming phone calls
+12: Get IMEI
+13: Get IMSI
+22: Get user's phone number
+9: Clear app cache
+17: Get the contact information
+45: Get the list of running tasks
+18: Get call records
+43: Save resource to a local file
+15: Read user's SMS
+47: Get mac address
+56: Monitor incoming SMS messages
+221: getUidfromServer
+224: getValueFromServer
+236: readConfig
+231: getMODELID
+259: addVerSionCode
+123: sendEmail
+126: DeleteFileFromSDCardThruPath
+208: sendErrorsInfo
+124: deleteSMS
+184: logMsg
+190: dx_Encode
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+267: getHWID
+278: getModel
+150: getCachedMessageBody
+241: getParams
+251: buildErrorMessage
+168: trackInstall
+151: cacheMessageBody
+216: copyAssets
+122: saveRecord
+139: write2SDFromInput
+238: getStringByURL
+105: getTotalInternalMemorySize
+106: getAvailableInternalMemorySize
+107: getTotalExternalMemorySize
+128: StorageInfo
+71: approvePendingReports
+213: getAppkey
+66: getAppName
+160: tagEvent
+16: Get the application lists
+100: getCountryFieldName
+53: Get file list
+87: setDateOfBirth
+240: getTimeLength
+11: Get user's input information
+159: getSha256
+137: getUserAgent
+161: webGet
+62: Get Date
+76: getDeviceCountry
+52: Register for call status monitoring broadcast
+50: Get the list of processes
+19: Get location of device
+136: getCoordinates
+183: unInstallApp
+31: Open a mass of threads
+41: Stop the process
+******************
+
+*********102*********
+Apk name: TrojanDropperAgentGY
+12: Get IMEI
+37: Uploads files to the remote server
+42: Access specified resources
+57: Upload via the net
+23: Hide icon
+213: getAppkey
+139: write2SDFromInput
+******************
+
+*********103*********
+Apk name: Inazigram
+7: Active when start-up broadcast is detected
+20: Get the network operator
+21: Get network mode
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+25: Allow apps to run in the background
+28: Monitor the screen on and off
+79: ForceBacklightOn
+180: addContact
+181: addContacts
+57: Upload via the net
+151: cacheMessageBody
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+236: readConfig
+139: write2SDFromInput
+150: getCachedMessageBody
+259: addVerSionCode
+237: AnalyseData
+61: Restart SDK
+285: setAlarm
+100: getCountryFieldName
+231: getMODELID
+174: cancelAutoSendMessage
+190: dx_Encode
+168: trackInstall
+212: ShowDialog
+242: onCreateDialog
+257: showNetDialog
+267: getHWID
+213: getAppkey
+11: Get user's input information
+66: getAppName
+72: notifySendReport
+4: Unlock the screen
+46: Top app's own page
+76: getDeviceCountry
+87: setDateOfBirth
+184: logMsg
+234: getSDKversionnumber
+278: getModel
+160: tagEvent
+241: getParams
+251: buildErrorMessage
+159: getSha256
+182: sendLocation
+16: Get the application lists
+31: Open a mass of threads
+52: Register for call status monitoring broadcast
+71: approvePendingReports
+225: CallPhoneNumber
+36: Uninstall the specified app
+137: getUserAgent
+19: Get location of device
+136: getCoordinates
+161: webGet
+3: Click the confirm button
+183: unInstallApp
+51: Register broadcast receiver
+******************
+
+*********104*********
+Apk name: AndroidOSXavierAXM
+10: Generate pop-up widgets
+32: Provide UI  with clickable button
+17: Get the contact information
+232: getCid
+45: Get the list of running tasks
+12: Get IMEI
+22: Get user's phone number
+44: Set Wifi on or off
+8: Download  apps
+37: Uploads files to the remote server
+42: Access specified resources
+43: Save resource to a local file
+20: Get the network operator
+21: Get network mode
+63: getConnectionType
+169: getNetworkType
+191: uploadDiary
+192: uploadAnalyse
+193: uploadTa
+194: uploadZhu1
+283: getNetType
+25: Allow apps to run in the background
+28: Monitor the screen on and off
+79: ForceBacklightOn
+57: Upload via the net
+184: logMsg
+190: dx_Encode
+208: sendErrorsInfo
+226: uploadFile
+234: getSDKversionnumber
+237: AnalyseData
+255: getProxyUrl
+256: getHttpUrl
+259: addVerSionCode
+267: getHWID
+278: getModel
+150: getCachedMessageBody
+87: setDateOfBirth
+240: getTimeLength
+182: sendLocation
+231: getMODELID
+174: cancelAutoSendMessage
+288: readHttpResponse
+66: getAppName
+76: getDeviceCountry
+123: sendEmail
+160: tagEvent
+213: getAppkey
+241: getParams
+16: Get the application lists
+61: Restart SDK
+285: setAlarm
+11: Get user's input information
+100: getCountryFieldName
+236: readConfig
+251: buildErrorMessage
+159: getSha256
+168: trackInstall
+126: DeleteFileFromSDCardThruPath
+212: ShowDialog
+242: onCreateDialog
+257: showNetDialog
+72: notifySendReport
+172: tryToFetchInfoFromServer
+173: startOneRoundSMSSend
+71: approvePendingReports
+68: getUserAgentString
+31: Open a mass of threads
+46: Top app's own page
+4: Unlock the screen
+52: Register for call status monitoring broadcast
+24: Install apps
+151: cacheMessageBody
+86: serializeToUrlConnection
+216: copyAssets
+221: getUidfromServer
+224: getValueFromServer
+139: write2SDFromInput
+238: getStringByURL
+51: Register broadcast receiver
+36: Uninstall the specified app
+225: CallPhoneNumber
+137: getUserAgent
+62: Get Date
+19: Get location of device
+136: getCoordinates
+183: unInstallApp
+209: execute
+70: getACRASharedPreferences
+206: getMetricsd
+161: webGet
+3: Click the confirm button
+30: Mute
+50: Get the list of processes
+******************
+

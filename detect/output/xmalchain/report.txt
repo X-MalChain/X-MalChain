@@ -1,0 +1,107 @@
+******************
+ After Augmentation-Dataset: /home/wuyang/Experiments/Datas/malwares/googlePlay/apk_sample
+2023-07-21 13:14:24.086579 
+******************
+****************** APK 1 ******************
+文件名：ClickrAd
+特征映射成功率(映射上的特征数/APK总的特征数)：100.0%
+部分特征映射的节点覆盖率(部分映射节点数/KG节点总数)：85.71%
+完全特征映射的节点覆盖率(完全映射节点数/KG节点总数)：53.56999999999999%
+完全特征映射的节点覆盖率(完全映射节点数/映射节点数)：62.5%
+完全匹配上的节点:1,21,7,87,66,74,94,11,59,53,62,63,83,16,23,75,84,85,70,71,73,31,46,32,86,4,79,76,52,24,72,67,68,69,41,77,51,60,96,82,19,3,30,20,50
+对应的语义如下:
+1: Access the Internet
+21: Get network info
+7: Active when start-up broadcast is detected
+87: Upload files
+66: Set date of birth
+74: Get cached message
+94: Get HttpUrl
+11: Get user's input information
+59: Get App's name
+53: Get file name
+62: Send notification
+63: Get device's country
+83: Show dialog
+16: Get the application lists
+23: Hide icon
+75: Cache message
+84: Get Uid from server
+85: Get value from server
+70: Save database record
+71: Delete SMS in database
+73: Write to SD from input
+31: Open a mass of threads
+46: Add views
+32: Listen on clicks
+86: Call phone number
+4: Unlock the screen
+79: Cancel auto-sended message
+76: Get SHA256
+52: Register broadcast receiver
+24: Install apps
+72: Delete file from SD Card by path
+67: Get total internal memory size
+68: Get avaliable internal memory size
+69: Get total internal memory size
+41: Stop the process
+77: Check permissions
+51: Register content observer
+60: Get user's agent
+96: Read HttpResponse
+82: Execute
+19: Get location of device
+3: Click the confirm button
+30: Mute
+20: Get the network operator
+50: Get the list of services
+基于完全匹配节点的匹配路径:[16, 1, 3];[19, 1, 73];[74, 75];[1, 84, 87];[71, 72];[24, 23];[68, 67, 69];[1, 32];[86, 85, 86];[67, 68];[84, 85, 87]
+
+
+****************** APK 2 ******************
+文件名：GoldenCup
+特征映射成功率(映射上的特征数/APK总的特征数)：100.0%
+部分特征映射的节点覆盖率(部分映射节点数/KG节点总数)：82.14%
+完全特征映射的节点覆盖率(完全映射节点数/KG节点总数)：42.86%
+完全特征映射的节点覆盖率(完全映射节点数/映射节点数)：52.17%
+完全匹配上的节点:1,21,5,42,28,64,12,13,22,83,62,79,59,63,11,74,94,53,75,84,85,73,46,4,76,32,31,52,72,69,77,86,51,19,24,3
+对应的语义如下:
+1: Access the Internet
+21: Get network info
+5: Compress the information into a .zip file
+42: Access specified resources
+28: Monitor the screen
+64: Force backlight on
+12: Get IMEI
+13: Get IMSI
+22: Get user's phone number
+83: Show dialog
+62: Send notification
+79: Cancel auto-sended message
+59: Get App's name
+63: Get device's country
+11: Get user's input information
+74: Get cached message
+94: Get HttpUrl
+53: Get file name
+75: Cache message
+84: Get Uid from server
+85: Get value from server
+73: Write to SD from input
+46: Add views
+4: Unlock the screen
+76: Get SHA256
+32: Listen on clicks
+31: Open a mass of threads
+52: Register broadcast receiver
+72: Delete file from SD Card by path
+69: Get total internal memory size
+77: Check permissions
+86: Call phone number
+51: Register content observer
+19: Get location of device
+24: Install apps
+3: Click the confirm button
+基于完全匹配节点的匹配路径:[59, 22, 13, 12, 1, 3];[69, 13, 1, 12, 13];[22, 1, 84, 85, 86, 85];[12, 22, 63];[13, 22, 64];[19, 1, 73];[1, 32];[22, 84];[12, 76];[74, 75]
+
+

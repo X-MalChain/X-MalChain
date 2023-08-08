@@ -1,0 +1,63 @@
+
+
+******1******
+Apk Name: ClickrAd
+Match Path: [[1, 3], [1, 32], [19, 1], [24, 23]]
+Match Nodes: [1, 3, 19, 23, 24, 32]
+KG Node -> CG Node: [{'kg_node': 1, 'cg_node': 20817}]
+Find Father and New Nodes: [{'kg_node': 1, 'cg_node': 20817, 'cg_node_function': 'Ljava/net/URL;->getProtocol()Ljava/lang/String;"    external 1    entrypoint 0  ]  node [    id 20818    label "Ljava/net/HttpURLConnection;->setDoInput(Z)V"    external 1    entrypoint 0  ]  node [    id 20819    label "Ljavax/net/ssl/HttpsURLConnection;->setSSLSocketFactory(Ljavax/net/ssl/SSLSocketFactory;)V"    external 1    entrypoint 0  ]  node [    id 20820    label "Lcom/android/volley/toolbox/HurlStack;->createConnection(Ljava/net/URL;)Ljava/net/HttpURLConnection;', 'cg_source_node': [20815, 22802, 40258, 42998, 43888, 47814, 48824], 'cg_source_node_id': 20815, 'cg_source_function': 'Lcom/android/volley/toolbox/HurlStack;->openConnection(Ljava/net/URL; Lcom/android/volley/Request;)Ljava/net/HttpURLConnection;', 'cfg_down_function': []}]
+Augment Nodes: []
+
+
+******2******
+Apk Name: GoldenCup
+Match Path: [[1, 3], [1, 32], [1, 12], [19, 1], [22, 13]]
+Match Nodes: [1, 3, 12, 13, 19, 22, 32]
+KG Node -> CG Node: [{'kg_node': 1, 'cg_node': 14967}, {'kg_node': 12, 'cg_node': 10296}, {'kg_node': 13, 'cg_node': 16798}, {'kg_node': 22, 'cg_node': 16796}]
+Find Father and New Nodes: [{'kg_node': 12, 'cg_node': 10296, 'cg_node_function': 'Landroid/support/v7/app/AppCompatDelegateImplV9;->b(Landroid/support/v7/app/AppCompatDelegateImplV9$PanelFeatureState; Landroid/view/KeyEvent;)Z', 'cg_source_node': [10145, 10310, 10336, 10340, 10341, 10398], 'cg_source_node_id': 10145, 'cg_source_function': 'Landroid/support/v7/app/AppCompatDelegateImplV9;->f(I)V', 'cfg_down_function': []}, {'kg_node': 13, 'cg_node': 16798, 'cg_node_function': 'Lcom/coder/glancelove/e/a;->b(Landroid/content/Context;)Ljava/lang/String;', 'cg_source_node': [16805], 'cg_source_node_id': 16805, 'cg_source_function': 'Lcom/coder/glancelove/e/a;->e()Ljava/lang/String;', 'cfg_down_function': []}, {'kg_node': 22, 'cg_node': 16796, 'cg_node_function': 'Lcom/coder/glancelove/e/a;->a(Landroid/content/Context;)Ljava/lang/String;', 'cg_source_node': [16805], 'cg_source_node_id': 16805, 'cg_source_function': 'Lcom/coder/glancelove/e/a;->e()Ljava/lang/String;', 'cfg_down_function': []}]
+Augment Nodes: []
+
+
+******3******
+Apk Name: TekyaHRX
+Match Path: [[19, 1], [1, 3], [1, 32], [24, 23]]
+Match Nodes: [1, 3, 19, 23, 24, 32]
+KG Node -> CG Node: [{'kg_node': 1, 'cg_node': 336}]
+Find Father and New Nodes: [{'kg_node': 1, 'cg_node': 336, 'cg_node_function': 'LBk$a;->a([Ljava/lang/String;)Ljava/lang/Boolean;', 'cg_source_node': [302, 302, 309, 309, 350, 2498, 3359, 3359, 3362, 3363, 3363, 3363, 3363, 3367, 3373, 3380, 3384, 3391, 3398, 3406, 3406, 3535, 3535, 5508, 15084, 15158, 15170, 15180, 15190, 15409, 15410, 28139, 28382, 28987, 29182, 33427, 33510, 33511, 33514, 33514, 33559, 33603, 33603, 33603, 33603, 33610, 33611, 33611, 33615, 33618, 33620, 33620, 33621, 33623, 33623, 33625, 33625, 33625, 33625, 33627, 33630, 33631, 33631, 33631, 33631, 33634, 33634, 33635, 33635, 33635, 33637, 33638, 33638, 33638, 33641, 33641, 33643, 33645, 33646, 33646, 33648, 33648, 33648, 33649, 33649, 33649, 33653, 33661, 33665, 33667, 33670, 33673, 33676, 33676, 33676, 33676, 33676, 33676, 33683, 33686, 33693, 33693, 33693, 33694, 33695, 33696, 34835, 34950, 34952, 34952, 34952, 35008, 35366, 35431, 36597, 36597, 36597, 39448, 39967, 40369, 40374, 40606, 41784, 42829, 42830, 42831, 49468, 49717, 49729, 49791, 50140, 51439, 51440, 56819, 57864, 57867, 57868, 58658, 58666, 60868, 60978, 60985, 61907, 62009, 63287, 64723, 66549, 67198, 67800, 68380, 68814, 71398, 72832, 73641, 79142, 81248, 81449, 84020, 84065, 84584, 84609, 84721, 87881, 87906, 87922, 87923, 91094, 91285, 91553, 91554, 91556, 91939, 92077, 92092, 92191, 92252, 92299, 92364, 92436, 94259, 97850, 97975, 98156, 98157, 98957, 101287, 101288, 104263, 104308], 'cg_source_node_id': 33676, 'cg_source_function': 'Lno;->onScrollChanged()V', 'cfg_down_function': []}]
+Augment Nodes: []
+
+
+******4******
+Apk Name: FakeApp
+Match Path: [[1, 3], [1, 32], [19, 1]]
+Match Nodes: [1, 3, 19, 32]
+KG Node -> CG Node: [{'kg_node': 1, 'cg_node': 856}]
+Find Father and New Nodes: [{'kg_node': 1, 'cg_node': 856, 'cg_node_function': 'La/a/a/a/a/e/i;->a(Ljava/net/URL;)Ljava/net/HttpURLConnection;', 'cg_source_node': [8560, 8563, 8565, 8567, 8569, 18252], 'cg_source_node_id': 8560, 'cg_source_function': 'Lbutterknife/a/e;->a(Ljava/lang/Object; I)Landroid/view/View;', 'cfg_down_function': []}]
+Augment Nodes: []
+
+
+******5******
+Apk Name: GuerillaA
+Match Path: [[1, 3], [1, 32], [1, 12], [19, 1]]
+Match Nodes: [1, 3, 12, 19, 32]
+KG Node -> CG Node: [{'kg_node': 1, 'cg_node': 21970}, {'kg_node': 12, 'cg_node': 16573}]
+Find Father and New Nodes: [{'kg_node': 1, 'cg_node': 21970, 'cg_node_function': 'Lbolts/WebViewAppLinkResolver$3;->call()Ljava/lang/Void;', 'cg_source_node': [21969], 'cg_source_node_id': 21969, 'cg_source_function': 'Lbolts/WebViewAppLinkResolver$3;->call()Ljava/lang/Object;', 'cfg_down_function': []}, {'kg_node': 12, 'cg_node': 16573, 'cg_node_function': 'Landroid/support/v7/app/AppCompatDelegateImplV9;->preparePanel(Landroid/support/v7/app/AppCompatDelegateImplV9$PanelFeatureState; Landroid/view/KeyEvent;)Z', 'cg_source_node': [16572, 16581, 16586, 16596, 16617, 16619], 'cg_source_node_id': 16572, 'cg_source_function': 'Landroid/support/v7/app/AppCompatDelegateImplV9;->onKeyDownPanel(I Landroid/view/KeyEvent;)Z', 'cfg_down_function': []}]
+Augment Nodes: []
+
+
+******6******
+Apk Name: HiddenAdGLCA
+Match Path: [[1, 3], [1, 32], [1, 12], [19, 1], [13, 1], [24, 23]]
+Match Nodes: [1, 3, 12, 13, 19, 23, 24, 32]
+KG Node -> CG Node: [{'kg_node': 1, 'cg_node': 24683}, {'kg_node': 12, 'cg_node': 11076}, {'kg_node': 13, 'cg_node': 31188}]
+Find Father and New Nodes: [{'kg_node': 1, 'cg_node': 24683, 'cg_node_function': 'Lblur/kinds/photo/gaussian/point/b/d;->a(Landroid/content/Context; Landroid/net/Uri;)Ljava/lang/String;', 'cg_source_node': [24677], 'cg_source_node_id': 24677, 'cg_source_function': 'Lblur/kinds/photo/gaussian/point/b/d;->a(Ljava/lang/String;)Landroid/graphics/Bitmap;', 'cfg_down_function': []}, {'kg_node': 12, 'cg_node': 11076, 'cg_node_function': 'Landroid/support/v7/app/AppCompatDelegateImplV9;->preparePanel(Landroid/support/v7/app/AppCompatDelegateImplV9$PanelFeatureState; Landroid/view/KeyEvent;)Z', 'cg_source_node': [11075, 11088, 11093, 11105, 11129, 11132], 'cg_source_node_id': 11075, 'cg_source_function': 'Landroid/support/v7/app/AppCompatDelegateImplV9;->onKeyDownPanel(I Landroid/view/KeyEvent;)Z', 'cfg_down_function': []}, {'kg_node': 13, 'cg_node': 31188, 'cg_node_function': 'Lcom/umeng/analytics/pro/bt;->f(Landroid/content/Context;)Ljava/lang/String;', 'cg_source_node': [30466, 31217], 'cg_source_node_id': 30466, 'cg_source_function': 'Lcom/umeng/analytics/pro/bt;->e(Landroid/content/Context;)Ljava/lang/String;', 'cfg_down_function': []}]
+Augment Nodes: []
+
+
+******7******
+Apk Name: Clast82
+Match Path: [[19, 1], [1, 3]]
+Match Nodes: [1, 3, 19]
+KG Node -> CG Node: [{'kg_node': 1, 'cg_node': 11851}]
+Find Father and New Nodes: [{'kg_node': 1, 'cg_node': 11851, 'cg_node_function': 'Lg/b/a/l/m/j;->d(Ljava/net/URL; I Ljava/net/URL; Ljava/util/Map;)Ljava/io/InputStream;', 'cg_source_node': [11851, 11868], 'cg_source_node_id': 11851, 'cg_source_function': 'Lg/b/a/l/m/j;->d(Ljava/net/URL; I Ljava/net/URL; Ljava/util/Map;)Ljava/io/InputStream;', 'cfg_down_function': []}]
+Augment Nodes: []

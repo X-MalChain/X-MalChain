@@ -1,0 +1,3044 @@
+****************** APK 1 ******************
+Apk name：ClickrAd
+
+---Malicious---
+Active when start-up broadcast is detected
+Access the Internet
+Get network info
+Register broadcast receiver
+Get location of device
+Install apps
+Get the application lists
+Hide icon
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Stop the process
+Register content observer
+Click the confirm button
+Get the network operator
+Get the list of services
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+19->1: Get location of device->Access the Internet
+24->23: Install apps->Hide icon
+---Others---
+******************
+
+****************** APK 2 ******************
+Apk name：GoldenCup
+
+---Malicious---
+Access specified resources
+Access the Internet
+Register broadcast receiver
+Get location of device
+Get network info
+Get user's phone number
+Get IMSI
+Get IMEI
+
+---Others---
+Listen on clicks
+Open a mass of threads
+Register content observer
+Get file name
+Click the confirm button
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+1->12: Access the Internet->Get IMEI
+19->1: Get location of device->Access the Internet
+22->13: Get user's phone number->Get IMSI
+---Others---
+******************
+
+****************** APK 3 ******************
+Apk name：TekyaHRX
+
+---Malicious---
+Get location of device
+Get network info
+Active when start-up broadcast is detected
+Access specified resources
+Access the Internet
+Register broadcast receiver
+Install apps
+Hide icon
+Get the application lists
+
+---Others---
+Open a mass of threads
+Get the network operator
+Listen on clicks
+Click the confirm button
+Stop the process
+Register content observer
+Call phone number
+Get the list of services
+
+
+---Malicious---
+19->1: Get location of device->Access the Internet
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+24->23: Install apps->Hide icon
+---Others---
+******************
+
+****************** APK 4 ******************
+Apk name：FakeApp
+
+---Malicious---
+Get network info
+Access the Internet
+Get location of device
+
+---Others---
+Open a mass of threads
+Register content observer
+Listen on clicks
+Click the confirm button
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+19->1: Get location of device->Access the Internet
+---Others---
+******************
+
+****************** APK 5 ******************
+Apk name：GuerillaA
+
+---Malicious---
+Access specified resources
+Access the Internet
+Save resource to a local file
+Get network info
+Register broadcast receiver
+Get location of device
+Install apps
+Get IMEI
+Get IMSI
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Stop the process
+Register content observer
+Get the network operator
+Click the confirm button
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+1->12: Access the Internet->Get IMEI
+19->1: Get location of device->Access the Internet
+---Others---
+******************
+
+****************** APK 6 ******************
+Apk name：HiddenAdGLCA
+
+---Malicious---
+Save resource to a local file
+Active when start-up broadcast is detected
+Create a desktop shortcut
+Access the Internet
+Get network info
+Register broadcast receiver
+Get location of device
+Hide icon
+Get IMEI
+Get IMSI
+Install apps
+
+---Others---
+Open a mass of threads
+Register content observer
+Listen on clicks
+Click the confirm button
+Get the list of services
+Stop the process
+Get the network operator
+Call phone number
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+1->12: Access the Internet->Get IMEI
+19->1: Get location of device->Access the Internet
+13->1: Get IMSI->Access the Internet
+24->23: Install apps->Hide icon
+---Others---
+******************
+
+****************** APK 7 ******************
+Apk name：TrojanDropperAgentCIQ
+
+
+---Malicious---
+---Others---
+******************
+
+****************** APK 8 ******************
+Apk name：Clast82
+
+---Malicious---
+Get network info
+Register broadcast receiver
+Get location of device
+Access the Internet
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Register content observer
+Click the confirm button
+
+
+---Malicious---
+19->1: Get location of device->Access the Internet
+1->3: Access the Internet->Click the confirm button
+---Others---
+******************
+
+****************** APK 9 ******************
+Apk name：Tekya
+
+---Malicious---
+Save resource to a local file
+Access the Internet
+Get location of device
+Active when start-up broadcast is detected
+Get network info
+Register broadcast receiver
+Hide icon
+Get the application lists
+Install apps
+Block broadcast
+
+---Others---
+Listen on clicks
+Open a mass of threads
+Click the confirm button
+Get the network operator
+Register content observer
+Call phone number
+Stop the process
+Add views
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+19->1: Get location of device->Access the Internet
+16->1: Get the application lists->Access the Internet
+24->23: Install apps->Hide icon
+---Others---
+******************
+
+****************** APK 10 ******************
+Apk name：Reputation1_2019
+
+---Malicious---
+Access specified resources
+Get location of device
+Save resource to a local file
+Active when start-up broadcast is detected
+Create a desktop shortcut
+Access the Internet
+Get network info
+Register broadcast receiver
+Hide icon
+Install apps
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Stop the process
+Get the list of services
+Get the network operator
+Register content observer
+Click the confirm button
+
+
+---Malicious---
+19->1: Get location of device->Access the Internet
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+24->23: Install apps->Hide icon
+---Others---
+******************
+
+****************** APK 11 ******************
+Apk name：TrojanPornClicker
+
+---Malicious---
+Hide icon
+Get network info
+
+
+---Malicious---
+---Others---
+******************
+
+****************** APK 12 ******************
+Apk name：GuerillaD
+
+---Malicious---
+Access specified resources
+Access the Internet
+Save resource to a local file
+Active when start-up broadcast is detected
+Generate pop-up widgets
+Get network info
+Register broadcast receiver
+Get location of device
+Set Wifi on or off
+Get IMEI
+Get IMSI
+
+---Others---
+Open a mass of threads
+Stop the process
+Listen on clicks
+Get the network operator
+Click the confirm button
+Register content observer
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+1->12: Access the Internet->Get IMEI
+19->1: Get location of device->Access the Internet
+---Others---
+******************
+
+****************** APK 13 ******************
+Apk name：FakeWhatsApp
+
+---Malicious---
+Get network info
+Register broadcast receiver
+Access the Internet
+Install apps
+Get location of device
+
+---Others---
+Open a mass of threads
+Click the confirm button
+Listen on clicks
+Get the network operator
+Register content observer
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+19->1: Get location of device->Access the Internet
+---Others---
+******************
+
+****************** APK 14 ******************
+Apk name：AndroidOSJSMiner
+
+---Malicious---
+Get network info
+Get location of device
+Access the Internet
+Register broadcast receiver
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Click the confirm button
+Get the network operator
+Call phone number
+
+
+---Malicious---
+19->1: Get location of device->Access the Internet
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+---Others---
+******************
+
+****************** APK 15 ******************
+Apk name：ProjectSpyHRX
+
+---Malicious---
+Monitor received SMS
+Access specified resources
+Get location of device
+Active when start-up broadcast is detected
+Access the Internet
+Save resource to a local file
+Get network info
+Read SMS
+Hide icon
+Get IMEI
+Register broadcast receiver
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Stop the process
+Register content observer
+Click the confirm button
+
+
+---Malicious---
+19->1: Get location of device->Access the Internet
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+1->12: Access the Internet->Get IMEI
+---Others---
+******************
+
+****************** APK 16 ******************
+Apk name：FakeAppKO
+
+---Malicious---
+Register broadcast receiver
+Get location of device
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Stop the process
+Register content observer
+
+
+---Malicious---
+---Others---
+******************
+
+****************** APK 17 ******************
+Apk name：FakeAppHZ
+
+---Malicious---
+Register broadcast receiver
+Get location of device
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Register content observer
+
+
+---Malicious---
+---Others---
+******************
+
+****************** APK 18 ******************
+Apk name：HiddadBZ
+
+---Malicious---
+Access specified resources
+Save resource to a local file
+Active when start-up broadcast is detected
+Access the Internet
+Get network info
+Register broadcast receiver
+Get location of device
+Install apps
+Get the application lists
+Block broadcast
+
+---Others---
+Open a mass of threads
+Register content observer
+Listen on clicks
+Get the network operator
+Click the confirm button
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+19->1: Get location of device->Access the Internet
+---Others---
+******************
+
+****************** APK 19 ******************
+Apk name：HiddenAdHRXH
+
+---Malicious---
+Access specified resources
+Save resource to a local file
+Active when start-up broadcast is detected
+Access the Internet
+Get network info
+Register broadcast receiver
+Get location of device
+Get IMEI
+Get the list of running tasks
+Install apps
+Get the SIM card serial number
+Create a desktop shortcut
+Get the application lists
+Audio recording
+Get IMSI
+Hide icon
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Stop the process
+Register content observer
+Get the list of services
+Get the network operator
+Click the confirm button
+Mute
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+1->12: Access the Internet->Get IMEI
+19->1: Get location of device->Access the Internet
+12->1: Get IMEI->Access the Internet
+12->14: Get IMEI->Get the SIM card serial number
+12->13: Get IMEI->Get IMSI
+24->23: Install apps->Hide icon
+14->1: Get the SIM card serial number->Access the Internet
+16->1: Get the application lists->Access the Internet
+54->43: Audio recording->Save resource to a local file
+13->14: Get IMSI->Get the SIM card serial number
+---Others---
+******************
+
+****************** APK 20 ******************
+Apk name：Solid
+
+---Malicious---
+Active when start-up broadcast is detected
+Access the Internet
+Get network info
+Register broadcast receiver
+Get location of device
+Install apps
+Get the application lists
+Request activation of device manager
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Click the confirm button
+Register content observer
+Get the network operator
+Get the list of services
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+19->1: Get location of device->Access the Internet
+---Others---
+******************
+
+****************** APK 21 ******************
+Apk name：InstaDetector
+
+---Malicious---
+Save resource to a local file
+Register broadcast receiver
+Install apps
+Get network info
+Access the Internet
+Get location of device
+
+---Others---
+Open a mass of threads
+Register content observer
+Listen on clicks
+Click the confirm button
+Get the network operator
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+---Others---
+******************
+
+****************** APK 22 ******************
+Apk name：AgentBKY
+
+---Malicious---
+Access specified resources
+Access the Internet
+Monitor received SMS
+Save resource to a local file
+Read SMS
+Register broadcast receiver
+Get location of device
+Get network info
+Parsing SMS content
+Get IMEI
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Stop the process
+Register content observer
+
+
+---Malicious---
+1->32: Access the Internet->Listen on clicks
+1->12: Access the Internet->Get IMEI
+56->29: Monitor received SMS->Parsing SMS content
+19->1: Get location of device->Access the Internet
+---Others---
+******************
+
+****************** APK 23 ******************
+Apk name：HiddenAdOS
+
+---Malicious---
+Access specified resources
+Get location of device
+Save resource to a local file
+Get network info
+Access the Internet
+Install apps
+Register broadcast receiver
+Hide icon
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Register content observer
+Click the confirm button
+Get the network operator
+
+
+---Malicious---
+19->1: Get location of device->Access the Internet
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+24->23: Install apps->Hide icon
+---Others---
+******************
+
+****************** APK 24 ******************
+Apk name：FakeAppCQ
+
+---Malicious---
+Save resource to a local file
+Get location of device
+Active when start-up broadcast is detected
+Register broadcast receiver
+Get network info
+Access the Internet
+Get user's phone number
+Get IMEI
+Install apps
+Get the application lists
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Get the network operator
+Click the confirm button
+Register content observer
+Stop the process
+Call phone number
+
+
+---Malicious---
+19->1: Get location of device->Access the Internet
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+1->12: Access the Internet->Get IMEI
+22->1: Get user's phone number->Access the Internet
+---Others---
+******************
+
+****************** APK 25 ******************
+Apk name：Joker
+
+---Malicious---
+Monitor received SMS
+Access the Internet
+Access specified resources
+Generate pop-up widgets
+Active when start-up broadcast is detected
+Register broadcast receiver
+Save resource to a local file
+Read SMS
+Get location of device
+Get network info
+Get user's phone number
+Hide icon
+Delete the recording of incoming phone calls
+Block broadcast
+Audio recording
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Get the network operator
+Click the confirm button
+Register content observer
+Stop the process
+Get file name
+
+
+---Malicious---
+56->2: Monitor received SMS->Block broadcast
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+19->1: Get location of device->Access the Internet
+54->43: Audio recording->Save resource to a local file
+---Others---
+******************
+
+****************** APK 26 ******************
+Apk name：PSWAndroidOSMyVK
+
+---Malicious---
+Save resource to a local file
+Access specified resources
+Access the Internet
+Get network info
+Get location of device
+Monitor incoming calls
+Register broadcast receiver
+Get the application lists
+
+---Others---
+Open a mass of threads
+Register content observer
+Listen on clicks
+Click the confirm button
+Get the network operator
+Stop the process
+Call phone number
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+19->1: Get location of device->Access the Internet
+---Others---
+******************
+
+****************** APK 27 ******************
+Apk name：AxentDS
+
+---Others---
+Get the network operator
+
+
+---Malicious---
+---Others---
+******************
+
+****************** APK 28 ******************
+Apk name：Reputation2
+
+---Malicious---
+Access specified resources
+Generate pop-up widgets
+Active when start-up broadcast is detected
+Save resource to a local file
+Set Wifi on or off
+Register broadcast receiver
+Get the application lists
+Get the contact information
+Create a desktop shortcut
+Get the list of running tasks
+Delete the recording of incoming phone calls
+Access the Internet
+Get network info
+Get location of device
+Block broadcast
+Get IMEI
+Get IMSI
+Compress the information into a .zip file
+Hide icon
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Stop the process
+Get file name
+Register content observer
+Call phone number
+Get the network operator
+Get the list of services
+Click the confirm button
+Mute
+
+
+---Malicious---
+16->1: Get the application lists->Access the Internet
+17->5: Get the contact information->Compress the information into a .zip file
+17->1: Get the contact information->Access the Internet
+6->1: Delete the recording of incoming phone calls->Access the Internet
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+1->12: Access the Internet->Get IMEI
+19->1: Get location of device->Access the Internet
+12->13: Get IMEI->Get IMSI
+---Others---
+******************
+
+****************** APK 29 ******************
+Apk name：GhostTeam
+
+---Malicious---
+Access specified resources
+Access the Internet
+Generate pop-up widgets
+Save resource to a local file
+Active when start-up broadcast is detected
+Get the contact information
+Get network info
+Register broadcast receiver
+Get location of device
+Get the application lists
+Delete the recording of incoming phone calls
+Set Wifi on or off
+Get the list of running tasks
+Get IMEI
+Get user's phone number
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Stop the process
+Register content observer
+Get the network operator
+Click the confirm button
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+1->12: Access the Internet->Get IMEI
+17->1: Get the contact information->Access the Internet
+19->1: Get location of device->Access the Internet
+16->1: Get the application lists->Access the Internet
+6->1: Delete the recording of incoming phone calls->Access the Internet
+---Others---
+******************
+
+****************** APK 30 ******************
+Apk name：Haken
+
+---Malicious---
+Access the Internet
+Access specified resources
+Active when start-up broadcast is detected
+Register broadcast receiver
+Get location of device
+Get network info
+Save resource to a local file
+Generate pop-up widgets
+Hide icon
+Get the application lists
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Register content observer
+Get the network operator
+Click the confirm button
+Stop the process
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+19->1: Get location of device->Access the Internet
+---Others---
+******************
+
+****************** APK 31 ******************
+Apk name：AgentJL
+
+---Malicious---
+Access specified resources
+Save resource to a local file
+Register broadcast receiver
+Get location of device
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Stop the process
+Register content observer
+Click the confirm button
+
+
+---Malicious---
+---Others---
+******************
+
+****************** APK 32 ******************
+Apk name：SpyBankerAJZ
+
+---Malicious---
+Access specified resources
+Active when start-up broadcast is detected
+Generate pop-up widgets
+Save resource to a local file
+Register broadcast receiver
+Get location of device
+Get the application lists
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Click the confirm button
+Register content observer
+
+
+---Malicious---
+---Others---
+******************
+
+****************** APK 33 ******************
+Apk name：FakeAppKP
+
+---Malicious---
+Access the Internet
+Active when start-up broadcast is detected
+Get network info
+Register broadcast receiver
+Get location of device
+Get IMEI
+Install apps
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Click the confirm button
+Call phone number
+Register content observer
+Get the network operator
+Stop the process
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+1->12: Access the Internet->Get IMEI
+19->1: Get location of device->Access the Internet
+---Others---
+******************
+
+****************** APK 34 ******************
+Apk name：SpyBankerPV
+
+---Malicious---
+Access the Internet
+Active when start-up broadcast is detected
+Hide icon
+Get network info
+
+---Others---
+Open a mass of threads
+Register content observer
+Listen on clicks
+Click the confirm button
+Get the network operator
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+---Others---
+******************
+
+****************** APK 35 ******************
+Apk name：ClipperC
+
+---Malicious---
+Access the Internet
+Save resource to a local file
+Get network info
+Register broadcast receiver
+Get location of device
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Register content observer
+
+
+---Malicious---
+1->32: Access the Internet->Listen on clicks
+19->1: Get location of device->Access the Internet
+---Others---
+******************
+
+****************** APK 36 ******************
+Apk name：DoubleHidden
+
+---Malicious---
+Active when start-up broadcast is detected
+Access the Internet
+Get network info
+Register broadcast receiver
+Get location of device
+Get the application lists
+Hide icon
+Block broadcast
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Stop the process
+Register content observer
+Click the confirm button
+Call phone number
+Get the network operator
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+19->1: Get location of device->Access the Internet
+16->1: Get the application lists->Access the Internet
+---Others---
+******************
+
+****************** APK 37 ******************
+Apk name：FakeInsta
+
+---Malicious---
+Access the Internet
+Active when start-up broadcast is detected
+Get network info
+Register broadcast receiver
+Get location of device
+Hide icon
+Get the application lists
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Stop the process
+Register content observer
+Click the confirm button
+Call phone number
+Get the network operator
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+19->1: Get location of device->Access the Internet
+16->1: Get the application lists->Access the Internet
+---Others---
+******************
+
+****************** APK 38 ******************
+Apk name：DroidPlugin
+
+---Malicious---
+Monitor received SMS
+Active when start-up broadcast is detected
+Generate pop-up widgets
+Save resource to a local file
+Access the Internet
+Get network info
+Read SMS
+Get location of device
+Get IMEI
+Get user's phone number
+Get IMSI
+Hide icon
+Create a desktop shortcut
+Register broadcast receiver
+Delete the recording of incoming phone calls
+Get the application lists
+Get the SIM card serial number
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Get the network operator
+Stop the process
+Register content observer
+
+
+---Malicious---
+1->32: Access the Internet->Listen on clicks
+1->12: Access the Internet->Get IMEI
+19->1: Get location of device->Access the Internet
+12->1: Get IMEI->Access the Internet
+12->14: Get IMEI->Get the SIM card serial number
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+13->1: Get IMSI->Access the Internet
+---Others---
+******************
+
+****************** APK 39 ******************
+Apk name：PletorD
+
+---Malicious---
+Active when start-up broadcast is detected
+Get location of device
+Get IMEI
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Register content observer
+
+
+---Malicious---
+---Others---
+******************
+
+****************** APK 40 ******************
+Apk name：AxentEH
+
+---Malicious---
+Access specified resources
+Generate pop-up widgets
+Save resource to a local file
+Get network info
+Access the Internet
+Get IMEI
+Get location of device
+Register broadcast receiver
+Get the list of running tasks
+Get the application lists
+Get IMSI
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Get the network operator
+Stop the process
+Register content observer
+Click the confirm button
+Get the list of services
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+1->12: Access the Internet->Get IMEI
+19->1: Get location of device->Access the Internet
+16->1: Get the application lists->Access the Internet
+---Others---
+******************
+
+****************** APK 41 ******************
+Apk name：JokerV2
+
+---Malicious---
+Save resource to a local file
+Access the Internet
+Access specified resources
+Get location of device
+Get network info
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Stop the process
+Get the network operator
+Click the confirm button
+Register content observer
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+19->1: Get location of device->Access the Internet
+---Others---
+******************
+
+****************** APK 42 ******************
+Apk name：HiddadAJN
+
+---Malicious---
+Access the Internet
+Active when start-up broadcast is detected
+Get network info
+Register broadcast receiver
+Get location of device
+Hide icon
+Install apps
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Get the network operator
+Register content observer
+Click the confirm button
+Stop the process
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+19->1: Get location of device->Access the Internet
+24->23: Install apps->Hide icon
+---Others---
+******************
+
+****************** APK 43 ******************
+Apk name：ClickAds
+
+---Malicious---
+Access the Internet
+Get network info
+Install apps
+Register broadcast receiver
+Get location of device
+
+---Others---
+Open a mass of threads
+Register content observer
+Listen on clicks
+Click the confirm button
+Get the network operator
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+19->1: Get location of device->Access the Internet
+---Others---
+******************
+
+****************** APK 44 ******************
+Apk name：MobstSpy
+
+---Malicious---
+Access the Internet
+Get network info
+Get location of device
+Create a desktop shortcut
+Get the application lists
+Active when start-up broadcast is detected
+Install apps
+Register broadcast receiver
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Call phone number
+Click the confirm button
+Get the list of services
+Get the network operator
+Stop the process
+Register content observer
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+19->1: Get location of device->Access the Internet
+16->1: Get the application lists->Access the Internet
+24->39: Install apps->Create a desktop shortcut
+---Others---
+******************
+
+****************** APK 45 ******************
+Apk name：SideWinder
+
+---Malicious---
+Access the Internet
+Access specified resources
+Get location of device
+Generate pop-up widgets
+Save resource to a local file
+Get network info
+Register broadcast receiver
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Stop the process
+Click the confirm button
+Register content observer
+Get the list of services
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+19->1: Get location of device->Access the Internet
+---Others---
+******************
+
+****************** APK 46 ******************
+Apk name：SpyBankerAIF
+
+---Malicious---
+Register broadcast receiver
+Get location of device
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Click the confirm button
+Register content observer
+
+
+---Malicious---
+---Others---
+******************
+
+****************** APK 47 ******************
+Apk name：LightsOut
+
+---Malicious---
+Save resource to a local file
+Access specified resources
+Active when start-up broadcast is detected
+Access the Internet
+Generate pop-up widgets
+Register broadcast receiver
+Get location of device
+Get the contact information
+Get network info
+Get the list of running tasks
+Get IMEI
+Get IMSI
+Get the application lists
+Set Wifi on or off
+Create a desktop shortcut
+Hide icon
+Compress the information into a .zip file
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Register content observer
+Get the network operator
+Stop the process
+Click the confirm button
+Call phone number
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+1->12: Access the Internet->Get IMEI
+19->1: Get location of device->Access the Internet
+17->5: Get the contact information->Compress the information into a .zip file
+17->1: Get the contact information->Access the Internet
+---Others---
+******************
+
+****************** APK 48 ******************
+Apk name：Fasurke
+
+---Malicious---
+Get network info
+Install apps
+Access the Internet
+Register broadcast receiver
+Get location of device
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Click the confirm button
+Get the network operator
+Call phone number
+Add views
+Register content observer
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+19->1: Get location of device->Access the Internet
+---Others---
+******************
+
+****************** APK 49 ******************
+Apk name：Vilny
+
+---Malicious---
+Active when start-up broadcast is detected
+Get network info
+Register broadcast receiver
+Get the list of running tasks
+Access the Internet
+
+---Others---
+Open a mass of threads
+Click the confirm button
+Listen on clicks
+Stop the process
+Register content observer
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+---Others---
+******************
+
+****************** APK 50 ******************
+Apk name：AceCard
+
+---Malicious---
+Monitor received SMS
+Active when start-up broadcast is detected
+Get network info
+Access the Internet
+Hide icon
+Read SMS
+Parsing SMS content
+Block broadcast
+Get user's phone number
+Send SMS
+Get IMEI
+
+---Others---
+Open a mass of threads
+Click the confirm button
+Stop the process
+Register content observer
+Listen on clicks
+
+
+---Malicious---
+56->2: Monitor received SMS->Block broadcast
+56->29: Monitor received SMS->Parsing SMS content
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+1->12: Access the Internet->Get IMEI
+22->1: Get user's phone number->Access the Internet
+35->56: Send SMS->Monitor received SMS
+---Others---
+******************
+
+****************** APK 51 ******************
+Apk name：Simpo
+
+---Malicious---
+Get network info
+Hide icon
+Set Wifi on or off
+Register broadcast receiver
+
+---Others---
+Open a mass of threads
+Listen on clicks
+
+
+---Malicious---
+---Others---
+******************
+
+****************** APK 52 ******************
+Apk name：Aladdin
+
+---Malicious---
+Active when start-up broadcast is detected
+Access the Internet
+Get network info
+Register broadcast receiver
+Get location of device
+Hide icon
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Register content observer
+
+
+---Malicious---
+1->32: Access the Internet->Listen on clicks
+19->1: Get location of device->Access the Internet
+---Others---
+******************
+
+****************** APK 53 ******************
+Apk name：Sonyvpay
+
+---Malicious---
+Monitor received SMS
+Access specified resources
+Save resource to a local file
+Active when start-up broadcast is detected
+Access the Internet
+Get network info
+Get the application lists
+Get user's input information
+Register broadcast receiver
+Set Wifi on or off
+Get location of device
+
+---Others---
+Listen on clicks
+Open a mass of threads
+Get the network operator
+Register content observer
+Click the confirm button
+Stop the process
+Get file name
+Get the list of services
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+16->1: Get the application lists->Access the Internet
+19->1: Get location of device->Access the Internet
+---Others---
+******************
+
+****************** APK 54 ******************
+Apk name：FlixOnline
+
+---Malicious---
+Active when start-up broadcast is detected
+Generate pop-up widgets
+Get network info
+Hide icon
+Register broadcast receiver
+Access the Internet
+
+---Others---
+Open a mass of threads
+Register content observer
+Listen on clicks
+
+
+---Malicious---
+1->32: Access the Internet->Listen on clicks
+---Others---
+******************
+
+****************** APK 55 ******************
+Apk name：RedDawn
+
+---Malicious---
+Active when start-up broadcast is detected
+Register broadcast receiver
+Get location of device
+Access the Internet
+Get network info
+Generate pop-up widgets
+Get IMEI
+Set Wifi on or off
+
+---Others---
+Open a mass of threads
+Register content observer
+Listen on clicks
+Click the confirm button
+Get the list of services
+
+
+---Malicious---
+19->1: Get location of device->Access the Internet
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+1->12: Access the Internet->Get IMEI
+---Others---
+******************
+
+****************** APK 56 ******************
+Apk name：CPUMiner
+
+---Malicious---
+Access the Internet
+Active when start-up broadcast is detected
+Register broadcast receiver
+Get location of device
+Get network info
+Hide icon
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Stop the process
+Click the confirm button
+Register content observer
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+19->1: Get location of device->Access the Internet
+---Others---
+******************
+
+****************** APK 57 ******************
+Apk name：InstaZuna
+
+---Malicious---
+Active when start-up broadcast is detected
+Save resource to a local file
+Get network info
+Get location of device
+Register broadcast receiver
+Install apps
+Access the Internet
+
+---Others---
+Listen on clicks
+Open a mass of threads
+Click the confirm button
+Get the network operator
+Register content observer
+
+
+---Malicious---
+19->1: Get location of device->Access the Internet
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+---Others---
+******************
+
+****************** APK 58 ******************
+Apk name：FraudApp
+
+---Malicious---
+Access the Internet
+Get network info
+Access specified resources
+Register broadcast receiver
+Get location of device
+Active when start-up broadcast is detected
+Get the list of running tasks
+Save resource to a local file
+Get the application lists
+Install apps
+Hide icon
+
+---Others---
+Open a mass of threads
+Click the confirm button
+Get the network operator
+Listen on clicks
+Call phone number
+Register content observer
+Stop the process
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+19->1: Get location of device->Access the Internet
+16->1: Get the application lists->Access the Internet
+24->23: Install apps->Hide icon
+---Others---
+******************
+
+****************** APK 59 ******************
+Apk name：AnubisDropper
+
+---Malicious---
+Access specified resources
+Active when start-up broadcast is detected
+Save resource to a local file
+Register broadcast receiver
+Get location of device
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Get the list of services
+Register content observer
+
+
+---Malicious---
+---Others---
+******************
+
+****************** APK 60 ******************
+Apk name：BanBraA
+
+---Malicious---
+Access the Internet
+Get location of device
+Generate pop-up widgets
+Get network info
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Register content observer
+Click the confirm button
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+19->1: Get location of device->Access the Internet
+---Others---
+******************
+
+****************** APK 61 ******************
+Apk name：Bahamut
+
+---Malicious---
+Monitor received SMS
+Access specified resources
+Active when start-up broadcast is detected
+Save resource to a local file
+Access the Internet
+Get network info
+Read SMS
+Get location of device
+Get IMEI
+Monitor incoming calls
+Parsing SMS content
+Audio recording
+Register broadcast receiver
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Stop the process
+Get the network operator
+Register content observer
+Click the confirm button
+
+
+---Malicious---
+56->29: Monitor received SMS->Parsing SMS content
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+1->12: Access the Internet->Get IMEI
+19->1: Get location of device->Access the Internet
+12->1: Get IMEI->Access the Internet
+54->43: Audio recording->Save resource to a local file
+---Others---
+******************
+
+****************** APK 62 ******************
+Apk name：SpyBankerHU
+
+---Malicious---
+Monitor received SMS
+Access the Internet
+Active when start-up broadcast is detected
+Register broadcast receiver
+Get location of device
+Read SMS
+Get network info
+Install apps
+Get the list of running tasks
+Reset password
+Hide icon
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Register content observer
+Get the network operator
+Click the confirm button
+Get the list of services
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+7->26: Active when start-up broadcast is detected->Reset password
+19->1: Get location of device->Access the Internet
+24->23: Install apps->Hide icon
+---Others---
+******************
+
+****************** APK 63 ******************
+Apk name：SMSAndroidOSWesp
+
+---Malicious---
+Monitor received SMS
+Get network info
+Read SMS
+Access the Internet
+Parsing SMS content
+Hide icon
+Register broadcast receiver
+Get location of device
+Get the SIM card serial number
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Get the network operator
+Get file name
+Register content observer
+Click the confirm button
+
+
+---Malicious---
+56->29: Monitor received SMS->Parsing SMS content
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+19->1: Get location of device->Access the Internet
+---Others---
+******************
+
+****************** APK 64 ******************
+Apk name：SimBad
+
+---Malicious---
+Active when start-up broadcast is detected
+Access the Internet
+Get network info
+Register broadcast receiver
+Get location of device
+Hide icon
+Install apps
+Block broadcast
+
+---Others---
+Open a mass of threads
+Stop the process
+Listen on clicks
+Get the network operator
+Register content observer
+Click the confirm button
+Get file name
+Add views
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+19->1: Get location of device->Access the Internet
+24->23: Install apps->Hide icon
+---Others---
+******************
+
+****************** APK 65 ******************
+Apk name：FakeAppFK
+
+---Malicious---
+Access specified resources
+Access the Internet
+Get network info
+Register broadcast receiver
+
+---Others---
+Open a mass of threads
+Register content observer
+Listen on clicks
+Stop the process
+Click the confirm button
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+---Others---
+******************
+
+****************** APK 66 ******************
+Apk name：Ashas
+
+---Malicious---
+Access specified resources
+Access the Internet
+Save resource to a local file
+Active when start-up broadcast is detected
+Create a desktop shortcut
+Get network info
+Register broadcast receiver
+Get location of device
+Install apps
+Hide icon
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Stop the process
+Click the confirm button
+Register content observer
+Get the network operator
+Call phone number
+Get the list of services
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+19->1: Get location of device->Access the Internet
+24->23: Install apps->Hide icon
+---Others---
+******************
+
+****************** APK 67 ******************
+Apk name：FakeAppFG
+
+---Malicious---
+Access the Internet
+Get network info
+Register broadcast receiver
+Get location of device
+Get the application lists
+Hide icon
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Register content observer
+Get the network operator
+
+
+---Malicious---
+1->32: Access the Internet->Listen on clicks
+19->1: Get location of device->Access the Internet
+---Others---
+******************
+
+****************** APK 68 ******************
+Apk name：AdloadNL
+
+---Malicious---
+Generate pop-up widgets
+Access specified resources
+Save resource to a local file
+Active when start-up broadcast is detected
+Access the Internet
+Get network info
+Monitor incoming calls
+Get location of device
+Register broadcast receiver
+Get the list of running tasks
+Get IMEI
+Get user's phone number
+Block broadcast
+Get the application lists
+
+---Others---
+Click the confirm button
+Open a mass of threads
+Register content observer
+Listen on clicks
+Stop the process
+Get the list of services
+Get the network operator
+Add views
+Call phone number
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+1->12: Access the Internet->Get IMEI
+19->1: Get location of device->Access the Internet
+22->1: Get user's phone number->Access the Internet
+---Others---
+******************
+
+****************** APK 69 ******************
+Apk name：FlokiSpy
+
+---Malicious---
+Monitor received SMS
+Read SMS
+Register broadcast receiver
+Get location of device
+Parsing SMS content
+Get the SIM card serial number
+Hide icon
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Register content observer
+
+
+---Malicious---
+56->29: Monitor received SMS->Parsing SMS content
+---Others---
+******************
+
+****************** APK 70 ******************
+Apk name：ToastAmigo
+
+---Malicious---
+Access specified resources
+
+---Others---
+Click the confirm button
+Stop the process
+
+
+---Malicious---
+---Others---
+******************
+
+****************** APK 71 ******************
+Apk name：HidenAd
+
+---Malicious---
+Active when start-up broadcast is detected
+Register broadcast receiver
+Get location of device
+Hide icon
+Access the Internet
+Get network info
+Install apps
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Register content observer
+Stop the process
+Get the network operator
+Click the confirm button
+
+
+---Malicious---
+19->1: Get location of device->Access the Internet
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+24->23: Install apps->Hide icon
+---Others---
+******************
+
+****************** APK 72 ******************
+Apk name：CoinMinerQ
+
+---Malicious---
+Active when start-up broadcast is detected
+Access the Internet
+Register broadcast receiver
+Get location of device
+Get network info
+Install apps
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Register content observer
+Get the network operator
+Click the confirm button
+Call phone number
+Stop the process
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+19->1: Get location of device->Access the Internet
+---Others---
+******************
+
+****************** APK 73 ******************
+Apk name：AsiaHitGroup
+
+---Malicious---
+Access specified resources
+Generate pop-up widgets
+Save resource to a local file
+Access the Internet
+Register broadcast receiver
+Get location of device
+Get network info
+Hide icon
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Click the confirm button
+Register content observer
+Stop the process
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+19->1: Get location of device->Access the Internet
+---Others---
+******************
+
+****************** APK 74 ******************
+Apk name：BKotlindHRX
+
+---Malicious---
+Active when start-up broadcast is detected
+Access specified resources
+Generate pop-up widgets
+Save resource to a local file
+Access the Internet
+Get network info
+Read SMS
+Register broadcast receiver
+Get location of device
+Clear app cache
+Get IMEI
+Get IMSI
+Send SMS
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Get the network operator
+Stop the process
+Register content observer
+
+
+---Malicious---
+1->32: Access the Internet->Listen on clicks
+1->12: Access the Internet->Get IMEI
+32->35: Listen on clicks->Send SMS
+19->1: Get location of device->Access the Internet
+13->1: Get IMSI->Access the Internet
+---Others---
+******************
+
+****************** APK 75 ******************
+Apk name：HiddenAdHRXJA
+
+---Malicious---
+Access specified resources
+Save resource to a local file
+Active when start-up broadcast is detected
+Get the contact information
+Access the Internet
+Get network info
+Install apps
+Register broadcast receiver
+Set Wifi on or off
+Get location of device
+Get the application lists
+
+---Others---
+Open a mass of threads
+Register content observer
+Listen on clicks
+Get the network operator
+Click the confirm button
+Call phone number
+
+
+---Malicious---
+17->1: Get the contact information->Access the Internet
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+---Others---
+******************
+
+****************** APK 76 ******************
+Apk name：CoinHive
+
+---Malicious---
+Access the Internet
+Get network info
+Install apps
+Get location of device
+Register broadcast receiver
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Get the network operator
+Click the confirm button
+Register content observer
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+19->1: Get location of device->Access the Internet
+---Others---
+******************
+
+****************** APK 77 ******************
+Apk name：AnubisSpy
+
+---Malicious---
+Monitor received SMS
+Save resource to a local file
+Active when start-up broadcast is detected
+Read SMS
+Get network info
+Get the list of running tasks
+Get IMEI
+Get location of device
+Get the application lists
+Register broadcast receiver
+Access the Internet
+Hide icon
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Register content observer
+Stop the process
+
+
+---Malicious---
+12->1: Get IMEI->Access the Internet
+19->1: Get location of device->Access the Internet
+---Others---
+******************
+
+****************** APK 78 ******************
+Apk name：ChatSpyA
+
+---Malicious---
+Monitor received SMS
+Access the Internet
+Save resource to a local file
+Read SMS
+Get network info
+Register broadcast receiver
+Get location of device
+Get IMEI
+Get user's phone number
+Install apps
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Register content observer
+Get the network operator
+Click the confirm button
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+1->12: Access the Internet->Get IMEI
+19->1: Get location of device->Access the Internet
+---Others---
+******************
+
+****************** APK 79 ******************
+Apk name：BlackLister
+
+---Malicious---
+Monitor received SMS
+Access the Internet
+Generate pop-up widgets
+Save resource to a local file
+Active when start-up broadcast is detected
+Register broadcast receiver
+Get location of device
+Read SMS
+Get network info
+Get the list of running tasks
+Get the application lists
+Get IMEI
+Send SMS
+
+---Others---
+Open a mass of threads
+Stop the process
+Listen on clicks
+Register content observer
+Click the confirm button
+Get the network operator
+Get the list of services
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+1->12: Access the Internet->Get IMEI
+32->35: Listen on clicks->Send SMS
+19->1: Get location of device->Access the Internet
+---Others---
+******************
+
+****************** APK 80 ******************
+Apk name：HiddenAd_2018
+
+---Malicious---
+Register broadcast receiver
+Get network info
+Access the Internet
+Get location of device
+Set Wifi on or off
+Get the application lists
+Install apps
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Register content observer
+Click the confirm button
+Get the network operator
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+19->1: Get location of device->Access the Internet
+16->1: Get the application lists->Access the Internet
+---Others---
+******************
+
+****************** APK 81 ******************
+Apk name：AdultSwine
+
+---Malicious---
+Access the Internet
+Generate pop-up widgets
+Save resource to a local file
+Active when start-up broadcast is detected
+Get network info
+Register broadcast receiver
+Get location of device
+Get the list of running tasks
+Get IMEI
+Hide icon
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Stop the process
+Register content observer
+Get the network operator
+Click the confirm button
+Get the list of services
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+1->12: Access the Internet->Get IMEI
+19->1: Get location of device->Access the Internet
+---Others---
+******************
+
+****************** APK 82 ******************
+Apk name：Reputation1_2018
+
+---Malicious---
+Active when start-up broadcast is detected
+Access the Internet
+Register broadcast receiver
+Get location of device
+Request activation of device manager
+Hide icon
+Get network info
+Install apps
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Stop the process
+Get the list of services
+Click the confirm button
+Get the network operator
+Register content observer
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+19->1: Get location of device->Access the Internet
+24->23: Install apps->Hide icon
+---Others---
+******************
+
+****************** APK 83 ******************
+Apk name：FalseGuide
+
+---Malicious---
+Active when start-up broadcast is detected
+Access the Internet
+Get network info
+Register broadcast receiver
+Get location of device
+Get the application lists
+Install apps
+Hide icon
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Stop the process
+Get the network operator
+Click the confirm button
+Register content observer
+Get the list of services
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+19->1: Get location of device->Access the Internet
+16->1: Get the application lists->Access the Internet
+24->23: Install apps->Hide icon
+---Others---
+******************
+
+****************** APK 84 ******************
+Apk name：AdQR
+
+---Malicious---
+Get network info
+Access the Internet
+Save resource to a local file
+Get location of device
+Install apps
+Register broadcast receiver
+Set Wifi on or off
+Hide icon
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Stop the process
+Click the confirm button
+Get the network operator
+Register content observer
+Call phone number
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+19->1: Get location of device->Access the Internet
+24->23: Install apps->Hide icon
+---Others---
+******************
+
+****************** APK 85 ******************
+Apk name：SockBotA
+
+---Malicious---
+Access the Internet
+Register broadcast receiver
+Active when start-up broadcast is detected
+Get network info
+Get location of device
+Save resource to a local file
+Get IMEI
+Generate pop-up widgets
+Get the application lists
+Monitor incoming calls
+Hide icon
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Get the network operator
+Click the confirm button
+Register content observer
+Call phone number
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+1->12: Access the Internet->Get IMEI
+19->1: Get location of device->Access the Internet
+12->1: Get IMEI->Access the Internet
+16->1: Get the application lists->Access the Internet
+---Others---
+******************
+
+****************** APK 86 ******************
+Apk name：Smesh
+
+---Malicious---
+Access specified resources
+Active when start-up broadcast is detected
+Save resource to a local file
+Get network info
+Read SMS
+Audio recording
+Access the Internet
+Get IMEI
+Get location of device
+Register broadcast receiver
+Install apps
+Get the list of running tasks
+Get user's phone number
+Compress the information into a .zip file
+Monitor incoming calls
+
+---Others---
+Open a mass of threads
+Get the network operator
+Listen on clicks
+Click the confirm button
+Stop the process
+Call phone number
+Register content observer
+Get the list of services
+
+
+---Malicious---
+54->43: Audio recording->Save resource to a local file
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+1->12: Access the Internet->Get IMEI
+12->1: Get IMEI->Access the Internet
+12->22: Get IMEI->Get user's phone number
+19->1: Get location of device->Access the Internet
+22->1: Get user's phone number->Access the Internet
+---Others---
+******************
+
+****************** APK 87 ******************
+Apk name：Necron
+
+---Malicious---
+Access specified resources
+Access the Internet
+Save resource to a local file
+Generate pop-up widgets
+Create a desktop shortcut
+Get network info
+Get the contact information
+Register broadcast receiver
+Get location of device
+Get IMSI
+Get the SIM card serial number
+Get IMEI
+Get the application lists
+Compress the information into a .zip file
+Get user's phone number
+Get the list of running tasks
+Hide icon
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Stop the process
+Click the confirm button
+Get the network operator
+Register content observer
+Call phone number
+Get file name
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+1->12: Access the Internet->Get IMEI
+17->5: Get the contact information->Compress the information into a .zip file
+17->1: Get the contact information->Access the Internet
+19->1: Get location of device->Access the Internet
+13->1: Get IMSI->Access the Internet
+13->22: Get IMSI->Get user's phone number
+13->14: Get IMSI->Get the SIM card serial number
+13->12: Get IMSI->Get IMEI
+14->1: Get the SIM card serial number->Access the Internet
+14->22: Get the SIM card serial number->Get user's phone number
+12->1: Get IMEI->Access the Internet
+12->13: Get IMEI->Get IMSI
+16->1: Get the application lists->Access the Internet
+---Others---
+******************
+
+****************** APK 88 ******************
+Apk name：SockBot
+
+---Malicious---
+Access specified resources
+Generate pop-up widgets
+Save resource to a local file
+Active when start-up broadcast is detected
+Access the Internet
+Get network info
+Get location of device
+Register broadcast receiver
+Monitor incoming calls
+Get the application lists
+Get IMEI
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Register content observer
+Click the confirm button
+Get the network operator
+Call phone number
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+1->12: Access the Internet->Get IMEI
+19->1: Get location of device->Access the Internet
+16->1: Get the application lists->Access the Internet
+---Others---
+******************
+
+****************** APK 89 ******************
+Apk name：SpyAgntX
+
+---Malicious---
+Monitor received SMS
+Access the Internet
+Generate pop-up widgets
+Save resource to a local file
+Get network info
+Read SMS
+Register broadcast receiver
+
+---Others---
+Open a mass of threads
+Get the list of services
+Get the network operator
+Click the confirm button
+Listen on clicks
+Register content observer
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+---Others---
+******************
+
+****************** APK 90 ******************
+Apk name：ZtorgA
+
+---Malicious---
+Monitor received SMS
+Get network info
+Access specified resources
+Active when start-up broadcast is detected
+Generate pop-up widgets
+Register broadcast receiver
+Get the list of running tasks
+Read SMS
+Save resource to a local file
+Access the Internet
+Get location of device
+Get IMEI
+Get IMSI
+Get the application lists
+Set Wifi on or off
+Hide icon
+Send SMS
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Stop the process
+Click the confirm button
+Register content observer
+Get the network operator
+Add views
+
+
+---Malicious---
+32->35: Listen on clicks->Send SMS
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+1->12: Access the Internet->Get IMEI
+19->1: Get location of device->Access the Internet
+13->1: Get IMSI->Access the Internet
+16->1: Get the application lists->Access the Internet
+---Others---
+******************
+
+****************** APK 91 ******************
+Apk name：IndexY
+
+---Malicious---
+Access the Internet
+Active when start-up broadcast is detected
+Get the contact information
+Register broadcast receiver
+Get location of device
+Install apps
+Get network info
+Get IMEI
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Stop the process
+Get the network operator
+Click the confirm button
+Register content observer
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+1->12: Access the Internet->Get IMEI
+17->1: Get the contact information->Access the Internet
+19->1: Get location of device->Access the Internet
+---Others---
+******************
+
+****************** APK 92 ******************
+Apk name：MilkyDoor
+
+---Malicious---
+Save resource to a local file
+Access specified resources
+Active when start-up broadcast is detected
+Get network info
+Access the Internet
+Register broadcast receiver
+Monitor incoming calls
+Get location of device
+Install apps
+Get user's phone number
+Hide icon
+Get IMEI
+Get the SIM card serial number
+Get the application lists
+
+---Others---
+Click the confirm button
+Open a mass of threads
+Register content observer
+Listen on clicks
+Get the network operator
+Stop the process
+Get the list of services
+Call phone number
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+1->12: Access the Internet->Get IMEI
+19->1: Get location of device->Access the Internet
+24->23: Install apps->Hide icon
+22->1: Get user's phone number->Access the Internet
+14->1: Get the SIM card serial number->Access the Internet
+---Others---
+******************
+
+****************** APK 93 ******************
+Apk name：FakeFlash
+
+
+---Malicious---
+---Others---
+******************
+
+****************** APK 94 ******************
+Apk name：Fakeyouwon
+
+---Malicious---
+Access specified resources
+Save resource to a local file
+Active when start-up broadcast is detected
+Generate pop-up widgets
+Get network info
+Get the contact information
+Register broadcast receiver
+Get location of device
+Access the Internet
+Get IMEI
+Hide icon
+Get the application lists
+Block broadcast
+Set Wifi on or off
+Delete the recording of incoming phone calls
+Get user's phone number
+
+---Others---
+Open a mass of threads
+Register content observer
+Listen on clicks
+Click the confirm button
+Get the network operator
+Stop the process
+Add views
+
+
+---Malicious---
+17->1: Get the contact information->Access the Internet
+19->1: Get location of device->Access the Internet
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+1->12: Access the Internet->Get IMEI
+16->1: Get the application lists->Access the Internet
+---Others---
+******************
+
+****************** APK 95 ******************
+Apk name：Hiddad
+
+---Malicious---
+Access the Internet
+Active when start-up broadcast is detected
+Get network info
+Get location of device
+Hide icon
+Install apps
+Register broadcast receiver
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Call phone number
+Get the network operator
+Click the confirm button
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+19->1: Get location of device->Access the Internet
+24->23: Install apps->Hide icon
+---Others---
+******************
+
+****************** APK 96 ******************
+Apk name：AndroidOSBrata
+
+---Malicious---
+Generate pop-up widgets
+Hide icon
+Register broadcast receiver
+Access the Internet
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Register content observer
+
+
+---Malicious---
+1->32: Access the Internet->Listen on clicks
+---Others---
+******************
+
+****************** APK 97 ******************
+Apk name：MalBus
+
+---Malicious---
+Access specified resources
+Save resource to a local file
+Access the Internet
+Get network info
+Register broadcast receiver
+Get location of device
+Install apps
+Audio recording
+Get the application lists
+
+---Others---
+Open a mass of threads
+Register content observer
+Listen on clicks
+Stop the process
+Get the network operator
+Click the confirm button
+Get the list of services
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+19->1: Get location of device->Access the Internet
+54->43: Audio recording->Save resource to a local file
+---Others---
+******************
+
+****************** APK 98 ******************
+Apk name：ClickerGenG
+
+---Malicious---
+Get network info
+Active when start-up broadcast is detected
+
+
+---Malicious---
+---Others---
+******************
+
+****************** APK 99 ******************
+Apk name：Gooligan
+
+---Malicious---
+Access specified resources
+Get the application lists
+Save resource to a local file
+Get network info
+Get IMEI
+Get user's phone number
+Access the Internet
+Active when start-up broadcast is detected
+Hide icon
+Get IMSI
+Get the list of running tasks
+Generate pop-up widgets
+Register broadcast receiver
+
+---Others---
+Open a mass of threads
+Get the network operator
+Click the confirm button
+Listen on clicks
+Get the list of services
+
+
+---Malicious---
+16->1: Get the application lists->Access the Internet
+12->1: Get IMEI->Access the Internet
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+1->12: Access the Internet->Get IMEI
+13->1: Get IMSI->Access the Internet
+13->12: Get IMSI->Get IMEI
+---Others---
+******************
+
+****************** APK 100 ******************
+Apk name：BeaverGang
+
+---Malicious---
+Access specified resources
+Access the Internet
+Get network info
+Get location of device
+Install apps
+Register broadcast receiver
+Get IMEI
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Register content observer
+Click the confirm button
+Get the network operator
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+1->12: Access the Internet->Get IMEI
+19->1: Get location of device->Access the Internet
+---Others---
+******************
+
+****************** APK 101 ******************
+Apk name：Godless
+
+---Malicious---
+Monitor received SMS
+Save resource to a local file
+Access specified resources
+Active when start-up broadcast is detected
+Get network info
+Register broadcast receiver
+Get IMEI
+Get user's phone number
+Read SMS
+Access the Internet
+Get location of device
+Get the application lists
+Get the list of running tasks
+Get IMSI
+
+---Others---
+Open a mass of threads
+Get the network operator
+Get the list of services
+Get file name
+Stop the process
+
+
+---Malicious---
+12->1: Get IMEI->Access the Internet
+12->13: Get IMEI->Get IMSI
+12->22: Get IMEI->Get user's phone number
+1->12: Access the Internet->Get IMEI
+19->1: Get location of device->Access the Internet
+16->1: Get the application lists->Access the Internet
+---Others---
+******************
+
+****************** APK 102 ******************
+Apk name：TrojanDropperAgentGY
+
+---Malicious---
+Access specified resources
+Hide icon
+Get IMEI
+Access the Internet
+
+
+---Malicious---
+12->1: Get IMEI->Access the Internet
+---Others---
+******************
+
+****************** APK 103 ******************
+Apk name：Inazigram
+
+---Malicious---
+Active when start-up broadcast is detected
+Access the Internet
+Get network info
+Get location of device
+Register broadcast receiver
+Get the application lists
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Click the confirm button
+Get the network operator
+Register content observer
+
+
+---Malicious---
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+19->1: Get location of device->Access the Internet
+16->1: Get the application lists->Access the Internet
+---Others---
+******************
+
+****************** APK 104 ******************
+Apk name：AndroidOSXavierAXM
+
+---Malicious---
+Access specified resources
+Save resource to a local file
+Generate pop-up widgets
+Get the contact information
+Access the Internet
+Get network info
+Get location of device
+Get the application lists
+Register broadcast receiver
+Get the list of running tasks
+Get user's phone number
+Set Wifi on or off
+Get IMEI
+
+---Others---
+Open a mass of threads
+Listen on clicks
+Register content observer
+Get the network operator
+Click the confirm button
+Get the list of services
+
+
+---Malicious---
+17->1: Get the contact information->Access the Internet
+1->3: Access the Internet->Click the confirm button
+1->32: Access the Internet->Listen on clicks
+1->12: Access the Internet->Get IMEI
+19->1: Get location of device->Access the Internet
+16->1: Get the application lists->Access the Internet
+---Others---
+******************
+
