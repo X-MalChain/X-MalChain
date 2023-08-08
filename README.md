@@ -6,7 +6,7 @@ Our goal is to provide a platform that can explain malware, specifically, to out
 
 ## Our Advantages
 - Detect malicious behaviors in malware as accurately as possible.
-- Explain the given malware with the help of **_Malicious Behavior Chains_**.
+- Explain the given malware with the help of <font color="#10c2c1">**_Malicious Behavior Chains_**</font>.
 - Using ChatGpt, generate a brief but clear description to explain why the application is classfied as malware with the help of malicious behavior chains.
 
 ## Development Environment
