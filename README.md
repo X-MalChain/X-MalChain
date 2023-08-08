@@ -24,7 +24,7 @@ Our goal is to provide a platform that can explain malware, specifically, to out
 ### Operate System
 This project is developed on Ubuntu 20.04.
 ### Language & IDE & Framework
-Using python, we choose Pycharm to implement our Django project.
+Using python 3.8, we choose Pycharm to implement our Django project.
 ### Installation of important packages
 - Django
 
