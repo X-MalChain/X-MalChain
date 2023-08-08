@@ -28,9 +28,7 @@ Using python 3.8, we choose Pycharm to implement our Django project.
 ### Installation of important packages
 - Androguard
 ```angular2html
-sudo apt-get install sqlite sqlite3
-sudo apt-get install libsqlite3-dev
-sqlite3 version
+apt install Androguard
 ```
 - Django
 ```angular2html
