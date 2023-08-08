@@ -306,23 +306,12 @@ def find_apk(apk_root_path, apk_name):
     shutil.copy(apk_new_file, dstpath + apk_name + '.apk')
 
 def find_apk_v1(apk_root_path, apk_name):
-    """
-    :param apk_root_path: string .apk文件的根目录，如/home/wuyang/Experiments/Datas/malwares/googlePlay/code_reports/AceCard，然后查找该目录下的.apk文件
-    :param apk_name: string 该.apk文件的发布名称
-    """
     dstpath = '/home/wuyang/Experiments/Datas/malwares/googlePlay/apk_sample/'
     for filepath, dirnames, filenames in os.walk(apk_root_path):
         for filename in filenames:
-            # 解压
-            # if os.path.splitext(filename)[1] == '.zip':
-            #     zip_path = os.path.join(filepath, filename)
-            #     print('zip:',zip_path)
-            #     os.system('unzip -o ' + zip_path+' -d '+filepath)
-            # os.path.splitext():分离文件名与扩展名
             if os.path.splitext(filename)[1] == '.apk':
                 # print('apk:', filename)
                 old_path = os.path.join(filepath, filename)
-                # 复制apk文件到新的目录
                 shutil.copy(old_path, dstpath + apk_name + '.apk')
 
 
