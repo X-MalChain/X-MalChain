@@ -317,80 +317,69 @@ def find_apk_v1(apk_root_path, apk_name):
 
 def apk_map_kg_main():
     """
-    构建由apk->kg的映射，检验整张图谱的完整程度；
-    样本： 构建图谱时的98个apk
-    :return
-        1) 所有的特征是否都有匹配的APK
-        2) 所有的节点是否都有匹配的APK
-        3) 所有的路径是否都有匹配的APK
+    Construct a mapping from apk- > kg to test the integrity of the entire map ; 
+    sample : 100 apk when constructing the map 
+    : return 
+        1 ) Do all features have matching APK  
+        2 ) Do all nodes have a matching APK  
+        3 ) Do all paths have matching APKs  
     """
     global kg_apis, kg_permissions, kg_features
-    kg_permissions, kg_apis, kg_features = get_pers_apis()  # 初始化数据：get all permissions&apis from kg/database
-    # print('kg fearure len:', len(kg_features))
+    kg_permissions, kg_apis, kg_features = get_pers_apis()
 
-    # 1、生成98个样本apk的特征文件
     sample_apks_folder_path = '/home/wuyang/Experiments/Datas/malwares/sample_apk_100'
-    # sample_apks_folder_path = '/home/wuyang/Experiments/Datas/malwares/googlePlay/apk_sample'
 
-    # 为了避免Django项目内的文件过多，生成CG文件和特征文件前先将文件夹清空
-    shutil.rmtree('detect/outputCG')  # 删除该文件夹以及该文件夹下的所有文件
+    shutil.rmtree('detect/outputCG')
     shutil.rmtree('detect/output_features')
-    os.mkdir('detect/outputCG')  # 创建新的文件夹
+    os.mkdir('detect/outputCG')
     os.mkdir('detect/output_features')
 
-    # ********** 二、依次匹配每一个文件 *************
+    # ********** Match each file in turn *************
     with open(report_path, "a", encoding='utf-8') as report:
-        # 读取所有的APK
         global flag
         files = glob.glob(sample_apks_folder_path + '/*.apk')
         # files=os.listdir(sample_apks_folder_path)
         file_id = 0
-        fullMapNodeStatistic = []  # 对于所有的APK文件，统计KG上每个节点的映射情况，对应的是完全匹配的情况
-        partMapNodeStatistic = []  # 对于所有的APK文件，统计KG上每个节点的映射情况，对应的是部分匹配的情况
-        featureMapStatistic = []  # 对于所有的APK文件，统计KG上每个特征的映射情况
-        apk_feature_map = []  # 对于每一个apk，映射上的特征/该APK总的特征数。里面存储了所有apk的特征映射情况
-        pathMapStatistic = []  # 对于所有的APK文件，统计KG上每条路径的映射情况
+        fullMapNodeStatistic = [] 
+        partMapNodeStatistic = []
+        featureMapStatistic = []
+        apk_feature_map = []
+        pathMapStatistic = []
         kgModel = KgTest.objects.values()
-        kgList = list(kgModel)  # 图谱上的节点数
+        kgList = list(kgModel)
 
         report.write(
-            "******************\n " + "Dataset: " + sample_apks_folder_path + " ******************\n")  # 记录当前APK的名字
-        report.write("******************\n " + '计算节点匹配率时，去掉permission' + " ******************\n\n")
+            "******************\n " + "Dataset: " + sample_apks_folder_path + " ******************\n")  
 
-        # 依次读取每一个APK
-        for f in files:  # f形如D:/input/apk01.apk
+        for f in files:  # e.g. D:/input/apk01.apk
             print("***********************")
             print("apk:", f)
             file_id = file_id + 1
             flag = 0
-            # 生成APK的特征文件
-            gml, apk_name = generate_cg(f)  # 输入apk，生成cg
-            txt = gml_txt(gml, apk_name)  # 将cg转化为txt文件
-            extract_features(txt, apk_name, f)  # 提取特征,生成特征文件
+            gml, apk_name = generate_cg(f)
+            txt = gml_txt(gml, apk_name)
+            extract_features(txt, apk_name, f)
             # 写入report
-            report.write("****************** APK " + str(file_id) + " ******************\n")  # 记录当前APK的名字
-            report.write("文件名：" + apk_name + '\n')  # 记录当前APK的名字
+            report.write("****************** APK " + str(file_id) + " ******************\n") 
+            report.write("文件名：" + apk_name + '\n')
             retJson0 = apk_name
-            # 首先读取某个APK的特征文件
             feature_file_path = 'detect/output_features/' + apk_name + '_features.txt'
-            # 首先读取某个APK的特征文件
             apk_file = open(feature_file_path, 'r', encoding='utf-8', newline="")
-            apkFeatures = []  # 存放该APK的特征
-            mapFeatureList = []  # 存放映射上的APK的特征
-            nmapFeatureList = []  # 存放没映射上的APK的特征
+            apkFeatures = []
+            mapFeatureList = [] 
+            nmapFeatureList = [] 
             a = 0
-            for row in apk_file.readlines():  # 去掉多余的信息行
+            for row in apk_file.readlines():
                 line = row.strip()
                 a = a + 1
                 if line != '':
                     apkFeatures.append(line)
 
-            # *******1. 计算某个APK的特征覆盖率，这里的映射关系是：KG->某个APK特征文件，查看KG特征的完整性*******
+            # *******1. Calculate the feature coverage of an APK, where the mapping relationship is : KG- > an APK feature file, view the integrity of the KG feature *******
             mapCount = 0
             nmapCount = 0
 
-            # 测试所有特征的覆盖率
-            for feature in apkFeatures:  # 对于apk的feature，都去kg中查看是否有对应的
+            for feature in apkFeatures:
                 tmp = feature.strip()
                 judge = tmp.find("(")
                 if judge != -1:
@@ -403,7 +392,6 @@ def apk_map_kg_main():
                     tmp = ";".join(tmp1)
                 if tmp in str(kg_features):
                     mapCount = mapCount + 1
-                    # print('映射成功的为：', feature)
                     if feature not in mapFeatureList:
                         mapFeatureList.append(feature)
                     else:
@@ -411,7 +399,6 @@ def apk_map_kg_main():
                     featureMapStatistic.append(feature)
                 else:
                     nmapCount = nmapCount + 1
-                    # print('映射失败的为：', feature)
                     if feature not in nmapFeatureList:
                         nmapFeatureList.append(feature)
                     else:
