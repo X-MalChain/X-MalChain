@@ -18,7 +18,7 @@ Our goal is to provide a platform that can explain malware, specifically, to out
 - _manager_: Design a background management system for our web service.
 - _mwep_: The configuration package of the project itself.
 - _tools_: Some codes acting as tools for this project.
-- _sb.sqlite3_: database.
+- _db.sqlite3_: database.
 - _manage.py_: manage codes.
   
 ### Operate System
