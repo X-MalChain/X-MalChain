@@ -5,7 +5,7 @@ import os
 import sys
 import json
 import shutil
-import codecs  # 将ansi编码的文件转为utf-8编码的文件
+import codecs
 
 from django.shortcuts import render
 from django.http import HttpResponse
@@ -24,15 +24,15 @@ kg_permissions = []  # all permissions in kg/database
 kg_apis = []  # all apis in kg/database
 kg_features = []  # all features(permissions+apis) in kg
 
-# Create your views here.
-# testApk_path = 'D:\\testAPK0.txt'   # 输入是apk的特征文件
+# Follow are used for test
+# testApk_path = 'D:\\testAPK0.txt'   # a test apk
 testApk_path = '/home/wuyang/Experiments/Datas/tmpdata/testAPK.txt'
 apkfile = './10.apk'
 apiFeature_path = ''
-perFeature_path = 'verify/input/perFeature.txt'  # 单独存放kg的permission特征
-apiFeature_path = 'verify/input/apiFeature.txt'  # 单独存放kg的api特征
-kgFeatures_path = 'verify/input/kgFeatures.txt'  # 存放kg的所有特征
-# report_path = "/home/wuyang/Experiments/Datas/output/reportTest.txt"  # 输出是匹配结果
+perFeature_path = 'verify/input/perFeature.txt'  # permissions
+apiFeature_path = 'verify/input/apiFeature.txt'  # apis
+kgFeatures_path = 'verify/input/kgFeatures.txt'  # permissions+apis
+# report_path = "/home/wuyang/Experiments/Datas/output/reportTest.txt"  # output
 report_path = '/home/wuyang/Experiments/Datas/output/report_mwep/report1.txt'
 input_path = '/home/wuyang/Experiments/Datas/tmpApk'
 
@@ -40,75 +40,23 @@ input_path = '/home/wuyang/Experiments/Datas/tmpApk'
 fileID = 0
 
 
-# 在写入映射失败的特征前，先清空txt文件，防止记录重复
-# with open("detect/output/nmapFetures.txt", "a", encoding='utf-8') as nmapFeatureFile:
-#     nmapFeatureFile.truncate(0)
-
-
+# avoid multiple or repeated writing
 def test(request):
-    # 在写入映射报告前，先清空txt文件，防止报告重复
     with open(report_path, "a", encoding='utf-8') as report:
         report.truncate(0)
 
-    # 在写入映射失败的特征前，先清空txt文件，防止记录重复
     with open("detect/output/nmapFetures.txt", "a", encoding='utf-8') as nmapFeatureFile:
         nmapFeatureFile.truncate(0)
 
-    # 在写入api-permission的映射前，先清空txt文件，防止记录重复
     # with open("detect/output/api_per.txt", "a", encoding='utf-8') as output:
     #     output.truncate(0)
-    # *******检测apk*******
+    # *******test apk*******
     # ret = kg_map_apk('detect/output_features/10_features.txt', apk_name)
     # ********************
 
-    # *******验证KG，构建从原始样本apk到KG的映射*******
+    # *******apk--->mapping--->kg*******
     apk_map_kg_main()
     # ********************************************
-
-    # *******处理样本数据*********
-    # root_path = '/home/wuyang/Experiments/Datas/malwares/googlePlay/code_reports'
-    # dirs = read_path(root_path)
-    # # print('dirs:', dirs)
-    # for dir in dirs:
-    #     print('dir:', dir)
-    #     # find_apk(root_path+'/'+dir, dir)
-    #     find_apk_v1(root_path + '/' + dir, dir)
-    # **************************
-
-    # testApk_path = '/home/wuyang/Experiments/Datas/tmpdata/testAPK.txt'
-    # 获取APK文件对象
-    # a = apk.APK('/home/wuyang/Experiments/Datas/tmpApk/10.apk', False, "r", None, 2)
-    # permissions=apk.get
-    # 获取DEX文件对象
-    # d = dvm.DalvikVMFormat(a.get_dex())
-    # 获取分析结果对象
-    # x = Analysis.VMAnalysis(d)
-    # a表示apk文件信息,关 APK 的信息，例如包名、权限、AndroidManifest.xml、resources；
-    # d表示dex文件对象，可以获取类，方法和字符串；
-    # dex表示 Analysis 对象，其包含链接了关于 classes.dex 信息的特殊的类
-    # a, d, dx = AnalyzeAPK('/home/wuyang/Experiments/Datas/tmpApk/10.apk')
-    # for meth, perm in dx.get_permissions(a.get_effective_target_sdk_version()):
-    #     print('Using API method {method} for permission {permission}'.format(method=meth, permission=perm))
-    #     print('used in:')
-    #     for _, m, _ in meth.get_xref_from():
-    #         print(m.full_name)
-    # print('调用方法：', dx.get_methods())
-    # 构造json返回内容，通过HttpResponse返回
-    # tmp = {}
-    # data = json.loads(json.dumps(tmp))
-    # # data['analysis_ans'] = x
-    # ret = json.dumps(data, ensure_ascii=False)
-    # os.system('androguard cg %m -o %n'(arg1, arg2))
-    # os.system('androguard cg /home/wuyang/Experiments/Datas/tmpApk/10.apk -o '
-    #           '/home/wuyang/Experiments/Datas/tmpApk/10.gml')
-    # global kg_apis, kg_permissions, kg_features
-    # kg_permissions, kg_apis, kg_features = get_pers_apis()  # 初始化数据：get all permissions&apis from kg/database
-    # apk_path = '/home/wuyang/Experiments/Datas/tmpApk/10.apk'
-    # gml, apk_name = generate_cg(apk_path)  # 输入apk，生成cg
-    # txt = gml_txt(gml, apk_name)  # 将cg转化为txt文件
-    # # print('txt:', txt)
-    # # database_test()  # 测试数据库是否可以正常接入
-    # extract_features(txt, apk_name, apk_path)  # 提取特征
 
     return HttpResponse('detect test', status=200)
 
@@ -120,12 +68,11 @@ def get_pers_apis():
     """
     per_list = PerTest.objects.values('perName')
     api_list = augmenTestAPi.objects.values('apiName')
-    # 此时的per_list api_list是由字典组成的数组，因此进行下述处理
     per_list = dict_list(per_list, 0)
     api_list = dict_list(api_list, 1)
 
-    kg_list = list(per_list)  # 直接复制一份数据
-    # permissions + apis = kg 中的所有特征
+    kg_list = list(per_list)
+    # permissions + apis = all features in kg
     for one in api_list:
         kg_list.append(one)
 
@@ -134,12 +81,12 @@ def get_pers_apis():
 
 def dict_list(demo_list, _flag):
     """
-    :param demo_list:由字典组成的数组 QuerySet，形如：[{'perName': 'android.permission.ACCESS_BACKGROUND_LOCATION'}, {'perName': 'android.permission.ACCESS_COARSE_LOCATION'}]
-    :param _flag: 指示传入的数组是permissions还是apis，又或者是node
+    :param demo_list: QuerySet, e.g. [{'perName': 'android.permission.ACCESS_BACKGROUND_LOCATION'}, {'perName': 'android.permission.ACCESS_COARSE_LOCATION'}]
+    :param _flag: permissions list? apis list? or node?
     :return a sample list
     """
     ret_list = []
-    if _flag == 0:  # 权限的QuerySet
+    if _flag == 0:  
         for i in demo_list:
             ret_list.append(i['perName'])
     elif _flag == 1:
@@ -155,24 +102,24 @@ def dict_list(demo_list, _flag):
 
 def generate_cg(apk):
     """
-    :param apk:带完整路径和后缀的apk文件
-    :return: 该apk利用androguard生成的gml文件，即call graph，:param
-            :string: apk_name: 该apk的名称，不带后缀
+    :param apk: apk file
+    :return: call graph: param
+             apk_name: apk name
     """
-    filename = os.path.split(apk)[1]  # 文件的名称(带后缀)
-    apk_name = filename.split('.')[0]  # 文件名（不带后缀）
-    # shutil.rmtree('detect/outputCG')  # 删除该文件夹以及该文件夹下的所有文件
-    # os.mkdir('detect/outputCG')  # 创建新的文件夹
+    filename = os.path.split(apk)[1]  
+    apk_name = filename.split('.')[0]  
+    # shutil.rmtree('detect/outputCG')
+    # os.mkdir('detect/outputCG') 
     os.system('androguard cg ' + apk + ' -o detect/outputCG/' + apk_name + '.gml')
     # os.system('androguard cg ' + apk + ' -o detect/outputCG/' + apk_name + '.gexf')
     # file = glob.glob('detect/outputCG/' + apk_name + '.gml')
-    file = os.path.join('detect/outputCG/', apk_name + '.gml')  # 存放apk的特征文件
+    file = os.path.join('detect/outputCG/', apk_name + '.gml')
     return file, apk_name
 
 
 def gml_txt(gml_file, apk_name):
     """
-    :param gml_file: a .gml file generated by generate_cg，传入的gml文件路径是 detect/outputCG/.gml
+    :param gml_file: a .gml file generated by generate_cg
     :param apk_name:apk's name
     :return: a .txt file generated from .gml file
     """
@@ -181,12 +128,12 @@ def gml_txt(gml_file, apk_name):
     # print('gml_file')
     os.rename(gml_file, 'detect/outputCG/' + new_file)
     # file = glob.glob('detect/outputCG/' + apk_name + '.txt')
-    file = os.path.join('detect/outputCG/', apk_name + '.txt')  # 存放apk的特征文件
+    file = os.path.join('detect/outputCG/', apk_name + '.txt')
     return file
 
 
 def analyse(data):
-    pattern = re.compile('edge \[\n(.*?)]', re.S)  # 使用re.S参数以后，正则表达式会将这个字符串作为一个整体，在整体中进行匹配
+    pattern = re.compile('edge \[\n(.*?)]', re.S)
     return_edge_list = pattern.findall(data)
     pattern = re.compile('node \[\n(.*?)external', re.S)
     return_node_list = pattern.findall(data)
@@ -225,9 +172,9 @@ def find_related_node(source, edge_list, node_list):
                 if api_location:
                     for api in api_location:
                         tmp = api
-                        if tmp[0] == "L":  # 去掉开头的L
+                        if tmp[0] == "L":
                             tmp = api[1:]
-                        judge = tmp.find("(")  # 截取字符串
+                        judge = tmp.find("(")
                         if judge != -1:
                             tmp = tmp[:judge]
                         ret_api = tmp
@@ -243,7 +190,7 @@ def extract_features(txt, apk_name, apk_path):
     a, d, dx = AnalyzeAPK(apk_path)
     permissions = a.get_permissions()
 
-    feature_filename = os.path.join('detect/output_features/', apk_name + '_features.txt')  # 存放apk的特征文件
+    feature_filename = os.path.join('detect/output_features/', apk_name + '_features.txt')
     feature_file = open(feature_filename, 'w', encoding='utf-8')
     # **********Write Information Belows*************
     # 1. write permissions
@@ -256,7 +203,7 @@ def extract_features(txt, apk_name, apk_path):
     # feature_file.close()
     # 2. write apis through .gml
     data = get_data(os.path.join('detect/outputCG/', apk_name + '.txt'))
-    api_list = list()  # 存放即将写入特征文件的api
+    api_list = list() 
     node_list, edge_list = analyse(data)
     # feature_file.write('apiStart' + '\n')
     for edge in edge_list:
@@ -267,39 +214,36 @@ def extract_features(txt, apk_name, apk_path):
         api_location = re.findall('L.*?;->.*?]', node_list[source])
         # print('node list:', node_list[source])
         # print('location:', api_location)
-        api_location = re.findall('L.*?;->.*?]', node_list[source])  # 能在node_list[source]中找到符合正则表达式的字符串，以列表的形式返回
-        # 下面分情况讨论
+        api_location = re.findall('L.*?;->.*?]', node_list[source])
+        # various cases
         if api_location:
-            api_location = re.findall('L.*?;->.*?]', node_list[target])  # 第1种情况
-            if api_location:  # 第1.1种情况
+            api_location = re.findall('L.*?;->.*?]', node_list[target])  # case 1
+            if api_location:  # case 1.1
                 continue
-            else:  # 第1.2种情况
+            else:  # case 1.2
                 api_location = re.findall(
                     '(L.*?;->.*?)"', node_list[target])
                 if api_location:
                     for api in api_location:
                         # api_list.append(api)
                         tmp = api
-                        if tmp[0] == "L":  # 去掉开头的L
+                        if tmp[0] == "L":  
                             tmp = api[1:]
-                        judge = tmp.find("(")  # 截取字符串
+                        judge = tmp.find("(") 
                         if judge != -1:
                             tmp = tmp[:judge]
                         if tmp in str(kg_apis):
                             api_list.append(tmp)
-                            # feature_file.write(tmp + '\n')
-                            # feature_file.write('一跳开始' + '\n')
-                            # api_list.append(find_related_node(target, edge_list, node_list)[1])
-                            # feature_file.write('一跳结束' + '\n')
-        else:  # 第2种情况)
+                           
+        else:  # case 2
             api_location = re.findall('(L.*?;->.*?)"', node_list[source])
             if api_location:
                 for api in api_location:
                     # api_list.append(api)
                     tmp = api
-                    if tmp[0] == "L":  # 去掉开头的L
+                    if tmp[0] == "L": 
                         tmp = api[1:]
-                    judge = tmp.find("(")  # 截取字符串
+                    judge = tmp.find("(")
                     if judge != -1:
                         tmp = tmp[:judge]
                     if tmp in str(kg_apis):
@@ -307,29 +251,24 @@ def extract_features(txt, apk_name, apk_path):
                         api_list.append(tmp)
 
             api_location = re.findall('L.*?;->.*?]', node_list[target])
-            if api_location:  # 第2.1种情况
+            if api_location:  #case 2.1
                 continue
-            else:  # 第2.2种情况
+            else:  # case 2.2
                 api_location = re.findall(
                     '(L.*?;->.*?)"', node_list[target])
                 if api_location:
                     for api in api_location:
                         # api_list.append(api)
                         tmp = api
-                        if tmp[0] == "L":  # 去掉开头的L
+                        if tmp[0] == "L":
                             tmp = api[1:]
-                        judge = tmp.find("(")  # 截取字符串
+                        judge = tmp.find("(")
                         if judge != -1:
                             tmp = tmp[:judge]
                         if tmp in str(kg_apis):
-                            # perm_api_file.write(tmp + '\n')
-                            # api_list.append(tmp)
                             feature_file.write(tmp + '\n')
-                            # feature_file.write('一跳开始' + '\n')
-                            # api_list.append(find_related_node(target, edge_list, node_list)[1])
-                            # feature_file.write('一跳结束' + '\n')
 
-    i = 0  # 从类似[1,2,2,3,3,3,4,1]转变为[1,2,3,4,1]
+    i = 0
     while i < len(api_list) - 1:
         if api_list[i] == api_list[i + 1]:
             del api_list[i]
@@ -337,25 +276,7 @@ def extract_features(txt, apk_name, apk_path):
             i = i + 1
     for api in api_list:
         feature_file.write(api + '\n')
-    # feature_file.write("apiEnd" + '\n')
     feature_file.close()
-
-    # 存放apk中有映射关系的api-per对
-    # api_per_name=os.path.join('detect/output_features/', apk_name + '_api_per.txt')
-    # api_per = open('detect/output/api_per.txt', 'a', encoding='utf-8')
-    # perm_map = load_api_specific_resource_module('api_permission_mappings')
-    # for meth_analysis in dx.get_methods():
-    #     meth = meth_analysis.get_method()
-    #     name = meth.get_class_name() + "-" + meth.get_name() + "-" + str(meth.get_descriptor())
-    #     for k, v in perm_map.items():
-    #         if name == k:
-    #             result = str(meth) + ' : ' + str(v)
-    #             api_per.write(result + '\n')
-    # api_per.close()
-
-
-
-    # return "hello"
 
 
 def database_test():
@@ -364,44 +285,25 @@ def database_test():
 
 
 def read_path(root_path):
-    """
-    :param root_path:样本根路径，每个样本都有一个文件夹，文件夹中存储着.apk以及report等，当然.apk可能和report又分属于不同的子文件夹\
-    :return dir_name_list: 当前根路径下所有二级文件夹的名称
-
-    补充：listdir()方法就只能获得第一层子文件或文件夹
-    """
     dir_name_list = []
-    if (os.path.exists(root_path)):  # 判断路径是否存在
-        files = os.listdir(root_path)  # 读取该路径下的所有文件/文件夹
+    if (os.path.exists(root_path)):
+        files = os.listdir(root_path)
         for file in files:
-            second_dir = os.path.join(root_path, file)  # 使用join函数将当前目录和文件所在根目录连接起来
-            if (os.path.isdir(second_dir)):  # 当前的是文件夹
-                dir_name = os.path.split(second_dir)[1]  # 获取文件夹的名称
+            second_dir = os.path.join(root_path, file)
+            if (os.path.isdir(second_dir)):  
+                dir_name = os.path.split(second_dir)[1]  
                 dir_name_list.append(dir_name)
     return dir_name_list
 
 
 def find_apk(apk_root_path, apk_name):
-    """
-    :param apk_root_path: string .apk文件的根目录，可能也需要文件的递归，具体看数据集压缩包的文件结构
-    :param apk_name: string: 该apk应该有的名字
-    :return apk_true_path: string .apk文件存在的真实路径，用户可以通过该路径访问apk文件
-    本数据集的文件组织结构为 /home/wuyang/Experiments/Datas/malwares/googlePlay/code_reports/AceCard/AceCard/xx.apk
-    传入的参数应该为这样的形式：/home/wuyang/Experiments/Datas/malwares/googlePlay/code_reports/AceCard
-
-    注意：因为不是所有的apk的文件组织形式都一样，所以这种方=方法不太能行🉐通
-    """
-    print('root path:', apk_root_path)
-    files = glob.glob(apk_root_path + '/' + apk_name + '/*.apk')  # 找到.apk文件
+    files = glob.glob(apk_root_path + '/' + apk_name + '/*.apk')  
     print('files:', files)
     dstpath = '/home/wuyang/Experiments/Datas/malwares/googlePlay/apk_sample/'
     apk_file = files[0]
     apk_new_file = apk_root_path + '/' + apk_name + '/' + apk_name + '.apk'
     os.rename(apk_file, apk_new_file)
-    # 复制重命名后的文件
     shutil.copy(apk_new_file, dstpath + apk_name + '.apk')
-    # print('new_file', new_file)
-
 
 def find_apk_v1(apk_root_path, apk_name):
     """
