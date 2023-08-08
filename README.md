@@ -26,9 +26,11 @@ This project is developed on Ubuntu 20.04.
 ### Language & IDE & Framework
 Using python, we choose Pycharm to implement our Django project.
 ### Installation of important packages
+- Django
 
 ```angular2html
 #  Edit Table Data
 python manage.py makemigrations
 python manage.py migrate
 ```
+- Sqlite
