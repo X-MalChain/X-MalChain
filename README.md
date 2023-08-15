@@ -9,6 +9,11 @@ Our goal is to provide a platform that can explain malware, specifically, to out
 - Explain the given malware with the help of **_Malicious Behavior Chains_**.
 - Using ChatGPT, generate a brief but clear description to explain why the application is classfied as malware with the help of malicious behavior chains.
 
+## Use Case
+To illustrate the effective use of X-MalChain, we give an example as follows: As for given malware, X-MalChain will detect harmful behaviors and output malicious behavior chains to interpret why it is malware. Moreover, based on malicious behavior chains, X-MalChain will generate a description of malicious behaviors that is easy to read and understand.
+
+<img width="400" alt="image" src="https://github.com/X-MalChain/X-MalChain/assets/141179257/295a5076-fe95-471d-86f6-e813daaf22a1">
+
 ## Development Environment
 ### Project Package Overview
 - _assets_: Some assets used for implementation of X-MalChain or experiments.
