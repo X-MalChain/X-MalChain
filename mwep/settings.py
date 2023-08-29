@@ -36,15 +36,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'corsheaders',  # 配置跨域
+    'corsheaders',
 
-    # 加入下面这行
     'common.apps.CommonConfig',
     'verify.apps.VerifyConfig',
     'detect.apps.DetectConfig',
     'manager.apps.ManagerConfig',
     'tools.apps.ToolsConfig',
-    'exper.apps.ExperConfig',
     'exper1.apps.Exper1Config',
 ]
 

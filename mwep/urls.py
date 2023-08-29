@@ -23,6 +23,5 @@ urlpatterns = [
     path('manage/', include('manager.urls')),
     path('create/', include('createkg.urls')),
     path('tools/', include('tools.urls')),
-    path('exper/', include('exper.urls')),
     path('exper1/', include('exper1.urls'))
 ]
