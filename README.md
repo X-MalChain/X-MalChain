@@ -20,7 +20,7 @@ To illustrate the effective use of X-MalChain, we give an example as follows: As
 - _common_: Design the model or class of database.
 - _createkg_: Draw a knowledge graph with Neo4j.
 - _detect & verify_: Detect malicious behaviors. Note that, this is an early version, and the latest version is in X-MalChain.py.
-- _exper1_: Implement the codes to conduct our experiments.
+- _exper_: Implement the codes to conduct our experiments.
 - _manager_: Design a background management system for our web service.
 - _mwep_: The configuration package of the project itself.
 - _tools_: Some codes acting as tools for this project.
