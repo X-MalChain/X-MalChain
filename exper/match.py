@@ -24,7 +24,7 @@ from django.db.models import Q
 
 from manager.views import dict_trans_list
 from common.models import augmenTestAPi, PerTest, augmenTestNode, augmenTestRel, ApiSim, ApiSDK
-from exper1.augment import joint_path
+from exper.augment import joint_path
 
 kg_permissions = []  # all permissions in kg/database
 kg_apis = []  # all apis in kg/database

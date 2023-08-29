@@ -43,13 +43,13 @@ INSTALLED_APPS = [
     'detect.apps.DetectConfig',
     'manager.apps.ManagerConfig',
     'tools.apps.ToolsConfig',
-    'exper1.apps.Exper1Config',
+    'exper.apps.Exper1Config',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'corsheaders.middleware.CorsMiddleware',  # 解决跨域问题时需要添加此行，注意前后顺序
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -57,7 +57,6 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-# 设置跨域
 CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_ALLOW_ALL = True
 
@@ -84,8 +83,6 @@ CORS_ALLOW_HEADERS = (
     'x-requested-with',
     'Pragma',
 )
-
-# 上述均为跨域设置
 
 ROOT_URLCONF = 'mwep.urls'
 

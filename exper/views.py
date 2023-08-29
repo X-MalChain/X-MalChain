@@ -20,7 +20,7 @@ from androguard.core.androconf import load_api_specific_resource_module
 from manager.views import dict_trans_list
 from common.models import ApiTest, PerTest, KgBackup, relBackup, ApiSim, ApiSDK, augmenTestNode, augmenTestRel, \
     augmenTestPer, augmenTestAPi
-from exper1.augment import joint_path
+from exper.augment import joint_path
 
 kg_permissions = []  # all permissions in kg/database
 kg_apis = []  # all apis in kg/database
@@ -77,7 +77,7 @@ def test(request):
 
     # get_apis_from_wkg()
 
-    return HttpResponse('exper1 test', status=200)
+    return HttpResponse('exper test', status=200)
 
 
 def get_pers_apis():

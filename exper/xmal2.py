@@ -6,13 +6,9 @@ import datetime
 import time
 import codecs  # 将ansi编码的文件转为utf-8编码的文件
 import os
-from operator import itemgetter, eq
-from collections import Counter
-
 import django
 import sys
 from django.http import HttpResponse
-from augment import do_feature_file_v1
 
 sys.path.append('../')
 
@@ -27,26 +23,38 @@ from androguard.misc import AnalyzeAPK
 from androguard.core.androconf import load_api_specific_resource_module
 from manager.views import dict_trans_list
 from common.models import ApiTest, PerTest, KgBackup, relBackup, ApiSim, ApiSDK
-from exper1.augment import joint_path
+from exper.augment import joint_path
 
 kg_permissions = []  # all permissions in kg/database
 kg_apis = []  # all apis in kg/database
 apis_from_test = []  # Apitest中的apis
 kg_features = []  # all features(permissions+apis) in kg
 
-# 原有的解释结果
-report_path = '../detect/output/xmalchain/report.txt'
-match_report = '../detect/output/xmalchain/match_report.txt'
-report_log = '../detect/output/xmalchain/log.txt'
-# 新增后的解释结果
-# report_path='../detect/output/xmalchain_augment/report.txt'
-# match_report = '../detect/output/xmalchain_augment/match_report.txt'
-# report_log='../detect/output/xmalchain_augment/log.txt'
 
-statics_behavior=[]
-
+report_path_xmal='../detect/output/report1_xmal.txt'
+report_path_xmal_short='../detect/output/report1_xmal_short.txt'
+match_report_path_xmal = '../detect/output/match_report1_xmal.txt'
 
 fileID = 0
+
+def test():
+    # 在写入映射报告前，先清空txt文件，防止报告重复
+    with open(report_path_xmal, "a", encoding='utf-8') as report:
+        report.truncate(0)
+    with open(match_report_path_xmal, "a", encoding='utf-8') as report:
+        report.truncate(0)
+
+    # 在写入api-permission的映射前，先清空txt文件，防止记录重复
+    # with open("detect/output/api_per.txt", "a", encoding='utf-8') as output:
+    #     output.truncate(0)
+    # *******检测apk*******
+    # ret = kg_map_apk('detect/output_features/10_features.txt', apk_name)
+    # ********************
+
+    # *******验证KG，构建从原始样本apk到KG的映射*******
+    # apk_map_kg_main()
+    apk_map_kg_main_augment_xmal()
+    # ********************************************
 
 
 def get_pers_apis_after_augment():
@@ -68,7 +76,7 @@ def get_apis_from_wkg_after_augment():
     """
     获取那些已经被确立为图谱节点特征的apis
     """
-    api_list = models.augmentNodeIn.objects.values('apiList')
+    api_list = models.augmentNode3.objects.values('apiList')
     api_list = dict_list(api_list, 'apiList')
     api_num = []
     apis_list = []
@@ -83,11 +91,11 @@ def get_apis_from_wkg_after_augment():
                 api_num.append(one)
     for one in api_num:
         try:
-            ans = models.augmentAPiIn.objects.get(id=int(one))
+            ans = models.augmentAPi3.objects.get(id=int(one))
             api = ans.apiName.replace(' ', '')
             apis_list.append(api)
         except:
-            print('augmentAPiIn matching query does not exist:', one)
+            print('augmenTestAPi matching query does not exist:',one)
     return apis_list
 
 
@@ -95,7 +103,7 @@ def get_pers_from_wkg_after_augment():
     """
     获取那些已经被确立为图谱节点特征的permissions
     """
-    per_list = models.augmentNodeIn.objects.values('perList')
+    per_list = models.augmentNode3.objects.values('perList')
     per_list = dict_list(per_list, 'perList')
     per_num = []
     pers_list = []
@@ -110,16 +118,16 @@ def get_pers_from_wkg_after_augment():
                 per_num.append(one)
     for one in per_num:
         try:
-            ans = models.augmentPerIn.objects.get(id=int(one))
-            per = ans.perName.replace(' ', '')
+            ans = models.augmentPer3.objects.get(id=int(one))
+            per= ans.perName.replace(' ', '')
             pers_list.append(per)
         except:
-            print('augmentPerIn matching query does not exist:', one)
+            print('augmenTestPer matching query does not exist:', one)
     return pers_list
 
 
 def get_apis_from_test_after_augment():
-    api_list = models.augmentAPiIn.objects.values('apiName')
+    api_list = models.augmentAPi3.objects.values('apiName')
     # 此时的per_list api_list是由字典组成的数组，因此进行下述处理
     api_list = dict_list(api_list, 'apiName')
     return api_list
@@ -149,24 +157,24 @@ def generate_cg(apk):
     filename = os.path.split(apk)[1]  # 文件的名称(带后缀)
     apk_name = filename.split('.')[0]  # 文件名（不带后缀）
 
-    # if os.path.exists('../detect/outputCG/' + apk_name + '.txt'):
-    #     file = os.path.join('../detect/outputCG/', apk_name + '.gml')  # 存放apk的特征文件
-    #     return file, apk_name
-    # else:
-    # shutil.rmtree('detect/outputCG')  # 删除该文件夹以及该文件夹下的所有文件
-    # os.mkdir('detect/outputCG')  # 创建新的文件夹
-    os.system('androguard cg ' + apk + ' -o ../detect/outputCG/' + apk_name + '.gml')
-    # os.system('androguard cg ' + apk + ' -o detect/outputCG/' + apk_name + '.gexf')
-    # file = glob.glob('detect/outputCG/' + apk_name + '.gml')
-    file = os.path.join('../detect/outputCG/', apk_name + '.gml')  # 存放apk的特征文件
-    return file, apk_name
+    if os.path.exists('../detect/outputCG/' + apk_name + '.txt'):
+        file = os.path.join('../detect/outputCG/', apk_name + '.gml')  # 存放apk的特征文件
+        return file, apk_name
+    else:
+        # shutil.rmtree('detect/outputCG')  # 删除该文件夹以及该文件夹下的所有文件
+        # os.mkdir('detect/outputCG')  # 创建新的文件夹
+        os.system('androguard cg ' + apk + ' -o ../detect/outputCG/' + apk_name + '.gml')
+        # os.system('androguard cg ' + apk + ' -o detect/outputCG/' + apk_name + '.gexf')
+        # file = glob.glob('detect/outputCG/' + apk_name + '.gml')
+        file = os.path.join('../detect/outputCG/', apk_name + '.gml')  # 存放apk的特征文件
+        return file, apk_name
 
 
 def gml_txt(gml_file, apk_name):
     """
     :param gml_file: a .gml file generated by generate_cg，传入的gml文件路径是 detect/outputCG/.gml
     :param apk_name:apk's name
-    # :return: a .txt file generated from .gml file
+    :return: a .txt file generated from .gml file
     """
     # print('file:', gml_file)
     new_file = apk_name + '.txt'
@@ -174,6 +182,7 @@ def gml_txt(gml_file, apk_name):
     os.rename(gml_file, '../detect/outputCG/' + new_file)
     # file = glob.glob('detect/outputCG/' + apk_name + '.txt')
     file = os.path.join('../detect/outputCG/', apk_name + '.txt')  # 存放apk的特征文件
+    return file
 
 
 def analyse(data):
@@ -226,7 +235,121 @@ def find_related_node(source, edge_list, node_list):
     return _target, ret_api
 
 
-def extract_features_plus(apk_name, apk_path):
+def extract_features(txt, apk_name, apk_path):
+    """
+    :param txt:a .txt file generated from .gml
+    :return feature_txt: a .txt file consists of key apis & permissions of an app
+    """
+    start_time = time.time()
+
+    a, d, dx = AnalyzeAPK(apk_path)
+    permissions = a.get_permissions()
+
+    feature_filename = os.path.join('../detect/output_features/', apk_name + '_features.txt')  # 存放apk的特征文件
+    feature_file = open(feature_filename, 'w', encoding='utf-8')
+    # **********Write Information Belows*************
+    # 1. write permissions
+    # feature_file.write('perStart' + '\n')
+    for per in permissions:
+        if per in kg_permissions:
+            feature_file.write(per + '\n')
+    # feature_file.write('perEnd' + '\n')
+    feature_file.write('\n')
+    # feature_file.close()
+
+    # 2. write apis through .gml
+    data = get_data(os.path.join('../detect/outputCG/', apk_name + '.txt'))
+    api_list = list()  # 存放即将写入特征文件的api
+    node_list, edge_list = analyse(data)
+    global apis_from_test
+    # print('apis_from_test:', apis_from_test)
+
+    # sta_apis=[] # 记录已经
+    # print('node list', node_list[10:15])
+    for node in node_list:
+        api_location0 = re.findall('L.*?;->.*?]', node)  # 能在node_list[source]中找到符合正则表达式的字符串，以列表的形式返回
+        if api_location0:
+            api_list = []
+            # print('node:', node)
+            source = re.findall('id\s*\d+', node)  # 拿到函数入口，e.g.【‘id 10’】
+            source_id = source[0].replace("'", '').split(' ')[1]
+            # source_name = re.findall('entrypoint 1', node)
+            # if source_name:
+            #     print('source name:', source_name)
+            #     feature_file.write('entrypoint node id:' + str(source_id) + '\n')
+            # print('\nsource id:', source_id)
+            # 去edges中查找以source id为起点的节点
+            for edge in edge_list:
+                source_edges = re.findall('source\s*\d+', edge)
+                source_edge_id = source_edges[0].replace("'", '').split(' ')[1]
+                if source_edge_id == source_id:
+                    target = re.findall('target\s*\d+', edge)  # 结果可能有多个
+                    target_id = target[0].replace("'", '').split(' ')[1]
+                    # print('target id:', target_id)
+                    # 去node list查找node
+                    api_location = re.findall('(L.*?;->.*?)"', node_list[int(target_id)])  # 不带[]的有可能是api
+                    if api_location:
+                        for api in api_location:
+                            tmp = api
+                            if tmp[0] == "L":  # 去掉开头的L
+                                tmp = api[1:]
+                            judge = tmp.find("(")
+                            if judge != -1:
+                                tmp = tmp[:judge]
+                            if tmp in str(apis_from_test):  # 标准api
+                                # print('stand api:', tmp)
+                                api_list.append(tmp)
+                            else:
+                                part_api = re.findall(';->.*', tmp)
+                                # print('part_api0:', part_api)
+                                if part_api:
+                                    part_api = part_api[0].replace("'", '')
+                                    # print('part_api1:', part_api)
+                                    for api in apis_from_test:
+                                        api_name = re.findall(';->.*', api)
+                                        if api_name:
+                                            api_name = api_name[0].replace("'", '')
+                                            if api_name == part_api:
+                                                # print('part_api2:', part_api)
+                                                # print('api:', api_name)
+                                                api_list.append(api)
+
+            # 考虑到api是不可以复用的，因此不能去除重复的？
+            # 删减/保留api会影响匹配上的节点（对于原匹配算法来说）
+            i = 0  # 从类似[1,2,2,3,3,3,4,1]转变为[1,2,3,4,1]
+            while i < len(api_list) - 1:
+                if api_list[i] == api_list[i + 1]:
+                    del api_list[i]
+                else:
+                    i = i + 1
+            if len(api_list) > 0:
+                feature_file.write('entrypoint node id:' + str(source_id) + '\n')
+            for api in api_list:
+                # print('api:', api)
+                feature_file.write(api + '\n')
+            # feature_file.write("apiEnd" + '\n')
+    feature_file.close()
+
+    end_time = time.time()
+    print('特征提取时间为：', str(end_time - start_time))
+
+    # 存放apk中有映射关系的api-per对
+    # api_per_name=os.path.join('detect/output_features/', apk_name + '_api_per.txt')
+    # api_per = open('detect/output/api_per.txt', 'a', encoding='utf-8')
+    # perm_map = load_api_specific_resource_module('api_permission_mappings')
+    # for meth_analysis in dx.get_methods():
+    #     meth = meth_analysis.get_method()
+    #     name = meth.get_class_name() + "-" + meth.get_name() + "-" + str(meth.get_descriptor())
+    #     for k, v in perm_map.items():
+    #         if name == k:
+    #             result = str(meth) + ' : ' + str(v)
+    #             api_per.write(result + '\n')
+    # api_per.close()
+
+    # return "hello"
+
+
+def extract_features_plus(txt, apk_name, apk_path):
     """
     :function 在原有的基础上多引入正则表达式，从而节约时间
     :param txt:a .txt file generated from .gml
@@ -250,7 +373,6 @@ def extract_features_plus(apk_name, apk_path):
     data = get_data(os.path.join('../detect/outputCG/', apk_name + '.txt'))
     node_list, edge_list = analyse(data)
     global apis_from_test
-    global kg_apis
 
     data = data.replace("\n", '')
 
@@ -299,8 +421,7 @@ def extract_features_plus(apk_name, apk_path):
                 del api_list[i]
             else:
                 i = i + 1
-        intsect = list(set(kg_apis).intersection(set(api_list)))
-        if len(api_list) > 0 and len(intsect) > 0:
+        if len(api_list) > 0:
             feature_file.write('entrypoint node id:' + str(source_id_str) + '\n')
             for api in api_list:
                 feature_file.write(api + '\n')
@@ -312,7 +433,7 @@ def extract_features_plus(apk_name, apk_path):
 
 
 def database_test():
-    ans = models.augmenAPiIn.objects.count()
+    ans = models.augmentAPi3.objects.count()
     print('ans:', ans)
 
 
@@ -364,6 +485,12 @@ def find_apk_v1(apk_root_path, apk_name):
     dstpath = '/home/wuyang/Experiments/Datas/malwares/googlePlay/apk_sample/'
     for filepath, dirnames, filenames in os.walk(apk_root_path):
         for filename in filenames:
+            # 解压
+            # if os.path.splitext(filename)[1] == '.zip':
+            #     zip_path = os.path.join(filepath, filename)
+            #     print('zip:',zip_path)
+            #     os.system('unzip -o ' + zip_path+' -d '+filepath)
+            # os.path.splitext():分离文件名与扩展名
             if os.path.splitext(filename)[1] == '.apk':
                 # print('apk:', filename)
                 old_path = os.path.join(filepath, filename)
@@ -412,14 +539,10 @@ def numberCount(myList):
     return ret
 
 
-def XMalChain():
+def apk_map_kg_main_augment_xmal():
     """
     使用扩充后的知识图谱来匹配APK
     """
-    # 在写入映射失败的特征前，先清空txt文件，防止记录重复
-    with open("detect/output/nmapFetures.txt", "a", encoding='utf-8') as nmapFeatureFile:
-        nmapFeatureFile.truncate(0)
-
     global kg_apis, kg_permissions, kg_features, apis_from_test
     kg_permissions, kg_apis, kg_features = get_pers_apis_after_augment()  # 初始化数据：get all permissions&apis from kg/database
     apis_from_test = get_apis_from_test_after_augment()
@@ -434,20 +557,20 @@ def XMalChain():
     match_report_ans = []
 
     # 为了避免Django项目内的文件过多，生成CG文件和特征文件前先将文件夹清空
-    # shutil.rmtree('../detect/outputCG')  # 删除该文件夹以及该文件夹下的所有文件
-    shutil.rmtree('../detect/output_features')
-    # os.mkdir('../detect/outputCG')  # 创建新的文件夹
-    os.mkdir('../detect/output_features')
+    # shutil.rmtree('detect/outputCG')  # 删除该文件夹以及该文件夹下的所有文件
+    # shutil.rmtree('detect/output_features')
+    # os.mkdir('detect/outputCG')  # 创建新的文件夹
+    # os.mkdir('detect/output_features')
     fullMapNodeStatistic = []  # 对于所有的APK文件，统计KG上每个节点的映射情况，对应的是完全匹配的情况
     partMapNodeStatistic = []  # 对于所有的APK文件，统计KG上每个节点的映射情况，对应的是部分匹配的情况
     featureMapStatistic = []  # 对于所有的APK文件，统计KG上每个特征的映射情况
     apk_feature_map = []  # 对于每一个apk，映射上的特征/该APK总的特征数。里面存储了所有apk的特征映射情况
     pathMapStatistic = []  # 对于所有的APK文件，统计KG上每条路径的映射情况
-    kgModel = models.augmentNodeIn.objects.values()
+    kgModel = models.augmentNode3.objects.values()
     kgList = list(kgModel)
 
     # ********** 二、依次匹配每一个文件 *************
-    with open(report_path, "a", encoding='utf-8') as report:
+    with open(report_path_xmal, "a", encoding='utf-8') as report:
         # 读取所有的APK
         global flag
         files = glob.glob(sample_apks_folder_path + '/*.apk')
@@ -462,30 +585,25 @@ def XMalChain():
         # 依次读取每一个APK
         for f in files:  # f形如D:/input/apk01.apk
             file_id = file_id + 1
-            t = '************' + str(file_id) + '************'
+            t='************'+str(file_id)+'************'
             print(t)
+            print("apk:", f)
             flag = 0
             # 生成APK的特征文件，如果文件存在则不另外生成
             filename = os.path.split(f)[1]  # 文件的名称(带后缀)
             apk_name = filename.split('.')[0]  # 文件名（不带后缀）
-            print("apk aaaa:", f)
-            if os.path.exists('../detect/output_features/' + apk_name + '_features.txt'):
-                if os.path.exists('../detect/outputCG/' + apk_name + '.txt'):
-                    pass
-                else:
-                    gml, apk_name = generate_cg(f)  # 输入apk，生成cg
-                    gml_txt(gml, apk_name)  # 将cg转化为txt文件
+            if os.path.exists('../detect/outputCG/' + apk_name + '.txt'):
+                print('CG文件已存在:',apk_name)
+                pass
             else:
-                if os.path.exists('../detect/outputCG/' + apk_name + '.txt'):
-                    extract_features_plus(apk_name, f)  # 提取特征,生成特征文件
-                else:
-                    gml, apk_name = generate_cg(f)  # 输入apk，生成cg
-                    gml_txt(gml, apk_name)  # 将cg转化为txt文件
-
-            # gml, apk_name = generate_cg(f)  # 输入apk，生成cg
-            # gml_txt(gml, apk_name)  # 将cg转化为txt文件
-            # extract_features_plus(apk_name, f)  # 提取特征,生成特征文件
-
+                gml, apk_name = generate_cg(f)  # 输入apk，生成cg
+                txt = gml_txt(gml, apk_name)  # 将cg转化为txt文件
+            if os.path.exists('../detect/output_features/' + apk_name + '_features.txt'):
+                print('特征文件已存在:',apk_name)
+                # continue  # 如果该文件的特征文件存在，说明已经匹配过了，那么直接开始下一个apk的匹配，以减少运行时间
+                pass
+            else:
+                extract_features_plus(txt, apk_name, f)  # 提取特征,生成特征文件
             # 写入report
             report.write("****************** APK " + str(file_id) + " ******************\n")  # 记录当前APK的名字
             report.write("文件名：" + apk_name + '\n')  # 记录当前APK的名字
@@ -541,7 +659,7 @@ def XMalChain():
                         # 考虑到sdk level
                         try:
                             # print("????????????????")
-                            ans = models.augmentAPiIn.objects.get(apiName=tmp)
+                            ans = models.augmentAPi3.objects.get(apiName=tmp)
                             if ans:
                                 addList = ans.addList
                                 repList = ans.repList
@@ -615,7 +733,7 @@ def XMalChain():
                 if line.find(";") != -1:  # 说明处理的是api
                     tmp1 = line.split(';')
                     tmp = ';'.join(tmp1)  # tmp为按顺序出现的api
-                    ans = models.augmentAPiIn.objects.filter(apiName=tmp)
+                    ans = models.augmentAPi3.objects.filter(apiName=tmp)
                     if ans:
                         ans = list(ans)
                         for one in ans:
@@ -635,7 +753,7 @@ def XMalChain():
                 if line.find(".") != -1:
                     tmp1 = line.split('.')
                     tmp = '.'.join(tmp1)
-                    ans = models.augmentPerIn.objects.filter(perName__icontains=tmp)
+                    ans = models.augmentPer3.objects.filter(perName__icontains=tmp)
                     if ans:
                         ans = list(ans)
                         for one in ans:
@@ -701,7 +819,7 @@ def XMalChain():
             # **************查看完整匹配的节点**********************
             retMapData = []  # 返回匹配的情况，包括：节点、节点匹配率、匹配上的特征、匹配失败的特征
             for nodeId in partNode:  # 这里面存放的是部分特征映射的节点的ID
-                ans = models.augmentNodeIn.objects.get(nodeID=nodeId)
+                ans = models.augmentNode3.objects.get(nodeID=nodeId)
                 ans = object_to_json(ans)
                 kgPerList = str2list(ans['perList'])
                 kgApiList = str2list(ans['apiList'])
@@ -782,36 +900,16 @@ def XMalChain():
             # 输出对应语义
             report.write("对应的语义如下:\n")
             for i in fullNode:
-                ans = models.augmentNodeIn.objects.get(id=int(i))
-                semantic = ans.actionName
-                report.write(str(i) + ": " + semantic + '\n')
-            with open(report_log, 'a', encoding='utf-8', newline="") as f:
-                f.write('*********' + str(file_id) + '*********\n')
-                f.write('Apk name: ' + apk_name + '\n')
-                malicious = []
-                promalicious = []
-                general = []
+                ans=models.augmentNode3.objects.get(id=int(i))
+                semantic=ans.actionName
+                report.write(str(i)+": " + semantic + '\n')
+            with open(report_path_xmal_short, 'w', encoding='utf-8', newline="") as f:
+                f.write('*********'+str(file_id)+'*********\n')
+                f.write('Apk name: '+apk_name+'\n')
                 for i in fullNode:
-                    ans = models.augmentNodeIn.objects.get(id=int(i))
-                    mark = ans.mark
+                    ans = models.augmentNode3.objects.get(id=int(i))
                     semantic = ans.actionName
-                    if mark == '2':
-                        malicious.append('(' + mark + ")" + semantic + '\n')
-                    elif mark == '1':
-                        promalicious.append('(' + mark + ")" + semantic + '\n')
-                    else:
-                        general.append('(' + mark + ")" + semantic + '\n')
-                if len(malicious) > 0:
-                    for i in malicious:
-                        f.write(i)
-                    f.write('------\n')
-                if len(promalicious) > 0:
-                    for i in promalicious:
-                        f.write(i)
-                    f.write('------\n')
-                if len(general) > 0:
-                    for i in general:
-                        f.write(i)
+                    report.write(str(i) + ": " + semantic + '\n')
                 f.write('******************\n\n')
 
             print('路径匹配...')
@@ -836,7 +934,7 @@ def XMalChain():
             # print('fullNodeIdList：', fullNodeIdList)
             for nodeId in fullNodeIdList:
                 # 1）访问数据库，查看该列表是否有图谱中的该节点的邻节点
-                ans = models.augmentRelIn.objects.filter(sourceID=nodeId)
+                ans = models.augmentRel3.objects.filter(sourceID=nodeId)
                 if ans:
                     if len(tmp) == 0 or tmp[-1] != nodeId:  # 避免重复加入相同节点
                         tmp.append(nodeId)  # 加入源节点
@@ -872,7 +970,7 @@ def XMalChain():
             match_report_ans.append({'apk_name': apk_name, 'match_path': str(pathList), 'perfect_match': str(fullNode)})
             report.write("基于完全匹配节点的匹配路径:" + ';'.join(str(i) for i in pathList) + '\n\n\n')
 
-            with open(match_report, 'w', encoding='utf-8', newline="") as f:
+            with open(match_report_path_xmal, 'w', encoding='utf-8', newline="") as f:
                 for one in match_report_ans:
                     f.write(json.dumps(one, indent=4, ensure_ascii=False))
                     f.write(';')
@@ -897,7 +995,7 @@ def XMalChain():
     ret8 = "KG上被完全匹配的节点覆盖率(完全匹配节点数/KG节点总数)：" + str(round(fullMapAllApkRate, 4) * 100) + '%'
     ret10 = "KG上的路径被匹配情况：" + str(pathMapStatistic)
 
-    with open(report_path, "a", encoding='utf-8') as outfile:  # 这种方法会自动关闭文件
+    with open(report_path_xmal, "a", encoding='utf-8') as outfile:  # 这种方法会自动关闭文件
         outfile.write("\n\n****************** KG Statistics ******************\n")
         outfile.write(ret9 + '\n')
         # outfile.write(ret11 + '\n')
@@ -906,7 +1004,6 @@ def XMalChain():
         outfile.write(ret7 + '\n')
         outfile.write(ret8 + '\n')
         outfile.write(ret10 + '\n')
-
 
 # test()
 
@@ -924,620 +1021,6 @@ def static_analysis():
             continue
         else:
             gml, apk_name = generate_cg(f)  # 输入apk，生成cg
-            gml_txt(gml, apk_name)  # 将cg转化为txt文件
-
+            txt = gml_txt(gml, apk_name)  # 将cg转化为txt文件
 
 # static_analysis()
-
-def find_nodes(apk_name):
-    """
-    :function: 根据apk的特征文件找出该apk的所有行为
-    :apk_name, app的名字
-    :return     match_node_rel 匹配上的节点列表，节点可能有重复
-                match_node_sin 匹配上了哪些节点，节点没有重复
-    """
-    global kg
-    global kg_apis
-    feature_data = do_feature_file_v1(apk_name)
-    data = feature_data.split("entrypoint node id:")
-    permissions = data[0:1][0].strip('\n').split('\n')  # 该api申请的所有权限
-    # print(permissions)
-    perlist = []
-    match_node_rel = []
-    match_node_sin = []
-
-    # 0. 根据permission name找到对应的id
-    for per in permissions:
-        try:
-            id = models.augmentPerIn.objects.get(perName=per).perID
-            if id not in perlist:
-                perlist.append(id)
-        except:
-            print('该permission无法找到：', per)
-    # print('***permission***')
-    # print(perlist)
-
-    for one in data[1:]:
-        # print(one)
-        apis = one.strip('\n').split('\n')[1:]
-        apilist = []  # 当前集合的api list
-        candidates = []  # 可能的节点
-        # 1. 根据api name找到对应api id，需要注意的是考虑api sdk和api similar
-        for api in apis:
-            if api in kg_apis:
-                pass
-            else:
-                api = api_sdk_sim(api)
-            try:
-                id = models.augmentAPiIn.objects.get(apiName=api).apiID
-                apilist.append(id)
-            except:
-                # print('api不存在：',api)
-                pass
-
-        # 2. 和图谱上的api list求交集，确定候选节点
-        for node in kg:
-            tmp=apilist
-            node_apiList = node['apiList']
-            node_perList = node['perList']
-            inset_api = list(set(node_apiList).intersection(set(tmp)))
-            inset_per = list(set(node_perList).intersection(set(perlist)))
-            inset_api.sort()
-            inset_per.sort()
-            node_apiList.sort()
-            node_perList.sort()
-            if eq(inset_api, node_apiList) and eq(inset_per, node_perList):
-                candidates.append(node)
-                # 避免API复用
-                for a in inset_api:
-                    apilist.remove(a)
-                # break
-
-        # 3. 确定最终匹配上的节点
-        if len(candidates) > 0:
-            for one in candidates:
-                match_node_rel.append(one)
-                if one not in match_node_sin:
-                    match_node_sin.append(one)
-        else:
-            # 没有和该特征集匹配的节点，直接跳出本次循环
-            continue
-
-    # 处理输出的行为
-    i = 0  # 从类似[1,2,2,3,3,3,4,1]转变为[1,2,3,4,1]
-    while i < len(match_node_rel) - 1:
-        if match_node_rel[i] == match_node_rel[i + 1]:
-            del match_node_rel[i]
-        else:
-            i = i + 1
-    # for one in match_node_sin:
-    #     if one['mark']=='2':
-    #         print(one)
-
-    return match_node_rel, match_node_sin
-
-
-def str_list(s):
-    """
-    将节点的perlist(数据类型str)和apilist(数据类型str)转化为相应的list(数据类型int)
-    s: 带处理的字符串
-    """
-    ret = []
-    if len(s) > 0 and s != '':
-        s = s.replace(' ', '')
-        if s.find(',') == -1:
-            ret.append(int(s))
-        else:
-            tmp = s.split(',')
-            for one in tmp:
-                ret.append(int(one))
-
-    return ret
-
-
-def api_sdk_sim(api_name):
-    """
-    考虑到api版本更新和相似的api
-    :param api_name 传入api的name，将这个api映射为现有节点中存储的api
-    :return 返回这个api对应节点上的api的name
-    """
-    ret = api_name
-    try:
-        ans = models.augmentAPiIn.objects.get(apiName=api_name)
-        if ans.addList != '' or ans.repList != '':
-            addList = ans.addList
-            repList = ans.repList
-            # print('addList：', addList)
-            # print('repList：', repList)
-            if addList != '':
-                add_obj = ApiSim.objects.get(id=int(addList))
-                add_apis = add_obj.list
-                add_apis = add_apis.split(',')
-                for api in add_apis:
-                    api = api.replace(' ', '')
-                    if api in str(kg_apis):
-                        # print('新增 by sim：',api)
-                        ret = api
-                        break
-            if repList != '':
-                rep_obj = ApiSDK.objects.get(id=int(repList))
-                rep_apis = rep_obj.list
-                rep_apis = rep_apis.split(',')
-                for api in rep_apis:
-                    api = api.replace(' ', '')
-                    if api in str(kg_apis):
-                        # print('新增 by sdk：', api)
-                        ret = api
-                        break
-        else:
-            # print('not find0：', )
-            pass
-    except:
-        # print('not find：', tmp)
-        pass
-
-    return ret
-
-
-def get_all_list():
-    """
-    获取知识图谱上所有节点对应的api list和per list
-    """
-    model = list(models.augmentNodeIn.objects.values())
-    ret = []
-    for node in model:
-        json = {}
-        nodeID = node['nodeID']
-        actionName = node['actionName']
-        mark = node['mark']
-        perlist = str_list(node['perList'])
-        apilist = str_list(node['apiList'])
-
-        json['nodeID'] = nodeID
-        json['actionName'] = actionName
-        json['mark'] = mark
-        json['perList'] = perlist
-        json['apiList'] = apilist
-        ret.append(json)
-
-    return ret
-
-
-def find_relation(match_node_rel):
-    """
-    根据匹配出的节点，找出这些节点可以匹配上的路径
-    """
-    match_node = match_node_rel
-    ret_path = []
-    fullNodeIdList = []  # 存储节点的ID
-    for node in match_node:
-        fullNodeIdList.append(node['nodeID'])
-    # 遍历访问该APK的部分特征匹配节点列表
-    # fullNodeIdList = fullNode[:]  # 复制列表，其中存储的是ID
-    tmp = list()  # 暂时存放一条路径
-
-    for node in match_node:
-        nodeId = node['nodeID']
-        # 1）访问数据库，查看该列表是否有图谱中的该节点的邻节点
-        try:
-            ans = models.augmentRelIn.objects.filter(sourceID=nodeId)
-            if ans:
-                if len(tmp) == 0 or tmp[-1] != nodeId:  # 避免重复加入相同节点
-                    tmp.append(nodeId)  # 加入源节点
-                ans = list(ans)
-                for one in ans:
-                    # 2）如果有邻节点，判断邻节点是否也存在于APK的匹配节点列表中
-                    if one.targetID in fullNodeIdList:
-                        # 2.1)如果存在，则将该邻节点加入到路径列表中
-                        # print('tmp:', tmp)
-                        # print("匹配上的路径节点为：", str(nodeId) + "->" + str(one.targetID))
-                        tmp.append(one.targetID)
-                        fullNodeIdList.remove(nodeId)
-                        fullNodeIdList.remove(one.targetID)
-                        # print('tmp list:', tmp)
-                        if len(tmp) > 1:
-                            ret_path.append(tmp)
-                            tmp = tmp[0:-1]
-                            continue
-                    else:
-                        # 2.2)如果没有则跳过（因为一般来说不存在这种情况）
-                        # print("有图谱上的邻节点但是邻节点不存在APK的匹配节点列表中")
-                        continue
-        except:
-            pass
-        tmp = []
-
-    # 匹配出来的路径去重
-    ret_path2 = []
-    for one in ret_path:
-        if one not in ret_path2:
-            ret_path2.append(one)
-
-    # 查找对应的语义
-    ret_path = []  # 全部的路径
-    # 返回带和不带malicious node的路径
-    ret_path_malicious = []
-    ret_path_others = []
-    for nodelist in ret_path2:
-        flag = 0  # 判断当前路径中是否有恶意节点，有为1，没有为0
-        semantics = []
-        for node in nodelist:  # 寻找对应的语义
-            ans = models.augmentNodeIn.objects.get(nodeID=node)
-            if ans.mark == '2':
-                flag = 1
-            semantic = ans.actionName
-            semantics.append(semantic)
-        ret_path.append({'path': nodelist, 'semantics': semantics})
-
-        if flag == 0:  # 返回不带恶意节点的路径
-            ret_path_others.append({'path': nodelist, 'semantics': semantics})
-        elif flag == 1:  # 返回带恶意节点的路径
-            ret_path_malicious.append({'path': nodelist, 'semantics': semantics})
-        else:
-            print('what error')
-
-    return ret_path, ret_path_malicious, ret_path_others
-
-
-def get_malicious_nodes():
-    """
-    获取知识图谱上那些mark为2的节点
-    """
-    ret = []
-    model = models.augmentNodeIn.objects.values()
-    model = list(model)
-    for node in model:
-        if node['mark'] == '2':
-            ret.append(node['nodeID'])
-    return ret
-
-
-def split_m_o(match_node_sin):
-    """
-    将节点分为恶意的和其他的
-    """
-    ret_malicious = []
-    ret_benign = []
-    for node in match_node_sin:
-        if node['mark'] == '2':
-            ret_malicious.append(node)
-        else:
-            ret_benign.append(node)
-
-    return ret_malicious, ret_benign
-
-
-def extract_id(node_list):
-    """
-    从字典节点的列表中提取出节点的id list
-    """
-    ret = []
-    for one in node_list:
-        if one['nodeID'] not in ret:
-            ret.append(one['nodeID'])
-
-    return ret
-
-
-def output(match_node_sin, match_path_malicious):
-    """
-    输出最终检测报告中应该有的行为。
-    node_malicious 匹配出的恶意节点+其他节点
-    match_path 匹配出的路径（至少带一个恶意节点的）
-    """
-    ret = []
-
-    node_mlicious, node_benign = split_m_o(match_node_sin)
-    node_w = extract_id(match_node_sin)
-    node_m = extract_id(node_mlicious)
-    node_b = extract_id(node_benign)
-    path_nodes = []  # 恶意路径中的节点
-    for one in match_path_malicious:
-        for i in one['path']:
-            if i not in path_nodes:
-                path_nodes.append(i)
-    # 求两个集合的交集
-    inset_nodes = list(set(node_w).intersection(path_nodes))
-    # 求两个集合的并集
-    union_nodes = list(set(inset_nodes).union(node_m))
-
-    for one in union_nodes:
-        for node in match_node_sin:
-            if one == node['nodeID']:
-                ret.append(node)
-                continue
-
-    return ret
-
-
-def reason(match_path,apk_name):
-    """
-    根据匹配的路径，推理出现有检测结果中没有的行为
-    """
-    renew_path=[]   # 推理后的路径
-    # 1. 找到路径的首尾节点
-    for one in match_path:
-        path = one['path']
-        source = path[0]
-        target = path[-1]
-        source_head_candidates = []  # 当前路径首节点的source node
-        target_tail_candidates = []  # 当前路径尾节点的target node
-        try:
-            source_head_rel = models.augmentRelIn.objects.filter(targetID=source)
-            if source_head_rel:
-                for obj in source_head_rel:
-                    id = obj.sourceID
-                    # 查找相应的节点
-                    try:
-                        ans = models.augmentNodeIn.objects.get(nodeID=id)
-                        source_head_candidates.append(
-                            {'nodeID': ans.nodeID, 'actionName': ans.actionName, 'mark': ans.mark,
-                             'perList': str_list(ans.perList), 'apiList': str_list(ans.apiList)})
-                    except:
-                        print('reason 没有查找到该首节点')
-        except:
-            pass
-        try:
-            target_tail_rel = models.augmentRelIn.objects.filter(sourceID=target)
-            if target_tail_rel:
-                for obj in target_tail_rel:
-                    id = obj.targetID
-                    # 查找相应的节点
-                    try:
-                        ans = models.augmentNodeIn.objects.get(nodeID=id)
-                        target_tail_candidates.append(
-                            {'nodeID': ans.nodeID, 'actionName': ans.actionName, 'mark': ans.mark,
-                             'perList': str_list(ans.perList), 'apiList': str_list(ans.apiList)})
-                    except:
-                        print('reason 没有查找到该尾节点')
-        except:
-            pass
-
-        # 2. 查看他们首尾节点的特征匹配情况。模糊查询，在整个特征文件中查找，而不是在某个函数中查找
-        tmp=path # 存放新的路径的
-        # print('source_head_candidate:',source_head_candidates)
-        for node in source_head_candidates:
-            nodeID=node['nodeID']
-            f=compute_f(apk_name,node)
-            # 设置阈值，超过则加入到原有路径中
-            if f>=0.5:
-                tmp.insert(0,nodeID)
-        for node in target_tail_candidates:
-            nodeID=node['nodeID']
-            f=compute_f(apk_name,node)
-            if f>=0.5:
-                tmp.append(nodeID)
-        renew_path.append({'path':tmp,'semantics':one['semantics']})
-
-    return renew_path
-
-
-def compute_f(apk_name, dict_node):
-    """
-    apk_name 用于定位特征文件
-    dict_node 一个节点的字典形式，如 {'nodeID': ans.nodeID, 'actionName': ans.actionName, 'mark': ans.mark,
-                             'perList': perList, 'apiList': apiList})
-    返回该节点的特征匹配率
-    """
-    apilist=dict_node['apiList']
-    perlist=dict_node['perList']
-
-    feature_data = do_feature_file_v1(apk_name)
-    api_str_list=query_kg_list(apilist,1)
-    per_str_list=query_kg_list(perlist,0)
-
-    # 查找匹配上的特征并计数
-    api_count=0
-    per_count=0
-    for api in api_str_list:
-        pattern=re.compile(api,re.S)
-        ans=pattern.findall(feature_data)
-        print('api ans:',ans[0])
-        if ans:
-            api_count=api_count+1
-    for per in per_str_list:
-        pattern = re.compile(per, re.S)
-        ans = pattern.findall(feature_data)
-        print('per ans:', ans[0])
-        if pattern:
-            per_count = per_count + 1
-
-    # 计算特征覆盖率
-    f=(api_count+per_count)/(len(apilist)+len(perlist))
-
-    return f
-
-
-def query_kg_list(int_list,flag):
-    """
-    根据传入的int id list和flag去数据库中查找相应的string name list
-    """
-    # 查询permission
-    ret=[]
-    if flag==0 and len(int_list)>0:
-        for one in int_list:
-            try:
-                ans=models.augmentPerIn.objects.get(perID=one).perName
-                ans=ans.strip(' ').replace(' ','') # 防止有多余的空格
-            except:
-                print('该permission无法被找到：',one)
-
-    # 查询apis
-    if flag==1 and len(int_list)>0:
-        for one in int_list:
-            try:
-                ans=models.augmentAPiIn.objects.get(apiID=one).apiName
-                ans=ans.strip(' ').replace(' ','') # 防止有多余的空格
-            except:
-                print('该api无法被找到：',one)
-
-    return ret
-
-
-# global kg,malicious_nodes
-# kg=get_all_list()
-# malicious_nodes=get_malicious_nodes()
-# for one in kg[0:25]:
-#     print(one)
-# m1,m2=find_nodes('ClickrAd')
-# p1,p2,p3=find_relation(m1)
-# for one in p2:
-#     print(one)
-#
-# print('**********')
-# for one in p3:
-#     print(one)
-
-# find_nodes('GoldenCup')
-
-def XMalChain_v1():
-    """
-    使用扩充后的知识图谱来匹配APK
-    """
-    # 在写入映射失败的特征前，先清空txt文件，防止记录重复
-    with open(report_log, "a", encoding='utf-8') as f:
-        f.truncate(0)
-    with open(match_report, "a", encoding='utf-8') as f:
-        f.truncate(0)
-    global kg, malicious_nodes
-    global kg_apis, kg_permissions, kg_features, apis_from_test
-    kg_permissions, kg_apis, kg_features = get_pers_apis_after_augment()  # 初始化数据：get all permissions&apis from kg/database
-    apis_from_test = get_apis_from_test_after_augment()
-    kg = get_all_list()
-    malicious_nodes = get_malicious_nodes()
-
-    # 1、生成98个样本apk的特征文件
-    sample_apks_folder_path = '/home/wuyang/Experiments/Datas/malwares/sample_apk_100'
-    # sample_apks_folder_path = '/home/wuyang/Experiments/Datas/malwares/googlePlay/apk_sample'
-    # sample_apks_folder_path='/home/wuyang/Experiments/Datas/malwares/part_androzoo/androzoo_apk_100'
-    # sample_apks_folder_path = '/home/wuyang/Experiments/Datas/tmpApk/protest'
-    # sample_apks_folder_path='/media/wuyang/WD_BLACK/AndroidMalware/xmal_test'
-
-    match_report_ans = []
-
-    # 为了避免Django项目内的文件过多，生成CG文件和特征文件前先将文件夹清空
-    # shutil.rmtree('../detect/outputCG')  # 删除该文件夹以及该文件夹下的所有文件
-    # shutil.rmtree('../detect/output_features')
-    # os.mkdir('../detect/outputCG')  # 创建新的文件夹
-    # os.mkdir('../detect/output_features')
-
-    # ********** 二、依次匹配每一个文件 *************
-    with open(report_log, "a", encoding='utf-8') as report:
-        # 读取所有的APK
-        global flag
-        files = glob.glob(sample_apks_folder_path + '/*.apk')
-        file_id = 0
-
-        # report.write("******************\n " + '计算节点匹配率时，去掉permission' + " ******************\n\n")
-
-        # 依次读取每一个APK
-        for f in files:  # f形如D:/input/apk01.apk
-            file_id = file_id + 1
-            flag = 0
-            # 生成APK的特征文件，如果文件存在则不另外生成
-            filename = os.path.split(f)[1]  # 文件的名称(带后缀)
-            apk_name = filename.split('.')[0]  # 文件名（不带后缀）
-
-            # 写入report
-            report.write("****************** APK " + str(file_id) + " ******************\n")  # 记录当前APK的名字
-            report.write("Apk name：" + apk_name + '\n')  # 记录当前APK的名字
-            print("******************" + str(file_id) + " ******************")
-            print("Apk name: " + apk_name + '')
-
-            if os.path.exists('../detect/output_features/' + apk_name + '_features.txt'):
-                pass
-            else:
-                if os.path.exists('../detect/outputCG/' + apk_name + '.txt'):
-                    pass
-                else:
-                    print('生成CG文件...')
-                    gml, apk_name = generate_cg(f)  # 输入apk，生成cg
-                    gml_txt(gml, apk_name)  # 将cg转化为txt文件
-                print('生成特征文件...')
-                extract_features_plus(apk_name, f)  # 提取特征,生成特征文件
-
-            print('节点匹配...')
-            # *******计算某个APK覆盖的节点 *******
-            match_node_rel, match_report_sin = find_nodes(apk_name)
-            report.write("\n")
-            malicious = []
-            others = []
-            global statics_behavior
-            for node in match_report_sin:
-                if node['mark'] == '2':
-                    malicious.append(node['actionName'] + '\n')
-                    statics_behavior.append(node['actionName'])
-                else:
-                    others.append(node['actionName'] + '\n')
-            if len(malicious) > 0:
-                report.write('---Malicious---\n')
-                for i in malicious:
-                    report.write(i)
-                report.write('\n')
-            if len(others) > 0:
-                report.write('---Others---\n')
-                for i in others:
-                    report.write(i)
-                report.write('\n')
-
-            print('路径匹配...')
-            # ************3.路径匹配 ***********
-            path_all, path_m, path_o = find_relation(match_node_rel)
-            output_nodes = output(match_report_sin, path_m)
-            report.write('\n---Malicious Path---\n')
-            for one in path_m:
-                path = one['path']
-                semantics = one['semantics']
-                report.write('->'.join(str(i) for i in path) + ': ' + '->'.join(str(i) for i in semantics) + '\n')
-            report.write('\n---Others Path---\n')
-            for one in path_o:
-                path = one['path']
-                semantics = one['semantics']
-                report.write('->'.join(str(i) for i in path) + ': ' + '->'.join(str(i) for i in semantics) + '\n')
-
-            print('输出最终节点与推理...')
-            report.write('\n\n---Final Output---\n')
-            for one in output_nodes:
-                report.write(one['actionName'] + '\n')
-
-            renew_path=reason(path_m,apk_name)
-            report.write('\n---Reasoning Path---\n')
-            for one in renew_path:
-                path = one['path']
-                semantics = one['semantics']
-                report.write('->'.join(str(i) for i in path) + ': ' + '->'.join(str(i) for i in semantics) + '\n')
-            report.write('******************\n\n')
-            print('---END---')
-
-            # 用于扩充数据集
-            # match_report_ans = []
-            # fullNode = []
-            # pathList = []
-            # for one in match_report_sin:
-            #     fullNode.append(one['nodeID'])
-            # for one in path_all:
-            #     # print(one)
-            #     if one['path'] not in pathList:
-            #         pathList.append(one['path'])
-            # match_report_ans.append({'apk_name': apk_name, 'match_path': str(pathList), 'perfect_match': str(fullNode)})
-            #
-            # with open(match_report, 'a', encoding='utf-8', newline="") as f:
-            #     for one in match_report_ans:
-            #         f.write(json.dumps(one, indent=4, ensure_ascii=False))
-            #         f.write(';')
-
-
-XMalChain_v1()
-
-print('startc:',statics_behavior[0:3])
-arr = statics_behavior
-
-
-# arr=Counter(lists)
-# print(arr)
-def counter(arr):
-    return Counter(arr)
-
-ans=counter(arr)
-print('*********')
-print(ans)

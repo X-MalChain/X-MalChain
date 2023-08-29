@@ -23,7 +23,7 @@ from androguard.misc import AnalyzeAPK
 from androguard.core.androconf import load_api_specific_resource_module
 from manager.views import dict_trans_list
 from common.models import ApiTest, PerTest, KgBackup, relBackup, ApiSim, ApiSDK
-from exper1.augment import joint_path
+from exper.augment import joint_path
 
 kg_permissions = []  # all permissions in kg/database
 kg_apis = []  # all apis in kg/database
@@ -32,8 +32,8 @@ kg_features = []  # all features(permissions+apis) in kg
 
 
 report_path_xmal='../detect/output/report1_xmal.txt'
-report_path_xmal_short='../detect/output/report1_xmal_short.txt'
 match_report_path_xmal = '../detect/output/match_report1_xmal.txt'
+report_path_xmal_short='../detect/output/report1_xmal_short.txt'
 
 fileID = 0
 
@@ -76,7 +76,7 @@ def get_apis_from_wkg_after_augment():
     """
     获取那些已经被确立为图谱节点特征的apis
     """
-    api_list = models.augmentNode3.objects.values('apiList')
+    api_list = models.augmenTestNode.objects.values('apiList')
     api_list = dict_list(api_list, 'apiList')
     api_num = []
     apis_list = []
@@ -91,7 +91,7 @@ def get_apis_from_wkg_after_augment():
                 api_num.append(one)
     for one in api_num:
         try:
-            ans = models.augmentAPi3.objects.get(id=int(one))
+            ans = models.augmenTestAPi.objects.get(id=int(one))
             api = ans.apiName.replace(' ', '')
             apis_list.append(api)
         except:
@@ -103,7 +103,7 @@ def get_pers_from_wkg_after_augment():
     """
     获取那些已经被确立为图谱节点特征的permissions
     """
-    per_list = models.augmentNode3.objects.values('perList')
+    per_list = models.augmenTestNode.objects.values('perList')
     per_list = dict_list(per_list, 'perList')
     per_num = []
     pers_list = []
@@ -118,7 +118,7 @@ def get_pers_from_wkg_after_augment():
                 per_num.append(one)
     for one in per_num:
         try:
-            ans = models.augmentPer3.objects.get(id=int(one))
+            ans = models.augmenTestPer.objects.get(id=int(one))
             per= ans.perName.replace(' ', '')
             pers_list.append(per)
         except:
@@ -127,7 +127,7 @@ def get_pers_from_wkg_after_augment():
 
 
 def get_apis_from_test_after_augment():
-    api_list = models.augmentAPi3.objects.values('apiName')
+    api_list = models.augmenTestAPi.objects.values('apiName')
     # 此时的per_list api_list是由字典组成的数组，因此进行下述处理
     api_list = dict_list(api_list, 'apiName')
     return api_list
@@ -433,7 +433,7 @@ def extract_features_plus(txt, apk_name, apk_path):
 
 
 def database_test():
-    ans = models.augmentAPi3.objects.count()
+    ans = models.augmenTestAPi.objects.count()
     print('ans:', ans)
 
 
@@ -566,7 +566,7 @@ def apk_map_kg_main_augment_xmal():
     featureMapStatistic = []  # 对于所有的APK文件，统计KG上每个特征的映射情况
     apk_feature_map = []  # 对于每一个apk，映射上的特征/该APK总的特征数。里面存储了所有apk的特征映射情况
     pathMapStatistic = []  # 对于所有的APK文件，统计KG上每条路径的映射情况
-    kgModel = models.augmentNode3.objects.values()
+    kgModel = models.augmenTestNode.objects.values()
     kgList = list(kgModel)
 
     # ********** 二、依次匹配每一个文件 *************
@@ -592,18 +592,9 @@ def apk_map_kg_main_augment_xmal():
             # 生成APK的特征文件，如果文件存在则不另外生成
             filename = os.path.split(f)[1]  # 文件的名称(带后缀)
             apk_name = filename.split('.')[0]  # 文件名（不带后缀）
-            if os.path.exists('../detect/outputCG/' + apk_name + '.txt'):
-                print('CG文件已存在:',apk_name)
-                pass
-            else:
-                gml, apk_name = generate_cg(f)  # 输入apk，生成cg
-                txt = gml_txt(gml, apk_name)  # 将cg转化为txt文件
-            if os.path.exists('../detect/output_features/' + apk_name + '_features.txt'):
-                print('特征文件已存在:',apk_name)
-                # continue  # 如果该文件的特征文件存在，说明已经匹配过了，那么直接开始下一个apk的匹配，以减少运行时间
-                pass
-            else:
-                extract_features_plus(txt, apk_name, f)  # 提取特征,生成特征文件
+            gml, apk_name = generate_cg(f)  # 输入apk，生成cg
+            txt = gml_txt(gml, apk_name)  # 将cg转化为txt文件
+            extract_features_plus(txt, apk_name, f)  # 提取特征,生成特征文件
             # 写入report
             report.write("****************** APK " + str(file_id) + " ******************\n")  # 记录当前APK的名字
             report.write("文件名：" + apk_name + '\n')  # 记录当前APK的名字
@@ -659,7 +650,7 @@ def apk_map_kg_main_augment_xmal():
                         # 考虑到sdk level
                         try:
                             # print("????????????????")
-                            ans = models.augmentAPi3.objects.get(apiName=tmp)
+                            ans = models.augmenTestAPi.objects.get(apiName=tmp)
                             if ans:
                                 addList = ans.addList
                                 repList = ans.repList
@@ -733,7 +724,7 @@ def apk_map_kg_main_augment_xmal():
                 if line.find(";") != -1:  # 说明处理的是api
                     tmp1 = line.split(';')
                     tmp = ';'.join(tmp1)  # tmp为按顺序出现的api
-                    ans = models.augmentAPi3.objects.filter(apiName=tmp)
+                    ans = models.augmenTestAPi.objects.filter(apiName=tmp)
                     if ans:
                         ans = list(ans)
                         for one in ans:
@@ -753,7 +744,7 @@ def apk_map_kg_main_augment_xmal():
                 if line.find(".") != -1:
                     tmp1 = line.split('.')
                     tmp = '.'.join(tmp1)
-                    ans = models.augmentPer3.objects.filter(perName__icontains=tmp)
+                    ans = models.augmenTestPer.objects.filter(perName__icontains=tmp)
                     if ans:
                         ans = list(ans)
                         for one in ans:
@@ -819,7 +810,7 @@ def apk_map_kg_main_augment_xmal():
             # **************查看完整匹配的节点**********************
             retMapData = []  # 返回匹配的情况，包括：节点、节点匹配率、匹配上的特征、匹配失败的特征
             for nodeId in partNode:  # 这里面存放的是部分特征映射的节点的ID
-                ans = models.augmentNode3.objects.get(nodeID=nodeId)
+                ans = models.augmenTestNode.objects.get(nodeID=nodeId)
                 ans = object_to_json(ans)
                 kgPerList = str2list(ans['perList'])
                 kgApiList = str2list(ans['apiList'])
@@ -900,16 +891,16 @@ def apk_map_kg_main_augment_xmal():
             # 输出对应语义
             report.write("对应的语义如下:\n")
             for i in fullNode:
-                ans=models.augmentNode3.objects.get(id=int(i))
+                ans=models.augmenTestNode.objects.get(id=int(i))
                 semantic=ans.actionName
                 report.write(str(i)+": " + semantic + '\n')
-            with open(report_path_xmal_short, 'w', encoding='utf-8', newline="") as f:
-                f.write('*********'+str(file_id)+'*********\n')
-                f.write('Apk name: '+apk_name+'\n')
+            with open(report_path_xmal_short, 'a', encoding='utf-8', newline="") as f:
+                f.write('*********' + str(file_id) + '*********\n')
+                f.write('Apk name: ' + apk_name + '\n')
                 for i in fullNode:
-                    ans = models.augmentNode3.objects.get(id=int(i))
+                    ans = models.augmenTestNode.objects.get(id=int(i))
                     semantic = ans.actionName
-                    report.write(str(i) + ": " + semantic + '\n')
+                    f.write(str(i) + ": " + semantic + '\n')
                 f.write('******************\n\n')
 
             print('路径匹配...')
@@ -934,7 +925,7 @@ def apk_map_kg_main_augment_xmal():
             # print('fullNodeIdList：', fullNodeIdList)
             for nodeId in fullNodeIdList:
                 # 1）访问数据库，查看该列表是否有图谱中的该节点的邻节点
-                ans = models.augmentRel3.objects.filter(sourceID=nodeId)
+                ans = models.augmenTestRel.objects.filter(sourceID=nodeId)
                 if ans:
                     if len(tmp) == 0 or tmp[-1] != nodeId:  # 避免重复加入相同节点
                         tmp.append(nodeId)  # 加入源节点
