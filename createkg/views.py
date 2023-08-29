@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from django.http import HttpResponse
 from common import models
 from common.models import ApiTest, PerTest, KgTest, relTest, KgBackup, relBackup
@@ -15,13 +14,11 @@ def create_graph():
     graph.run('match (n) detach delete n')
 
     # 2. Create nodes
-    # kg = KgTest.objects.values()
     kg = KgBackup.objects.values()
     for one in kg:
         action_id = one['id']
         action_name = one['actionName']
         per_id_list = one['perList']
-        # print('per list:', per_id_list)
         api_id_list = one['apiList']
         per_list = str_list(per_id_list)
         api_list = str_list(api_id_list)
@@ -41,28 +38,18 @@ def create_graph():
                     apis.append(api_obj.apiName)
                 except:
                     pass
-        # print('one', kg)
-        # if int(action_id)<20:
-        #     node = Node('Behavoir', ID=action_name, name=action_name)  # label, sensitive or not
-        # else:
-        #     node = Node('Unkown', ID=action_name, name=action_name)
         node = Node('Behavior', ID=action_id, name=action_id, apis=apis, permissions=permissions, action=action_name)
         graph.create(node)
 
     # 3. Create relationships
     node_matcher = NodeMatcher(graph)
-    # rel = relTest.objects.values()
     rel = models.relBackup.objects.values()
     for one in rel:
         node_id_source = one['sourceID']
         node_id_target = one['targetID']
         relation = one['relation']
-        # print('sourceID:',node_id_source)
-        # print('target:', node_id_target)
-        # print('relation:', relation)
         if relation=='': 
             relation='next'
-        # print('\n')
         node_source = node_matcher.match("Behavior").where(ID=node_id_source).first()
         node_target = node_matcher.match("Behavior").where(ID=node_id_target).first()
         r = Relationship(node_source, relation, node_target)
